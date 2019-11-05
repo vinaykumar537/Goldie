@@ -1,0 +1,6965 @@
+Date,Sector,Net
+2017-01-02,Index,0.04
+2017-01-02,Industrials,0.2
+2017-01-02,Cons. Disc.,0.29
+2017-01-02,Real Estate,0
+2017-01-02,Cons. Staples,0.04
+2017-01-02,Financials,0.22
+2017-01-02,Materials,0.15
+2017-01-02,Currency,0
+2017-01-02,Health Care,0.06
+2017-01-03,Currency,0
+2017-01-03,Cons. Disc.,0.29
+2017-01-03,Financials,0.22
+2017-01-03,Industrials,0.2
+2017-01-03,Health Care,0.06
+2017-01-03,Real Estate,0
+2017-01-03,Materials,0.14
+2017-01-03,Cons. Staples,0.04
+2017-01-03,Index,0.04
+2017-01-04,Currency,0
+2017-01-04,Cons. Disc.,0.28
+2017-01-04,Financials,0.22
+2017-01-04,Health Care,0.06
+2017-01-04,Cons. Staples,0.04
+2017-01-04,Materials,0.14
+2017-01-04,Real Estate,0.01
+2017-01-04,Industrials,0.2
+2017-01-04,Index,0.04
+2017-01-05,Health Care,0.06
+2017-01-05,Cons. Disc.,0.28
+2017-01-05,Materials,0.14
+2017-01-05,Cons. Staples,0.04
+2017-01-05,Index,0.04
+2017-01-05,Currency,0
+2017-01-05,Financials,0.23
+2017-01-05,Real Estate,0.01
+2017-01-05,Industrials,0.2
+2017-01-06,Cons. Disc.,0.28
+2017-01-06,Real Estate,0.01
+2017-01-06,Health Care,0.06
+2017-01-06,Currency,0
+2017-01-06,Financials,0.23
+2017-01-06,Materials,0.14
+2017-01-06,Index,0.04
+2017-01-06,Cons. Staples,0.04
+2017-01-06,Industrials,0.2
+2017-01-09,Cons. Staples,0.04
+2017-01-09,Industrials,0.2
+2017-01-09,Financials,0.23
+2017-01-09,Currency,0
+2017-01-09,Health Care,0.06
+2017-01-09,Real Estate,0.01
+2017-01-09,Cons. Disc.,0.28
+2017-01-09,Materials,0.14
+2017-01-09,Index,0.04
+2017-01-10,Health Care,0.06
+2017-01-10,Cons. Disc.,0.27
+2017-01-10,Real Estate,0.01
+2017-01-10,Currency,0
+2017-01-10,Index,0.04
+2017-01-10,Financials,0.23
+2017-01-10,Cons. Staples,0.04
+2017-01-10,Industrials,0.2
+2017-01-10,Materials,0.14
+2017-01-11,Industrials,0.2
+2017-01-11,Index,0.04
+2017-01-11,Currency,0
+2017-01-11,Financials,0.22
+2017-01-11,Real Estate,0.01
+2017-01-11,Cons. Disc.,0.27
+2017-01-11,Materials,0.15
+2017-01-11,Cons. Staples,0.04
+2017-01-11,Health Care,0.06
+2017-01-12,Real Estate,0.01
+2017-01-12,Cons. Staples,0.04
+2017-01-12,Financials,0.22
+2017-01-12,Index,0.04
+2017-01-12,Cons. Disc.,0.27
+2017-01-12,Industrials,0.2
+2017-01-12,Materials,0.15
+2017-01-12,Currency,0
+2017-01-12,Health Care,0.06
+2017-01-13,Index,0.04
+2017-01-13,Industrials,0.2
+2017-01-13,Financials,0.22
+2017-01-13,Currency,0
+2017-01-13,Real Estate,0.01
+2017-01-13,Cons. Staples,0.04
+2017-01-13,Health Care,0.06
+2017-01-13,Cons. Disc.,0.27
+2017-01-13,Materials,0.15
+2017-01-16,Currency,0
+2017-01-16,Cons. Disc.,0.27
+2017-01-16,Financials,0.22
+2017-01-16,Industrials,0.2
+2017-01-16,Materials,0.15
+2017-01-16,Cons. Staples,0.04
+2017-01-16,Real Estate,0.01
+2017-01-16,Index,0.04
+2017-01-16,Health Care,0.06
+2017-01-17,Financials,0.22
+2017-01-17,Cons. Staples,0.04
+2017-01-17,Real Estate,0.01
+2017-01-17,Currency,0
+2017-01-17,Cons. Disc.,0.27
+2017-01-17,Health Care,0.06
+2017-01-17,Index,0.04
+2017-01-17,Materials,0.15
+2017-01-17,Industrials,0.2
+2017-01-18,Currency,0
+2017-01-18,Health Care,0.06
+2017-01-18,Industrials,0.2
+2017-01-18,Financials,0.22
+2017-01-18,Materials,0.15
+2017-01-18,Cons. Disc.,0.27
+2017-01-18,Real Estate,0.01
+2017-01-18,Index,0.04
+2017-01-18,Cons. Staples,0.04
+2017-01-19,Real Estate,0.01
+2017-01-19,Cons. Staples,0.04
+2017-01-19,Industrials,0.2
+2017-01-19,Health Care,0.06
+2017-01-19,Index,0.04
+2017-01-19,Materials,0.15
+2017-01-19,Cons. Disc.,0.27
+2017-01-19,Financials,0.22
+2017-01-19,Currency,0
+2017-01-20,Real Estate,0.01
+2017-01-20,Cons. Staples,0.04
+2017-01-20,Financials,0.22
+2017-01-20,Cons. Disc.,0.27
+2017-01-20,Index,0.04
+2017-01-20,Health Care,0.06
+2017-01-20,Industrials,0.21
+2017-01-20,Materials,0.15
+2017-01-20,Currency,0
+2017-01-23,Real Estate,0.01
+2017-01-23,Cons. Staples,0.04
+2017-01-23,Cons. Disc.,0.27
+2017-01-23,Industrials,0.21
+2017-01-23,Currency,0
+2017-01-23,Financials,0.23
+2017-01-23,Materials,0.15
+2017-01-23,Index,0.04
+2017-01-23,Health Care,0.06
+2017-01-24,Health Care,0.06
+2017-01-24,Industrials,0.2
+2017-01-24,Real Estate,0.01
+2017-01-24,Materials,0.15
+2017-01-24,Cons. Staples,0.04
+2017-01-24,Currency,0
+2017-01-24,Financials,0.22
+2017-01-24,Cons. Disc.,0.27
+2017-01-24,Index,0.04
+2017-01-25,Index,0.04
+2017-01-25,Health Care,0.06
+2017-01-25,Materials,0.15
+2017-01-25,Cons. Staples,0.04
+2017-01-25,Cons. Disc.,0.27
+2017-01-25,Currency,0
+2017-01-25,Industrials,0.2
+2017-01-25,Financials,0.22
+2017-01-25,Real Estate,0.01
+2017-01-26,Real Estate,0.01
+2017-01-26,Health Care,0.06
+2017-01-26,Materials,0.15
+2017-01-26,Cons. Disc.,0.27
+2017-01-26,Financials,0.22
+2017-01-26,Index,0.04
+2017-01-26,Currency,0
+2017-01-26,Industrials,0.2
+2017-01-26,Cons. Staples,0.04
+2017-01-27,Health Care,0.06
+2017-01-27,Real Estate,0.01
+2017-01-27,Cons. Disc.,0.27
+2017-01-27,Index,0.04
+2017-01-27,Industrials,0.2
+2017-01-27,Cons. Staples,0.04
+2017-01-27,Financials,0.22
+2017-01-27,Currency,0
+2017-01-27,Materials,0.15
+2017-01-30,Real Estate,0.01
+2017-01-30,Cons. Staples,0.04
+2017-01-30,Materials,0.15
+2017-01-30,Financials,0.22
+2017-01-30,Health Care,0.06
+2017-01-30,Industrials,0.2
+2017-01-30,Cons. Disc.,0.27
+2017-01-30,Index,0.04
+2017-01-30,Currency,0
+2017-01-31,Industrials,0.2
+2017-01-31,Financials,0.22
+2017-01-31,Materials,0.15
+2017-01-31,Health Care,0.06
+2017-01-31,Real Estate,0.01
+2017-01-31,Currency,0
+2017-01-31,Index,0.04
+2017-01-31,Cons. Disc.,0.27
+2017-01-31,Cons. Staples,0.04
+2017-02-01,Industrials,0.2
+2017-02-01,Index,0.04
+2017-02-01,Materials,0.15
+2017-02-01,Health Care,0.06
+2017-02-01,Cons. Disc.,0.27
+2017-02-01,Cons. Staples,0.04
+2017-02-01,Real Estate,0.01
+2017-02-01,Currency,0
+2017-02-01,Financials,0.22
+2017-02-02,Index,0.05
+2017-02-02,Materials,0.15
+2017-02-02,Real Estate,0.01
+2017-02-02,Currency,0
+2017-02-02,Financials,0.22
+2017-02-02,Health Care,0.06
+2017-02-02,Industrials,0.2
+2017-02-02,Cons. Staples,0.04
+2017-02-02,Cons. Disc.,0.26
+2017-02-03,Industrials,0.2
+2017-02-03,Materials,0.15
+2017-02-03,Financials,0.21
+2017-02-03,Currency,0
+2017-02-03,Real Estate,0.01
+2017-02-03,Cons. Staples,0.04
+2017-02-03,Health Care,0.06
+2017-02-03,Index,0.05
+2017-02-03,Cons. Disc.,0.26
+2017-02-06,Index,0.05
+2017-02-06,Health Care,0.06
+2017-02-06,Currency,0
+2017-02-06,Real Estate,0.01
+2017-02-06,Materials,0.15
+2017-02-06,Financials,0.21
+2017-02-06,Cons. Disc.,0.26
+2017-02-06,Cons. Staples,0.04
+2017-02-06,Industrials,0.2
+2017-02-07,Health Care,0.06
+2017-02-07,Index,0.05
+2017-02-07,Industrials,0.2
+2017-02-07,Currency,0
+2017-02-07,Cons. Disc.,0.26
+2017-02-07,Materials,0.15
+2017-02-07,Cons. Staples,0.04
+2017-02-07,Real Estate,0.01
+2017-02-07,Financials,0.21
+2017-02-08,Industrials,0.2
+2017-02-08,Currency,0
+2017-02-08,Health Care,0.06
+2017-02-08,Cons. Disc.,0.26
+2017-02-08,Financials,0.21
+2017-02-08,Cons. Staples,0.04
+2017-02-08,Index,0.05
+2017-02-08,Materials,0.15
+2017-02-08,Real Estate,0.01
+2017-02-09,Cons. Staples,0.04
+2017-02-09,Health Care,0.06
+2017-02-09,Cons. Disc.,0.27
+2017-02-09,Currency,0
+2017-02-09,Real Estate,0.01
+2017-02-09,Industrials,0.2
+2017-02-09,Materials,0.15
+2017-02-09,Financials,0.21
+2017-02-09,Index,0.05
+2017-02-10,Health Care,0.06
+2017-02-10,Industrials,0.2
+2017-02-10,Cons. Staples,0.04
+2017-02-10,Financials,0.21
+2017-02-10,Currency,0
+2017-02-10,Cons. Disc.,0.27
+2017-02-10,Materials,0.15
+2017-02-10,Real Estate,0.01
+2017-02-10,Index,0.05
+2017-02-13,Currency,0
+2017-02-13,Cons. Disc.,0.27
+2017-02-13,Index,0.05
+2017-02-13,Industrials,0.2
+2017-02-13,Health Care,0.06
+2017-02-13,Financials,0.21
+2017-02-13,Cons. Staples,0.04
+2017-02-13,Materials,0.15
+2017-02-13,Real Estate,0.01
+2017-02-14,Financials,0.21
+2017-02-14,Index,0.05
+2017-02-14,Real Estate,0.01
+2017-02-14,Materials,0.15
+2017-02-14,Currency,0
+2017-02-14,Industrials,0.2
+2017-02-14,Health Care,0.06
+2017-02-14,Cons. Disc.,0.27
+2017-02-14,Cons. Staples,0.04
+2017-02-15,Index,0.05
+2017-02-15,Currency,0
+2017-02-15,Materials,0.15
+2017-02-15,Industrials,0.21
+2017-02-15,Health Care,0.06
+2017-02-15,Cons. Staples,0.04
+2017-02-15,Financials,0.21
+2017-02-15,Cons. Disc.,0.27
+2017-02-15,Real Estate,0.01
+2017-02-16,Industrials,0.2
+2017-02-16,Index,0.05
+2017-02-16,Health Care,0.06
+2017-02-16,Cons. Staples,0.04
+2017-02-16,Materials,0.14
+2017-02-16,Currency,0
+2017-02-16,Real Estate,0.01
+2017-02-16,Cons. Disc.,0.27
+2017-02-16,Financials,0.21
+2017-02-17,Real Estate,0.01
+2017-02-17,Financials,0.21
+2017-02-17,Health Care,0.06
+2017-02-17,Index,0.05
+2017-02-17,Industrials,0.2
+2017-02-17,Cons. Staples,0.04
+2017-02-17,Currency,0
+2017-02-17,Cons. Disc.,0.27
+2017-02-17,Materials,0.14
+2017-02-20,Industrials,0.21
+2017-02-20,Index,0.05
+2017-02-20,Cons. Disc.,0.27
+2017-02-20,Cons. Staples,0.04
+2017-02-20,Materials,0.15
+2017-02-20,Financials,0.21
+2017-02-20,Real Estate,0.01
+2017-02-20,Currency,0
+2017-02-20,Health Care,0.06
+2017-02-21,Materials,0.14
+2017-02-21,Currency,0
+2017-02-21,Real Estate,0.01
+2017-02-21,Cons. Disc.,0.27
+2017-02-21,Industrials,0.2
+2017-02-21,Health Care,0.06
+2017-02-21,Index,0.05
+2017-02-21,Financials,0.21
+2017-02-21,Cons. Staples,0.04
+2017-02-22,Industrials,0.2
+2017-02-22,Materials,0.15
+2017-02-22,Currency,0
+2017-02-22,Cons. Disc.,0.27
+2017-02-22,Index,0.05
+2017-02-22,Health Care,0.07
+2017-02-22,Financials,0.21
+2017-02-22,Cons. Staples,0.04
+2017-02-22,Real Estate,0.01
+2017-02-23,Cons. Disc.,0.27
+2017-02-23,Financials,0.21
+2017-02-23,Currency,0
+2017-02-23,Cons. Staples,0.04
+2017-02-23,Index,0.05
+2017-02-23,Industrials,0.2
+2017-02-23,Health Care,0.07
+2017-02-23,Real Estate,0.01
+2017-02-23,Materials,0.15
+2017-02-24,Financials,0.21
+2017-02-24,Cons. Staples,0.04
+2017-02-24,Real Estate,0.01
+2017-02-24,Health Care,0.07
+2017-02-24,Cons. Disc.,0.27
+2017-02-24,Industrials,0.2
+2017-02-24,Materials,0.15
+2017-02-24,Index,0.05
+2017-02-24,Currency,0
+2017-02-27,Currency,0
+2017-02-27,Materials,0.15
+2017-02-27,Cons. Staples,0.04
+2017-02-27,Real Estate,0.01
+2017-02-27,Health Care,0.07
+2017-02-27,Financials,0.21
+2017-02-27,Cons. Disc.,0.26
+2017-02-27,Industrials,0.2
+2017-02-27,Index,0.05
+2017-02-28,Health Care,0.07
+2017-02-28,Currency,0
+2017-02-28,Cons. Staples,0.04
+2017-02-28,Industrials,0.2
+2017-02-28,Financials,0.21
+2017-02-28,Materials,0.15
+2017-02-28,Cons. Disc.,0.26
+2017-02-28,Index,0.05
+2017-02-28,Real Estate,0.01
+2017-03-01,Financials,0.21
+2017-03-01,Materials,0.15
+2017-03-01,Cons. Staples,0.04
+2017-03-01,Real Estate,0.01
+2017-03-01,Currency,0
+2017-03-01,Health Care,0.07
+2017-03-01,Industrials,0.2
+2017-03-01,Cons. Disc.,0.26
+2017-03-01,Index,0.05
+2017-03-02,Index,0.05
+2017-03-02,Financials,0.21
+2017-03-02,Health Care,0.07
+2017-03-02,Currency,0
+2017-03-02,Real Estate,0.01
+2017-03-02,Cons. Disc.,0.26
+2017-03-02,Industrials,0.2
+2017-03-02,Materials,0.14
+2017-03-02,Cons. Staples,0.04
+2017-03-03,Health Care,0.07
+2017-03-03,Index,0.05
+2017-03-03,Currency,0
+2017-03-03,Materials,0.14
+2017-03-03,Cons. Staples,0.04
+2017-03-03,Real Estate,0.02
+2017-03-03,Financials,0.21
+2017-03-03,Cons. Disc.,0.26
+2017-03-03,Industrials,0.2
+2017-03-06,Industrials,0.2
+2017-03-06,Cons. Staples,0.04
+2017-03-06,Cons. Disc.,0.26
+2017-03-06,Materials,0.14
+2017-03-06,Financials,0.21
+2017-03-06,Health Care,0.07
+2017-03-06,Index,0.06
+2017-03-06,Real Estate,0.02
+2017-03-06,Currency,0
+2017-03-07,Real Estate,0.02
+2017-03-07,Cons. Disc.,0.26
+2017-03-07,Financials,0.21
+2017-03-07,Currency,0
+2017-03-07,Industrials,0.2
+2017-03-07,Cons. Staples,0.04
+2017-03-07,Materials,0.14
+2017-03-07,Health Care,0.07
+2017-03-07,Index,0.06
+2017-03-08,Currency,0
+2017-03-08,Health Care,0.07
+2017-03-08,Index,0.06
+2017-03-08,Financials,0.21
+2017-03-08,Real Estate,0.02
+2017-03-08,Cons. Staples,0.04
+2017-03-08,Industrials,0.2
+2017-03-08,Materials,0.14
+2017-03-08,Cons. Disc.,0.26
+2017-03-09,Index,0.06
+2017-03-09,Materials,0.15
+2017-03-09,Industrials,0.19
+2017-03-09,Cons. Disc.,0.26
+2017-03-09,Real Estate,0.02
+2017-03-09,Financials,0.2
+2017-03-09,Health Care,0.07
+2017-03-09,Cons. Staples,0.04
+2017-03-09,Currency,0
+2017-03-10,Health Care,0.07
+2017-03-10,Financials,0.2
+2017-03-10,Real Estate,0.02
+2017-03-10,Cons. Disc.,0.25
+2017-03-10,Currency,0
+2017-03-10,Index,0.06
+2017-03-10,Industrials,0.2
+2017-03-10,Cons. Staples,0.04
+2017-03-10,Materials,0.15
+2017-03-13,Industrials,0.2
+2017-03-13,Currency,0
+2017-03-13,Cons. Disc.,0.25
+2017-03-13,Index,0.06
+2017-03-13,Financials,0.2
+2017-03-13,Health Care,0.07
+2017-03-13,Cons. Staples,0.04
+2017-03-13,Real Estate,0.02
+2017-03-13,Materials,0.15
+2017-03-14,Industrials,0.2
+2017-03-14,Index,0.06
+2017-03-14,Health Care,0.07
+2017-03-14,Real Estate,0.02
+2017-03-14,Materials,0.15
+2017-03-14,Currency,0
+2017-03-14,Cons. Disc.,0.25
+2017-03-14,Cons. Staples,0.04
+2017-03-14,Financials,0.2
+2017-03-15,Currency,0
+2017-03-15,Real Estate,0.02
+2017-03-15,Industrials,0.2
+2017-03-15,Cons. Staples,0.04
+2017-03-15,Index,0.06
+2017-03-15,Materials,0.15
+2017-03-15,Financials,0.2
+2017-03-15,Cons. Disc.,0.25
+2017-03-15,Health Care,0.07
+2017-03-16,Financials,0.2
+2017-03-16,Health Care,0.07
+2017-03-16,Index,0.06
+2017-03-16,Cons. Disc.,0.25
+2017-03-16,Cons. Staples,0.04
+2017-03-16,Industrials,0.2
+2017-03-16,Materials,0.15
+2017-03-16,Real Estate,0.02
+2017-03-16,Currency,0
+2017-03-17,Industrials,0.2
+2017-03-17,Cons. Disc.,0.26
+2017-03-17,Index,0.06
+2017-03-17,Cons. Staples,0.04
+2017-03-17,Health Care,0.07
+2017-03-17,Materials,0.15
+2017-03-17,Financials,0.2
+2017-03-17,Real Estate,0.02
+2017-03-17,Currency,0
+2017-03-20,Index,0.06
+2017-03-20,Financials,0.2
+2017-03-20,Currency,0
+2017-03-20,Cons. Staples,0.04
+2017-03-20,Health Care,0.07
+2017-03-20,Materials,0.15
+2017-03-20,Industrials,0.2
+2017-03-20,Cons. Disc.,0.26
+2017-03-20,Real Estate,0.02
+2017-03-21,Cons. Disc.,0.26
+2017-03-21,Health Care,0.07
+2017-03-21,Industrials,0.2
+2017-03-21,Cons. Staples,0.04
+2017-03-21,Currency,0
+2017-03-21,Index,0.06
+2017-03-21,Financials,0.2
+2017-03-21,Materials,0.15
+2017-03-21,Real Estate,0.02
+2017-03-22,Cons. Staples,0.04
+2017-03-22,Cons. Disc.,0.26
+2017-03-22,Index,0.06
+2017-03-22,Materials,0.15
+2017-03-22,Financials,0.2
+2017-03-22,Real Estate,0.02
+2017-03-22,Currency,0
+2017-03-22,Industrials,0.2
+2017-03-22,Health Care,0.07
+2017-03-23,Health Care,0.07
+2017-03-23,Materials,0.15
+2017-03-23,Real Estate,0.02
+2017-03-23,Cons. Staples,0.04
+2017-03-23,Cons. Disc.,0.26
+2017-03-23,Index,0.05
+2017-03-23,Financials,0.2
+2017-03-23,Currency,0
+2017-03-23,Industrials,0.2
+2017-03-24,Currency,0
+2017-03-24,Cons. Disc.,0.26
+2017-03-24,Index,0.05
+2017-03-24,Financials,0.2
+2017-03-24,Cons. Staples,0.04
+2017-03-24,Industrials,0.2
+2017-03-24,Real Estate,0.02
+2017-03-24,Health Care,0.07
+2017-03-24,Materials,0.15
+2017-03-27,Materials,0.15
+2017-03-27,Cons. Staples,0.04
+2017-03-27,Industrials,0.2
+2017-03-27,Health Care,0.07
+2017-03-27,Currency,0
+2017-03-27,Index,0.05
+2017-03-27,Real Estate,0.02
+2017-03-27,Financials,0.2
+2017-03-27,Cons. Disc.,0.26
+2017-03-28,Health Care,0.07
+2017-03-28,Index,0.05
+2017-03-28,Currency,0
+2017-03-28,Real Estate,0.02
+2017-03-28,Financials,0.2
+2017-03-28,Materials,0.15
+2017-03-28,Cons. Staples,0.04
+2017-03-28,Industrials,0.19
+2017-03-28,Cons. Disc.,0.26
+2017-03-29,Financials,0.2
+2017-03-29,Real Estate,0.02
+2017-03-29,Materials,0.15
+2017-03-29,Cons. Staples,0.04
+2017-03-29,Industrials,0.19
+2017-03-29,Index,0.05
+2017-03-29,Cons. Disc.,0.26
+2017-03-29,Currency,0
+2017-03-29,Health Care,0.07
+2017-03-30,Index,0.05
+2017-03-30,Materials,0.15
+2017-03-30,Health Care,0.07
+2017-03-30,Currency,0
+2017-03-30,Cons. Staples,0.04
+2017-03-30,Financials,0.2
+2017-03-30,Real Estate,0.02
+2017-03-30,Cons. Disc.,0.26
+2017-03-30,Industrials,0.19
+2017-03-31,Index,0.05
+2017-03-31,Cons. Disc.,0.26
+2017-03-31,Materials,0.15
+2017-03-31,Real Estate,0.02
+2017-03-31,Cons. Staples,0.04
+2017-03-31,Industrials,0.19
+2017-03-31,Financials,0.2
+2017-03-31,Health Care,0.07
+2017-03-31,Currency,0
+2017-04-03,Index,0.06
+2017-04-03,Currency,0
+2017-04-03,Cons. Staples,0.04
+2017-04-03,Real Estate,0.02
+2017-04-03,Cons. Disc.,0.26
+2017-04-03,Industrials,0.19
+2017-04-03,Financials,0.2
+2017-04-03,Health Care,0.07
+2017-04-03,Materials,0.15
+2017-04-04,Cons. Staples,0.04
+2017-04-04,Cons. Disc.,0.26
+2017-04-04,Currency,0
+2017-04-04,Health Care,0.07
+2017-04-04,Index,0.06
+2017-04-04,Real Estate,0.02
+2017-04-04,Financials,0.2
+2017-04-04,Materials,0.15
+2017-04-04,Industrials,0.19
+2017-04-05,Cons. Staples,0.04
+2017-04-05,Materials,0.15
+2017-04-05,Real Estate,0.02
+2017-04-05,Health Care,0.07
+2017-04-05,Cons. Disc.,0.26
+2017-04-05,Index,0.06
+2017-04-05,Industrials,0.19
+2017-04-05,Financials,0.2
+2017-04-05,Currency,0
+2017-04-06,Materials,0.15
+2017-04-06,Industrials,0.18
+2017-04-06,Currency,0
+2017-04-06,Health Care,0.07
+2017-04-06,Cons. Disc.,0.26
+2017-04-06,Financials,0.21
+2017-04-06,Real Estate,0.02
+2017-04-06,Cons. Staples,0.04
+2017-04-06,Index,0.06
+2017-04-07,Cons. Staples,0.04
+2017-04-07,Industrials,0.18
+2017-04-07,Index,0.06
+2017-04-07,Cons. Disc.,0.26
+2017-04-07,Financials,0.21
+2017-04-07,Real Estate,0.02
+2017-04-07,Currency,0
+2017-04-07,Health Care,0.07
+2017-04-07,Materials,0.15
+2017-04-10,Currency,0
+2017-04-10,Financials,0.21
+2017-04-10,Industrials,0.18
+2017-04-10,Cons. Staples,0.04
+2017-04-10,Health Care,0.07
+2017-04-10,Real Estate,0.02
+2017-04-10,Cons. Disc.,0.26
+2017-04-10,Materials,0.15
+2017-04-10,Index,0.06
+2017-04-11,Currency,0
+2017-04-11,Cons. Disc.,0.26
+2017-04-11,Health Care,0.07
+2017-04-11,Real Estate,0.02
+2017-04-11,Financials,0.21
+2017-04-11,Industrials,0.18
+2017-04-11,Materials,0.15
+2017-04-11,Index,0.06
+2017-04-11,Cons. Staples,0.04
+2017-04-12,Cons. Disc.,0.26
+2017-04-12,Cons. Staples,0.05
+2017-04-12,Financials,0.21
+2017-04-12,Currency,0
+2017-04-12,Materials,0.15
+2017-04-12,Health Care,0.07
+2017-04-12,Industrials,0.18
+2017-04-12,Index,0.06
+2017-04-12,Real Estate,0.02
+2017-04-13,Real Estate,0.02
+2017-04-13,Industrials,0.18
+2017-04-13,Currency,0
+2017-04-13,Materials,0.15
+2017-04-13,Financials,0.21
+2017-04-13,Health Care,0.07
+2017-04-13,Cons. Disc.,0.26
+2017-04-13,Cons. Staples,0.05
+2017-04-13,Index,0.06
+2017-04-14,Currency,0
+2017-04-14,Health Care,0.07
+2017-04-14,Index,0.06
+2017-04-14,Cons. Disc.,0.26
+2017-04-14,Real Estate,0.02
+2017-04-14,Financials,0.21
+2017-04-14,Industrials,0.18
+2017-04-14,Cons. Staples,0.05
+2017-04-14,Materials,0.15
+2017-04-17,Industrials,0.19
+2017-04-17,Currency,0
+2017-04-17,Cons. Disc.,0.26
+2017-04-17,Health Care,0.07
+2017-04-17,Index,0.06
+2017-04-17,Materials,0.15
+2017-04-17,Cons. Staples,0.05
+2017-04-17,Financials,0.21
+2017-04-17,Real Estate,0.02
+2017-04-18,Cons. Disc.,0.26
+2017-04-18,Financials,0.21
+2017-04-18,Real Estate,0.02
+2017-04-18,Index,0.05
+2017-04-18,Currency,0
+2017-04-18,Cons. Staples,0.05
+2017-04-18,Industrials,0.18
+2017-04-18,Health Care,0.07
+2017-04-18,Materials,0.15
+2017-04-19,Currency,0
+2017-04-19,Financials,0.21
+2017-04-19,Materials,0.15
+2017-04-19,Cons. Staples,0.05
+2017-04-19,Cons. Disc.,0.26
+2017-04-19,Industrials,0.18
+2017-04-19,Real Estate,0.02
+2017-04-19,Index,0.05
+2017-04-19,Health Care,0.07
+2017-04-20,Real Estate,0.02
+2017-04-20,Cons. Disc.,0.26
+2017-04-20,Health Care,0.07
+2017-04-20,Financials,0.21
+2017-04-20,Cons. Staples,0.05
+2017-04-20,Materials,0.15
+2017-04-20,Index,0.05
+2017-04-20,Industrials,0.18
+2017-04-20,Currency,0
+2017-04-21,Currency,0
+2017-04-21,Financials,0.21
+2017-04-21,Index,0.05
+2017-04-21,Industrials,0.18
+2017-04-21,Real Estate,0.02
+2017-04-21,Cons. Staples,0.05
+2017-04-21,Cons. Disc.,0.26
+2017-04-21,Health Care,0.07
+2017-04-21,Materials,0.15
+2017-04-24,Cons. Staples,0.05
+2017-04-24,Industrials,0.18
+2017-04-24,Currency,0
+2017-04-24,Financials,0.21
+2017-04-24,Materials,0.15
+2017-04-24,Health Care,0.07
+2017-04-24,Index,0.05
+2017-04-24,Real Estate,0.02
+2017-04-24,Cons. Disc.,0.26
+2017-04-25,Financials,0.21
+2017-04-25,Materials,0.15
+2017-04-25,Real Estate,0.02
+2017-04-25,Cons. Disc.,0.26
+2017-04-25,Index,0.05
+2017-04-25,Cons. Staples,0.05
+2017-04-25,Currency,0
+2017-04-25,Industrials,0.18
+2017-04-25,Health Care,0.07
+2017-04-26,Cons. Staples,0.05
+2017-04-26,Industrials,0.18
+2017-04-26,Real Estate,0.02
+2017-04-26,Materials,0.15
+2017-04-26,Index,0.05
+2017-04-26,Financials,0.21
+2017-04-26,Cons. Disc.,0.26
+2017-04-26,Currency,0
+2017-04-26,Health Care,0.07
+2017-04-27,Financials,0.21
+2017-04-27,Industrials,0.18
+2017-04-27,Cons. Staples,0.05
+2017-04-27,Health Care,0.07
+2017-04-27,Materials,0.15
+2017-04-27,Index,0.05
+2017-04-27,Real Estate,0.02
+2017-04-27,Cons. Disc.,0.26
+2017-04-27,Currency,0
+2017-04-28,Cons. Staples,0.05
+2017-04-28,Materials,0.15
+2017-04-28,Financials,0.21
+2017-04-28,Cons. Disc.,0.26
+2017-04-28,Real Estate,0.02
+2017-04-28,Currency,0
+2017-04-28,Index,0.05
+2017-04-28,Industrials,0.18
+2017-04-28,Health Care,0.07
+2017-05-01,Cons. Disc.,0.26
+2017-05-01,Currency,0
+2017-05-01,Real Estate,0.02
+2017-05-01,Financials,0.21
+2017-05-01,Index,0.05
+2017-05-01,Industrials,0.18
+2017-05-01,Health Care,0.07
+2017-05-01,Materials,0.15
+2017-05-01,Cons. Staples,0.05
+2017-05-02,Materials,0.15
+2017-05-02,Cons. Disc.,0.26
+2017-05-02,Health Care,0.07
+2017-05-02,Cons. Staples,0.05
+2017-05-02,Real Estate,0.02
+2017-05-02,Financials,0.21
+2017-05-02,Industrials,0.18
+2017-05-02,Currency,0
+2017-05-02,Index,0.05
+2017-05-03,Industrials,0.18
+2017-05-03,Cons. Disc.,0.26
+2017-05-03,Index,0.05
+2017-05-03,Real Estate,0.02
+2017-05-03,Materials,0.15
+2017-05-03,Health Care,0.07
+2017-05-03,Financials,0.21
+2017-05-03,Cons. Staples,0.05
+2017-05-03,Currency,0
+2017-05-04,Health Care,0.07
+2017-05-04,Materials,0.15
+2017-05-04,Real Estate,0.02
+2017-05-04,Cons. Staples,0.05
+2017-05-04,Index,0.04
+2017-05-04,Financials,0.21
+2017-05-04,Industrials,0.18
+2017-05-04,Currency,0
+2017-05-04,Cons. Disc.,0.26
+2017-05-05,Materials,0.15
+2017-05-05,Health Care,0.07
+2017-05-05,Industrials,0.18
+2017-05-05,Currency,0
+2017-05-05,Real Estate,0.02
+2017-05-05,Cons. Disc.,0.26
+2017-05-05,Index,0.04
+2017-05-05,Cons. Staples,0.05
+2017-05-05,Financials,0.21
+2017-05-08,Currency,0
+2017-05-08,Industrials,0.18
+2017-05-08,Index,0.04
+2017-05-08,Cons. Disc.,0.26
+2017-05-08,Real Estate,0.02
+2017-05-08,Health Care,0.07
+2017-05-08,Materials,0.15
+2017-05-08,Cons. Staples,0.05
+2017-05-08,Financials,0.21
+2017-05-09,Industrials,0.18
+2017-05-09,Financials,0.21
+2017-05-09,Cons. Staples,0.05
+2017-05-09,Cons. Disc.,0.26
+2017-05-09,Materials,0.15
+2017-05-09,Health Care,0.07
+2017-05-09,Real Estate,0.02
+2017-05-09,Currency,0
+2017-05-09,Index,0.04
+2017-05-10,Cons. Disc.,0.26
+2017-05-10,Materials,0.15
+2017-05-10,Industrials,0.19
+2017-05-10,Cons. Staples,0.05
+2017-05-10,Index,0.05
+2017-05-10,Health Care,0.07
+2017-05-10,Financials,0.21
+2017-05-10,Real Estate,0.03
+2017-05-10,Currency,0
+2017-05-11,Health Care,0.06
+2017-05-11,Real Estate,0.02
+2017-05-11,Industrials,0.18
+2017-05-11,Financials,0.21
+2017-05-11,Currency,0
+2017-05-11,Cons. Staples,0.05
+2017-05-11,Index,0.05
+2017-05-11,Cons. Disc.,0.26
+2017-05-11,Materials,0.15
+2017-05-12,Real Estate,0.02
+2017-05-12,Cons. Staples,0.05
+2017-05-12,Industrials,0.19
+2017-05-12,Health Care,0.06
+2017-05-12,Materials,0.15
+2017-05-12,Index,0.05
+2017-05-12,Financials,0.21
+2017-05-12,Currency,0
+2017-05-12,Cons. Disc.,0.26
+2017-05-15,Materials,0.15
+2017-05-15,Real Estate,0.02
+2017-05-15,Cons. Disc.,0.26
+2017-05-15,Financials,0.2
+2017-05-15,Cons. Staples,0.05
+2017-05-15,Industrials,0.19
+2017-05-15,Index,0.05
+2017-05-15,Currency,0
+2017-05-15,Health Care,0.06
+2017-05-16,Materials,0.15
+2017-05-16,Cons. Disc.,0.26
+2017-05-16,Currency,0
+2017-05-16,Industrials,0.19
+2017-05-16,Cons. Staples,0.05
+2017-05-16,Real Estate,0.02
+2017-05-16,Financials,0.21
+2017-05-16,Index,0.05
+2017-05-16,Health Care,0.06
+2017-05-17,Cons. Staples,0.05
+2017-05-17,Cons. Disc.,0.26
+2017-05-17,Materials,0.15
+2017-05-17,Financials,0.21
+2017-05-17,Health Care,0.06
+2017-05-17,Real Estate,0.03
+2017-05-17,Currency,0
+2017-05-17,Industrials,0.19
+2017-05-17,Index,0.05
+2017-05-18,Cons. Staples,0.05
+2017-05-18,Materials,0.15
+2017-05-18,Industrials,0.18
+2017-05-18,Health Care,0.06
+2017-05-18,Index,0.05
+2017-05-18,Cons. Disc.,0.26
+2017-05-18,Currency,0
+2017-05-18,Real Estate,0.03
+2017-05-18,Financials,0.21
+2017-05-19,Index,0.05
+2017-05-19,Cons. Disc.,0.26
+2017-05-19,Real Estate,0.03
+2017-05-19,Currency,0
+2017-05-19,Cons. Staples,0.05
+2017-05-19,Industrials,0.19
+2017-05-19,Materials,0.14
+2017-05-19,Health Care,0.07
+2017-05-19,Financials,0.21
+2017-05-22,Industrials,0.19
+2017-05-22,Real Estate,0.03
+2017-05-22,Financials,0.21
+2017-05-22,Cons. Disc.,0.26
+2017-05-22,Currency,0
+2017-05-22,Index,0.04
+2017-05-22,Materials,0.14
+2017-05-22,Cons. Staples,0.05
+2017-05-22,Health Care,0.06
+2017-05-23,Financials,0.21
+2017-05-23,Currency,0
+2017-05-23,Health Care,0.06
+2017-05-23,Cons. Staples,0.05
+2017-05-23,Real Estate,0.03
+2017-05-23,Materials,0.14
+2017-05-23,Industrials,0.19
+2017-05-23,Cons. Disc.,0.26
+2017-05-23,Index,0.04
+2017-05-24,Real Estate,0.03
+2017-05-24,Financials,0.21
+2017-05-24,Cons. Staples,0.05
+2017-05-24,Health Care,0.06
+2017-05-24,Cons. Disc.,0.26
+2017-05-24,Materials,0.14
+2017-05-24,Currency,0
+2017-05-24,Index,0.04
+2017-05-24,Industrials,0.19
+2017-05-25,Index,0.04
+2017-05-25,Financials,0.21
+2017-05-25,Health Care,0.06
+2017-05-25,Cons. Staples,0.05
+2017-05-25,Industrials,0.19
+2017-05-25,Materials,0.14
+2017-05-25,Real Estate,0.03
+2017-05-25,Cons. Disc.,0.26
+2017-05-25,Currency,0
+2017-05-26,Financials,0.2
+2017-05-26,Cons. Disc.,0.27
+2017-05-26,Index,0.04
+2017-05-26,Currency,0
+2017-05-26,Health Care,0.06
+2017-05-26,Real Estate,0.03
+2017-05-26,Cons. Staples,0.05
+2017-05-26,Materials,0.14
+2017-05-26,Industrials,0.2
+2017-05-29,Financials,0.2
+2017-05-29,Materials,0.14
+2017-05-29,Health Care,0.06
+2017-05-29,Currency,0
+2017-05-29,Cons. Staples,0.05
+2017-05-29,Industrials,0.19
+2017-05-29,Index,0.04
+2017-05-29,Real Estate,0.03
+2017-05-29,Cons. Disc.,0.27
+2017-05-30,Cons. Staples,0.05
+2017-05-30,Materials,0.14
+2017-05-30,Index,0.04
+2017-05-30,Real Estate,0.03
+2017-05-30,Cons. Disc.,0.27
+2017-05-30,Health Care,0.06
+2017-05-30,Currency,0
+2017-05-30,Financials,0.2
+2017-05-30,Industrials,0.19
+2017-05-31,Cons. Staples,0.05
+2017-05-31,Real Estate,0.03
+2017-05-31,Financials,0.2
+2017-05-31,Industrials,0.19
+2017-05-31,Health Care,0.06
+2017-05-31,Cons. Disc.,0.27
+2017-05-31,Materials,0.14
+2017-05-31,Index,0.04
+2017-05-31,Currency,0
+2017-06-01,Real Estate,0.03
+2017-06-01,Industrials,0.19
+2017-06-01,Health Care,0.06
+2017-06-01,Index,0.04
+2017-06-01,Cons. Disc.,0.27
+2017-06-01,Financials,0.2
+2017-06-01,Cons. Staples,0.05
+2017-06-01,Currency,0
+2017-06-01,Materials,0.14
+2017-06-02,Financials,0.2
+2017-06-02,Index,0.04
+2017-06-02,Cons. Staples,0.06
+2017-06-02,Currency,0
+2017-06-02,Industrials,0.19
+2017-06-02,Cons. Disc.,0.27
+2017-06-02,Health Care,0.06
+2017-06-02,Real Estate,0.03
+2017-06-02,Materials,0.14
+2017-06-05,Cons. Disc.,0.27
+2017-06-05,Index,0.04
+2017-06-05,Industrials,0.19
+2017-06-05,Cons. Staples,0.06
+2017-06-05,Real Estate,0.03
+2017-06-05,Financials,0.2
+2017-06-05,Health Care,0.06
+2017-06-05,Currency,0
+2017-06-05,Materials,0.14
+2017-06-06,Health Care,0.06
+2017-06-06,Cons. Disc.,0.27
+2017-06-06,Financials,0.2
+2017-06-06,Real Estate,0.03
+2017-06-06,Industrials,0.19
+2017-06-06,Currency,0
+2017-06-06,Cons. Staples,0.06
+2017-06-06,Materials,0.14
+2017-06-06,Index,0.04
+2017-06-07,Financials,0.2
+2017-06-07,Real Estate,0.03
+2017-06-07,Materials,0.14
+2017-06-07,Cons. Disc.,0.27
+2017-06-07,Industrials,0.19
+2017-06-07,Health Care,0.06
+2017-06-07,Cons. Staples,0.06
+2017-06-07,Index,0.04
+2017-06-07,Currency,0
+2017-06-08,Financials,0.19
+2017-06-08,Real Estate,0.03
+2017-06-08,Cons. Staples,0.06
+2017-06-08,Currency,0
+2017-06-08,Cons. Disc.,0.27
+2017-06-08,Health Care,0.06
+2017-06-08,Index,0.04
+2017-06-08,Industrials,0.19
+2017-06-08,Materials,0.14
+2017-06-09,Real Estate,0.03
+2017-06-09,Industrials,0.19
+2017-06-09,Index,0.04
+2017-06-09,Cons. Disc.,0.28
+2017-06-09,Materials,0.14
+2017-06-09,Currency,0
+2017-06-09,Health Care,0.06
+2017-06-09,Cons. Staples,0.06
+2017-06-09,Financials,0.19
+2017-06-12,Materials,0.14
+2017-06-12,Financials,0.19
+2017-06-12,Cons. Staples,0.06
+2017-06-12,Health Care,0.06
+2017-06-12,Cons. Disc.,0.28
+2017-06-12,Index,0.04
+2017-06-12,Currency,0
+2017-06-12,Industrials,0.19
+2017-06-12,Real Estate,0.03
+2017-06-13,Financials,0.19
+2017-06-13,Currency,0
+2017-06-13,Index,0.04
+2017-06-13,Health Care,0.06
+2017-06-13,Materials,0.14
+2017-06-13,Cons. Staples,0.06
+2017-06-13,Industrials,0.19
+2017-06-13,Cons. Disc.,0.28
+2017-06-13,Real Estate,0.03
+2017-06-14,Financials,0.19
+2017-06-14,Real Estate,0.03
+2017-06-14,Cons. Staples,0.06
+2017-06-14,Cons. Disc.,0.28
+2017-06-14,Health Care,0.06
+2017-06-14,Industrials,0.19
+2017-06-14,Materials,0.14
+2017-06-14,Currency,0
+2017-06-14,Index,0.04
+2017-06-15,Health Care,0.06
+2017-06-15,Industrials,0.18
+2017-06-15,Real Estate,0.03
+2017-06-15,Currency,0
+2017-06-15,Materials,0.14
+2017-06-15,Index,0.04
+2017-06-15,Cons. Disc.,0.28
+2017-06-15,Cons. Staples,0.06
+2017-06-15,Financials,0.19
+2017-06-16,Real Estate,0.03
+2017-06-16,Cons. Disc.,0.28
+2017-06-16,Financials,0.19
+2017-06-16,Industrials,0.18
+2017-06-16,Cons. Staples,0.06
+2017-06-16,Health Care,0.06
+2017-06-16,Currency,0
+2017-06-16,Index,0.04
+2017-06-16,Materials,0.14
+2017-06-19,Cons. Disc.,0.28
+2017-06-19,Industrials,0.18
+2017-06-19,Financials,0.19
+2017-06-19,Health Care,0.06
+2017-06-19,Currency,0
+2017-06-19,Cons. Staples,0.06
+2017-06-19,Index,0.04
+2017-06-19,Real Estate,0.03
+2017-06-19,Materials,0.14
+2017-06-20,Health Care,0.06
+2017-06-20,Cons. Disc.,0.28
+2017-06-20,Real Estate,0.03
+2017-06-20,Financials,0.19
+2017-06-20,Materials,0.14
+2017-06-20,Cons. Staples,0.07
+2017-06-20,Currency,0
+2017-06-20,Industrials,0.18
+2017-06-20,Index,0.04
+2017-06-21,Financials,0.19
+2017-06-21,Currency,0
+2017-06-21,Materials,0.14
+2017-06-21,Industrials,0.18
+2017-06-21,Index,0.04
+2017-06-21,Health Care,0.06
+2017-06-21,Cons. Disc.,0.28
+2017-06-21,Cons. Staples,0.07
+2017-06-21,Real Estate,0.03
+2017-06-22,Health Care,0.06
+2017-06-22,Financials,0.19
+2017-06-22,Index,0.03
+2017-06-22,Cons. Staples,0.07
+2017-06-22,Currency,0
+2017-06-22,Cons. Disc.,0.28
+2017-06-22,Industrials,0.18
+2017-06-22,Real Estate,0.03
+2017-06-22,Materials,0.14
+2017-06-23,Industrials,0.18
+2017-06-23,Cons. Staples,0.07
+2017-06-23,Cons. Disc.,0.28
+2017-06-23,Index,0.03
+2017-06-23,Real Estate,0.03
+2017-06-23,Health Care,0.06
+2017-06-23,Financials,0.19
+2017-06-23,Currency,0
+2017-06-23,Materials,0.14
+2017-06-26,Financials,0.19
+2017-06-26,Currency,0
+2017-06-26,Index,0.04
+2017-06-26,Industrials,0.18
+2017-06-26,Cons. Disc.,0.28
+2017-06-26,Health Care,0.06
+2017-06-26,Real Estate,0.03
+2017-06-26,Materials,0.14
+2017-06-26,Cons. Staples,0.07
+2017-06-27,Financials,0.19
+2017-06-27,Currency,0
+2017-06-27,Cons. Disc.,0.28
+2017-06-27,Index,0.03
+2017-06-27,Real Estate,0.03
+2017-06-27,Cons. Staples,0.07
+2017-06-27,Health Care,0.06
+2017-06-27,Industrials,0.18
+2017-06-27,Materials,0.13
+2017-06-28,Cons. Staples,0.07
+2017-06-28,Real Estate,0.03
+2017-06-28,Health Care,0.06
+2017-06-28,Industrials,0.18
+2017-06-28,Materials,0.13
+2017-06-28,Currency,0
+2017-06-28,Cons. Disc.,0.28
+2017-06-28,Financials,0.19
+2017-06-28,Index,0.03
+2017-06-29,Real Estate,0.03
+2017-06-29,Materials,0.14
+2017-06-29,Currency,0
+2017-06-29,Industrials,0.18
+2017-06-29,Cons. Staples,0.07
+2017-06-29,Index,0.03
+2017-06-29,Health Care,0.06
+2017-06-29,Cons. Disc.,0.28
+2017-06-29,Financials,0.19
+2017-06-30,Cons. Staples,0.07
+2017-06-30,Index,0.03
+2017-06-30,Cons. Disc.,0.28
+2017-06-30,Health Care,0.06
+2017-06-30,Financials,0.19
+2017-06-30,Real Estate,0.03
+2017-06-30,Currency,0
+2017-06-30,Industrials,0.18
+2017-06-30,Materials,0.14
+2017-07-03,Health Care,0.06
+2017-07-03,Currency,0
+2017-07-03,Financials,0.19
+2017-07-03,Materials,0.14
+2017-07-03,Industrials,0.18
+2017-07-03,Cons. Staples,0.07
+2017-07-03,Index,0.03
+2017-07-03,Real Estate,0.03
+2017-07-03,Cons. Disc.,0.29
+2017-07-04,Health Care,0.06
+2017-07-04,Cons. Disc.,0.29
+2017-07-04,Real Estate,0.03
+2017-07-04,Currency,0
+2017-07-04,Materials,0.14
+2017-07-04,Cons. Staples,0.07
+2017-07-04,Index,0.03
+2017-07-04,Industrials,0.18
+2017-07-04,Financials,0.19
+2017-07-05,Health Care,0.06
+2017-07-05,Materials,0.14
+2017-07-05,Financials,0.19
+2017-07-05,Cons. Staples,0.07
+2017-07-05,Cons. Disc.,0.29
+2017-07-05,Index,0.03
+2017-07-05,Currency,0
+2017-07-05,Real Estate,0.03
+2017-07-05,Industrials,0.18
+2017-07-06,Index,0.03
+2017-07-06,Currency,0
+2017-07-06,Health Care,0.06
+2017-07-06,Cons. Disc.,0.28
+2017-07-06,Materials,0.14
+2017-07-06,Financials,0.19
+2017-07-06,Industrials,0.18
+2017-07-06,Cons. Staples,0.07
+2017-07-06,Real Estate,0.03
+2017-07-07,Industrials,0.18
+2017-07-07,Health Care,0.06
+2017-07-07,Real Estate,0.03
+2017-07-07,Cons. Staples,0.07
+2017-07-07,Cons. Disc.,0.28
+2017-07-07,Index,0.03
+2017-07-07,Financials,0.19
+2017-07-07,Materials,0.14
+2017-07-07,Currency,0
+2017-07-10,Cons. Staples,0.07
+2017-07-10,Real Estate,0.03
+2017-07-10,Materials,0.14
+2017-07-10,Currency,0
+2017-07-10,Financials,0.19
+2017-07-10,Index,0.03
+2017-07-10,Health Care,0.06
+2017-07-10,Cons. Disc.,0.28
+2017-07-10,Industrials,0.18
+2017-07-11,Real Estate,0.03
+2017-07-11,Index,0.03
+2017-07-11,Health Care,0.06
+2017-07-11,Cons. Staples,0.07
+2017-07-11,Financials,0.19
+2017-07-11,Cons. Disc.,0.28
+2017-07-11,Currency,0
+2017-07-11,Materials,0.14
+2017-07-11,Industrials,0.18
+2017-07-12,Financials,0.19
+2017-07-12,Index,0.03
+2017-07-12,Currency,0
+2017-07-12,Health Care,0.06
+2017-07-12,Cons. Disc.,0.28
+2017-07-12,Real Estate,0.03
+2017-07-12,Industrials,0.18
+2017-07-12,Materials,0.14
+2017-07-12,Cons. Staples,0.07
+2017-07-13,Index,0.03
+2017-07-13,Currency,0
+2017-07-13,Materials,0.14
+2017-07-13,Financials,0.19
+2017-07-13,Industrials,0.18
+2017-07-13,Real Estate,0.03
+2017-07-13,Health Care,0.06
+2017-07-13,Cons. Disc.,0.28
+2017-07-13,Cons. Staples,0.07
+2017-07-14,Health Care,0.06
+2017-07-14,Cons. Disc.,0.28
+2017-07-14,Real Estate,0.03
+2017-07-14,Industrials,0.19
+2017-07-14,Currency,0
+2017-07-14,Materials,0.14
+2017-07-14,Financials,0.19
+2017-07-14,Index,0.03
+2017-07-14,Cons. Staples,0.07
+2017-07-17,Materials,0.14
+2017-07-17,Industrials,0.18
+2017-07-17,Cons. Staples,0.07
+2017-07-17,Real Estate,0.03
+2017-07-17,Cons. Disc.,0.28
+2017-07-17,Currency,0
+2017-07-17,Health Care,0.06
+2017-07-17,Index,0.03
+2017-07-17,Financials,0.19
+2017-07-18,Industrials,0.18
+2017-07-18,Financials,0.19
+2017-07-18,Currency,0
+2017-07-18,Cons. Disc.,0.28
+2017-07-18,Real Estate,0.03
+2017-07-18,Cons. Staples,0.07
+2017-07-18,Materials,0.13
+2017-07-18,Index,0.03
+2017-07-18,Health Care,0.06
+2017-07-19,Currency,0
+2017-07-19,Industrials,0.18
+2017-07-19,Cons. Disc.,0.28
+2017-07-19,Index,0.03
+2017-07-19,Health Care,0.06
+2017-07-19,Financials,0.19
+2017-07-19,Real Estate,0.03
+2017-07-19,Cons. Staples,0.07
+2017-07-19,Materials,0.13
+2017-07-20,Index,0.03
+2017-07-20,Health Care,0.06
+2017-07-20,Financials,0.19
+2017-07-20,Cons. Disc.,0.28
+2017-07-20,Currency,0
+2017-07-20,Industrials,0.19
+2017-07-20,Real Estate,0.03
+2017-07-20,Cons. Staples,0.07
+2017-07-20,Materials,0.13
+2017-07-21,Industrials,0.19
+2017-07-21,Health Care,0.06
+2017-07-21,Index,0.03
+2017-07-21,Cons. Disc.,0.28
+2017-07-21,Cons. Staples,0.07
+2017-07-21,Real Estate,0.03
+2017-07-21,Materials,0.13
+2017-07-21,Currency,0
+2017-07-21,Financials,0.19
+2017-07-24,Real Estate,0.03
+2017-07-24,Financials,0.19
+2017-07-24,Index,0.03
+2017-07-24,Materials,0.13
+2017-07-24,Cons. Staples,0.07
+2017-07-24,Currency,0
+2017-07-24,Health Care,0.06
+2017-07-24,Cons. Disc.,0.28
+2017-07-24,Industrials,0.19
+2017-07-25,Real Estate,0.03
+2017-07-25,Cons. Disc.,0.28
+2017-07-25,Index,0.03
+2017-07-25,Cons. Staples,0.07
+2017-07-25,Financials,0.19
+2017-07-25,Health Care,0.06
+2017-07-25,Industrials,0.19
+2017-07-25,Materials,0.13
+2017-07-25,Currency,0
+2017-07-26,Materials,0.13
+2017-07-26,Index,0.03
+2017-07-26,Financials,0.19
+2017-07-26,Real Estate,0.03
+2017-07-26,Industrials,0.19
+2017-07-26,Currency,0
+2017-07-26,Health Care,0.06
+2017-07-26,Cons. Staples,0.07
+2017-07-26,Cons. Disc.,0.28
+2017-07-27,Cons. Staples,0.07
+2017-07-27,Industrials,0.19
+2017-07-27,Index,0.03
+2017-07-27,Materials,0.13
+2017-07-27,Cons. Disc.,0.28
+2017-07-27,Currency,0
+2017-07-27,Financials,0.19
+2017-07-27,Real Estate,0.03
+2017-07-27,Health Care,0.06
+2017-07-28,Cons. Staples,0.07
+2017-07-28,Financials,0.2
+2017-07-28,Cons. Disc.,0.27
+2017-07-28,Currency,0
+2017-07-28,Health Care,0.06
+2017-07-28,Materials,0.13
+2017-07-28,Industrials,0.19
+2017-07-28,Real Estate,0.03
+2017-07-28,Index,0.03
+2017-07-31,Cons. Staples,0.07
+2017-07-31,Real Estate,0.03
+2017-07-31,Financials,0.2
+2017-07-31,Index,0.03
+2017-07-31,Currency,0
+2017-07-31,Cons. Disc.,0.27
+2017-07-31,Materials,0.13
+2017-07-31,Health Care,0.07
+2017-07-31,Industrials,0.19
+2017-08-01,Cons. Staples,0.07
+2017-08-01,Currency,0
+2017-08-01,Materials,0.13
+2017-08-01,Index,0.03
+2017-08-01,Financials,0.2
+2017-08-01,Real Estate,0.03
+2017-08-01,Cons. Disc.,0.28
+2017-08-01,Health Care,0.06
+2017-08-01,Industrials,0.19
+2017-08-02,Health Care,0.06
+2017-08-02,Materials,0.13
+2017-08-02,Currency,0
+2017-08-02,Financials,0.2
+2017-08-02,Cons. Disc.,0.28
+2017-08-02,Real Estate,0.03
+2017-08-02,Cons. Staples,0.07
+2017-08-02,Index,0.03
+2017-08-02,Industrials,0.19
+2017-08-03,Health Care,0.07
+2017-08-03,Real Estate,0.03
+2017-08-03,Cons. Staples,0.07
+2017-08-03,Financials,0.2
+2017-08-03,Cons. Disc.,0.28
+2017-08-03,Index,0.03
+2017-08-03,Industrials,0.19
+2017-08-03,Currency,0
+2017-08-03,Materials,0.13
+2017-08-04,Currency,0
+2017-08-04,Cons. Disc.,0.28
+2017-08-04,Real Estate,0.03
+2017-08-04,Health Care,0.07
+2017-08-04,Index,0.03
+2017-08-04,Materials,0.13
+2017-08-04,Industrials,0.19
+2017-08-04,Cons. Staples,0.07
+2017-08-04,Financials,0.2
+2017-08-07,Industrials,0.19
+2017-08-07,Currency,0
+2017-08-07,Cons. Disc.,0.28
+2017-08-07,Cons. Staples,0.07
+2017-08-07,Health Care,0.06
+2017-08-07,Index,0.03
+2017-08-07,Financials,0.2
+2017-08-07,Real Estate,0.03
+2017-08-07,Materials,0.13
+2017-08-08,Index,0.03
+2017-08-08,Cons. Disc.,0.27
+2017-08-08,Financials,0.2
+2017-08-08,Materials,0.13
+2017-08-08,Industrials,0.19
+2017-08-08,Health Care,0.07
+2017-08-08,Cons. Staples,0.07
+2017-08-08,Currency,0
+2017-08-08,Real Estate,0.03
+2017-08-09,Real Estate,0.03
+2017-08-09,Health Care,0.07
+2017-08-09,Cons. Staples,0.07
+2017-08-09,Cons. Disc.,0.28
+2017-08-09,Index,0.03
+2017-08-09,Industrials,0.19
+2017-08-09,Currency,0
+2017-08-09,Financials,0.2
+2017-08-09,Materials,0.13
+2017-08-10,Materials,0.13
+2017-08-10,Cons. Disc.,0.27
+2017-08-10,Health Care,0.07
+2017-08-10,Cons. Staples,0.07
+2017-08-10,Real Estate,0.03
+2017-08-10,Financials,0.2
+2017-08-10,Index,0.03
+2017-08-10,Industrials,0.19
+2017-08-10,Currency,0
+2017-08-11,Real Estate,0.04
+2017-08-11,Health Care,0.07
+2017-08-11,Index,0.03
+2017-08-11,Cons. Disc.,0.27
+2017-08-11,Currency,0
+2017-08-11,Materials,0.13
+2017-08-11,Industrials,0.19
+2017-08-11,Cons. Staples,0.07
+2017-08-11,Financials,0.2
+2017-08-14,Industrials,0.18
+2017-08-14,Financials,0.2
+2017-08-14,Real Estate,0.04
+2017-08-14,Cons. Staples,0.07
+2017-08-14,Currency,0
+2017-08-14,Index,0.03
+2017-08-14,Cons. Disc.,0.27
+2017-08-14,Materials,0.13
+2017-08-14,Health Care,0.07
+2017-08-15,Index,0.03
+2017-08-15,Industrials,0.18
+2017-08-15,Materials,0.13
+2017-08-15,Currency,0
+2017-08-15,Cons. Staples,0.07
+2017-08-15,Financials,0.2
+2017-08-15,Health Care,0.07
+2017-08-15,Real Estate,0.04
+2017-08-15,Cons. Disc.,0.27
+2017-08-16,Industrials,0.18
+2017-08-16,Financials,0.2
+2017-08-16,Materials,0.13
+2017-08-16,Cons. Disc.,0.28
+2017-08-16,Health Care,0.07
+2017-08-16,Currency,0
+2017-08-16,Real Estate,0.03
+2017-08-16,Cons. Staples,0.06
+2017-08-16,Index,0.03
+2017-08-17,Financials,0.2
+2017-08-17,Materials,0.13
+2017-08-17,Cons. Disc.,0.27
+2017-08-17,Cons. Staples,0.07
+2017-08-17,Health Care,0.07
+2017-08-17,Industrials,0.18
+2017-08-17,Index,0.03
+2017-08-17,Real Estate,0.03
+2017-08-17,Currency,0
+2017-08-18,Currency,0
+2017-08-18,Materials,0.13
+2017-08-18,Cons. Staples,0.07
+2017-08-18,Industrials,0.18
+2017-08-18,Health Care,0.07
+2017-08-18,Cons. Disc.,0.28
+2017-08-18,Financials,0.2
+2017-08-18,Real Estate,0.03
+2017-08-18,Index,0.04
+2017-08-21,Index,0.04
+2017-08-21,Real Estate,0.03
+2017-08-21,Currency,0
+2017-08-21,Cons. Disc.,0.28
+2017-08-21,Materials,0.13
+2017-08-21,Industrials,0.18
+2017-08-21,Cons. Staples,0.07
+2017-08-21,Health Care,0.07
+2017-08-21,Financials,0.2
+2017-08-22,Real Estate,0.03
+2017-08-22,Currency,0
+2017-08-22,Financials,0.2
+2017-08-22,Cons. Disc.,0.28
+2017-08-22,Materials,0.13
+2017-08-22,Health Care,0.07
+2017-08-22,Cons. Staples,0.07
+2017-08-22,Industrials,0.18
+2017-08-22,Index,0.04
+2017-08-23,Cons. Disc.,0.27
+2017-08-23,Currency,0
+2017-08-23,Industrials,0.18
+2017-08-23,Financials,0.2
+2017-08-23,Index,0.04
+2017-08-23,Materials,0.13
+2017-08-23,Real Estate,0.03
+2017-08-23,Cons. Staples,0.07
+2017-08-23,Health Care,0.07
+2017-08-24,Cons. Staples,0.07
+2017-08-24,Materials,0.13
+2017-08-24,Industrials,0.18
+2017-08-24,Cons. Disc.,0.27
+2017-08-24,Financials,0.2
+2017-08-24,Health Care,0.07
+2017-08-24,Real Estate,0.03
+2017-08-24,Currency,0
+2017-08-24,Index,0.04
+2017-08-25,Currency,0
+2017-08-25,Health Care,0.07
+2017-08-25,Cons. Staples,0.07
+2017-08-25,Industrials,0.18
+2017-08-25,Real Estate,0.03
+2017-08-25,Cons. Disc.,0.27
+2017-08-25,Materials,0.13
+2017-08-25,Financials,0.2
+2017-08-25,Index,0.02
+2017-08-28,Cons. Staples,0.07
+2017-08-28,Industrials,0.18
+2017-08-28,Financials,0.23
+2017-08-28,Materials,0.12
+2017-08-28,Cons. Disc.,0.26
+2017-08-28,Index,0.02
+2017-08-28,Health Care,0.07
+2017-08-28,Real Estate,0.03
+2017-08-28,Currency,0
+2017-08-29,Real Estate,0.03
+2017-08-29,Currency,0
+2017-08-29,Health Care,0.07
+2017-08-29,Materials,0.13
+2017-08-29,Cons. Staples,0.07
+2017-08-29,Industrials,0.18
+2017-08-29,Financials,0.22
+2017-08-29,Cons. Disc.,0.27
+2017-08-29,Index,0.02
+2017-08-30,Cons. Disc.,0.27
+2017-08-30,Real Estate,0.03
+2017-08-30,Currency,0
+2017-08-30,Cons. Staples,0.07
+2017-08-30,Index,0.02
+2017-08-30,Materials,0.12
+2017-08-30,Industrials,0.18
+2017-08-30,Financials,0.22
+2017-08-30,Health Care,0.07
+2017-08-31,Index,0.02
+2017-08-31,Real Estate,0.03
+2017-08-31,Health Care,0.06
+2017-08-31,Industrials,0.18
+2017-08-31,Cons. Staples,0.07
+2017-08-31,Cons. Disc.,0.27
+2017-08-31,Materials,0.12
+2017-08-31,Financials,0.22
+2017-08-31,Currency,0
+2017-09-01,Index,0.02
+2017-09-01,Real Estate,0.02
+2017-09-01,Cons. Staples,0.06
+2017-09-01,Financials,0.22
+2017-09-01,Currency,0
+2017-09-01,Industrials,0.18
+2017-09-01,Health Care,0.06
+2017-09-01,Materials,0.12
+2017-09-01,Cons. Disc.,0.27
+2017-09-04,Health Care,0.06
+2017-09-04,Financials,0.22
+2017-09-04,Industrials,0.18
+2017-09-04,Cons. Staples,0.07
+2017-09-04,Index,0.02
+2017-09-04,Cons. Disc.,0.27
+2017-09-04,Materials,0.12
+2017-09-04,Currency,0
+2017-09-04,Real Estate,0.02
+2017-09-05,Cons. Disc.,0.27
+2017-09-05,Materials,0.12
+2017-09-05,Health Care,0.06
+2017-09-05,Cons. Staples,0.07
+2017-09-05,Financials,0.22
+2017-09-05,Index,0.02
+2017-09-05,Real Estate,0.02
+2017-09-05,Industrials,0.18
+2017-09-05,Currency,0
+2017-09-06,Cons. Staples,0.07
+2017-09-06,Cons. Disc.,0.27
+2017-09-06,Currency,0
+2017-09-06,Health Care,0.06
+2017-09-06,Index,0.03
+2017-09-06,Real Estate,0.02
+2017-09-06,Materials,0.12
+2017-09-06,Industrials,0.18
+2017-09-06,Financials,0.22
+2017-09-07,Real Estate,0.02
+2017-09-07,Materials,0.12
+2017-09-07,Cons. Staples,0.07
+2017-09-07,Currency,0
+2017-09-07,Cons. Disc.,0.28
+2017-09-07,Index,0.04
+2017-09-07,Health Care,0.06
+2017-09-07,Financials,0.21
+2017-09-07,Industrials,0.18
+2017-09-08,Materials,0.12
+2017-09-08,Financials,0.21
+2017-09-08,Cons. Staples,0.07
+2017-09-08,Industrials,0.18
+2017-09-08,Health Care,0.06
+2017-09-08,Index,0.05
+2017-09-08,Real Estate,0.02
+2017-09-08,Cons. Disc.,0.27
+2017-09-08,Currency,0
+2017-09-11,Cons. Staples,0.07
+2017-09-11,Real Estate,0.02
+2017-09-11,Cons. Disc.,0.28
+2017-09-11,Health Care,0.06
+2017-09-11,Industrials,0.18
+2017-09-11,Materials,0.12
+2017-09-11,Index,0.05
+2017-09-11,Currency,0
+2017-09-11,Financials,0.21
+2017-09-12,Financials,0.21
+2017-09-12,Industrials,0.18
+2017-09-12,Cons. Staples,0.07
+2017-09-12,Index,0.05
+2017-09-12,Health Care,0.06
+2017-09-12,Real Estate,0.02
+2017-09-12,Materials,0.12
+2017-09-12,Currency,0
+2017-09-12,Cons. Disc.,0.28
+2017-09-13,Currency,0
+2017-09-13,Cons. Staples,0.07
+2017-09-13,Materials,0.12
+2017-09-13,Industrials,0.18
+2017-09-13,Real Estate,0.02
+2017-09-13,Cons. Disc.,0.28
+2017-09-13,Index,0.05
+2017-09-13,Health Care,0.06
+2017-09-13,Financials,0.21
+2017-09-14,Currency,0
+2017-09-14,Cons. Disc.,0.28
+2017-09-14,Health Care,0.06
+2017-09-14,Index,0.05
+2017-09-14,Cons. Staples,0.07
+2017-09-14,Real Estate,0.02
+2017-09-14,Materials,0.12
+2017-09-14,Industrials,0.18
+2017-09-14,Financials,0.21
+2017-09-15,Cons. Staples,0.07
+2017-09-15,Cons. Disc.,0.28
+2017-09-15,Materials,0.12
+2017-09-15,Financials,0.21
+2017-09-15,Currency,0
+2017-09-15,Index,0.05
+2017-09-15,Health Care,0.06
+2017-09-15,Real Estate,0.02
+2017-09-15,Industrials,0.18
+2017-09-18,Currency,0
+2017-09-18,Index,0.05
+2017-09-18,Cons. Staples,0.07
+2017-09-18,Health Care,0.06
+2017-09-18,Industrials,0.18
+2017-09-18,Financials,0.21
+2017-09-18,Real Estate,0.02
+2017-09-18,Materials,0.12
+2017-09-18,Cons. Disc.,0.28
+2017-09-19,Currency,0
+2017-09-19,Real Estate,0.03
+2017-09-19,Health Care,0.06
+2017-09-19,Index,0.05
+2017-09-19,Cons. Disc.,0.28
+2017-09-19,Cons. Staples,0.07
+2017-09-19,Financials,0.21
+2017-09-19,Materials,0.12
+2017-09-19,Industrials,0.18
+2017-09-20,Financials,0.21
+2017-09-20,Index,0.05
+2017-09-20,Cons. Disc.,0.28
+2017-09-20,Cons. Staples,0.07
+2017-09-20,Currency,0
+2017-09-20,Materials,0.12
+2017-09-20,Industrials,0.18
+2017-09-20,Health Care,0.06
+2017-09-20,Real Estate,0.03
+2017-09-21,Materials,0.11
+2017-09-21,Index,0.05
+2017-09-21,Financials,0.21
+2017-09-21,Industrials,0.18
+2017-09-21,Cons. Disc.,0.28
+2017-09-21,Currency,0
+2017-09-21,Real Estate,0.03
+2017-09-21,Health Care,0.06
+2017-09-21,Cons. Staples,0.07
+2017-09-22,Materials,0.11
+2017-09-22,Real Estate,0.03
+2017-09-22,Currency,0
+2017-09-22,Industrials,0.18
+2017-09-22,Cons. Staples,0.06
+2017-09-22,Financials,0.21
+2017-09-22,Cons. Disc.,0.28
+2017-09-22,Health Care,0.06
+2017-09-22,Index,0.05
+2017-09-25,Real Estate,0.03
+2017-09-25,Health Care,0.06
+2017-09-25,Cons. Staples,0.06
+2017-09-25,Industrials,0.19
+2017-09-25,Materials,0.11
+2017-09-25,Currency,0
+2017-09-25,Financials,0.21
+2017-09-25,Cons. Disc.,0.28
+2017-09-25,Index,0.04
+2017-09-26,Financials,0.21
+2017-09-26,Cons. Staples,0.06
+2017-09-26,Health Care,0.06
+2017-09-26,Materials,0.11
+2017-09-26,Real Estate,0.03
+2017-09-26,Currency,0
+2017-09-26,Index,0.04
+2017-09-26,Cons. Disc.,0.28
+2017-09-26,Industrials,0.19
+2017-09-27,Real Estate,0.03
+2017-09-27,Currency,0
+2017-09-27,Industrials,0.19
+2017-09-27,Index,0.04
+2017-09-27,Cons. Disc.,0.28
+2017-09-27,Materials,0.11
+2017-09-27,Health Care,0.06
+2017-09-27,Financials,0.21
+2017-09-27,Cons. Staples,0.06
+2017-09-28,Health Care,0.06
+2017-09-28,Real Estate,0.03
+2017-09-28,Cons. Staples,0.06
+2017-09-28,Industrials,0.19
+2017-09-28,Materials,0.12
+2017-09-28,Index,0.03
+2017-09-28,Financials,0.21
+2017-09-28,Currency,0
+2017-09-28,Cons. Disc.,0.3
+2017-09-29,Industrials,0.19
+2017-09-29,Financials,0.21
+2017-09-29,Currency,0
+2017-09-29,Cons. Disc.,0.3
+2017-09-29,Health Care,0.06
+2017-09-29,Real Estate,0.03
+2017-09-29,Cons. Staples,0.06
+2017-09-29,Index,0.03
+2017-09-29,Materials,0.12
+2017-10-02,Materials,0.11
+2017-10-02,Industrials,0.2
+2017-10-02,Currency,0
+2017-10-02,Cons. Staples,0.06
+2017-10-02,Real Estate,0.03
+2017-10-02,Financials,0.21
+2017-10-02,Cons. Disc.,0.3
+2017-10-02,Index,0.02
+2017-10-02,Health Care,0.06
+2017-10-03,Currency,0
+2017-10-03,Real Estate,0.03
+2017-10-03,Cons. Staples,0.06
+2017-10-03,Index,0.02
+2017-10-03,Health Care,0.06
+2017-10-03,Industrials,0.2
+2017-10-03,Materials,0.11
+2017-10-03,Financials,0.21
+2017-10-03,Cons. Disc.,0.3
+2017-10-04,Materials,0.11
+2017-10-04,Cons. Staples,0.06
+2017-10-04,Index,0.01
+2017-10-04,Health Care,0.06
+2017-10-04,Cons. Disc.,0.3
+2017-10-04,Financials,0.21
+2017-10-04,Industrials,0.2
+2017-10-04,Currency,0
+2017-10-04,Real Estate,0.03
+2017-10-05,Cons. Disc.,0.3
+2017-10-05,Health Care,0.06
+2017-10-05,Financials,0.21
+2017-10-05,Index,0.01
+2017-10-05,Real Estate,0.03
+2017-10-05,Currency,0
+2017-10-05,Industrials,0.2
+2017-10-05,Materials,0.11
+2017-10-05,Cons. Staples,0.06
+2017-10-06,Currency,0
+2017-10-06,Index,0.01
+2017-10-06,Cons. Staples,0.06
+2017-10-06,Cons. Disc.,0.3
+2017-10-06,Real Estate,0.03
+2017-10-06,Financials,0.21
+2017-10-06,Health Care,0.06
+2017-10-06,Industrials,0.2
+2017-10-06,Materials,0.11
+2017-10-09,Health Care,0.06
+2017-10-09,Cons. Staples,0.06
+2017-10-09,Real Estate,0.03
+2017-10-09,Industrials,0.2
+2017-10-09,Financials,0.21
+2017-10-09,Cons. Disc.,0.3
+2017-10-09,Materials,0.11
+2017-10-09,Currency,0
+2017-10-09,Index,0.01
+2017-10-10,Health Care,0.06
+2017-10-10,Materials,0.11
+2017-10-10,Cons. Staples,0.06
+2017-10-10,Cons. Disc.,0.29
+2017-10-10,Real Estate,0.03
+2017-10-10,Financials,0.21
+2017-10-10,Index,0.01
+2017-10-10,Currency,0
+2017-10-10,Industrials,0.21
+2017-10-11,Cons. Disc.,0.29
+2017-10-11,Financials,0.21
+2017-10-11,Materials,0.1
+2017-10-11,Health Care,0.06
+2017-10-11,Currency,0
+2017-10-11,Cons. Staples,0.06
+2017-10-11,Industrials,0.21
+2017-10-11,Index,0.01
+2017-10-11,Real Estate,0.03
+2017-10-12,Currency,0
+2017-10-12,Financials,0.21
+2017-10-12,Cons. Staples,0.06
+2017-10-12,Materials,0.1
+2017-10-12,Cons. Disc.,0.29
+2017-10-12,Health Care,0.06
+2017-10-12,Index,0.01
+2017-10-12,Real Estate,0.03
+2017-10-12,Industrials,0.21
+2017-10-13,Cons. Disc.,0.29
+2017-10-13,Real Estate,0.03
+2017-10-13,Index,0.01
+2017-10-13,Cons. Staples,0.06
+2017-10-13,Financials,0.21
+2017-10-13,Materials,0.1
+2017-10-13,Currency,0
+2017-10-13,Industrials,0.21
+2017-10-13,Health Care,0.06
+2017-10-16,Cons. Disc.,0.3
+2017-10-16,Industrials,0.21
+2017-10-16,Financials,0.21
+2017-10-16,Cons. Staples,0.06
+2017-10-16,Index,0.01
+2017-10-16,Real Estate,0.03
+2017-10-16,Currency,0
+2017-10-16,Materials,0.1
+2017-10-16,Health Care,0.06
+2017-10-17,Materials,0.11
+2017-10-17,Currency,0
+2017-10-17,Health Care,0.06
+2017-10-17,Index,0.01
+2017-10-17,Real Estate,0.03
+2017-10-17,Cons. Disc.,0.3
+2017-10-17,Financials,0.21
+2017-10-17,Industrials,0.21
+2017-10-17,Cons. Staples,0.06
+2017-10-18,Index,0.01
+2017-10-18,Real Estate,0.03
+2017-10-18,Industrials,0.21
+2017-10-18,Financials,0.21
+2017-10-18,Currency,0
+2017-10-18,Cons. Disc.,0.3
+2017-10-18,Materials,0.1
+2017-10-18,Health Care,0.06
+2017-10-18,Cons. Staples,0.06
+2017-10-19,Cons. Disc.,0.3
+2017-10-19,Currency,0
+2017-10-19,Financials,0.21
+2017-10-19,Real Estate,0.03
+2017-10-19,Materials,0.1
+2017-10-19,Health Care,0.06
+2017-10-19,Index,0.01
+2017-10-19,IT,0
+2017-10-19,Cons. Staples,0.06
+2017-10-19,Industrials,0.21
+2017-10-20,Financials,0.21
+2017-10-20,Cons. Disc.,0.3
+2017-10-20,Health Care,0.06
+2017-10-20,IT,0
+2017-10-20,Currency,0
+2017-10-20,Materials,0.1
+2017-10-20,Index,0.01
+2017-10-20,Cons. Staples,0.06
+2017-10-20,Industrials,0.21
+2017-10-20,Real Estate,0.03
+2017-10-23,Index,0.01
+2017-10-23,IT,0
+2017-10-23,Cons. Disc.,0.3
+2017-10-23,Industrials,0.21
+2017-10-23,Real Estate,0.03
+2017-10-23,Financials,0.21
+2017-10-23,Materials,0.11
+2017-10-23,Currency,0
+2017-10-23,Health Care,0.06
+2017-10-23,Cons. Staples,0.06
+2017-10-24,Index,0.01
+2017-10-24,IT,0
+2017-10-24,Financials,0.21
+2017-10-24,Health Care,0.06
+2017-10-24,Industrials,0.21
+2017-10-24,Cons. Staples,0.06
+2017-10-24,Currency,0
+2017-10-24,Real Estate,0.03
+2017-10-24,Cons. Disc.,0.3
+2017-10-24,Materials,0.11
+2017-10-25,Currency,0
+2017-10-25,Financials,0.21
+2017-10-25,Materials,0.1
+2017-10-25,Index,0.01
+2017-10-25,Health Care,0.06
+2017-10-25,Real Estate,0.03
+2017-10-25,Cons. Staples,0.06
+2017-10-25,IT,0
+2017-10-25,Industrials,0.21
+2017-10-25,Cons. Disc.,0.3
+2017-10-26,IT,0
+2017-10-26,Industrials,0.21
+2017-10-26,Cons. Staples,0.06
+2017-10-26,Materials,0.1
+2017-10-26,Currency,0
+2017-10-26,Cons. Disc.,0.3
+2017-10-26,Health Care,0.06
+2017-10-26,Index,0.01
+2017-10-26,Financials,0.21
+2017-10-26,Real Estate,0.03
+2017-10-27,IT,0
+2017-10-27,Index,0.01
+2017-10-27,Health Care,0.06
+2017-10-27,Currency,0
+2017-10-27,Industrials,0.21
+2017-10-27,Real Estate,0.03
+2017-10-27,Cons. Staples,0.06
+2017-10-27,Materials,0.1
+2017-10-27,Financials,0.21
+2017-10-27,Cons. Disc.,0.3
+2017-10-30,Health Care,0.06
+2017-10-30,Materials,0.08
+2017-10-30,Index,0.01
+2017-10-30,Financials,0.21
+2017-10-30,Cons. Staples,0.06
+2017-10-30,Industrials,0.21
+2017-10-30,Currency,0
+2017-10-30,IT,0
+2017-10-30,Real Estate,0.03
+2017-10-30,Cons. Disc.,0.3
+2017-10-31,Currency,0
+2017-10-31,Cons. Disc.,0.3
+2017-10-31,Real Estate,0.03
+2017-10-31,Materials,0.08
+2017-10-31,Health Care,0.05
+2017-10-31,Index,0.02
+2017-10-31,Financials,0.21
+2017-10-31,Cons. Staples,0.06
+2017-10-31,IT,0
+2017-10-31,Industrials,0.2
+2017-11-01,Cons. Staples,0.06
+2017-11-01,Financials,0.22
+2017-11-01,IT,0
+2017-11-01,Industrials,0.2
+2017-11-01,Currency,0
+2017-11-01,Health Care,0.06
+2017-11-01,Cons. Disc.,0.3
+2017-11-01,Materials,0.08
+2017-11-01,Real Estate,0.03
+2017-11-01,Index,0.03
+2017-11-02,Index,0.03
+2017-11-02,IT,0
+2017-11-02,Materials,0.08
+2017-11-02,Cons. Disc.,0.3
+2017-11-02,Health Care,0.06
+2017-11-02,Cons. Staples,0.06
+2017-11-02,Real Estate,0.03
+2017-11-02,Financials,0.22
+2017-11-02,Currency,0
+2017-11-02,Industrials,0.2
+2017-11-03,Index,0.03
+2017-11-03,Real Estate,0.03
+2017-11-03,IT,0
+2017-11-03,Cons. Disc.,0.3
+2017-11-03,Cons. Staples,0.07
+2017-11-03,Materials,0.08
+2017-11-03,Currency,0
+2017-11-03,Health Care,0.06
+2017-11-03,Financials,0.22
+2017-11-03,Industrials,0.2
+2017-11-06,Cons. Disc.,0.3
+2017-11-06,Currency,0
+2017-11-06,Real Estate,0.03
+2017-11-06,IT,0
+2017-11-06,Health Care,0.06
+2017-11-06,Industrials,0.2
+2017-11-06,Index,0.03
+2017-11-06,Cons. Staples,0.07
+2017-11-06,Materials,0.08
+2017-11-06,Financials,0.22
+2017-11-07,Cons. Staples,0.06
+2017-11-07,Financials,0.22
+2017-11-07,IT,0
+2017-11-07,Currency,0
+2017-11-07,Materials,0.08
+2017-11-07,Cons. Disc.,0.3
+2017-11-07,Industrials,0.2
+2017-11-07,Index,0.04
+2017-11-07,Health Care,0.06
+2017-11-07,Real Estate,0.03
+2017-11-08,Cons. Staples,0.06
+2017-11-08,Real Estate,0.03
+2017-11-08,Currency,0
+2017-11-08,Cons. Disc.,0.29
+2017-11-08,Health Care,0.06
+2017-11-08,Materials,0.08
+2017-11-08,Financials,0.22
+2017-11-08,IT,0
+2017-11-08,Industrials,0.2
+2017-11-08,Index,0.04
+2017-11-09,IT,0
+2017-11-09,Health Care,0.06
+2017-11-09,Currency,0
+2017-11-09,Cons. Disc.,0.3
+2017-11-09,Cons. Staples,0.06
+2017-11-09,Financials,0.22
+2017-11-09,Materials,0.08
+2017-11-09,Industrials,0.2
+2017-11-09,Index,0.04
+2017-11-09,Real Estate,0.03
+2017-11-10,Health Care,0.06
+2017-11-10,Currency,0
+2017-11-10,IT,0
+2017-11-10,Financials,0.22
+2017-11-10,Cons. Staples,0.06
+2017-11-10,Real Estate,0.03
+2017-11-10,Industrials,0.19
+2017-11-10,Cons. Disc.,0.3
+2017-11-10,Index,0.04
+2017-11-10,Materials,0.08
+2017-11-13,Index,0.04
+2017-11-13,Materials,0.08
+2017-11-13,IT,0
+2017-11-13,Industrials,0.2
+2017-11-13,Cons. Staples,0.06
+2017-11-13,Currency,0
+2017-11-13,Health Care,0.06
+2017-11-13,Financials,0.22
+2017-11-13,Cons. Disc.,0.29
+2017-11-13,Real Estate,0.03
+2017-11-14,Index,0.04
+2017-11-14,Health Care,0.06
+2017-11-14,Currency,0
+2017-11-14,Financials,0.22
+2017-11-14,Cons. Disc.,0.29
+2017-11-14,Cons. Staples,0.06
+2017-11-14,Real Estate,0.03
+2017-11-14,Industrials,0.2
+2017-11-14,Materials,0.08
+2017-11-14,IT,0
+2017-11-15,Cons. Disc.,0.29
+2017-11-15,Financials,0.22
+2017-11-15,Materials,0.08
+2017-11-15,Cons. Staples,0.06
+2017-11-15,Real Estate,0.03
+2017-11-15,IT,0
+2017-11-15,Currency,0
+2017-11-15,Index,0.04
+2017-11-15,Industrials,0.2
+2017-11-15,Health Care,0.06
+2017-11-16,Cons. Staples,0.06
+2017-11-16,Financials,0.22
+2017-11-16,Currency,0
+2017-11-16,Materials,0.07
+2017-11-16,Health Care,0.06
+2017-11-16,Industrials,0.2
+2017-11-16,Cons. Disc.,0.3
+2017-11-16,Real Estate,0.03
+2017-11-16,IT,0
+2017-11-16,Index,0.04
+2017-11-17,IT,0
+2017-11-17,Currency,0
+2017-11-17,Real Estate,0.04
+2017-11-17,Financials,0.22
+2017-11-17,Health Care,0.06
+2017-11-17,Materials,0.07
+2017-11-17,Cons. Disc.,0.29
+2017-11-17,Cons. Staples,0.06
+2017-11-17,Industrials,0.2
+2017-11-17,Index,0.04
+2017-11-20,Cons. Staples,0.06
+2017-11-20,Health Care,0.06
+2017-11-20,Cons. Disc.,0.29
+2017-11-20,IT,0
+2017-11-20,Industrials,0.2
+2017-11-20,Index,0.05
+2017-11-20,Real Estate,0.03
+2017-11-20,Materials,0.07
+2017-11-20,Currency,0
+2017-11-20,Financials,0.22
+2017-11-21,Health Care,0.06
+2017-11-21,Industrials,0.2
+2017-11-21,Currency,0
+2017-11-21,Materials,0.07
+2017-11-21,Index,0.05
+2017-11-21,IT,0
+2017-11-21,Cons. Disc.,0.29
+2017-11-21,Real Estate,0.03
+2017-11-21,Financials,0.22
+2017-11-21,Cons. Staples,0.06
+2017-11-22,Industrials,0.2
+2017-11-22,IT,0
+2017-11-22,Cons. Staples,0.06
+2017-11-22,Health Care,0.06
+2017-11-22,Materials,0.07
+2017-11-22,Financials,0.22
+2017-11-22,Cons. Disc.,0.29
+2017-11-22,Real Estate,0.03
+2017-11-22,Index,0.05
+2017-11-22,Currency,0
+2017-11-23,Financials,0.22
+2017-11-23,Industrials,0.2
+2017-11-23,Index,0.05
+2017-11-23,Currency,0
+2017-11-23,Real Estate,0.03
+2017-11-23,Cons. Disc.,0.29
+2017-11-23,IT,0
+2017-11-23,Materials,0.07
+2017-11-23,Health Care,0.05
+2017-11-23,Cons. Staples,0.07
+2017-11-24,Health Care,0.06
+2017-11-24,Materials,0.07
+2017-11-24,Cons. Staples,0.07
+2017-11-24,Industrials,0.2
+2017-11-24,IT,0
+2017-11-24,Financials,0.22
+2017-11-24,Real Estate,0.03
+2017-11-24,Cons. Disc.,0.29
+2017-11-24,Index,0.05
+2017-11-24,Currency,0
+2017-11-27,Materials,0.07
+2017-11-27,IT,0
+2017-11-27,Currency,0
+2017-11-27,Real Estate,0.03
+2017-11-27,Financials,0.22
+2017-11-27,Cons. Disc.,0.29
+2017-11-27,Health Care,0.06
+2017-11-27,Index,0.05
+2017-11-27,Cons. Staples,0.07
+2017-11-27,Industrials,0.2
+2017-11-28,Materials,0.07
+2017-11-28,Cons. Disc.,0.29
+2017-11-28,Currency,0
+2017-11-28,IT,0
+2017-11-28,Cons. Staples,0.07
+2017-11-28,Index,0.05
+2017-11-28,Industrials,0.2
+2017-11-28,Health Care,0.05
+2017-11-28,Real Estate,0.03
+2017-11-28,Financials,0.22
+2017-11-29,Financials,0.22
+2017-11-29,IT,0
+2017-11-29,Health Care,0.06
+2017-11-29,Materials,0.07
+2017-11-29,Real Estate,0.03
+2017-11-29,Industrials,0.2
+2017-11-29,Cons. Disc.,0.29
+2017-11-29,Cons. Staples,0.07
+2017-11-29,Currency,0
+2017-11-29,Index,0.05
+2017-11-30,Financials,0.22
+2017-11-30,Index,0.05
+2017-11-30,Cons. Staples,0.07
+2017-11-30,Industrials,0.2
+2017-11-30,Currency,0
+2017-11-30,Materials,0.07
+2017-11-30,Cons. Disc.,0.29
+2017-11-30,Real Estate,0.03
+2017-11-30,IT,0
+2017-11-30,Health Care,0.05
+2017-12-01,Index,0.05
+2017-12-01,Industrials,0.2
+2017-12-01,Real Estate,0.03
+2017-12-01,Financials,0.22
+2017-12-01,Health Care,0.05
+2017-12-01,IT,0
+2017-12-01,Cons. Staples,0.07
+2017-12-01,Currency,0
+2017-12-01,Cons. Disc.,0.28
+2017-12-01,Materials,0.07
+2017-12-04,Currency,0
+2017-12-04,Real Estate,0.03
+2017-12-04,Health Care,0.05
+2017-12-04,IT,0
+2017-12-04,Cons. Staples,0.07
+2017-12-04,Industrials,0.2
+2017-12-04,Financials,0.22
+2017-12-04,Index,0.05
+2017-12-04,Materials,0.07
+2017-12-04,Cons. Disc.,0.28
+2017-12-05,Index,0.05
+2017-12-05,Cons. Staples,0.07
+2017-12-05,Industrials,0.2
+2017-12-05,Cons. Disc.,0.28
+2017-12-05,IT,0
+2017-12-05,Financials,0.22
+2017-12-05,Real Estate,0.03
+2017-12-05,Materials,0.07
+2017-12-05,Currency,0
+2017-12-05,Health Care,0.05
+2017-12-06,Industrials,0.2
+2017-12-06,Real Estate,0.03
+2017-12-06,Index,0.05
+2017-12-06,IT,0
+2017-12-06,Currency,0
+2017-12-06,Cons. Disc.,0.28
+2017-12-06,Financials,0.22
+2017-12-06,Cons. Staples,0.07
+2017-12-06,Materials,0.07
+2017-12-06,Health Care,0.05
+2017-12-07,Industrials,0.19
+2017-12-07,Cons. Disc.,0.29
+2017-12-07,Materials,0.07
+2017-12-07,Health Care,0.05
+2017-12-07,Cons. Staples,0.07
+2017-12-07,Currency,0
+2017-12-07,Index,0.05
+2017-12-07,IT,0
+2017-12-07,Financials,0.22
+2017-12-07,Real Estate,0.03
+2017-12-08,IT,0
+2017-12-08,Cons. Disc.,0.28
+2017-12-08,Industrials,0.19
+2017-12-08,Financials,0.22
+2017-12-08,Index,0.05
+2017-12-08,Real Estate,0.03
+2017-12-08,Cons. Staples,0.07
+2017-12-08,Materials,0.06
+2017-12-08,Health Care,0.05
+2017-12-08,Currency,0
+2017-12-11,Index,0.05
+2017-12-11,Currency,0
+2017-12-11,Cons. Disc.,0.29
+2017-12-11,Materials,0.06
+2017-12-11,Industrials,0.19
+2017-12-11,Health Care,0.05
+2017-12-11,Financials,0.22
+2017-12-11,Cons. Staples,0.07
+2017-12-11,IT,0
+2017-12-11,Real Estate,0.03
+2017-12-12,Index,0.05
+2017-12-12,IT,0
+2017-12-12,Financials,0.22
+2017-12-12,Currency,0
+2017-12-12,Industrials,0.19
+2017-12-12,Real Estate,0.03
+2017-12-12,Health Care,0.05
+2017-12-12,Materials,0.06
+2017-12-12,Cons. Staples,0.07
+2017-12-12,Cons. Disc.,0.29
+2017-12-13,Real Estate,0.04
+2017-12-13,Cons. Staples,0.07
+2017-12-13,Index,0.05
+2017-12-13,Financials,0.23
+2017-12-13,Health Care,0.05
+2017-12-13,Currency,0
+2017-12-13,Materials,0.05
+2017-12-13,IT,0
+2017-12-13,Cons. Disc.,0.29
+2017-12-13,Industrials,0.19
+2017-12-14,Cons. Staples,0.07
+2017-12-14,Health Care,0.05
+2017-12-14,IT,0
+2017-12-14,Currency,0
+2017-12-14,Financials,0.23
+2017-12-14,Real Estate,0.04
+2017-12-14,Index,0.05
+2017-12-14,Industrials,0.19
+2017-12-14,Cons. Disc.,0.29
+2017-12-14,Materials,0.05
+2017-12-15,Materials,0.05
+2017-12-15,IT,0
+2017-12-15,Real Estate,0.04
+2017-12-15,Financials,0.23
+2017-12-15,Industrials,0.19
+2017-12-15,Cons. Disc.,0.29
+2017-12-15,Currency,0
+2017-12-15,Index,0.05
+2017-12-15,Health Care,0.05
+2017-12-15,Cons. Staples,0.07
+2017-12-18,Industrials,0.19
+2017-12-18,Cons. Staples,0.07
+2017-12-18,Health Care,0.05
+2017-12-18,Currency,0
+2017-12-18,Financials,0.22
+2017-12-18,IT,0
+2017-12-18,Cons. Disc.,0.29
+2017-12-18,Materials,0.05
+2017-12-18,Real Estate,0.04
+2017-12-18,Index,0.05
+2017-12-19,Cons. Disc.,0.3
+2017-12-19,Health Care,0.05
+2017-12-19,Materials,0.05
+2017-12-19,Cons. Staples,0.07
+2017-12-19,Currency,0
+2017-12-19,Real Estate,0.03
+2017-12-19,Financials,0.22
+2017-12-19,IT,0
+2017-12-19,Industrials,0.19
+2017-12-19,Index,0.05
+2017-12-20,Currency,0
+2017-12-20,IT,0
+2017-12-20,Health Care,0.05
+2017-12-20,Materials,0.05
+2017-12-20,Real Estate,0.04
+2017-12-20,Cons. Staples,0.07
+2017-12-20,Cons. Disc.,0.3
+2017-12-20,Index,0.05
+2017-12-20,Financials,0.23
+2017-12-20,Industrials,0.2
+2017-12-21,Cons. Disc.,0.3
+2017-12-21,IT,0
+2017-12-21,Index,0.05
+2017-12-21,Industrials,0.2
+2017-12-21,Materials,0.05
+2017-12-21,Health Care,0.05
+2017-12-21,Real Estate,0.03
+2017-12-21,Cons. Staples,0.07
+2017-12-21,Currency,0
+2017-12-21,Financials,0.23
+2017-12-22,Currency,0
+2017-12-22,Cons. Staples,0.07
+2017-12-22,Industrials,0.19
+2017-12-22,Materials,0.05
+2017-12-22,Index,0.05
+2017-12-22,Real Estate,0.04
+2017-12-22,Health Care,0.05
+2017-12-22,Cons. Disc.,0.3
+2017-12-22,Financials,0.23
+2017-12-22,IT,0
+2017-12-25,Index,0.05
+2017-12-25,Cons. Staples,0.07
+2017-12-25,Real Estate,0.04
+2017-12-25,Health Care,0.05
+2017-12-25,Materials,0.05
+2017-12-25,Industrials,0.19
+2017-12-25,Cons. Disc.,0.3
+2017-12-25,Currency,0
+2017-12-25,IT,0
+2017-12-25,Financials,0.23
+2017-12-26,Index,0.05
+2017-12-26,Health Care,0.05
+2017-12-26,Cons. Disc.,0.29
+2017-12-26,Financials,0.23
+2017-12-26,IT,0
+2017-12-26,Real Estate,0.04
+2017-12-26,Currency,0
+2017-12-26,Materials,0.05
+2017-12-26,Industrials,0.2
+2017-12-26,Cons. Staples,0.07
+2017-12-27,Cons. Disc.,0.29
+2017-12-27,Cons. Staples,0.07
+2017-12-27,Health Care,0.05
+2017-12-27,Index,0.05
+2017-12-27,Currency,0
+2017-12-27,Materials,0.05
+2017-12-27,Real Estate,0.04
+2017-12-27,IT,0
+2017-12-27,Financials,0.23
+2017-12-27,Industrials,0.2
+2017-12-28,Industrials,0.2
+2017-12-28,Real Estate,0.04
+2017-12-28,Financials,0.23
+2017-12-28,Cons. Staples,0.07
+2017-12-28,Index,0.05
+2017-12-28,Health Care,0.05
+2017-12-28,IT,0
+2017-12-28,Currency,0
+2017-12-28,Materials,0.05
+2017-12-28,Cons. Disc.,0.29
+2017-12-29,Cons. Disc.,0.3
+2017-12-29,Cons. Staples,0.07
+2017-12-29,Real Estate,0.04
+2017-12-29,Materials,0.05
+2017-12-29,IT,0
+2017-12-29,Currency,0
+2017-12-29,Industrials,0.2
+2017-12-29,Financials,0.23
+2017-12-29,Index,0.04
+2017-12-29,Health Care,0.05
+2018-01-01,Cons. Staples,0.07
+2018-01-01,Cons. Disc.,0.29
+2018-01-01,Currency,0
+2018-01-01,Health Care,0.05
+2018-01-01,Financials,0.23
+2018-01-01,Industrials,0.2
+2018-01-01,Real Estate,0.04
+2018-01-01,Index,0.04
+2018-01-01,Materials,0.05
+2018-01-01,IT,0
+2018-01-02,IT,0
+2018-01-02,Industrials,0.2
+2018-01-02,Cons. Disc.,0.29
+2018-01-02,Financials,0.23
+2018-01-02,Materials,0.04
+2018-01-02,Cons. Staples,0.07
+2018-01-02,Real Estate,0.04
+2018-01-02,Health Care,0.05
+2018-01-02,Index,0.04
+2018-01-02,Currency,0
+2018-01-03,Cons. Staples,0.07
+2018-01-03,Industrials,0.21
+2018-01-03,Financials,0.23
+2018-01-03,Real Estate,0.04
+2018-01-03,Currency,0
+2018-01-03,Health Care,0.05
+2018-01-03,Materials,0.04
+2018-01-03,IT,0
+2018-01-03,Cons. Disc.,0.3
+2018-01-03,Index,0.04
+2018-01-04,Industrials,0.21
+2018-01-04,Financials,0.23
+2018-01-04,IT,0
+2018-01-04,Cons. Disc.,0.3
+2018-01-04,Cons. Staples,0.07
+2018-01-04,Materials,0.04
+2018-01-04,Index,0.04
+2018-01-04,Real Estate,0.04
+2018-01-04,Health Care,0.06
+2018-01-04,Currency,0
+2018-01-05,Financials,0.23
+2018-01-05,Real Estate,0.04
+2018-01-05,Currency,0
+2018-01-05,Index,0.04
+2018-01-05,Health Care,0.06
+2018-01-05,Cons. Disc.,0.3
+2018-01-05,IT,0
+2018-01-05,Materials,0.04
+2018-01-05,Cons. Staples,0.07
+2018-01-05,Industrials,0.21
+2018-01-08,Cons. Staples,0.07
+2018-01-08,Currency,0
+2018-01-08,Real Estate,0.04
+2018-01-08,Index,0.04
+2018-01-08,Cons. Disc.,0.3
+2018-01-08,Health Care,0.06
+2018-01-08,IT,0
+2018-01-08,Industrials,0.21
+2018-01-08,Financials,0.23
+2018-01-08,Materials,0.04
+2018-01-09,Industrials,0.2
+2018-01-09,Cons. Staples,0.07
+2018-01-09,Health Care,0.06
+2018-01-09,Materials,0.05
+2018-01-09,Cons. Disc.,0.3
+2018-01-09,Currency,0
+2018-01-09,Index,0.04
+2018-01-09,IT,0
+2018-01-09,Real Estate,0.04
+2018-01-09,Financials,0.23
+2018-01-10,Cons. Staples,0.07
+2018-01-10,Industrials,0.21
+2018-01-10,IT,0
+2018-01-10,Financials,0.24
+2018-01-10,Index,0.04
+2018-01-10,Materials,0.05
+2018-01-10,Health Care,0.06
+2018-01-10,Currency,0
+2018-01-10,Cons. Disc.,0.29
+2018-01-10,Real Estate,0.04
+2018-01-11,Industrials,0.21
+2018-01-11,Currency,0
+2018-01-11,IT,0
+2018-01-11,Cons. Disc.,0.29
+2018-01-11,Health Care,0.06
+2018-01-11,Financials,0.23
+2018-01-11,Cons. Staples,0.07
+2018-01-11,Real Estate,0.04
+2018-01-11,Index,0.04
+2018-01-11,Materials,0.05
+2018-01-12,Cons. Disc.,0.29
+2018-01-12,Financials,0.23
+2018-01-12,Index,0.04
+2018-01-12,Materials,0.05
+2018-01-12,Real Estate,0.04
+2018-01-12,Industrials,0.21
+2018-01-12,IT,0
+2018-01-12,Currency,0
+2018-01-12,Health Care,0.06
+2018-01-12,Cons. Staples,0.07
+2018-01-15,Materials,0.05
+2018-01-15,Industrials,0.21
+2018-01-15,Cons. Staples,0.07
+2018-01-15,Currency,0
+2018-01-15,Real Estate,0.04
+2018-01-15,Financials,0.23
+2018-01-15,Index,0.04
+2018-01-15,Health Care,0.06
+2018-01-15,IT,0
+2018-01-15,Cons. Disc.,0.29
+2018-01-16,IT,0
+2018-01-16,Cons. Staples,0.07
+2018-01-16,Real Estate,0.04
+2018-01-16,Index,0.04
+2018-01-16,Financials,0.24
+2018-01-16,Industrials,0.21
+2018-01-16,Cons. Disc.,0.29
+2018-01-16,Materials,0.05
+2018-01-16,Currency,0
+2018-01-16,Health Care,0.06
+2018-01-17,IT,0
+2018-01-17,Materials,0.05
+2018-01-17,Real Estate,0.04
+2018-01-17,Cons. Disc.,0.29
+2018-01-17,Index,0.03
+2018-01-17,Cons. Staples,0.07
+2018-01-17,Financials,0.24
+2018-01-17,Currency,0
+2018-01-17,Health Care,0.06
+2018-01-17,Industrials,0.21
+2018-01-18,Health Care,0.06
+2018-01-18,Cons. Staples,0.07
+2018-01-18,Real Estate,0.04
+2018-01-18,IT,0
+2018-01-18,Financials,0.24
+2018-01-18,Materials,0.05
+2018-01-18,Industrials,0.21
+2018-01-18,Cons. Disc.,0.29
+2018-01-18,Currency,0
+2018-01-18,Index,0.03
+2018-01-19,Health Care,0.06
+2018-01-19,Materials,0.05
+2018-01-19,Index,0.03
+2018-01-19,Real Estate,0.04
+2018-01-19,Industrials,0.21
+2018-01-19,IT,0
+2018-01-19,Cons. Staples,0.07
+2018-01-19,Cons. Disc.,0.29
+2018-01-19,Financials,0.24
+2018-01-19,Currency,0
+2018-01-22,Health Care,0.06
+2018-01-22,Real Estate,0.04
+2018-01-22,Index,0.03
+2018-01-22,Industrials,0.21
+2018-01-22,Financials,0.24
+2018-01-22,Materials,0.05
+2018-01-22,Currency,0
+2018-01-22,IT,0
+2018-01-22,Cons. Disc.,0.29
+2018-01-22,Cons. Staples,0.07
+2018-01-23,Index,0.03
+2018-01-23,Financials,0.24
+2018-01-23,Health Care,0.06
+2018-01-23,Cons. Disc.,0.29
+2018-01-23,Industrials,0.21
+2018-01-23,Cons. Staples,0.07
+2018-01-23,IT,0
+2018-01-23,Materials,0.05
+2018-01-23,Real Estate,0.04
+2018-01-23,Currency,0
+2018-01-24,Health Care,0.06
+2018-01-24,Index,0.03
+2018-01-24,Financials,0.24
+2018-01-24,Cons. Staples,0.07
+2018-01-24,Currency,0
+2018-01-24,Materials,0.05
+2018-01-24,IT,0
+2018-01-24,Real Estate,0.04
+2018-01-24,Industrials,0.22
+2018-01-24,Cons. Disc.,0.28
+2018-01-25,Cons. Disc.,0.28
+2018-01-25,Financials,0.23
+2018-01-25,IT,0
+2018-01-25,Health Care,0.06
+2018-01-25,Real Estate,0.04
+2018-01-25,Materials,0.05
+2018-01-25,Currency,0
+2018-01-25,Index,0.03
+2018-01-25,Industrials,0.22
+2018-01-25,Cons. Staples,0.07
+2018-01-26,Industrials,0.22
+2018-01-26,IT,0
+2018-01-26,Currency,0
+2018-01-26,Cons. Disc.,0.28
+2018-01-26,Materials,0.05
+2018-01-26,Real Estate,0.04
+2018-01-26,Index,0.03
+2018-01-26,Cons. Staples,0.07
+2018-01-26,Financials,0.23
+2018-01-26,Health Care,0.06
+2018-01-29,Financials,0.23
+2018-01-29,IT,0
+2018-01-29,Materials,0.05
+2018-01-29,Index,0.02
+2018-01-29,Industrials,0.22
+2018-01-29,Health Care,0.06
+2018-01-29,Currency,0
+2018-01-29,Real Estate,0.04
+2018-01-29,Cons. Staples,0.07
+2018-01-29,Cons. Disc.,0.28
+2018-01-30,Real Estate,0.04
+2018-01-30,IT,0
+2018-01-30,Materials,0.05
+2018-01-30,Industrials,0.22
+2018-01-30,Index,0.02
+2018-01-30,Health Care,0.06
+2018-01-30,Currency,0
+2018-01-30,Cons. Disc.,0.28
+2018-01-30,Cons. Staples,0.07
+2018-01-30,Financials,0.23
+2018-01-31,Currency,0
+2018-01-31,Cons. Staples,0.07
+2018-01-31,Financials,0.23
+2018-01-31,Index,0.02
+2018-01-31,Health Care,0.06
+2018-01-31,Cons. Disc.,0.28
+2018-01-31,Industrials,0.22
+2018-01-31,Materials,0.05
+2018-01-31,IT,0
+2018-01-31,Real Estate,0.04
+2018-02-01,Health Care,0.06
+2018-02-01,Index,0.02
+2018-02-01,Cons. Disc.,0.28
+2018-02-01,Cons. Staples,0.07
+2018-02-01,Materials,0.05
+2018-02-01,Financials,0.23
+2018-02-01,Industrials,0.22
+2018-02-01,Real Estate,0.04
+2018-02-01,Currency,0
+2018-02-01,IT,0
+2018-02-02,Currency,0
+2018-02-02,Financials,0.23
+2018-02-02,Index,0.02
+2018-02-02,Cons. Disc.,0.28
+2018-02-02,IT,0
+2018-02-02,Cons. Staples,0.07
+2018-02-02,Health Care,0.06
+2018-02-02,Real Estate,0.04
+2018-02-02,Industrials,0.22
+2018-02-02,Materials,0.05
+2018-02-05,IT,0
+2018-02-05,Materials,0.05
+2018-02-05,Index,0.02
+2018-02-05,Real Estate,0.04
+2018-02-05,Cons. Disc.,0.29
+2018-02-05,Currency,0
+2018-02-05,Health Care,0.06
+2018-02-05,Cons. Staples,0.07
+2018-02-05,Financials,0.23
+2018-02-05,Industrials,0.22
+2018-02-06,Health Care,0.06
+2018-02-06,IT,0
+2018-02-06,Real Estate,0.04
+2018-02-06,Financials,0.23
+2018-02-06,Currency,0
+2018-02-06,Cons. Staples,0.07
+2018-02-06,Cons. Disc.,0.29
+2018-02-06,Materials,0.05
+2018-02-06,Index,0.02
+2018-02-06,Industrials,0.22
+2018-02-07,Real Estate,0.04
+2018-02-07,Currency,0
+2018-02-07,Index,0.02
+2018-02-07,Health Care,0.06
+2018-02-07,Cons. Staples,0.08
+2018-02-07,Financials,0.24
+2018-02-07,IT,0
+2018-02-07,Cons. Disc.,0.29
+2018-02-07,Industrials,0.22
+2018-02-07,Materials,0.05
+2018-02-08,Industrials,0.21
+2018-02-08,IT,0
+2018-02-08,Cons. Disc.,0.29
+2018-02-08,Cons. Staples,0.07
+2018-02-08,Materials,0.05
+2018-02-08,Health Care,0.06
+2018-02-08,Index,0.01
+2018-02-08,Real Estate,0.04
+2018-02-08,Financials,0.24
+2018-02-08,Currency,0
+2018-02-09,Financials,0.24
+2018-02-09,Health Care,0.06
+2018-02-09,Industrials,0.21
+2018-02-09,Cons. Disc.,0.3
+2018-02-09,Currency,0
+2018-02-09,Comm. Services,0
+2018-02-09,Index,0.01
+2018-02-09,IT,0
+2018-02-09,Real Estate,0.04
+2018-02-09,Cons. Staples,0.07
+2018-02-09,Materials,0.05
+2018-02-12,Cons. Disc.,0.3
+2018-02-12,Index,0.01
+2018-02-12,Comm. Services,0
+2018-02-12,Materials,0.05
+2018-02-12,Financials,0.24
+2018-02-12,Cons. Staples,0.07
+2018-02-12,Industrials,0.21
+2018-02-12,Health Care,0.06
+2018-02-12,IT,0
+2018-02-12,Real Estate,0.04
+2018-02-12,Currency,0
+2018-02-13,Health Care,0.06
+2018-02-13,Cons. Staples,0.07
+2018-02-13,Index,0.01
+2018-02-13,Comm. Services,0
+2018-02-13,IT,0
+2018-02-13,Cons. Disc.,0.3
+2018-02-13,Industrials,0.21
+2018-02-13,Financials,0.24
+2018-02-13,Materials,0.05
+2018-02-13,Currency,0
+2018-02-13,Real Estate,0.04
+2018-02-14,Cons. Staples,0.07
+2018-02-14,Comm. Services,0
+2018-02-14,Cons. Disc.,0.3
+2018-02-14,Currency,0
+2018-02-14,Index,0.01
+2018-02-14,IT,0
+2018-02-14,Financials,0.24
+2018-02-14,Industrials,0.21
+2018-02-14,Materials,0.05
+2018-02-14,Health Care,0.06
+2018-02-14,Real Estate,0.04
+2018-02-15,Health Care,0.06
+2018-02-15,IT,0
+2018-02-15,Index,0.01
+2018-02-15,Industrials,0.21
+2018-02-15,Materials,0.05
+2018-02-15,Currency,0
+2018-02-15,Cons. Disc.,0.3
+2018-02-15,Comm. Services,0
+2018-02-15,Cons. Staples,0.07
+2018-02-15,Real Estate,0.04
+2018-02-15,Financials,0.24
+2018-02-16,Currency,0
+2018-02-16,IT,0
+2018-02-16,Industrials,0.21
+2018-02-16,Cons. Disc.,0.3
+2018-02-16,Real Estate,0.04
+2018-02-16,Financials,0.24
+2018-02-16,Comm. Services,0
+2018-02-16,Index,0.01
+2018-02-16,Health Care,0.06
+2018-02-16,Cons. Staples,0.07
+2018-02-16,Materials,0.05
+2018-02-19,Currency,0
+2018-02-19,Materials,0.05
+2018-02-19,Health Care,0.06
+2018-02-19,Index,0.01
+2018-02-19,Financials,0.24
+2018-02-19,Comm. Services,0
+2018-02-19,Industrials,0.21
+2018-02-19,Real Estate,0.04
+2018-02-19,IT,0
+2018-02-19,Cons. Staples,0.07
+2018-02-19,Cons. Disc.,0.3
+2018-02-20,IT,0
+2018-02-20,Cons. Staples,0.07
+2018-02-20,Health Care,0.06
+2018-02-20,Index,0.01
+2018-02-20,Materials,0.05
+2018-02-20,Real Estate,0.04
+2018-02-20,Industrials,0.21
+2018-02-20,Cons. Disc.,0.3
+2018-02-20,Currency,0
+2018-02-20,Comm. Services,0
+2018-02-20,Financials,0.24
+2018-02-21,Materials,0.05
+2018-02-21,Health Care,0.06
+2018-02-21,Currency,0
+2018-02-21,Financials,0.24
+2018-02-21,Index,0.01
+2018-02-21,Real Estate,0.04
+2018-02-21,IT,0
+2018-02-21,Cons. Disc.,0.3
+2018-02-21,Cons. Staples,0.06
+2018-02-21,Industrials,0.21
+2018-02-21,Comm. Services,0
+2018-02-22,Cons. Staples,0.06
+2018-02-22,Industrials,0.21
+2018-02-22,IT,0
+2018-02-22,Real Estate,0.04
+2018-02-22,Financials,0.24
+2018-02-22,Materials,0.05
+2018-02-22,Health Care,0.06
+2018-02-22,Index,0.02
+2018-02-22,Cons. Disc.,0.3
+2018-02-22,Currency,0
+2018-02-22,Comm. Services,0
+2018-02-23,Materials,0.05
+2018-02-23,Health Care,0.05
+2018-02-23,Financials,0.24
+2018-02-23,Cons. Disc.,0.3
+2018-02-23,Index,0.02
+2018-02-23,Cons. Staples,0.06
+2018-02-23,Real Estate,0.04
+2018-02-23,IT,0
+2018-02-23,Industrials,0.21
+2018-02-23,Currency,0
+2018-02-23,Comm. Services,0
+2018-02-26,Real Estate,0.04
+2018-02-26,Index,0.02
+2018-02-26,Cons. Disc.,0.3
+2018-02-26,IT,0
+2018-02-26,Financials,0.24
+2018-02-26,Industrials,0.21
+2018-02-26,Comm. Services,0
+2018-02-26,Materials,0.05
+2018-02-26,Currency,0
+2018-02-26,Health Care,0.05
+2018-02-26,Cons. Staples,0.06
+2018-02-27,Materials,0.05
+2018-02-27,Real Estate,0.04
+2018-02-27,Financials,0.24
+2018-02-27,Comm. Services,0
+2018-02-27,Cons. Staples,0.07
+2018-02-27,Index,0.02
+2018-02-27,Health Care,0.05
+2018-02-27,Currency,0
+2018-02-27,Industrials,0.21
+2018-02-27,Cons. Disc.,0.3
+2018-02-27,IT,0
+2018-02-28,Cons. Disc.,0.3
+2018-02-28,Cons. Staples,0.07
+2018-02-28,Real Estate,0.04
+2018-02-28,Materials,0.05
+2018-02-28,IT,0
+2018-02-28,Index,0.02
+2018-02-28,Health Care,0.05
+2018-02-28,Industrials,0.21
+2018-02-28,Financials,0.24
+2018-02-28,Currency,0
+2018-02-28,Comm. Services,0
+2018-03-01,Health Care,0.05
+2018-03-01,Cons. Disc.,0.3
+2018-03-01,Real Estate,0.04
+2018-03-01,Materials,0.05
+2018-03-01,Financials,0.24
+2018-03-01,Index,0.02
+2018-03-01,IT,0
+2018-03-01,Comm. Services,0
+2018-03-01,Industrials,0.21
+2018-03-01,Cons. Staples,0.07
+2018-03-01,Currency,0
+2018-03-02,Industrials,0.21
+2018-03-02,IT,0
+2018-03-02,Cons. Disc.,0.3
+2018-03-02,Comm. Services,0
+2018-03-02,Currency,0
+2018-03-02,Cons. Staples,0.07
+2018-03-02,Health Care,0.05
+2018-03-02,Index,0.02
+2018-03-02,Materials,0.05
+2018-03-02,Financials,0.24
+2018-03-02,Real Estate,0.04
+2018-03-05,Cons. Disc.,0.3
+2018-03-05,Financials,0.24
+2018-03-05,Comm. Services,0
+2018-03-05,Industrials,0.21
+2018-03-05,Real Estate,0.04
+2018-03-05,Cons. Staples,0.07
+2018-03-05,Materials,0.05
+2018-03-05,Currency,0
+2018-03-05,Health Care,0.05
+2018-03-05,Index,0.02
+2018-03-05,IT,0
+2018-03-06,IT,0
+2018-03-06,Cons. Disc.,0.29
+2018-03-06,Health Care,0.05
+2018-03-06,Industrials,0.21
+2018-03-06,Financials,0.24
+2018-03-06,Comm. Services,0
+2018-03-06,Index,0.03
+2018-03-06,Real Estate,0.04
+2018-03-06,Currency,0
+2018-03-06,Materials,0.05
+2018-03-06,Cons. Staples,0.07
+2018-03-07,Comm. Services,0
+2018-03-07,Currency,0
+2018-03-07,Index,0.03
+2018-03-07,Financials,0.24
+2018-03-07,Industrials,0.21
+2018-03-07,Cons. Staples,0.07
+2018-03-07,IT,0
+2018-03-07,Real Estate,0.04
+2018-03-07,Cons. Disc.,0.29
+2018-03-07,Health Care,0.05
+2018-03-07,Materials,0.05
+2018-03-08,Industrials,0.21
+2018-03-08,Currency,0
+2018-03-08,IT,0
+2018-03-08,Index,0.03
+2018-03-08,Comm. Services,0
+2018-03-08,Health Care,0.05
+2018-03-08,Real Estate,0.04
+2018-03-08,Materials,0.05
+2018-03-08,Cons. Staples,0.07
+2018-03-08,Cons. Disc.,0.29
+2018-03-08,Financials,0.24
+2018-03-09,Currency,0
+2018-03-09,Health Care,0.05
+2018-03-09,Index,0.02
+2018-03-09,Real Estate,0.04
+2018-03-09,Materials,0.05
+2018-03-09,Comm. Services,0
+2018-03-09,Cons. Staples,0.07
+2018-03-09,IT,0
+2018-03-09,Cons. Disc.,0.3
+2018-03-09,Financials,0.23
+2018-03-09,Industrials,0.21
+2018-03-12,Industrials,0.21
+2018-03-12,Index,0.02
+2018-03-12,Real Estate,0.04
+2018-03-12,Currency,0
+2018-03-12,Comm. Services,0
+2018-03-12,Financials,0.24
+2018-03-12,Health Care,0.05
+2018-03-12,Cons. Disc.,0.3
+2018-03-12,Materials,0.05
+2018-03-12,IT,0
+2018-03-12,Cons. Staples,0.07
+2018-03-13,Cons. Disc.,0.3
+2018-03-13,Cons. Staples,0.07
+2018-03-13,Health Care,0.05
+2018-03-13,Financials,0.24
+2018-03-13,IT,0
+2018-03-13,Comm. Services,0
+2018-03-13,Materials,0.05
+2018-03-13,Real Estate,0.04
+2018-03-13,Currency,0
+2018-03-13,Industrials,0.21
+2018-03-13,Index,0.02
+2018-03-14,Real Estate,0.04
+2018-03-14,Industrials,0.21
+2018-03-14,Health Care,0.05
+2018-03-14,Financials,0.24
+2018-03-14,Cons. Staples,0.07
+2018-03-14,Materials,0.05
+2018-03-14,Cons. Disc.,0.3
+2018-03-14,IT,0
+2018-03-14,Index,0.02
+2018-03-14,Comm. Services,0
+2018-03-14,Currency,0
+2018-03-15,Materials,0.05
+2018-03-15,Cons. Disc.,0.3
+2018-03-15,IT,0
+2018-03-15,Financials,0.24
+2018-03-15,Real Estate,0.04
+2018-03-15,Cons. Staples,0.07
+2018-03-15,Currency,0
+2018-03-15,Industrials,0.21
+2018-03-15,Index,0.02
+2018-03-15,Health Care,0.05
+2018-03-15,Comm. Services,0
+2018-03-16,Real Estate,0.04
+2018-03-16,Index,0.02
+2018-03-16,Industrials,0.21
+2018-03-16,Cons. Staples,0.08
+2018-03-16,Currency,0
+2018-03-16,Cons. Disc.,0.29
+2018-03-16,Financials,0.24
+2018-03-16,Health Care,0.05
+2018-03-16,IT,0
+2018-03-16,Comm. Services,0
+2018-03-16,Materials,0.05
+2018-03-19,Health Care,0.05
+2018-03-19,Real Estate,0.04
+2018-03-19,Comm. Services,0
+2018-03-19,Financials,0.24
+2018-03-19,Currency,0
+2018-03-19,Index,0.02
+2018-03-19,Industrials,0.21
+2018-03-19,IT,0
+2018-03-19,Materials,0.05
+2018-03-19,Cons. Staples,0.08
+2018-03-19,Cons. Disc.,0.29
+2018-03-20,Health Care,0.05
+2018-03-20,Index,0.02
+2018-03-20,Materials,0.05
+2018-03-20,Financials,0.24
+2018-03-20,IT,0
+2018-03-20,Cons. Disc.,0.3
+2018-03-20,Comm. Services,0
+2018-03-20,Industrials,0.21
+2018-03-20,Cons. Staples,0.08
+2018-03-20,Currency,0
+2018-03-20,Real Estate,0.04
+2018-03-21,Cons. Disc.,0.3
+2018-03-21,IT,0
+2018-03-21,Cons. Staples,0.08
+2018-03-21,Financials,0.24
+2018-03-21,Real Estate,0.04
+2018-03-21,Industrials,0.21
+2018-03-21,Health Care,0.05
+2018-03-21,Comm. Services,0
+2018-03-21,Currency,0
+2018-03-21,Index,0.02
+2018-03-21,Materials,0.05
+2018-03-22,Cons. Disc.,0.3
+2018-03-22,Health Care,0.05
+2018-03-22,IT,0
+2018-03-22,Real Estate,0.04
+2018-03-22,Comm. Services,0
+2018-03-22,Materials,0.05
+2018-03-22,Index,0.02
+2018-03-22,Industrials,0.21
+2018-03-22,Currency,0
+2018-03-22,Cons. Staples,0.08
+2018-03-22,Financials,0.24
+2018-03-23,Index,0.02
+2018-03-23,Health Care,0.05
+2018-03-23,IT,0
+2018-03-23,Real Estate,0.04
+2018-03-23,Financials,0.23
+2018-03-23,Industrials,0.21
+2018-03-23,Cons. Disc.,0.3
+2018-03-23,Materials,0.05
+2018-03-23,Comm. Services,0
+2018-03-23,Cons. Staples,0.08
+2018-03-23,Currency,0
+2018-03-26,Industrials,0.21
+2018-03-26,Comm. Services,0
+2018-03-26,Materials,0.05
+2018-03-26,Cons. Staples,0.08
+2018-03-26,Cons. Disc.,0.3
+2018-03-26,Financials,0.24
+2018-03-26,Currency,0
+2018-03-26,Index,0.02
+2018-03-26,Health Care,0.05
+2018-03-26,IT,0
+2018-03-26,Real Estate,0.04
+2018-03-27,Real Estate,0.04
+2018-03-27,Index,0.02
+2018-03-27,Health Care,0.05
+2018-03-27,Financials,0.24
+2018-03-27,Currency,0
+2018-03-27,Cons. Disc.,0.3
+2018-03-27,IT,0
+2018-03-27,Comm. Services,0
+2018-03-27,Cons. Staples,0.08
+2018-03-27,Industrials,0.2
+2018-03-27,Materials,0.05
+2018-03-28,Currency,0
+2018-03-28,Materials,0.05
+2018-03-28,Comm. Services,0
+2018-03-28,Financials,0.24
+2018-03-28,Real Estate,0.04
+2018-03-28,IT,0
+2018-03-28,Index,0.02
+2018-03-28,Health Care,0.05
+2018-03-28,Cons. Staples,0.08
+2018-03-28,Cons. Disc.,0.31
+2018-03-28,Industrials,0.2
+2018-03-29,IT,0
+2018-03-29,Financials,0.24
+2018-03-29,Currency,0
+2018-03-29,Comm. Services,0
+2018-03-29,Materials,0.05
+2018-03-29,Industrials,0.2
+2018-03-29,Index,0.02
+2018-03-29,Cons. Staples,0.08
+2018-03-29,Real Estate,0.04
+2018-03-29,Health Care,0.05
+2018-03-29,Cons. Disc.,0.3
+2018-03-30,Materials,0.05
+2018-03-30,Real Estate,0.04
+2018-03-30,Cons. Disc.,0.31
+2018-03-30,Health Care,0.05
+2018-03-30,Index,0.02
+2018-03-30,Industrials,0.2
+2018-03-30,IT,0
+2018-03-30,Currency,0
+2018-03-30,Cons. Staples,0.08
+2018-03-30,Comm. Services,0
+2018-03-30,Financials,0.24
+2018-04-02,Real Estate,0.04
+2018-04-02,Financials,0.24
+2018-04-02,Health Care,0.05
+2018-04-02,Index,0.02
+2018-04-02,Currency,0
+2018-04-02,Materials,0.05
+2018-04-02,Industrials,0.2
+2018-04-02,Cons. Disc.,0.31
+2018-04-02,Cons. Staples,0.08
+2018-04-02,Comm. Services,0
+2018-04-02,IT,0
+2018-04-03,Real Estate,0.04
+2018-04-03,Cons. Staples,0.08
+2018-04-03,Comm. Services,0
+2018-04-03,IT,0
+2018-04-03,Cons. Disc.,0.31
+2018-04-03,Health Care,0.05
+2018-04-03,Industrials,0.2
+2018-04-03,Index,0.02
+2018-04-03,Financials,0.24
+2018-04-03,Materials,0.05
+2018-04-03,Currency,0
+2018-04-04,Real Estate,0.04
+2018-04-04,Financials,0.24
+2018-04-04,Cons. Staples,0.08
+2018-04-04,Index,0.02
+2018-04-04,Health Care,0.05
+2018-04-04,Cons. Disc.,0.31
+2018-04-04,Industrials,0.2
+2018-04-04,Materials,0.05
+2018-04-04,Comm. Services,0
+2018-04-04,Currency,0
+2018-04-04,IT,0
+2018-04-05,Health Care,0.04
+2018-04-05,Cons. Staples,0.08
+2018-04-05,Real Estate,0.04
+2018-04-05,Index,0.02
+2018-04-05,Materials,0.05
+2018-04-05,IT,0
+2018-04-05,Cons. Disc.,0.31
+2018-04-05,Financials,0.23
+2018-04-05,Industrials,0.2
+2018-04-05,Currency,0
+2018-04-05,Comm. Services,0
+2018-04-06,Industrials,0.2
+2018-04-06,Health Care,0.04
+2018-04-06,Cons. Staples,0.08
+2018-04-06,Materials,0.05
+2018-04-06,Cons. Disc.,0.31
+2018-04-06,Index,0.02
+2018-04-06,Real Estate,0.04
+2018-04-06,Comm. Services,0
+2018-04-06,IT,0
+2018-04-06,Currency,0
+2018-04-06,Financials,0.23
+2018-04-09,Industrials,0.2
+2018-04-09,Health Care,0.05
+2018-04-09,Cons. Disc.,0.31
+2018-04-09,Cons. Staples,0.08
+2018-04-09,Comm. Services,0
+2018-04-09,IT,0
+2018-04-09,Index,0.02
+2018-04-09,Real Estate,0.04
+2018-04-09,Currency,0
+2018-04-09,Materials,0.05
+2018-04-09,Financials,0.23
+2018-04-10,Index,0.02
+2018-04-10,Currency,0
+2018-04-10,Health Care,0.04
+2018-04-10,IT,0
+2018-04-10,Real Estate,0.04
+2018-04-10,Industrials,0.2
+2018-04-10,Cons. Disc.,0.32
+2018-04-10,Comm. Services,0
+2018-04-10,Materials,0.05
+2018-04-10,Financials,0.24
+2018-04-10,Cons. Staples,0.07
+2018-04-11,Cons. Disc.,0.32
+2018-04-11,Comm. Services,0
+2018-04-11,Cons. Staples,0.07
+2018-04-11,Materials,0.05
+2018-04-11,Real Estate,0.04
+2018-04-11,Health Care,0.04
+2018-04-11,Index,0.02
+2018-04-11,IT,0
+2018-04-11,Currency,0
+2018-04-11,Financials,0.23
+2018-04-11,Industrials,0.21
+2018-04-12,Cons. Disc.,0.32
+2018-04-12,Industrials,0.2
+2018-04-12,Cons. Staples,0.07
+2018-04-12,Real Estate,0.04
+2018-04-12,IT,0
+2018-04-12,Comm. Services,0
+2018-04-12,Financials,0.23
+2018-04-12,Health Care,0.05
+2018-04-12,Currency,0
+2018-04-12,Index,0.02
+2018-04-12,Materials,0.05
+2018-04-13,IT,0
+2018-04-13,Index,0.02
+2018-04-13,Real Estate,0.04
+2018-04-13,Currency,0
+2018-04-13,Health Care,0.04
+2018-04-13,Industrials,0.2
+2018-04-13,Cons. Staples,0.07
+2018-04-13,Comm. Services,0
+2018-04-13,Materials,0.05
+2018-04-13,Cons. Disc.,0.32
+2018-04-13,Financials,0.23
+2018-04-16,Health Care,0.04
+2018-04-16,Financials,0.23
+2018-04-16,Comm. Services,0
+2018-04-16,Real Estate,0.04
+2018-04-16,IT,0
+2018-04-16,Industrials,0.2
+2018-04-16,Index,0.02
+2018-04-16,Cons. Disc.,0.33
+2018-04-16,Cons. Staples,0.07
+2018-04-16,Materials,0.05
+2018-04-16,Currency,0
+2018-04-17,Financials,0.23
+2018-04-17,Index,0.02
+2018-04-17,Materials,0.05
+2018-04-17,Cons. Disc.,0.33
+2018-04-17,IT,0
+2018-04-17,Health Care,0.04
+2018-04-17,Comm. Services,0
+2018-04-17,Cons. Staples,0.07
+2018-04-17,Industrials,0.2
+2018-04-17,Real Estate,0.04
+2018-04-17,Currency,0
+2018-04-18,Materials,0.05
+2018-04-18,Cons. Staples,0.07
+2018-04-18,Real Estate,0.04
+2018-04-18,Industrials,0.2
+2018-04-18,Cons. Disc.,0.33
+2018-04-18,IT,0
+2018-04-18,Health Care,0.04
+2018-04-18,Index,0.03
+2018-04-18,Financials,0.23
+2018-04-18,Currency,0
+2018-04-18,Comm. Services,0
+2018-04-19,Cons. Staples,0.07
+2018-04-19,IT,0
+2018-04-19,Industrials,0.2
+2018-04-19,Index,0.03
+2018-04-19,Cons. Disc.,0.32
+2018-04-19,Comm. Services,0
+2018-04-19,Currency,0
+2018-04-19,Real Estate,0.04
+2018-04-19,Financials,0.23
+2018-04-19,Materials,0.05
+2018-04-19,Health Care,0.04
+2018-04-20,Financials,0.23
+2018-04-20,Cons. Staples,0.06
+2018-04-20,Index,0.03
+2018-04-20,Comm. Services,0
+2018-04-20,Materials,0.05
+2018-04-20,Cons. Disc.,0.32
+2018-04-20,Health Care,0.04
+2018-04-20,Currency,0
+2018-04-20,Industrials,0.2
+2018-04-20,Real Estate,0.04
+2018-04-20,IT,0
+2018-04-23,Real Estate,0.04
+2018-04-23,Cons. Staples,0.06
+2018-04-23,Currency,0
+2018-04-23,Materials,0.05
+2018-04-23,Comm. Services,0
+2018-04-23,Health Care,0.04
+2018-04-23,Industrials,0.2
+2018-04-23,Index,0.03
+2018-04-23,Financials,0.23
+2018-04-23,IT,0
+2018-04-23,Cons. Disc.,0.32
+2018-04-24,Cons. Disc.,0.32
+2018-04-24,Real Estate,0.04
+2018-04-24,Financials,0.23
+2018-04-24,Comm. Services,0
+2018-04-24,IT,0
+2018-04-24,Cons. Staples,0.06
+2018-04-24,Currency,0
+2018-04-24,Index,0.03
+2018-04-24,Health Care,0.04
+2018-04-24,Materials,0.05
+2018-04-24,Industrials,0.2
+2018-04-25,Real Estate,0.04
+2018-04-25,Materials,0.05
+2018-04-25,Industrials,0.19
+2018-04-25,Comm. Services,0
+2018-04-25,Financials,0.24
+2018-04-25,Currency,0
+2018-04-25,Cons. Staples,0.06
+2018-04-25,Cons. Disc.,0.32
+2018-04-25,IT,0
+2018-04-25,Index,0.03
+2018-04-25,Health Care,0.04
+2018-04-26,Index,0.04
+2018-04-26,Currency,0
+2018-04-26,Comm. Services,0
+2018-04-26,Cons. Staples,0.06
+2018-04-26,IT,0
+2018-04-26,Financials,0.24
+2018-04-26,Industrials,0.2
+2018-04-26,Cons. Disc.,0.32
+2018-04-26,Health Care,0.04
+2018-04-26,Real Estate,0.04
+2018-04-26,Materials,0.05
+2018-04-27,Financials,0.24
+2018-04-27,IT,0
+2018-04-27,Health Care,0.04
+2018-04-27,Cons. Disc.,0.32
+2018-04-27,Materials,0.05
+2018-04-27,Comm. Services,0
+2018-04-27,Currency,0
+2018-04-27,Real Estate,0.04
+2018-04-27,Cons. Staples,0.06
+2018-04-27,Industrials,0.19
+2018-04-27,Index,0.04
+2018-04-30,Industrials,0.19
+2018-04-30,Cons. Disc.,0.32
+2018-04-30,Index,0.04
+2018-04-30,Health Care,0.04
+2018-04-30,Currency,0
+2018-04-30,Cons. Staples,0.06
+2018-04-30,Financials,0.24
+2018-04-30,Real Estate,0.04
+2018-04-30,Comm. Services,0
+2018-04-30,Materials,0.05
+2018-05-01,Index,0.04
+2018-05-01,Real Estate,0.04
+2018-05-01,Financials,0.24
+2018-05-01,Cons. Disc.,0.32
+2018-05-01,Materials,0.05
+2018-05-01,Industrials,0.19
+2018-05-01,Cons. Staples,0.06
+2018-05-01,Currency,0
+2018-05-01,Health Care,0.04
+2018-05-01,Comm. Services,0
+2018-05-02,Real Estate,0.04
+2018-05-02,Financials,0.24
+2018-05-02,Cons. Disc.,0.31
+2018-05-02,Index,0.05
+2018-05-02,Currency,0
+2018-05-02,Comm. Services,0
+2018-05-02,Materials,0.05
+2018-05-02,Health Care,0.04
+2018-05-02,Industrials,0.2
+2018-05-02,Cons. Staples,0.06
+2018-05-03,Comm. Services,0
+2018-05-03,Real Estate,0.04
+2018-05-03,Cons. Staples,0.06
+2018-05-03,Currency,0
+2018-05-03,Materials,0.05
+2018-05-03,Industrials,0.19
+2018-05-03,Cons. Disc.,0.31
+2018-05-03,Index,0.05
+2018-05-03,Health Care,0.04
+2018-05-03,Financials,0.24
+2018-05-04,Comm. Services,0
+2018-05-04,Health Care,0.04
+2018-05-04,Cons. Staples,0.06
+2018-05-04,Financials,0.24
+2018-05-04,Index,0.05
+2018-05-04,Real Estate,0.04
+2018-05-04,Materials,0.05
+2018-05-04,Industrials,0.19
+2018-05-04,Cons. Disc.,0.31
+2018-05-04,Currency,0
+2018-05-07,Cons. Disc.,0.31
+2018-05-07,Currency,0
+2018-05-07,Materials,0.05
+2018-05-07,Health Care,0.04
+2018-05-07,Index,0.05
+2018-05-07,Comm. Services,0
+2018-05-07,Industrials,0.19
+2018-05-07,Cons. Staples,0.06
+2018-05-07,Real Estate,0.04
+2018-05-07,Financials,0.24
+2018-05-08,Health Care,0.04
+2018-05-08,Comm. Services,0
+2018-05-08,Currency,0
+2018-05-08,Real Estate,0.04
+2018-05-08,Industrials,0.19
+2018-05-08,Cons. Staples,0.05
+2018-05-08,Financials,0.24
+2018-05-08,Cons. Disc.,0.32
+2018-05-08,Index,0.05
+2018-05-08,Materials,0.05
+2018-05-09,Financials,0.23
+2018-05-09,Health Care,0.04
+2018-05-09,Industrials,0.19
+2018-05-09,Currency,0
+2018-05-09,Index,0.05
+2018-05-09,Cons. Staples,0.05
+2018-05-09,Comm. Services,0
+2018-05-09,Cons. Disc.,0.32
+2018-05-09,Materials,0.05
+2018-05-09,Real Estate,0.04
+2018-05-10,Health Care,0.04
+2018-05-10,Index,0.04
+2018-05-10,Currency,0
+2018-05-10,Cons. Disc.,0.33
+2018-05-10,Financials,0.23
+2018-05-10,Industrials,0.19
+2018-05-10,Real Estate,0.04
+2018-05-10,Comm. Services,0
+2018-05-10,Materials,0.05
+2018-05-10,Cons. Staples,0.05
+2018-05-11,Real Estate,0.04
+2018-05-11,Financials,0.23
+2018-05-11,Comm. Services,0
+2018-05-11,Industrials,0.19
+2018-05-11,Health Care,0.04
+2018-05-11,Cons. Staples,0.05
+2018-05-11,Materials,0.05
+2018-05-11,Cons. Disc.,0.34
+2018-05-11,Index,0.03
+2018-05-11,Currency,0
+2018-05-14,Cons. Staples,0.05
+2018-05-14,Real Estate,0.04
+2018-05-14,Comm. Services,0.01
+2018-05-14,Currency,0
+2018-05-14,Health Care,0.04
+2018-05-14,Index,0.03
+2018-05-14,Financials,0.23
+2018-05-14,Industrials,0.19
+2018-05-14,Materials,0.05
+2018-05-14,Cons. Disc.,0.34
+2018-05-15,Index,0.02
+2018-05-15,Real Estate,0.04
+2018-05-15,Health Care,0.04
+2018-05-15,Cons. Disc.,0.34
+2018-05-15,Materials,0.05
+2018-05-15,Financials,0.24
+2018-05-15,Currency,0
+2018-05-15,Cons. Staples,0.05
+2018-05-15,Industrials,0.19
+2018-05-15,Comm. Services,0.01
+2018-05-16,Index,0.02
+2018-05-16,Financials,0.23
+2018-05-16,Currency,0
+2018-05-16,Comm. Services,0.02
+2018-05-16,Cons. Staples,0.05
+2018-05-16,Materials,0.05
+2018-05-16,Health Care,0.04
+2018-05-16,Industrials,0.19
+2018-05-16,Cons. Disc.,0.35
+2018-05-16,Real Estate,0.04
+2018-05-17,Currency,0
+2018-05-17,Cons. Disc.,0.35
+2018-05-17,Cons. Staples,0.05
+2018-05-17,Financials,0.24
+2018-05-17,Health Care,0.04
+2018-05-17,Comm. Services,0.02
+2018-05-17,Index,0.02
+2018-05-17,Industrials,0.19
+2018-05-17,Materials,0.05
+2018-05-17,Real Estate,0.04
+2018-05-18,Industrials,0.19
+2018-05-18,Comm. Services,0.02
+2018-05-18,Currency,0
+2018-05-18,Index,0.02
+2018-05-18,Health Care,0.04
+2018-05-18,Cons. Staples,0.05
+2018-05-18,Cons. Disc.,0.35
+2018-05-18,Financials,0.24
+2018-05-18,Materials,0.05
+2018-05-18,Real Estate,0.04
+2018-05-21,Materials,0.05
+2018-05-21,Industrials,0.19
+2018-05-21,Health Care,0.04
+2018-05-21,Index,0.02
+2018-05-21,Cons. Staples,0.05
+2018-05-21,Financials,0.23
+2018-05-21,Real Estate,0.04
+2018-05-21,Currency,0
+2018-05-21,Cons. Disc.,0.35
+2018-05-21,Comm. Services,0.02
+2018-05-22,Materials,0.05
+2018-05-22,Cons. Disc.,0.34
+2018-05-22,Real Estate,0.04
+2018-05-22,Industrials,0.2
+2018-05-22,Health Care,0.04
+2018-05-22,Currency,0
+2018-05-22,Index,0.02
+2018-05-22,Cons. Staples,0.05
+2018-05-22,Financials,0.23
+2018-05-22,Comm. Services,0.02
+2018-05-23,Currency,0
+2018-05-23,Materials,0.05
+2018-05-23,Health Care,0.04
+2018-05-23,Real Estate,0.04
+2018-05-23,Industrials,0.2
+2018-05-23,Cons. Staples,0.05
+2018-05-23,Comm. Services,0.02
+2018-05-23,Financials,0.23
+2018-05-23,Cons. Disc.,0.35
+2018-05-23,Index,0.02
+2018-05-24,Health Care,0.04
+2018-05-24,Currency,0
+2018-05-24,Industrials,0.2
+2018-05-24,Cons. Staples,0.04
+2018-05-24,Cons. Disc.,0.35
+2018-05-24,Financials,0.23
+2018-05-24,Index,0.02
+2018-05-24,Materials,0.05
+2018-05-24,Comm. Services,0.02
+2018-05-24,Real Estate,0.04
+2018-05-25,Cons. Staples,0.04
+2018-05-25,Health Care,0.04
+2018-05-25,Currency,0
+2018-05-25,Cons. Disc.,0.35
+2018-05-25,IT,0
+2018-05-25,Index,0.02
+2018-05-25,Industrials,0.19
+2018-05-25,Real Estate,0.04
+2018-05-25,Materials,0.05
+2018-05-25,Comm. Services,0.02
+2018-05-25,Financials,0.23
+2018-05-28,IT,0
+2018-05-28,Cons. Staples,0.03
+2018-05-28,Comm. Services,0.02
+2018-05-28,Currency,0
+2018-05-28,Real Estate,0.04
+2018-05-28,Industrials,0.19
+2018-05-28,Materials,0.05
+2018-05-28,Index,0.02
+2018-05-28,Health Care,0.04
+2018-05-28,Financials,0.23
+2018-05-28,Cons. Disc.,0.36
+2018-05-29,Industrials,0.19
+2018-05-29,Index,0.02
+2018-05-29,IT,0
+2018-05-29,Currency,0
+2018-05-29,Health Care,0.04
+2018-05-29,Comm. Services,0.03
+2018-05-29,Cons. Disc.,0.36
+2018-05-29,Real Estate,0.04
+2018-05-29,Financials,0.23
+2018-05-29,Materials,0.05
+2018-05-29,Cons. Staples,0.03
+2018-05-30,Real Estate,0.04
+2018-05-30,Financials,0.23
+2018-05-30,Currency,0
+2018-05-30,Cons. Staples,0.03
+2018-05-30,IT,0
+2018-05-30,Comm. Services,0.03
+2018-05-30,Materials,0.05
+2018-05-30,Index,0.02
+2018-05-30,Cons. Disc.,0.36
+2018-05-30,Health Care,0.04
+2018-05-30,Industrials,0.19
+2018-05-31,Materials,0.05
+2018-05-31,Index,0.02
+2018-05-31,Cons. Staples,0.03
+2018-05-31,Health Care,0.04
+2018-05-31,Cons. Disc.,0.36
+2018-05-31,Currency,0
+2018-05-31,Real Estate,0.04
+2018-05-31,Financials,0.23
+2018-05-31,Industrials,0.19
+2018-05-31,IT,0
+2018-05-31,Comm. Services,0.03
+2018-06-01,Comm. Services,0.03
+2018-06-01,Currency,0
+2018-06-01,Materials,0.04
+2018-06-01,Index,0.02
+2018-06-01,Health Care,0.04
+2018-06-01,Cons. Staples,0.03
+2018-06-01,Financials,0.23
+2018-06-01,Cons. Disc.,0.36
+2018-06-01,IT,0
+2018-06-01,Industrials,0.19
+2018-06-01,Real Estate,0.04
+2018-06-04,Financials,0.23
+2018-06-04,Health Care,0.03
+2018-06-04,Currency,0
+2018-06-04,Real Estate,0.04
+2018-06-04,Comm. Services,0.03
+2018-06-04,Materials,0.05
+2018-06-04,Cons. Staples,0.03
+2018-06-04,Index,0.02
+2018-06-04,IT,0
+2018-06-04,Cons. Disc.,0.36
+2018-06-04,Industrials,0.19
+2018-06-05,Cons. Staples,0.03
+2018-06-05,IT,0
+2018-06-05,Index,0.02
+2018-06-05,Industrials,0.19
+2018-06-05,Financials,0.23
+2018-06-05,Cons. Disc.,0.36
+2018-06-05,Comm. Services,0.03
+2018-06-05,Currency,0
+2018-06-05,Health Care,0.03
+2018-06-05,Real Estate,0.04
+2018-06-05,Materials,0.05
+2018-06-06,Health Care,0.03
+2018-06-06,Index,0.02
+2018-06-06,Cons. Disc.,0.36
+2018-06-06,Financials,0.24
+2018-06-06,IT,0
+2018-06-06,Real Estate,0.04
+2018-06-06,Comm. Services,0.03
+2018-06-06,Currency,0
+2018-06-06,Cons. Staples,0.03
+2018-06-06,Materials,0.05
+2018-06-06,Industrials,0.18
+2018-06-07,Cons. Staples,0.03
+2018-06-07,Index,0.02
+2018-06-07,Industrials,0.18
+2018-06-07,Real Estate,0.04
+2018-06-07,Cons. Disc.,0.36
+2018-06-07,Currency,0
+2018-06-07,Financials,0.24
+2018-06-07,Materials,0.05
+2018-06-07,IT,0
+2018-06-07,Health Care,0.03
+2018-06-07,Comm. Services,0.03
+2018-06-08,Financials,0.24
+2018-06-08,Industrials,0.19
+2018-06-08,Comm. Services,0.04
+2018-06-08,Index,0.02
+2018-06-08,IT,0
+2018-06-08,Materials,0.05
+2018-06-08,Cons. Disc.,0.36
+2018-06-08,Health Care,0.03
+2018-06-08,Real Estate,0.04
+2018-06-08,Cons. Staples,0.03
+2018-06-08,Currency,0
+2018-06-11,Index,0.02
+2018-06-11,Financials,0.24
+2018-06-11,Currency,0
+2018-06-11,Materials,0.05
+2018-06-11,Health Care,0.03
+2018-06-11,IT,0
+2018-06-11,Cons. Staples,0.04
+2018-06-11,Industrials,0.19
+2018-06-11,Comm. Services,0.04
+2018-06-11,Cons. Disc.,0.36
+2018-06-11,Real Estate,0.04
+2018-06-12,Cons. Disc.,0.36
+2018-06-12,Financials,0.24
+2018-06-12,Currency,0
+2018-06-12,Index,0.02
+2018-06-12,Health Care,0.03
+2018-06-12,Real Estate,0.04
+2018-06-12,Cons. Staples,0.04
+2018-06-12,Materials,0.05
+2018-06-12,Comm. Services,0.04
+2018-06-12,Industrials,0.19
+2018-06-12,IT,0
+2018-06-13,Financials,0.24
+2018-06-13,Currency,0
+2018-06-13,Industrials,0.19
+2018-06-13,Health Care,0.03
+2018-06-13,IT,0
+2018-06-13,Real Estate,0.04
+2018-06-13,Cons. Disc.,0.36
+2018-06-13,Comm. Services,0.04
+2018-06-13,Materials,0.05
+2018-06-13,Index,0.02
+2018-06-13,Cons. Staples,0.04
+2018-06-14,Index,0.02
+2018-06-14,Currency,0
+2018-06-14,Cons. Staples,0.04
+2018-06-14,Comm. Services,0.03
+2018-06-14,Cons. Disc.,0.36
+2018-06-14,Health Care,0.03
+2018-06-14,Materials,0.05
+2018-06-14,Real Estate,0.04
+2018-06-14,IT,0
+2018-06-14,Financials,0.24
+2018-06-14,Industrials,0.18
+2018-06-15,Cons. Disc.,0.36
+2018-06-15,IT,0
+2018-06-15,Financials,0.24
+2018-06-15,Index,0.02
+2018-06-15,Health Care,0.03
+2018-06-15,Materials,0.05
+2018-06-15,Industrials,0.18
+2018-06-15,Comm. Services,0.03
+2018-06-15,Cons. Staples,0.04
+2018-06-15,Currency,0
+2018-06-15,Real Estate,0.04
+2018-06-18,Cons. Staples,0.04
+2018-06-18,Financials,0.24
+2018-06-18,IT,0
+2018-06-18,Comm. Services,0.03
+2018-06-18,Health Care,0.03
+2018-06-18,Index,0.02
+2018-06-18,Real Estate,0.04
+2018-06-18,Industrials,0.18
+2018-06-18,Materials,0.04
+2018-06-18,Currency,0
+2018-06-18,Cons. Disc.,0.37
+2018-06-19,Industrials,0.19
+2018-06-19,Real Estate,0.04
+2018-06-19,Financials,0.24
+2018-06-19,Cons. Staples,0.04
+2018-06-19,Cons. Disc.,0.36
+2018-06-19,Health Care,0.03
+2018-06-19,Index,0.02
+2018-06-19,Materials,0.04
+2018-06-19,Currency,0
+2018-06-19,Comm. Services,0.03
+2018-06-19,IT,0
+2018-06-20,Index,0.02
+2018-06-20,Comm. Services,0.03
+2018-06-20,IT,0
+2018-06-20,Real Estate,0.04
+2018-06-20,Financials,0.24
+2018-06-20,Currency,0
+2018-06-20,Industrials,0.18
+2018-06-20,Health Care,0.03
+2018-06-20,Cons. Disc.,0.37
+2018-06-20,Cons. Staples,0.04
+2018-06-20,Materials,0.04
+2018-06-21,Comm. Services,0.04
+2018-06-21,Health Care,0.03
+2018-06-21,Materials,0.04
+2018-06-21,Cons. Disc.,0.36
+2018-06-21,Cons. Staples,0.04
+2018-06-21,Financials,0.24
+2018-06-21,IT,0
+2018-06-21,Industrials,0.18
+2018-06-21,Index,0.01
+2018-06-21,Currency,0
+2018-06-21,Real Estate,0.04
+2018-06-22,Index,0.01
+2018-06-22,Industrials,0.18
+2018-06-22,Cons. Disc.,0.37
+2018-06-22,Currency,0
+2018-06-22,IT,0
+2018-06-22,Cons. Staples,0.04
+2018-06-22,Real Estate,0.04
+2018-06-22,Health Care,0.03
+2018-06-22,Financials,0.24
+2018-06-22,Comm. Services,0.04
+2018-06-22,Materials,0.05
+2018-06-25,Materials,0.05
+2018-06-25,Cons. Staples,0.04
+2018-06-25,Real Estate,0.04
+2018-06-25,Financials,0.23
+2018-06-25,IT,0
+2018-06-25,Cons. Disc.,0.37
+2018-06-25,Industrials,0.18
+2018-06-25,Currency,0
+2018-06-25,Comm. Services,0.04
+2018-06-25,Index,0.01
+2018-06-25,Health Care,0.03
+2018-06-26,Index,0.01
+2018-06-26,Cons. Disc.,0.36
+2018-06-26,Health Care,0.03
+2018-06-26,Financials,0.23
+2018-06-26,Industrials,0.18
+2018-06-26,Cons. Staples,0.04
+2018-06-26,Comm. Services,0.04
+2018-06-26,Currency,0
+2018-06-26,Materials,0.05
+2018-06-26,Real Estate,0.04
+2018-06-26,IT,0
+2018-06-27,Currency,0
+2018-06-27,Industrials,0.18
+2018-06-27,Cons. Disc.,0.36
+2018-06-27,Index,0.01
+2018-06-27,Comm. Services,0.04
+2018-06-27,Health Care,0.03
+2018-06-27,Materials,0.05
+2018-06-27,IT,0
+2018-06-27,Cons. Staples,0.04
+2018-06-27,Real Estate,0.04
+2018-06-27,Financials,0.24
+2018-06-28,Health Care,0.03
+2018-06-28,Index,0.01
+2018-06-28,Financials,0.23
+2018-06-28,Cons. Disc.,0.36
+2018-06-28,Real Estate,0.04
+2018-06-28,IT,0
+2018-06-28,Cons. Staples,0.04
+2018-06-28,Currency,0
+2018-06-28,Comm. Services,0.04
+2018-06-28,Industrials,0.19
+2018-06-28,Materials,0.05
+2018-06-29,Real Estate,0.04
+2018-06-29,Industrials,0.19
+2018-06-29,Cons. Staples,0.04
+2018-06-29,Financials,0.23
+2018-06-29,Index,0.02
+2018-06-29,IT,0
+2018-06-29,Comm. Services,0.04
+2018-06-29,Cons. Disc.,0.36
+2018-06-29,Health Care,0.03
+2018-06-29,Materials,0.05
+2018-06-29,Currency,0
+2018-07-02,Currency,0
+2018-07-02,Materials,0.05
+2018-07-02,Industrials,0.19
+2018-07-02,Cons. Staples,0.04
+2018-07-02,Index,0.02
+2018-07-02,IT,0
+2018-07-02,Cons. Disc.,0.36
+2018-07-02,Comm. Services,0.04
+2018-07-02,Real Estate,0.04
+2018-07-02,Financials,0.24
+2018-07-02,Health Care,0.02
+2018-07-03,Cons. Staples,0.04
+2018-07-03,Materials,0.05
+2018-07-03,Industrials,0.19
+2018-07-03,Comm. Services,0.04
+2018-07-03,Index,0.02
+2018-07-03,IT,0
+2018-07-03,Real Estate,0.04
+2018-07-03,Health Care,0.02
+2018-07-03,Cons. Disc.,0.36
+2018-07-03,Currency,0
+2018-07-03,Financials,0.24
+2018-07-04,Index,0.02
+2018-07-04,Health Care,0.02
+2018-07-04,Materials,0.05
+2018-07-04,Financials,0.24
+2018-07-04,Comm. Services,0.04
+2018-07-04,IT,0
+2018-07-04,Cons. Staples,0.04
+2018-07-04,Industrials,0.19
+2018-07-04,Real Estate,0.04
+2018-07-04,Cons. Disc.,0.36
+2018-07-04,Currency,0
+2018-07-05,Index,0.02
+2018-07-05,Materials,0.05
+2018-07-05,Comm. Services,0.04
+2018-07-05,Financials,0.24
+2018-07-05,Industrials,0.19
+2018-07-05,Health Care,0.02
+2018-07-05,Real Estate,0.04
+2018-07-05,IT,0
+2018-07-05,Cons. Disc.,0.36
+2018-07-05,Cons. Staples,0.04
+2018-07-05,Currency,0
+2018-07-06,Industrials,0.19
+2018-07-06,Cons. Staples,0.04
+2018-07-06,Financials,0.23
+2018-07-06,Index,0.02
+2018-07-06,Health Care,0.02
+2018-07-06,IT,0
+2018-07-06,Cons. Disc.,0.36
+2018-07-06,Comm. Services,0.04
+2018-07-06,Materials,0.05
+2018-07-06,Real Estate,0.04
+2018-07-06,Currency,0
+2018-07-09,Real Estate,0.04
+2018-07-09,Financials,0.23
+2018-07-09,Currency,0
+2018-07-09,Index,0.02
+2018-07-09,Health Care,0.02
+2018-07-09,Cons. Staples,0.04
+2018-07-09,Cons. Disc.,0.36
+2018-07-09,Comm. Services,0.04
+2018-07-09,Industrials,0.19
+2018-07-09,Materials,0.05
+2018-07-09,IT,0
+2018-07-10,Industrials,0.19
+2018-07-10,Financials,0.24
+2018-07-10,Cons. Disc.,0.36
+2018-07-10,Index,0.02
+2018-07-10,Materials,0.04
+2018-07-10,Comm. Services,0.04
+2018-07-10,Health Care,0.02
+2018-07-10,Currency,0
+2018-07-10,Cons. Staples,0.04
+2018-07-10,Real Estate,0.04
+2018-07-10,IT,0
+2018-07-11,Cons. Disc.,0.36
+2018-07-11,Financials,0.24
+2018-07-11,Industrials,0.19
+2018-07-11,Materials,0.05
+2018-07-11,Health Care,0.02
+2018-07-11,Index,0.02
+2018-07-11,Comm. Services,0.04
+2018-07-11,Cons. Staples,0.04
+2018-07-11,Currency,0
+2018-07-11,Real Estate,0.04
+2018-07-11,IT,0
+2018-07-12,IT,0
+2018-07-12,Currency,0
+2018-07-12,Index,0.02
+2018-07-12,Real Estate,0.04
+2018-07-12,Cons. Staples,0.04
+2018-07-12,Health Care,0.02
+2018-07-12,Industrials,0.19
+2018-07-12,Comm. Services,0.04
+2018-07-12,Cons. Disc.,0.36
+2018-07-12,Financials,0.24
+2018-07-12,Materials,0.04
+2018-07-13,Materials,0.04
+2018-07-13,Cons. Staples,0.04
+2018-07-13,Comm. Services,0.04
+2018-07-13,Cons. Disc.,0.36
+2018-07-13,Financials,0.24
+2018-07-13,Index,0.02
+2018-07-13,Health Care,0.02
+2018-07-13,Real Estate,0.04
+2018-07-13,Industrials,0.19
+2018-07-13,Currency,0
+2018-07-13,IT,0
+2018-07-16,Industrials,0.19
+2018-07-16,Comm. Services,0.04
+2018-07-16,Currency,0
+2018-07-16,Real Estate,0.04
+2018-07-16,Cons. Staples,0.04
+2018-07-16,Financials,0.23
+2018-07-16,Index,0.02
+2018-07-16,Cons. Disc.,0.35
+2018-07-16,Materials,0.04
+2018-07-16,Health Care,0.02
+2018-07-17,Financials,0.23
+2018-07-17,Comm. Services,0.04
+2018-07-17,Health Care,0.02
+2018-07-17,Cons. Staples,0.04
+2018-07-17,Real Estate,0.04
+2018-07-17,Cons. Disc.,0.35
+2018-07-17,Currency,0
+2018-07-17,Materials,0.05
+2018-07-17,Index,0.02
+2018-07-17,Industrials,0.19
+2018-07-18,Materials,0.05
+2018-07-18,Index,0.03
+2018-07-18,Industrials,0.19
+2018-07-18,Cons. Disc.,0.35
+2018-07-18,Currency,0
+2018-07-18,Cons. Staples,0.04
+2018-07-18,Real Estate,0.04
+2018-07-18,Health Care,0.02
+2018-07-18,Comm. Services,0.04
+2018-07-18,Financials,0.23
+2018-07-19,Financials,0.23
+2018-07-19,Comm. Services,0.04
+2018-07-19,Materials,0.05
+2018-07-19,Currency,0
+2018-07-19,Real Estate,0.04
+2018-07-19,Cons. Staples,0.04
+2018-07-19,Index,0.03
+2018-07-19,Health Care,0.02
+2018-07-19,Cons. Disc.,0.35
+2018-07-19,Industrials,0.2
+2018-07-20,Health Care,0.02
+2018-07-20,Comm. Services,0.04
+2018-07-20,Cons. Disc.,0.35
+2018-07-20,Cons. Staples,0.04
+2018-07-20,Industrials,0.19
+2018-07-20,Real Estate,0.04
+2018-07-20,Materials,0.05
+2018-07-20,Financials,0.23
+2018-07-20,Currency,0
+2018-07-20,Index,0.03
+2018-07-23,Health Care,0.02
+2018-07-23,Cons. Staples,0.04
+2018-07-23,Real Estate,0.04
+2018-07-23,Currency,0
+2018-07-23,Index,0.03
+2018-07-23,Comm. Services,0.04
+2018-07-23,Industrials,0.19
+2018-07-23,Materials,0.05
+2018-07-23,Financials,0.23
+2018-07-23,Cons. Disc.,0.35
+2018-07-24,Index,0.03
+2018-07-24,Cons. Disc.,0.35
+2018-07-24,Comm. Services,0.04
+2018-07-24,Real Estate,0.04
+2018-07-24,Financials,0.22
+2018-07-24,Industrials,0.19
+2018-07-24,Cons. Staples,0.04
+2018-07-24,Health Care,0.02
+2018-07-24,Materials,0.05
+2018-07-24,Currency,0
+2018-07-25,Index,0.04
+2018-07-25,Cons. Staples,0.04
+2018-07-25,Health Care,0.02
+2018-07-25,Comm. Services,0.04
+2018-07-25,Real Estate,0.04
+2018-07-25,Cons. Disc.,0.35
+2018-07-25,Industrials,0.19
+2018-07-25,Materials,0.05
+2018-07-25,Financials,0.22
+2018-07-25,Currency,0
+2018-07-26,Materials,0.05
+2018-07-26,Real Estate,0.04
+2018-07-26,Industrials,0.19
+2018-07-26,Comm. Services,0.04
+2018-07-26,Index,0.04
+2018-07-26,Currency,0
+2018-07-26,Cons. Staples,0.04
+2018-07-26,Financials,0.22
+2018-07-26,Health Care,0.02
+2018-07-26,Cons. Disc.,0.35
+2018-07-27,Cons. Staples,0.04
+2018-07-27,Comm. Services,0.04
+2018-07-27,Financials,0.22
+2018-07-27,Health Care,0.02
+2018-07-27,Index,0.04
+2018-07-27,Materials,0.05
+2018-07-27,Currency,0
+2018-07-27,Real Estate,0.04
+2018-07-27,Cons. Disc.,0.35
+2018-07-27,Industrials,0.19
+2018-07-30,Industrials,0.19
+2018-07-30,Comm. Services,0.04
+2018-07-30,Materials,0.05
+2018-07-30,Cons. Disc.,0.35
+2018-07-30,Financials,0.22
+2018-07-30,Real Estate,0.04
+2018-07-30,Health Care,0.02
+2018-07-30,Index,0.04
+2018-07-30,Currency,0
+2018-07-30,Cons. Staples,0.04
+2018-07-31,Cons. Staples,0.04
+2018-07-31,Materials,0.05
+2018-07-31,Comm. Services,0.04
+2018-07-31,Industrials,0.19
+2018-07-31,Health Care,0.02
+2018-07-31,Real Estate,0.04
+2018-07-31,Financials,0.22
+2018-07-31,Currency,0
+2018-07-31,Cons. Disc.,0.35
+2018-07-31,Index,0.04
+2018-08-01,Cons. Staples,0.04
+2018-08-01,Comm. Services,0.04
+2018-08-01,Materials,0.05
+2018-08-01,Health Care,0.02
+2018-08-01,Index,0.04
+2018-08-01,Industrials,0.19
+2018-08-01,Real Estate,0.04
+2018-08-01,Currency,0
+2018-08-01,Financials,0.22
+2018-08-01,Cons. Disc.,0.35
+2018-08-02,Health Care,0.02
+2018-08-02,Cons. Disc.,0.34
+2018-08-02,Cons. Staples,0.04
+2018-08-02,Real Estate,0.04
+2018-08-02,Comm. Services,0.04
+2018-08-02,Financials,0.22
+2018-08-02,Materials,0.05
+2018-08-02,Industrials,0.19
+2018-08-02,Currency,0
+2018-08-02,Index,0.04
+2018-08-03,Industrials,0.19
+2018-08-03,Comm. Services,0.04
+2018-08-03,Health Care,0.02
+2018-08-03,Index,0.04
+2018-08-03,Cons. Staples,0.04
+2018-08-03,Materials,0.05
+2018-08-03,Cons. Disc.,0.34
+2018-08-03,Real Estate,0.04
+2018-08-03,Currency,0
+2018-08-03,Financials,0.22
+2018-08-06,Materials,0.05
+2018-08-06,Index,0.04
+2018-08-06,Comm. Services,0.04
+2018-08-06,Industrials,0.19
+2018-08-06,Cons. Disc.,0.34
+2018-08-06,Currency,0
+2018-08-06,Real Estate,0.04
+2018-08-06,Cons. Staples,0.04
+2018-08-06,Financials,0.22
+2018-08-06,Health Care,0.02
+2018-08-07,Health Care,0.02
+2018-08-07,Currency,0
+2018-08-07,Real Estate,0.04
+2018-08-07,Industrials,0.19
+2018-08-07,Cons. Disc.,0.35
+2018-08-07,Index,0.04
+2018-08-07,Financials,0.22
+2018-08-07,Comm. Services,0.03
+2018-08-07,Materials,0.05
+2018-08-07,Cons. Staples,0.04
+2018-08-08,Currency,0
+2018-08-08,Materials,0.05
+2018-08-08,Real Estate,0.04
+2018-08-08,Industrials,0.19
+2018-08-08,Cons. Staples,0.04
+2018-08-08,Health Care,0.02
+2018-08-08,Financials,0.22
+2018-08-08,Index,0.04
+2018-08-08,Comm. Services,0.03
+2018-08-08,Cons. Disc.,0.35
+2018-08-09,Health Care,0.02
+2018-08-09,Index,0.04
+2018-08-09,Comm. Services,0.03
+2018-08-09,Real Estate,0.04
+2018-08-09,Financials,0.21
+2018-08-09,Materials,0.05
+2018-08-09,Cons. Disc.,0.35
+2018-08-09,Cons. Staples,0.04
+2018-08-09,Industrials,0.19
+2018-08-09,Currency,0
+2018-08-10,Comm. Services,0.03
+2018-08-10,Financials,0.22
+2018-08-10,Cons. Staples,0.04
+2018-08-10,Real Estate,0.04
+2018-08-10,Materials,0.05
+2018-08-10,Industrials,0.18
+2018-08-10,Health Care,0.02
+2018-08-10,Cons. Disc.,0.36
+2018-08-10,Currency,0
+2018-08-10,Index,0.04
+2018-08-13,Cons. Staples,0.04
+2018-08-13,Currency,0
+2018-08-13,Index,0.04
+2018-08-13,Financials,0.22
+2018-08-13,Materials,0.05
+2018-08-13,Health Care,0.02
+2018-08-13,Comm. Services,0.03
+2018-08-13,Cons. Disc.,0.35
+2018-08-13,Industrials,0.18
+2018-08-13,Real Estate,0.04
+2018-08-14,Industrials,0.18
+2018-08-14,Financials,0.21
+2018-08-14,Comm. Services,0.04
+2018-08-14,Health Care,0.02
+2018-08-14,Index,0.04
+2018-08-14,Real Estate,0.04
+2018-08-14,Materials,0.05
+2018-08-14,Currency,0
+2018-08-14,Cons. Staples,0.05
+2018-08-14,Cons. Disc.,0.35
+2018-08-15,Real Estate,0.04
+2018-08-15,Financials,0.22
+2018-08-15,Currency,0
+2018-08-15,Industrials,0.18
+2018-08-15,Index,0.04
+2018-08-15,Cons. Disc.,0.35
+2018-08-15,Materials,0.04
+2018-08-15,Comm. Services,0.04
+2018-08-15,Cons. Staples,0.05
+2018-08-15,Health Care,0.02
+2018-08-16,Materials,0.04
+2018-08-16,Real Estate,0.04
+2018-08-16,Health Care,0.02
+2018-08-16,Comm. Services,0.04
+2018-08-16,Cons. Staples,0.05
+2018-08-16,Cons. Disc.,0.35
+2018-08-16,Index,0.04
+2018-08-16,Financials,0.22
+2018-08-16,Currency,0
+2018-08-16,Industrials,0.18
+2018-08-17,Cons. Staples,0.05
+2018-08-17,Index,0.05
+2018-08-17,Health Care,0.02
+2018-08-17,Cons. Disc.,0.35
+2018-08-17,Currency,0
+2018-08-17,Financials,0.22
+2018-08-17,Real Estate,0.04
+2018-08-17,Industrials,0.18
+2018-08-17,Materials,0.04
+2018-08-17,Comm. Services,0.04
+2018-08-20,Currency,0
+2018-08-20,Index,0.06
+2018-08-20,Comm. Services,0.04
+2018-08-20,Health Care,0.02
+2018-08-20,Cons. Disc.,0.35
+2018-08-20,Materials,0.04
+2018-08-20,Cons. Staples,0.05
+2018-08-20,Real Estate,0.04
+2018-08-20,Industrials,0.18
+2018-08-20,Financials,0.21
+2018-08-21,Industrials,0.17
+2018-08-21,Real Estate,0.04
+2018-08-21,Comm. Services,0.04
+2018-08-21,Materials,0.04
+2018-08-21,Index,0.06
+2018-08-21,Health Care,0.02
+2018-08-21,Cons. Staples,0.05
+2018-08-21,Currency,0
+2018-08-21,Financials,0.21
+2018-08-21,Cons. Disc.,0.35
+2018-08-22,Currency,0
+2018-08-22,Industrials,0.18
+2018-08-22,Health Care,0.02
+2018-08-22,Index,0.06
+2018-08-22,Real Estate,0.04
+2018-08-22,Financials,0.21
+2018-08-22,Materials,0.04
+2018-08-22,Cons. Disc.,0.35
+2018-08-22,Comm. Services,0.04
+2018-08-22,Cons. Staples,0.05
+2018-08-23,Real Estate,0.04
+2018-08-23,Cons. Disc.,0.35
+2018-08-23,Currency,0
+2018-08-23,Industrials,0.17
+2018-08-23,Health Care,0.02
+2018-08-23,Cons. Staples,0.05
+2018-08-23,Index,0.06
+2018-08-23,Financials,0.21
+2018-08-23,Comm. Services,0.04
+2018-08-23,Materials,0.04
+2018-08-24,Health Care,0.02
+2018-08-24,Real Estate,0.04
+2018-08-24,Index,0.06
+2018-08-24,Comm. Services,0.04
+2018-08-24,Currency,0
+2018-08-24,Cons. Staples,0.05
+2018-08-24,Financials,0.21
+2018-08-24,Materials,0.04
+2018-08-24,Industrials,0.16
+2018-08-24,Cons. Disc.,0.35
+2018-08-27,Health Care,0.02
+2018-08-27,Currency,0
+2018-08-27,Cons. Staples,0.05
+2018-08-27,Materials,0.04
+2018-08-27,Financials,0.21
+2018-08-27,Industrials,0.17
+2018-08-27,Index,0.06
+2018-08-27,Real Estate,0.04
+2018-08-27,Comm. Services,0.04
+2018-08-27,Cons. Disc.,0.35
+2018-08-28,Cons. Disc.,0.35
+2018-08-28,Health Care,0.02
+2018-08-28,Industrials,0.17
+2018-08-28,Index,0.07
+2018-08-28,Cons. Staples,0.05
+2018-08-28,Currency,0
+2018-08-28,Comm. Services,0.04
+2018-08-28,Financials,0.21
+2018-08-28,Real Estate,0.04
+2018-08-28,Materials,0.04
+2018-08-29,Currency,0
+2018-08-29,Materials,0.04
+2018-08-29,Cons. Disc.,0.35
+2018-08-29,Comm. Services,0.04
+2018-08-29,Index,0.07
+2018-08-29,Health Care,0.02
+2018-08-29,Cons. Staples,0.05
+2018-08-29,Financials,0.21
+2018-08-29,Real Estate,0.04
+2018-08-29,Industrials,0.17
+2018-08-30,Real Estate,0.04
+2018-08-30,Cons. Disc.,0.35
+2018-08-30,Industrials,0.17
+2018-08-30,Index,0.07
+2018-08-30,Financials,0.21
+2018-08-30,Comm. Services,0.04
+2018-08-30,Currency,0
+2018-08-30,Health Care,0.02
+2018-08-30,Cons. Staples,0.05
+2018-08-30,Materials,0.04
+2018-08-31,Cons. Disc.,0.34
+2018-08-31,Comm. Services,0.04
+2018-08-31,Real Estate,0.04
+2018-08-31,Index,0.07
+2018-08-31,Currency,0
+2018-08-31,Industrials,0.17
+2018-08-31,Financials,0.21
+2018-08-31,Materials,0.04
+2018-08-31,Health Care,0.02
+2018-08-31,Cons. Staples,0.05
+2018-09-03,Materials,0.04
+2018-09-03,Index,0.07
+2018-09-03,Cons. Staples,0.05
+2018-09-03,Health Care,0.02
+2018-09-03,Financials,0.21
+2018-09-03,Currency,0
+2018-09-03,Real Estate,0.04
+2018-09-03,Cons. Disc.,0.35
+2018-09-03,Comm. Services,0.04
+2018-09-03,Industrials,0.17
+2018-09-04,Cons. Disc.,0.34
+2018-09-04,Industrials,0.17
+2018-09-04,Index,0.07
+2018-09-04,Financials,0.21
+2018-09-04,Comm. Services,0.04
+2018-09-04,Health Care,0.02
+2018-09-04,Cons. Staples,0.05
+2018-09-04,Real Estate,0.04
+2018-09-04,Materials,0.04
+2018-09-04,Currency,0
+2018-09-05,Cons. Staples,0.05
+2018-09-05,Cons. Disc.,0.35
+2018-09-05,Health Care,0.02
+2018-09-05,Industrials,0.17
+2018-09-05,Currency,0
+2018-09-05,Materials,0.04
+2018-09-05,Financials,0.21
+2018-09-05,Real Estate,0.05
+2018-09-05,Comm. Services,0.04
+2018-09-05,Index,0.07
+2018-09-06,Index,0.07
+2018-09-06,Cons. Disc.,0.34
+2018-09-06,Financials,0.21
+2018-09-06,Cons. Staples,0.05
+2018-09-06,Comm. Services,0.04
+2018-09-06,Currency,0
+2018-09-06,Materials,0.04
+2018-09-06,Industrials,0.18
+2018-09-06,Health Care,0.02
+2018-09-06,Real Estate,0.05
+2018-09-07,Health Care,0.02
+2018-09-07,Index,0.07
+2018-09-07,Real Estate,0.04
+2018-09-07,Currency,0
+2018-09-07,Cons. Staples,0.05
+2018-09-07,Cons. Disc.,0.35
+2018-09-07,Industrials,0.18
+2018-09-07,Financials,0.21
+2018-09-07,Comm. Services,0.04
+2018-09-07,Materials,0.04
+2018-09-10,Real Estate,0.05
+2018-09-10,Health Care,0.02
+2018-09-10,Materials,0.04
+2018-09-10,Financials,0.21
+2018-09-10,Currency,0
+2018-09-10,Cons. Disc.,0.35
+2018-09-10,Industrials,0.17
+2018-09-10,Comm. Services,0.04
+2018-09-10,Cons. Staples,0.05
+2018-09-10,Index,0.07
+2018-09-11,Industrials,0.17
+2018-09-11,Index,0.07
+2018-09-11,Materials,0.04
+2018-09-11,Currency,0
+2018-09-11,Financials,0.2
+2018-09-11,Real Estate,0.05
+2018-09-11,Cons. Disc.,0.35
+2018-09-11,Comm. Services,0.04
+2018-09-11,Health Care,0.02
+2018-09-11,Cons. Staples,0.05
+2018-09-12,Cons. Disc.,0.35
+2018-09-12,Health Care,0.02
+2018-09-12,Comm. Services,0.04
+2018-09-12,Industrials,0.17
+2018-09-12,Real Estate,0.05
+2018-09-12,Cons. Staples,0.05
+2018-09-12,Financials,0.2
+2018-09-12,Currency,0
+2018-09-12,Materials,0.04
+2018-09-12,Index,0.07
+2018-09-13,Real Estate,0.05
+2018-09-13,Currency,0
+2018-09-13,Financials,0.2
+2018-09-13,Index,0.07
+2018-09-13,Materials,0.04
+2018-09-13,Health Care,0.02
+2018-09-13,Industrials,0.17
+2018-09-13,Cons. Staples,0.05
+2018-09-13,Cons. Disc.,0.35
+2018-09-13,Comm. Services,0.04
+2018-09-14,Comm. Services,0.04
+2018-09-14,Health Care,0.02
+2018-09-14,Materials,0.04
+2018-09-14,Currency,0
+2018-09-14,Financials,0.2
+2018-09-14,Real Estate,0.05
+2018-09-14,Cons. Staples,0.05
+2018-09-14,Index,0.07
+2018-09-14,Industrials,0.17
+2018-09-14,Cons. Disc.,0.35
+2018-09-17,Materials,0.04
+2018-09-17,Index,0.07
+2018-09-17,Comm. Services,0.04
+2018-09-17,Industrials,0.18
+2018-09-17,Real Estate,0.05
+2018-09-17,Cons. Disc.,0.35
+2018-09-17,Financials,0.2
+2018-09-17,Cons. Staples,0.05
+2018-09-17,Currency,0
+2018-09-17,Health Care,0.02
+2018-09-18,Real Estate,0.05
+2018-09-18,Cons. Staples,0.05
+2018-09-18,Currency,0
+2018-09-18,Index,0.07
+2018-09-18,Industrials,0.17
+2018-09-18,Comm. Services,0.04
+2018-09-18,Health Care,0.02
+2018-09-18,Materials,0.04
+2018-09-18,Cons. Disc.,0.35
+2018-09-18,Financials,0.2
+2018-09-19,Currency,0
+2018-09-19,Industrials,0.17
+2018-09-19,Health Care,0.02
+2018-09-19,Materials,0.04
+2018-09-19,Real Estate,0.05
+2018-09-19,Index,0.07
+2018-09-19,Cons. Staples,0.05
+2018-09-19,Comm. Services,0.04
+2018-09-19,Financials,0.19
+2018-09-19,Cons. Disc.,0.35
+2018-09-20,Financials,0.19
+2018-09-20,Index,0.07
+2018-09-20,Currency,0
+2018-09-20,Industrials,0.17
+2018-09-20,Health Care,0.02
+2018-09-20,Comm. Services,0.04
+2018-09-20,Cons. Disc.,0.35
+2018-09-20,Cons. Staples,0.05
+2018-09-20,Real Estate,0.05
+2018-09-20,Materials,0.04
+2018-09-21,Industrials,0.18
+2018-09-21,Currency,0
+2018-09-21,Cons. Staples,0.05
+2018-09-21,Comm. Services,0.04
+2018-09-21,Health Care,0.02
+2018-09-21,Index,0.07
+2018-09-21,Materials,0.04
+2018-09-21,Financials,0.19
+2018-09-21,Real Estate,0.05
+2018-09-21,Cons. Disc.,0.35
+2018-09-24,Cons. Disc.,0.35
+2018-09-24,Index,0.07
+2018-09-24,Industrials,0.18
+2018-09-24,Materials,0.04
+2018-09-24,Financials,0.18
+2018-09-24,Cons. Staples,0.05
+2018-09-24,Comm. Services,0.05
+2018-09-24,Currency,0
+2018-09-24,Health Care,0.02
+2018-09-24,Real Estate,0.05
+2018-09-25,Index,0.07
+2018-09-25,Comm. Services,0.04
+2018-09-25,Health Care,0.02
+2018-09-25,Cons. Disc.,0.35
+2018-09-25,Currency,0
+2018-09-25,Real Estate,0.05
+2018-09-25,Industrials,0.18
+2018-09-25,Materials,0.04
+2018-09-25,Cons. Staples,0.05
+2018-09-25,Financials,0.19
+2018-09-26,Comm. Services,0.05
+2018-09-26,Materials,0.04
+2018-09-26,Index,0.08
+2018-09-26,Health Care,0.02
+2018-09-26,Industrials,0.18
+2018-09-26,Financials,0.18
+2018-09-26,Currency,0
+2018-09-26,Real Estate,0.05
+2018-09-26,Cons. Disc.,0.35
+2018-09-26,Cons. Staples,0.05
+2018-09-27,Real Estate,0.05
+2018-09-27,Comm. Services,0.04
+2018-09-27,Financials,0.18
+2018-09-27,Health Care,0.02
+2018-09-27,Index,0.08
+2018-09-27,Industrials,0.18
+2018-09-27,Currency,0
+2018-09-27,Cons. Disc.,0.35
+2018-09-27,Cons. Staples,0.05
+2018-09-27,Materials,0.04
+2018-09-28,Cons. Disc.,0.34
+2018-09-28,Cons. Staples,0.05
+2018-09-28,Financials,0.18
+2018-09-28,Real Estate,0.05
+2018-09-28,Industrials,0.17
+2018-09-28,Materials,0.04
+2018-09-28,Currency,0
+2018-09-28,Comm. Services,0.04
+2018-09-28,Health Care,0.02
+2018-09-28,Index,0.07
+2018-10-01,Cons. Staples,0.05
+2018-10-01,Health Care,0.02
+2018-10-01,Index,0.08
+2018-10-01,Financials,0.18
+2018-10-01,Materials,0.04
+2018-10-01,Real Estate,0.05
+2018-10-01,Cons. Disc.,0.35
+2018-10-01,Comm. Services,0.05
+2018-10-01,Industrials,0.17
+2018-10-01,Currency,0
+2018-10-02,Currency,0
+2018-10-02,Financials,0.18
+2018-10-02,Health Care,0.02
+2018-10-02,Industrials,0.17
+2018-10-02,Real Estate,0.05
+2018-10-02,Index,0.08
+2018-10-02,Cons. Disc.,0.35
+2018-10-02,Cons. Staples,0.05
+2018-10-02,Comm. Services,0.04
+2018-10-02,Materials,0.04
+2018-10-03,Comm. Services,0.04
+2018-10-03,Index,0.08
+2018-10-03,Cons. Disc.,0.34
+2018-10-03,Industrials,0.17
+2018-10-03,Financials,0.18
+2018-10-03,Health Care,0.02
+2018-10-03,Real Estate,0.05
+2018-10-03,Cons. Staples,0.06
+2018-10-03,Materials,0.04
+2018-10-03,Currency,0
+2018-10-04,Health Care,0.01
+2018-10-04,Currency,0
+2018-10-04,Cons. Disc.,0.34
+2018-10-04,Financials,0.18
+2018-10-04,Industrials,0.17
+2018-10-04,Comm. Services,0.04
+2018-10-04,Materials,0.04
+2018-10-04,Cons. Staples,0.06
+2018-10-04,Real Estate,0.05
+2018-10-04,Index,0.08
+2018-10-05,Health Care,0.01
+2018-10-05,Real Estate,0.05
+2018-10-05,Financials,0.18
+2018-10-05,Materials,0.04
+2018-10-05,Cons. Disc.,0.34
+2018-10-05,Currency,0
+2018-10-05,Industrials,0.17
+2018-10-05,Cons. Staples,0.06
+2018-10-05,Comm. Services,0.04
+2018-10-05,Index,0.08
+2018-10-08,Materials,0.04
+2018-10-08,Index,0.08
+2018-10-08,Comm. Services,0.04
+2018-10-08,Real Estate,0.05
+2018-10-08,Cons. Disc.,0.34
+2018-10-08,Health Care,0.01
+2018-10-08,Industrials,0.17
+2018-10-08,Financials,0.18
+2018-10-08,Cons. Staples,0.07
+2018-10-08,Currency,0
+2018-10-09,Industrials,0.17
+2018-10-09,Materials,0.04
+2018-10-09,Financials,0.18
+2018-10-09,Comm. Services,0.04
+2018-10-09,Cons. Staples,0.07
+2018-10-09,Real Estate,0.05
+2018-10-09,Index,0.08
+2018-10-09,Currency,0
+2018-10-09,Health Care,0.01
+2018-10-09,Cons. Disc.,0.34
+2018-10-10,Currency,0
+2018-10-10,Real Estate,0.05
+2018-10-10,Cons. Staples,0.07
+2018-10-10,Materials,0.04
+2018-10-10,Industrials,0.17
+2018-10-10,Cons. Disc.,0.35
+2018-10-10,Index,0.08
+2018-10-10,Health Care,0.01
+2018-10-10,Financials,0.18
+2018-10-10,Comm. Services,0.04
+2018-10-11,Real Estate,0.05
+2018-10-11,Materials,0.04
+2018-10-11,Comm. Services,0.04
+2018-10-11,Index,0.08
+2018-10-11,Health Care,0.01
+2018-10-11,Currency,0
+2018-10-11,Cons. Disc.,0.34
+2018-10-11,Cons. Staples,0.07
+2018-10-11,Industrials,0.17
+2018-10-11,Financials,0.18
+2018-10-12,Industrials,0.17
+2018-10-12,Financials,0.18
+2018-10-12,Comm. Services,0.04
+2018-10-12,Cons. Disc.,0.35
+2018-10-12,Index,0.08
+2018-10-12,Health Care,0.01
+2018-10-12,Materials,0.04
+2018-10-12,Cons. Staples,0.07
+2018-10-12,Real Estate,0.05
+2018-10-12,Currency,0
+2018-10-15,Cons. Staples,0.07
+2018-10-15,Financials,0.19
+2018-10-15,Cons. Disc.,0.35
+2018-10-15,Currency,0
+2018-10-15,Materials,0.04
+2018-10-15,Index,0.08
+2018-10-15,Real Estate,0.05
+2018-10-15,Comm. Services,0.04
+2018-10-15,Industrials,0.17
+2018-10-15,Health Care,0.01
+2018-10-16,Financials,0.19
+2018-10-16,Currency,0
+2018-10-16,Materials,0.04
+2018-10-16,Industrials,0.17
+2018-10-16,Cons. Disc.,0.35
+2018-10-16,Real Estate,0.05
+2018-10-16,Index,0.08
+2018-10-16,Health Care,0.01
+2018-10-16,Cons. Staples,0.07
+2018-10-16,Comm. Services,0.04
+2018-10-17,Comm. Services,0.04
+2018-10-17,Health Care,0.01
+2018-10-17,Real Estate,0.05
+2018-10-17,Materials,0.04
+2018-10-17,Index,0.08
+2018-10-17,Cons. Disc.,0.34
+2018-10-17,Cons. Staples,0.07
+2018-10-17,Currency,0
+2018-10-17,Industrials,0.17
+2018-10-17,Financials,0.19
+2018-10-18,Currency,0
+2018-10-18,Cons. Staples,0.07
+2018-10-18,Materials,0.04
+2018-10-18,Comm. Services,0.04
+2018-10-18,Real Estate,0.05
+2018-10-18,Health Care,0.01
+2018-10-18,Cons. Disc.,0.34
+2018-10-18,Industrials,0.17
+2018-10-18,Financials,0.19
+2018-10-18,Index,0.08
+2018-10-19,Health Care,0.01
+2018-10-19,Cons. Staples,0.07
+2018-10-19,Industrials,0.17
+2018-10-19,Financials,0.18
+2018-10-19,Cons. Disc.,0.34
+2018-10-19,Materials,0.04
+2018-10-19,Currency,0
+2018-10-19,Real Estate,0.05
+2018-10-19,Comm. Services,0.04
+2018-10-19,Index,0.08
+2018-10-22,Comm. Services,0.05
+2018-10-22,Cons. Disc.,0.34
+2018-10-22,Real Estate,0.05
+2018-10-22,Health Care,0.01
+2018-10-22,Industrials,0.17
+2018-10-22,Cons. Staples,0.07
+2018-10-22,Currency,0
+2018-10-22,Materials,0.04
+2018-10-22,Financials,0.18
+2018-10-22,Index,0.08
+2018-10-23,Index,0.08
+2018-10-23,Health Care,0.01
+2018-10-23,Industrials,0.17
+2018-10-23,Materials,0.03
+2018-10-23,Cons. Disc.,0.35
+2018-10-23,Comm. Services,0.05
+2018-10-23,Cons. Staples,0.07
+2018-10-23,Real Estate,0.05
+2018-10-23,Currency,0
+2018-10-23,Financials,0.18
+2018-10-24,Health Care,0.01
+2018-10-24,Cons. Disc.,0.35
+2018-10-24,Industrials,0.16
+2018-10-24,Currency,0
+2018-10-24,Real Estate,0.05
+2018-10-24,Index,0.08
+2018-10-24,Comm. Services,0.05
+2018-10-24,Cons. Staples,0.08
+2018-10-24,Financials,0.18
+2018-10-24,Materials,0.03
+2018-10-25,Currency,0
+2018-10-25,Financials,0.18
+2018-10-25,Health Care,0.01
+2018-10-25,Cons. Disc.,0.35
+2018-10-25,Comm. Services,0.05
+2018-10-25,Materials,0.03
+2018-10-25,Industrials,0.16
+2018-10-25,Index,0.08
+2018-10-25,Real Estate,0.05
+2018-10-25,Cons. Staples,0.08
+2018-10-26,Materials,0.03
+2018-10-26,Cons. Staples,0.08
+2018-10-26,Currency,0
+2018-10-26,Index,0.08
+2018-10-26,Health Care,0.01
+2018-10-26,Financials,0.18
+2018-10-26,Real Estate,0.05
+2018-10-26,Comm. Services,0.05
+2018-10-26,Industrials,0.17
+2018-10-26,Cons. Disc.,0.35
+2018-10-29,Cons. Staples,0.08
+2018-10-29,Health Care,0.01
+2018-10-29,Materials,0.03
+2018-10-29,Cons. Disc.,0.35
+2018-10-29,Industrials,0.17
+2018-10-29,Real Estate,0.05
+2018-10-29,Comm. Services,0.05
+2018-10-29,Currency,0
+2018-10-29,Financials,0.18
+2018-10-29,Index,0.07
+2018-10-30,Real Estate,0.05
+2018-10-30,Cons. Disc.,0.34
+2018-10-30,Health Care,0.01
+2018-10-30,Materials,0.03
+2018-10-30,Index,0.08
+2018-10-30,Financials,0.18
+2018-10-30,Currency,0
+2018-10-30,Cons. Staples,0.08
+2018-10-30,Industrials,0.16
+2018-10-30,Comm. Services,0.06
+2018-10-31,Health Care,0.01
+2018-10-31,Financials,0.18
+2018-10-31,Currency,0
+2018-10-31,Real Estate,0.05
+2018-10-31,Cons. Disc.,0.34
+2018-10-31,Cons. Staples,0.08
+2018-10-31,Comm. Services,0.06
+2018-10-31,Industrials,0.16
+2018-10-31,Materials,0.03
+2018-10-31,Index,0.08
+2018-11-01,Currency,0
+2018-11-01,Materials,0.02
+2018-11-01,Industrials,0.15
+2018-11-01,Real Estate,0.04
+2018-11-01,Health Care,0.01
+2018-11-01,Cons. Disc.,0.32
+2018-11-01,Comm. Services,0.05
+2018-11-01,Financials,0.18
+2018-11-01,Index,0.07
+2018-11-01,Cons. Staples,0.08
+2018-11-02,Index,0.08
+2018-11-02,Health Care,0.01
+2018-11-02,Industrials,0.14
+2018-11-02,Materials,0.02
+2018-11-02,Cons. Disc.,0.33
+2018-11-02,Currency,0
+2018-11-02,Comm. Services,0.06
+2018-11-02,Cons. Staples,0.08
+2018-11-02,Financials,0.17
+2018-11-02,Real Estate,0.04
+2018-11-05,Industrials,0.14
+2018-11-05,Cons. Staples,0.08
+2018-11-05,Financials,0.17
+2018-11-05,Comm. Services,0.06
+2018-11-05,Real Estate,0.04
+2018-11-05,Currency,0
+2018-11-05,Materials,0.02
+2018-11-05,Index,0.08
+2018-11-05,Cons. Disc.,0.33
+2018-11-05,Health Care,0.01
+2018-11-06,Index,0.09
+2018-11-06,Health Care,0.01
+2018-11-06,Cons. Staples,0.08
+2018-11-06,Comm. Services,0.06
+2018-11-06,Currency,0
+2018-11-06,Real Estate,0.04
+2018-11-06,Industrials,0.14
+2018-11-06,Financials,0.18
+2018-11-06,Materials,0.02
+2018-11-06,Cons. Disc.,0.33
+2018-11-07,Industrials,0.14
+2018-11-07,Cons. Disc.,0.33
+2018-11-07,Materials,0.02
+2018-11-07,Real Estate,0.04
+2018-11-07,IT,0
+2018-11-07,Financials,0.17
+2018-11-07,Comm. Services,0.06
+2018-11-07,Index,0.09
+2018-11-07,Health Care,0.01
+2018-11-07,Cons. Staples,0.08
+2018-11-07,Currency,0
+2018-11-08,Cons. Staples,0.08
+2018-11-08,Comm. Services,0.06
+2018-11-08,Materials,0.01
+2018-11-08,Industrials,0.14
+2018-11-08,Financials,0.17
+2018-11-08,Index,0.1
+2018-11-08,Currency,0
+2018-11-08,IT,0
+2018-11-08,Real Estate,0.04
+2018-11-08,Cons. Disc.,0.33
+2018-11-08,Health Care,0.01
+2018-11-09,Cons. Disc.,0.34
+2018-11-09,Materials,0.01
+2018-11-09,Currency,0
+2018-11-09,Industrials,0.14
+2018-11-09,Cons. Staples,0.09
+2018-11-09,Comm. Services,0.06
+2018-11-09,Financials,0.18
+2018-11-09,IT,0
+2018-11-09,Real Estate,0.04
+2018-11-09,Index,0.11
+2018-11-09,Health Care,0.01
+2018-11-12,Real Estate,0.04
+2018-11-12,Financials,0.18
+2018-11-12,Currency,0
+2018-11-12,Industrials,0.14
+2018-11-12,Cons. Disc.,0.33
+2018-11-12,Comm. Services,0.06
+2018-11-12,Index,0.11
+2018-11-12,Cons. Staples,0.09
+2018-11-12,IT,0
+2018-11-12,Health Care,0.01
+2018-11-12,Materials,0.01
+2018-11-13,Cons. Disc.,0.33
+2018-11-13,Industrials,0.14
+2018-11-13,Comm. Services,0.06
+2018-11-13,Cons. Staples,0.09
+2018-11-13,Index,0.11
+2018-11-13,Real Estate,0.04
+2018-11-13,Financials,0.17
+2018-11-13,Materials,0.01
+2018-11-13,Currency,0
+2018-11-13,IT,0
+2018-11-13,Health Care,0.01
+2018-11-14,Real Estate,0.04
+2018-11-14,Cons. Staples,0.09
+2018-11-14,Cons. Disc.,0.33
+2018-11-14,Index,0.11
+2018-11-14,Financials,0.17
+2018-11-14,Materials,0
+2018-11-14,Currency,0
+2018-11-14,Industrials,0.15
+2018-11-14,Health Care,0.01
+2018-11-14,IT,0
+2018-11-14,Comm. Services,0.06
+2018-11-15,Real Estate,0.04
+2018-11-15,Health Care,0.01
+2018-11-15,Materials,0
+2018-11-15,IT,0
+2018-11-15,Currency,0
+2018-11-15,Industrials,0.15
+2018-11-15,Cons. Staples,0.09
+2018-11-15,Cons. Disc.,0.32
+2018-11-15,Financials,0.17
+2018-11-15,Comm. Services,0.06
+2018-11-15,Index,0.12
+2018-11-16,Comm. Services,0.06
+2018-11-16,Materials,0
+2018-11-16,Cons. Staples,0.09
+2018-11-16,Cons. Disc.,0.33
+2018-11-16,Health Care,0.01
+2018-11-16,Index,0.13
+2018-11-16,Industrials,0.15
+2018-11-16,IT,0
+2018-11-16,Financials,0.17
+2018-11-16,Currency,0
+2018-11-16,Real Estate,0.04
+2018-11-19,IT,0
+2018-11-19,Index,0.13
+2018-11-19,Currency,0
+2018-11-19,Financials,0.18
+2018-11-19,Industrials,0.15
+2018-11-19,Health Care,0.01
+2018-11-19,Comm. Services,0.06
+2018-11-19,Real Estate,0.04
+2018-11-19,Cons. Staples,0.09
+2018-11-19,Cons. Disc.,0.33
+2018-11-20,IT,0
+2018-11-20,Cons. Disc.,0.33
+2018-11-20,Real Estate,0.04
+2018-11-20,Industrials,0.15
+2018-11-20,Index,0.13
+2018-11-20,Currency,0
+2018-11-20,Financials,0.18
+2018-11-20,Cons. Staples,0.09
+2018-11-20,Health Care,0.01
+2018-11-20,Comm. Services,0.06
+2018-11-21,Cons. Disc.,0.33
+2018-11-21,Cons. Staples,0.09
+2018-11-21,IT,0
+2018-11-21,Comm. Services,0.06
+2018-11-21,Financials,0.18
+2018-11-21,Real Estate,0.04
+2018-11-21,Currency,0
+2018-11-21,Health Care,0.01
+2018-11-21,Industrials,0.14
+2018-11-21,Index,0.13
+2018-11-22,Index,0.13
+2018-11-22,Cons. Disc.,0.33
+2018-11-22,Cons. Staples,0.09
+2018-11-22,Health Care,0.01
+2018-11-22,Industrials,0.14
+2018-11-22,Currency,0
+2018-11-22,Real Estate,0.04
+2018-11-22,Financials,0.18
+2018-11-22,IT,0
+2018-11-22,Comm. Services,0.06
+2018-11-23,Industrials,0.14
+2018-11-23,Currency,0
+2018-11-23,Comm. Services,0.06
+2018-11-23,Cons. Staples,0.09
+2018-11-23,Real Estate,0.04
+2018-11-23,Financials,0.18
+2018-11-23,Health Care,0.01
+2018-11-23,Index,0.13
+2018-11-23,IT,0
+2018-11-23,Cons. Disc.,0.33
+2018-11-26,IT,0
+2018-11-26,Currency,0
+2018-11-26,Index,0.13
+2018-11-26,Financials,0.18
+2018-11-26,Real Estate,0.04
+2018-11-26,Cons. Disc.,0.33
+2018-11-26,Comm. Services,0.06
+2018-11-26,Cons. Staples,0.09
+2018-11-26,Industrials,0.14
+2018-11-26,Health Care,0.01
+2018-11-27,Currency,0
+2018-11-27,Cons. Disc.,0.33
+2018-11-27,Health Care,0.01
+2018-11-27,Comm. Services,0.06
+2018-11-27,Cons. Staples,0.09
+2018-11-27,IT,0
+2018-11-27,Industrials,0.14
+2018-11-27,Financials,0.18
+2018-11-27,Index,0.13
+2018-11-27,Real Estate,0.04
+2018-11-28,Comm. Services,0.06
+2018-11-28,Cons. Disc.,0.33
+2018-11-28,Health Care,0.01
+2018-11-28,Real Estate,0.04
+2018-11-28,IT,0
+2018-11-28,Index,0.13
+2018-11-28,Industrials,0.14
+2018-11-28,Currency,0
+2018-11-28,Financials,0.18
+2018-11-28,Cons. Staples,0.09
+2018-11-29,IT,0
+2018-11-29,Cons. Disc.,0.32
+2018-11-29,Industrials,0.14
+2018-11-29,Cons. Staples,0.09
+2018-11-29,Real Estate,0.04
+2018-11-29,Index,0.13
+2018-11-29,Health Care,0.01
+2018-11-29,Comm. Services,0.06
+2018-11-29,Financials,0.18
+2018-11-29,Currency,0
+2018-11-30,Financials,0.19
+2018-11-30,Currency,0
+2018-11-30,IT,0
+2018-11-30,Comm. Services,0.07
+2018-11-30,Cons. Staples,0.09
+2018-11-30,Cons. Disc.,0.35
+2018-11-30,Health Care,0.01
+2018-11-30,Industrials,0.14
+2018-11-30,Index,0.09
+2018-11-30,Real Estate,0.05
+2018-12-03,Comm. Services,0.06
+2018-12-03,Cons. Disc.,0.35
+2018-12-03,IT,0
+2018-12-03,Currency,0
+2018-12-03,Financials,0.19
+2018-12-03,Cons. Staples,0.1
+2018-12-03,Index,0.08
+2018-12-03,Industrials,0.14
+2018-12-03,Real Estate,0.05
+2018-12-03,Health Care,0.01
+2018-12-04,Health Care,0.01
+2018-12-04,Real Estate,0.05
+2018-12-04,Industrials,0.14
+2018-12-04,IT,0
+2018-12-04,Index,0.09
+2018-12-04,Currency,0
+2018-12-04,Cons. Staples,0.1
+2018-12-04,Financials,0.19
+2018-12-04,Cons. Disc.,0.34
+2018-12-04,Comm. Services,0.06
+2018-12-05,Cons. Disc.,0.34
+2018-12-05,Index,0.09
+2018-12-05,IT,0
+2018-12-05,Cons. Staples,0.1
+2018-12-05,Currency,0
+2018-12-05,Industrials,0.14
+2018-12-05,Health Care,0.01
+2018-12-05,Real Estate,0.05
+2018-12-05,Financials,0.19
+2018-12-05,Comm. Services,0.06
+2018-12-06,Cons. Staples,0.1
+2018-12-06,Health Care,0.01
+2018-12-06,Index,0.1
+2018-12-06,Comm. Services,0.06
+2018-12-06,Real Estate,0.05
+2018-12-06,IT,0
+2018-12-06,Industrials,0.14
+2018-12-06,Cons. Disc.,0.34
+2018-12-06,Financials,0.19
+2018-12-06,Currency,0
+2018-12-07,Cons. Staples,0.1
+2018-12-07,Index,0.1
+2018-12-07,Industrials,0.14
+2018-12-07,Comm. Services,0.06
+2018-12-07,Financials,0.19
+2018-12-07,Currency,0
+2018-12-07,Cons. Disc.,0.34
+2018-12-07,IT,0
+2018-12-07,Health Care,0.01
+2018-12-07,Real Estate,0.05
+2018-12-10,Industrials,0.14
+2018-12-10,Comm. Services,0.07
+2018-12-10,Health Care,0.01
+2018-12-10,Index,0.1
+2018-12-10,Financials,0.18
+2018-12-10,Cons. Disc.,0.34
+2018-12-10,Cons. Staples,0.1
+2018-12-10,Currency,0
+2018-12-10,Real Estate,0.05
+2018-12-10,IT,0
+2018-12-11,Cons. Staples,0.1
+2018-12-11,Cons. Disc.,0.34
+2018-12-11,Currency,0
+2018-12-11,IT,0
+2018-12-11,Comm. Services,0.07
+2018-12-11,Industrials,0.14
+2018-12-11,Health Care,0.01
+2018-12-11,Real Estate,0.05
+2018-12-11,Index,0.1
+2018-12-11,Financials,0.18
+2018-12-12,Health Care,0.01
+2018-12-12,Real Estate,0.05
+2018-12-12,Industrials,0.14
+2018-12-12,IT,0
+2018-12-12,Cons. Disc.,0.34
+2018-12-12,Financials,0.18
+2018-12-12,Comm. Services,0.07
+2018-12-12,Index,0.1
+2018-12-12,Cons. Staples,0.1
+2018-12-12,Currency,0
+2018-12-13,Cons. Staples,0.1
+2018-12-13,Real Estate,0.05
+2018-12-13,IT,0
+2018-12-13,Index,0.1
+2018-12-13,Cons. Disc.,0.34
+2018-12-13,Comm. Services,0.07
+2018-12-13,Health Care,0.01
+2018-12-13,Currency,0
+2018-12-13,Financials,0.18
+2018-12-13,Industrials,0.14
+2018-12-13,Materials,0
+2018-12-14,Comm. Services,0.06
+2018-12-14,Currency,0
+2018-12-14,Financials,0.18
+2018-12-14,Cons. Staples,0.1
+2018-12-14,Industrials,0.14
+2018-12-14,Real Estate,0.05
+2018-12-14,IT,0
+2018-12-14,Materials,0.01
+2018-12-14,Cons. Disc.,0.34
+2018-12-14,Index,0.1
+2018-12-14,Health Care,0.01
+2018-12-17,Industrials,0.14
+2018-12-17,Index,0.1
+2018-12-17,IT,0
+2018-12-17,Currency,0
+2018-12-17,Cons. Disc.,0.34
+2018-12-17,Cons. Staples,0.1
+2018-12-17,Health Care,0.01
+2018-12-17,Materials,0.01
+2018-12-17,Comm. Services,0.06
+2018-12-17,Real Estate,0.05
+2018-12-17,Financials,0.18
+2018-12-18,Index,0.1
+2018-12-18,Cons. Disc.,0.34
+2018-12-18,Cons. Staples,0.1
+2018-12-18,Industrials,0.14
+2018-12-18,Materials,0.01
+2018-12-18,Health Care,0.01
+2018-12-18,Real Estate,0.05
+2018-12-18,IT,0
+2018-12-18,Comm. Services,0.06
+2018-12-18,Currency,0
+2018-12-18,Financials,0.18
+2018-12-19,Materials,0.01
+2018-12-19,Real Estate,0.05
+2018-12-19,Cons. Disc.,0.34
+2018-12-19,Financials,0.18
+2018-12-19,Cons. Staples,0.09
+2018-12-19,Index,0.1
+2018-12-19,Currency,0
+2018-12-19,Health Care,0.01
+2018-12-19,Comm. Services,0.06
+2018-12-19,IT,0
+2018-12-19,Industrials,0.14
+2018-12-20,Materials,0.01
+2018-12-20,Comm. Services,0.06
+2018-12-20,Industrials,0.15
+2018-12-20,Health Care,0.01
+2018-12-20,Index,0.1
+2018-12-20,Cons. Staples,0.09
+2018-12-20,Financials,0.18
+2018-12-20,Currency,0
+2018-12-20,IT,0
+2018-12-20,Cons. Disc.,0.34
+2018-12-20,Real Estate,0.05
+2018-12-21,Real Estate,0.05
+2018-12-21,Index,0.1
+2018-12-21,IT,0
+2018-12-21,Cons. Staples,0.09
+2018-12-21,Health Care,0.01
+2018-12-21,Industrials,0.15
+2018-12-21,Cons. Disc.,0.34
+2018-12-21,Financials,0.17
+2018-12-21,Currency,0
+2018-12-21,Materials,0.01
+2018-12-21,Comm. Services,0.06
+2018-12-24,IT,0
+2018-12-24,Index,0.1
+2018-12-24,Health Care,0.01
+2018-12-24,Cons. Staples,0.1
+2018-12-24,Real Estate,0.05
+2018-12-24,Materials,0.01
+2018-12-24,Currency,0
+2018-12-24,Financials,0.17
+2018-12-24,Cons. Disc.,0.34
+2018-12-24,Comm. Services,0.06
+2018-12-24,Industrials,0.15
+2018-12-25,Comm. Services,0.06
+2018-12-25,Materials,0.01
+2018-12-25,Health Care,0.01
+2018-12-25,IT,0
+2018-12-25,Index,0.1
+2018-12-25,Cons. Disc.,0.34
+2018-12-25,Currency,0
+2018-12-25,Industrials,0.15
+2018-12-25,Real Estate,0.05
+2018-12-25,Financials,0.17
+2018-12-25,Cons. Staples,0.1
+2018-12-26,Industrials,0.14
+2018-12-26,Financials,0.17
+2018-12-26,Comm. Services,0.06
+2018-12-26,Cons. Disc.,0.34
+2018-12-26,Index,0.1
+2018-12-26,Materials,0.01
+2018-12-26,Real Estate,0.05
+2018-12-26,Health Care,0.01
+2018-12-26,Cons. Staples,0.1
+2018-12-26,IT,0
+2018-12-26,Currency,0
+2018-12-27,Health Care,0.01
+2018-12-27,Materials,0.01
+2018-12-27,Cons. Disc.,0.34
+2018-12-27,Comm. Services,0.06
+2018-12-27,Currency,0
+2018-12-27,Index,0.1
+2018-12-27,Real Estate,0.05
+2018-12-27,Financials,0.18
+2018-12-27,Cons. Staples,0.09
+2018-12-27,Industrials,0.15
+2018-12-27,IT,0
+2018-12-28,Comm. Services,0.06
+2018-12-28,IT,0
+2018-12-28,Cons. Disc.,0.34
+2018-12-28,Real Estate,0.05
+2018-12-28,Financials,0.17
+2018-12-28,Materials,0.01
+2018-12-28,Health Care,0.01
+2018-12-28,Cons. Staples,0.09
+2018-12-28,Industrials,0.15
+2018-12-28,Index,0.1
+2018-12-28,Currency,0
+2018-12-31,Cons. Disc.,0.36
+2018-12-31,IT,0
+2018-12-31,Industrials,0.15
+2018-12-31,Index,0.05
+2018-12-31,Currency,0
+2018-12-31,Financials,0.18
+2018-12-31,Health Care,0.01
+2018-12-31,Cons. Staples,0.1
+2018-12-31,Materials,0.01
+2018-12-31,Comm. Services,0.06
+2018-12-31,Real Estate,0.05
+2019-01-01,Industrials,0.14
+2019-01-01,Currency,0
+2019-01-01,Cons. Disc.,0.36
+2019-01-01,Cons. Staples,0.1
+2019-01-01,Health Care,0.01
+2019-01-01,Real Estate,0.05
+2019-01-01,IT,0
+2019-01-01,Index,0.07
+2019-01-01,Comm. Services,0.06
+2019-01-01,Materials,0.01
+2019-01-01,Financials,0.18
+2019-01-02,Industrials,0.15
+2019-01-02,Health Care,0.01
+2019-01-02,Cons. Staples,0.12
+2019-01-02,Materials,0.01
+2019-01-02,Comm. Services,0.07
+2019-01-02,Real Estate,0.05
+2019-01-02,Currency,0
+2019-01-02,Financials,0.18
+2019-01-02,IT,0
+2019-01-02,Cons. Disc.,0.36
+2019-01-02,Index,0.04
+2019-01-03,Health Care,0.01
+2019-01-03,Materials,0.01
+2019-01-03,Industrials,0.15
+2019-01-03,Comm. Services,0.06
+2019-01-03,Currency,0
+2019-01-03,Cons. Disc.,0.36
+2019-01-03,Index,0.04
+2019-01-03,Cons. Staples,0.12
+2019-01-03,Real Estate,0.05
+2019-01-03,Financials,0.18
+2019-01-03,IT,0
+2019-01-04,Industrials,0.15
+2019-01-04,Real Estate,0.05
+2019-01-04,Cons. Staples,0.12
+2019-01-04,Cons. Disc.,0.35
+2019-01-04,Index,0.04
+2019-01-04,Currency,0
+2019-01-04,IT,0
+2019-01-04,Comm. Services,0.06
+2019-01-04,Health Care,0.01
+2019-01-04,Materials,0.02
+2019-01-04,Financials,0.18
+2019-01-07,Cons. Staples,0.12
+2019-01-07,Cons. Disc.,0.35
+2019-01-07,IT,0
+2019-01-07,Real Estate,0.05
+2019-01-07,Comm. Services,0.07
+2019-01-07,Industrials,0.15
+2019-01-07,Financials,0.18
+2019-01-07,Currency,0
+2019-01-07,Health Care,0.01
+2019-01-07,Index,0.04
+2019-01-07,Materials,0.02
+2019-01-08,Currency,0
+2019-01-08,Industrials,0.15
+2019-01-08,Financials,0.18
+2019-01-08,Index,0.04
+2019-01-08,Cons. Disc.,0.35
+2019-01-08,Cons. Staples,0.12
+2019-01-08,Materials,0.02
+2019-01-08,Health Care,0.01
+2019-01-08,IT,0
+2019-01-08,Real Estate,0.05
+2019-01-08,Comm. Services,0.06
+2019-01-09,Industrials,0.15
+2019-01-09,Index,0.04
+2019-01-09,Health Care,0.01
+2019-01-09,Currency,0
+2019-01-09,Real Estate,0.05
+2019-01-09,Financials,0.17
+2019-01-09,Materials,0.02
+2019-01-09,Cons. Disc.,0.35
+2019-01-09,Cons. Staples,0.12
+2019-01-09,IT,0
+2019-01-09,Comm. Services,0.06
+2019-01-10,Financials,0.18
+2019-01-10,Index,0.04
+2019-01-10,Real Estate,0.05
+2019-01-10,Cons. Staples,0.12
+2019-01-10,Currency,0
+2019-01-10,Materials,0.02
+2019-01-10,Health Care,0.01
+2019-01-10,IT,0
+2019-01-10,Comm. Services,0.06
+2019-01-10,Industrials,0.15
+2019-01-10,Cons. Disc.,0.35
+2019-01-11,Cons. Staples,0.12
+2019-01-11,Real Estate,0.05
+2019-01-11,Industrials,0.15
+2019-01-11,Comm. Services,0.07
+2019-01-11,Health Care,0.01
+2019-01-11,Financials,0.17
+2019-01-11,Materials,0.02
+2019-01-11,Currency,0
+2019-01-11,Cons. Disc.,0.35
+2019-01-11,IT,0
+2019-01-11,Index,0.04
+2019-01-14,Currency,0
+2019-01-14,Real Estate,0.05
+2019-01-14,Financials,0.17
+2019-01-14,Cons. Staples,0.12
+2019-01-14,Health Care,0.01
+2019-01-14,Index,0.04
+2019-01-14,Materials,0.02
+2019-01-14,Industrials,0.15
+2019-01-14,Comm. Services,0.06
+2019-01-14,Cons. Disc.,0.35
+2019-01-14,IT,0
+2019-01-15,Cons. Staples,0.12
+2019-01-15,Materials,0.03
+2019-01-15,Health Care,0.01
+2019-01-15,IT,0
+2019-01-15,Currency,0
+2019-01-15,Industrials,0.15
+2019-01-15,Index,0.04
+2019-01-15,Real Estate,0.05
+2019-01-15,Cons. Disc.,0.35
+2019-01-15,Financials,0.17
+2019-01-15,Comm. Services,0.06
+2019-01-16,Real Estate,0.05
+2019-01-16,Health Care,0.01
+2019-01-16,IT,0
+2019-01-16,Industrials,0.15
+2019-01-16,Cons. Disc.,0.35
+2019-01-16,Cons. Staples,0.12
+2019-01-16,Currency,0
+2019-01-16,Index,0.04
+2019-01-16,Financials,0.17
+2019-01-16,Materials,0.03
+2019-01-16,Comm. Services,0.06
+2019-01-17,Health Care,0.01
+2019-01-17,Cons. Staples,0.12
+2019-01-17,Financials,0.17
+2019-01-17,Cons. Disc.,0.35
+2019-01-17,Industrials,0.15
+2019-01-17,Comm. Services,0.06
+2019-01-17,Real Estate,0.05
+2019-01-17,Materials,0.02
+2019-01-17,IT,0
+2019-01-17,Index,0.04
+2019-01-17,Currency,0
+2019-01-18,Comm. Services,0.07
+2019-01-18,Industrials,0.15
+2019-01-18,Cons. Disc.,0.35
+2019-01-18,Currency,0
+2019-01-18,Real Estate,0.05
+2019-01-18,Index,0.04
+2019-01-18,IT,0
+2019-01-18,Materials,0.03
+2019-01-18,Cons. Staples,0.12
+2019-01-18,Health Care,0.01
+2019-01-18,Financials,0.17
+2019-01-21,Financials,0.17
+2019-01-21,Health Care,0.01
+2019-01-21,Index,0.04
+2019-01-21,Currency,0
+2019-01-21,Real Estate,0.05
+2019-01-21,Cons. Staples,0.12
+2019-01-21,Cons. Disc.,0.35
+2019-01-21,IT,0
+2019-01-21,Materials,0.03
+2019-01-21,Comm. Services,0.07
+2019-01-21,Industrials,0.15
+2019-01-22,Real Estate,0.05
+2019-01-22,Cons. Disc.,0.35
+2019-01-22,IT,0
+2019-01-22,Financials,0.17
+2019-01-22,Currency,0
+2019-01-22,Comm. Services,0.07
+2019-01-22,Materials,0.03
+2019-01-22,Index,0.04
+2019-01-22,Industrials,0.15
+2019-01-22,Cons. Staples,0.12
+2019-01-22,Health Care,0.01
+2019-01-23,IT,0
+2019-01-23,Cons. Disc.,0.35
+2019-01-23,Industrials,0.15
+2019-01-23,Comm. Services,0.07
+2019-01-23,Materials,0.03
+2019-01-23,Index,0.04
+2019-01-23,Financials,0.17
+2019-01-23,Currency,0
+2019-01-23,Health Care,0.01
+2019-01-23,Cons. Staples,0.12
+2019-01-23,Real Estate,0.05
+2019-01-24,Index,0.04
+2019-01-24,IT,0
+2019-01-24,Comm. Services,0.06
+2019-01-24,Materials,0.03
+2019-01-24,Real Estate,0.05
+2019-01-24,Industrials,0.15
+2019-01-24,Health Care,0.01
+2019-01-24,Currency,0
+2019-01-24,Cons. Staples,0.12
+2019-01-24,Financials,0.17
+2019-01-24,Cons. Disc.,0.35
+2019-01-25,Cons. Staples,0.12
+2019-01-25,Index,0.04
+2019-01-25,Materials,0.03
+2019-01-25,Currency,0
+2019-01-25,Comm. Services,0.06
+2019-01-25,Cons. Disc.,0.34
+2019-01-25,Real Estate,0.05
+2019-01-25,Industrials,0.15
+2019-01-25,Financials,0.17
+2019-01-25,Health Care,0.01
+2019-01-28,Cons. Staples,0.12
+2019-01-28,Real Estate,0.05
+2019-01-28,Comm. Services,0.06
+2019-01-28,Health Care,0.01
+2019-01-28,Cons. Disc.,0.34
+2019-01-28,Currency,0
+2019-01-28,Financials,0.17
+2019-01-28,Industrials,0.15
+2019-01-28,Materials,0.03
+2019-01-28,Index,0.04
+2019-01-29,Index,0.05
+2019-01-29,Comm. Services,0.06
+2019-01-29,Cons. Disc.,0.34
+2019-01-29,Financials,0.16
+2019-01-29,Currency,0
+2019-01-29,Real Estate,0.05
+2019-01-29,Health Care,0.01
+2019-01-29,Cons. Staples,0.12
+2019-01-29,Materials,0.03
+2019-01-29,Industrials,0.15
+2019-01-30,Industrials,0.15
+2019-01-30,Health Care,0.01
+2019-01-30,Currency,0
+2019-01-30,Financials,0.16
+2019-01-30,Index,0.05
+2019-01-30,Materials,0.03
+2019-01-30,Cons. Disc.,0.34
+2019-01-30,Cons. Staples,0.12
+2019-01-30,Real Estate,0.05
+2019-01-30,Comm. Services,0.06
+2019-01-31,Materials,0.03
+2019-01-31,Currency,0
+2019-01-31,Financials,0.16
+2019-01-31,Cons. Disc.,0.34
+2019-01-31,Real Estate,0.05
+2019-01-31,Cons. Staples,0.13
+2019-01-31,Index,0.05
+2019-01-31,Health Care,0.01
+2019-01-31,Comm. Services,0.06
+2019-01-31,Industrials,0.15
+2019-02-01,Cons. Staples,0.12
+2019-02-01,Financials,0.17
+2019-02-01,Currency,0
+2019-02-01,Cons. Disc.,0.35
+2019-02-01,Comm. Services,0.06
+2019-02-01,Real Estate,0.05
+2019-02-01,Index,0.05
+2019-02-01,Industrials,0.15
+2019-02-01,Health Care,0.01
+2019-02-01,Materials,0.03
+2019-02-04,Real Estate,0.05
+2019-02-04,Industrials,0.15
+2019-02-04,Index,0.05
+2019-02-04,Materials,0.03
+2019-02-04,Financials,0.17
+2019-02-04,Comm. Services,0.06
+2019-02-04,Currency,0
+2019-02-04,Cons. Disc.,0.34
+2019-02-04,Cons. Staples,0.13
+2019-02-04,Health Care,0.01
+2019-02-05,Financials,0.17
+2019-02-05,Industrials,0.15
+2019-02-05,Currency,0
+2019-02-05,Real Estate,0.05
+2019-02-05,Cons. Staples,0.13
+2019-02-05,Health Care,0.01
+2019-02-05,Cons. Disc.,0.34
+2019-02-05,Comm. Services,0.06
+2019-02-05,Index,0.05
+2019-02-05,Materials,0.03
+2019-02-06,Comm. Services,0.06
+2019-02-06,Index,0.05
+2019-02-06,Real Estate,0.05
+2019-02-06,Currency,0
+2019-02-06,Cons. Disc.,0.34
+2019-02-06,Health Care,0.01
+2019-02-06,Industrials,0.15
+2019-02-06,Financials,0.17
+2019-02-06,Materials,0.03
+2019-02-06,Cons. Staples,0.12
+2019-02-07,Industrials,0.15
+2019-02-07,Index,0.05
+2019-02-07,Currency,0
+2019-02-07,Cons. Staples,0.12
+2019-02-07,Health Care,0.01
+2019-02-07,Real Estate,0.05
+2019-02-07,Financials,0.17
+2019-02-07,Comm. Services,0.06
+2019-02-07,Cons. Disc.,0.35
+2019-02-07,Materials,0.03
+2019-02-08,Comm. Services,0.06
+2019-02-08,Health Care,0
+2019-02-08,Real Estate,0.05
+2019-02-08,Materials,0.03
+2019-02-08,Financials,0.17
+2019-02-08,Industrials,0.15
+2019-02-08,Cons. Staples,0.12
+2019-02-08,Index,0.05
+2019-02-08,Cons. Disc.,0.34
+2019-02-08,Currency,0
+2019-02-11,Health Care,0
+2019-02-11,Industrials,0.15
+2019-02-11,Index,0.05
+2019-02-11,Currency,0
+2019-02-11,Cons. Disc.,0.35
+2019-02-11,Cons. Staples,0.12
+2019-02-11,Financials,0.17
+2019-02-11,Comm. Services,0.06
+2019-02-11,Materials,0.03
+2019-02-11,Real Estate,0.05
+2019-02-12,Materials,0.03
+2019-02-12,Index,0.05
+2019-02-12,Currency,0
+2019-02-12,Real Estate,0.05
+2019-02-12,Comm. Services,0.06
+2019-02-12,Industrials,0.15
+2019-02-12,Cons. Disc.,0.35
+2019-02-12,Financials,0.17
+2019-02-12,Cons. Staples,0.13
+2019-02-13,Materials,0.03
+2019-02-13,Industrials,0.14
+2019-02-13,Currency,0
+2019-02-13,Index,0.06
+2019-02-13,Financials,0.17
+2019-02-13,Cons. Staples,0.13
+2019-02-13,Cons. Disc.,0.34
+2019-02-13,Comm. Services,0.06
+2019-02-13,Real Estate,0.05
+2019-02-14,Index,0.07
+2019-02-14,Real Estate,0.05
+2019-02-14,Industrials,0.14
+2019-02-14,Comm. Services,0.06
+2019-02-14,Financials,0.16
+2019-02-14,Cons. Staples,0.13
+2019-02-14,Cons. Disc.,0.34
+2019-02-14,Currency,0
+2019-02-14,Materials,0.03
+2019-02-15,Index,0.07
+2019-02-15,Real Estate,0.05
+2019-02-15,Comm. Services,0.06
+2019-02-15,Cons. Disc.,0.34
+2019-02-15,Materials,0.03
+2019-02-15,Financials,0.16
+2019-02-15,Currency,0
+2019-02-15,Cons. Staples,0.13
+2019-02-15,Industrials,0.14
+2019-02-18,Cons. Disc.,0.33
+2019-02-18,Materials,0.03
+2019-02-18,Index,0.07
+2019-02-18,Cons. Staples,0.13
+2019-02-18,Real Estate,0.05
+2019-02-18,Comm. Services,0.06
+2019-02-18,Currency,0
+2019-02-18,Industrials,0.14
+2019-02-18,Financials,0.16
+2019-02-19,Real Estate,0.05
+2019-02-19,Materials,0.03
+2019-02-19,Comm. Services,0.06
+2019-02-19,Cons. Staples,0.13
+2019-02-19,Financials,0.16
+2019-02-19,Currency,0
+2019-02-19,IT,0
+2019-02-19,Index,0.07
+2019-02-19,Cons. Disc.,0.33
+2019-02-19,Industrials,0.14
+2019-02-20,Materials,0.03
+2019-02-20,Real Estate,0.05
+2019-02-20,Cons. Disc.,0.33
+2019-02-20,Comm. Services,0.06
+2019-02-20,Financials,0.16
+2019-02-20,Index,0.07
+2019-02-20,Cons. Staples,0.13
+2019-02-20,Currency,0
+2019-02-20,Industrials,0.14
+2019-02-20,IT,0
+2019-02-21,IT,0
+2019-02-21,Comm. Services,0.06
+2019-02-21,Financials,0.16
+2019-02-21,Cons. Disc.,0.33
+2019-02-21,Currency,0
+2019-02-21,Cons. Staples,0.13
+2019-02-21,Index,0.07
+2019-02-21,Real Estate,0.05
+2019-02-21,Industrials,0.14
+2019-02-21,Materials,0.03
+2019-02-22,Financials,0.16
+2019-02-22,Cons. Staples,0.13
+2019-02-22,Materials,0.03
+2019-02-22,Industrials,0.14
+2019-02-22,IT,0
+2019-02-22,Comm. Services,0.06
+2019-02-22,Currency,0
+2019-02-22,Real Estate,0.05
+2019-02-22,Cons. Disc.,0.33
+2019-02-22,Index,0.07
+2019-02-25,Real Estate,0.05
+2019-02-25,Index,0.07
+2019-02-25,Cons. Disc.,0.33
+2019-02-25,Comm. Services,0.06
+2019-02-25,Currency,0
+2019-02-25,Industrials,0.13
+2019-02-25,Cons. Staples,0.13
+2019-02-25,IT,0
+2019-02-25,Financials,0.16
+2019-02-25,Materials,0.03
+2019-02-26,Currency,0
+2019-02-26,Materials,0.04
+2019-02-26,Index,0.07
+2019-02-26,Real Estate,0.05
+2019-02-26,Cons. Staples,0.13
+2019-02-26,Comm. Services,0.06
+2019-02-26,IT,0
+2019-02-26,Industrials,0.13
+2019-02-26,Financials,0.16
+2019-02-26,Cons. Disc.,0.33
+2019-02-27,IT,0
+2019-02-27,Materials,0.04
+2019-02-27,Index,0.07
+2019-02-27,Cons. Disc.,0.33
+2019-02-27,Comm. Services,0.06
+2019-02-27,Financials,0.16
+2019-02-27,Real Estate,0.05
+2019-02-27,Industrials,0.13
+2019-02-27,Cons. Staples,0.13
+2019-02-27,Currency,0
+2019-02-28,Index,0.06
+2019-02-28,Currency,0
+2019-02-28,Real Estate,0.05
+2019-02-28,Cons. Disc.,0.33
+2019-02-28,Comm. Services,0.07
+2019-02-28,Cons. Staples,0.14
+2019-02-28,IT,0
+2019-02-28,Industrials,0.13
+2019-02-28,Materials,0.04
+2019-02-28,Financials,0.16
+2019-03-01,Currency,0
+2019-03-01,IT,0
+2019-03-01,Comm. Services,0.07
+2019-03-01,Financials,0.17
+2019-03-01,Real Estate,0.05
+2019-03-01,Materials,0.04
+2019-03-01,Index,0.06
+2019-03-01,Cons. Disc.,0.34
+2019-03-01,Industrials,0.13
+2019-03-01,Cons. Staples,0.13
+2019-03-04,Cons. Staples,0.14
+2019-03-04,Industrials,0.13
+2019-03-04,Real Estate,0.05
+2019-03-04,Index,0.05
+2019-03-04,Financials,0.17
+2019-03-04,Cons. Disc.,0.35
+2019-03-04,Currency,0
+2019-03-04,Comm. Services,0.06
+2019-03-04,Materials,0.04
+2019-03-04,Health Care,0
+2019-03-04,IT,0
+2019-03-05,Industrials,0.13
+2019-03-05,Cons. Disc.,0.35
+2019-03-05,Comm. Services,0.06
+2019-03-05,Real Estate,0.05
+2019-03-05,Financials,0.17
+2019-03-05,Index,0.04
+2019-03-05,IT,0
+2019-03-05,Materials,0.04
+2019-03-05,Health Care,0
+2019-03-05,Cons. Staples,0.13
+2019-03-05,Currency,0
+2019-03-06,Currency,0
+2019-03-06,IT,0
+2019-03-06,Materials,0.04
+2019-03-06,Real Estate,0.05
+2019-03-06,Financials,0.18
+2019-03-06,Comm. Services,0.06
+2019-03-06,Industrials,0.13
+2019-03-06,Health Care,0
+2019-03-06,Index,0.04
+2019-03-06,Cons. Staples,0.13
+2019-03-06,Cons. Disc.,0.35
+2019-03-07,Financials,0.18
+2019-03-07,Comm. Services,0.06
+2019-03-07,Index,0.04
+2019-03-07,IT,0
+2019-03-07,Real Estate,0.05
+2019-03-07,Cons. Staples,0.13
+2019-03-07,Currency,0
+2019-03-07,Materials,0.04
+2019-03-07,Health Care,0
+2019-03-07,Industrials,0.13
+2019-03-07,Cons. Disc.,0.35
+2019-03-08,Health Care,0
+2019-03-08,Currency,0
+2019-03-08,IT,0
+2019-03-08,Financials,0.18
+2019-03-08,Index,0.04
+2019-03-08,Industrials,0.13
+2019-03-08,Comm. Services,0.06
+2019-03-08,Materials,0.04
+2019-03-08,Real Estate,0.05
+2019-03-08,Cons. Disc.,0.35
+2019-03-08,Cons. Staples,0.13
+2019-03-11,Comm. Services,0.06
+2019-03-11,Real Estate,0.05
+2019-03-11,Financials,0.18
+2019-03-11,Index,0.04
+2019-03-11,Health Care,0
+2019-03-11,Materials,0.04
+2019-03-11,Currency,0
+2019-03-11,Industrials,0.13
+2019-03-11,Cons. Staples,0.13
+2019-03-11,IT,0
+2019-03-11,Cons. Disc.,0.36
+2019-03-12,Health Care,0
+2019-03-12,Real Estate,0.05
+2019-03-12,Industrials,0.13
+2019-03-12,Financials,0.18
+2019-03-12,Currency,0
+2019-03-12,Cons. Staples,0.13
+2019-03-12,Materials,0.04
+2019-03-12,IT,0
+2019-03-12,Comm. Services,0.06
+2019-03-12,Cons. Disc.,0.35
+2019-03-12,Index,0.04
+2019-03-13,Materials,0.04
+2019-03-13,Cons. Disc.,0.35
+2019-03-13,Cons. Staples,0.13
+2019-03-13,Comm. Services,0.06
+2019-03-13,IT,0
+2019-03-13,Currency,0
+2019-03-13,Financials,0.18
+2019-03-13,Real Estate,0.05
+2019-03-13,Industrials,0.13
+2019-03-13,Health Care,0
+2019-03-13,Index,0.04
+2019-03-14,Real Estate,0.05
+2019-03-14,Cons. Staples,0.13
+2019-03-14,Materials,0.04
+2019-03-14,Comm. Services,0.06
+2019-03-14,Index,0.04
+2019-03-14,Health Care,0
+2019-03-14,Industrials,0.13
+2019-03-14,Financials,0.18
+2019-03-14,Cons. Disc.,0.35
+2019-03-14,Currency,0
+2019-03-14,IT,0
+2019-03-15,Index,0.03
+2019-03-15,Cons. Disc.,0.35
+2019-03-15,IT,0
+2019-03-15,Cons. Staples,0.13
+2019-03-15,Financials,0.18
+2019-03-15,Materials,0.04
+2019-03-15,Currency,0
+2019-03-15,Industrials,0.13
+2019-03-15,Health Care,0
+2019-03-15,Comm. Services,0.07
+2019-03-15,Real Estate,0.05
+2019-03-18,Real Estate,0.05
+2019-03-18,Financials,0.18
+2019-03-18,Cons. Disc.,0.35
+2019-03-18,Cons. Staples,0.13
+2019-03-18,IT,0
+2019-03-18,Materials,0.04
+2019-03-18,Comm. Services,0.07
+2019-03-18,Index,0.03
+2019-03-18,Industrials,0.12
+2019-03-18,Currency,0
+2019-03-18,Health Care,0
+2019-03-19,IT,0.01
+2019-03-19,Real Estate,0.05
+2019-03-19,Cons. Staples,0.13
+2019-03-19,Index,0.03
+2019-03-19,Financials,0.18
+2019-03-19,Cons. Disc.,0.35
+2019-03-19,Industrials,0.12
+2019-03-19,Comm. Services,0.07
+2019-03-19,Currency,0
+2019-03-19,Health Care,0
+2019-03-19,Materials,0.04
+2019-03-20,Health Care,0
+2019-03-20,Real Estate,0.05
+2019-03-20,Industrials,0.12
+2019-03-20,Index,0.03
+2019-03-20,Materials,0.04
+2019-03-20,Cons. Disc.,0.34
+2019-03-20,Cons. Staples,0.13
+2019-03-20,Financials,0.18
+2019-03-20,IT,0.01
+2019-03-20,Comm. Services,0.08
+2019-03-20,Currency,0
+2019-03-21,Industrials,0.12
+2019-03-21,Cons. Disc.,0.34
+2019-03-21,Comm. Services,0.08
+2019-03-21,Health Care,0
+2019-03-21,Real Estate,0.05
+2019-03-21,Currency,0
+2019-03-21,Index,0.02
+2019-03-21,Cons. Staples,0.13
+2019-03-21,Materials,0.04
+2019-03-21,Financials,0.18
+2019-03-21,IT,0.01
+2019-03-22,Index,0.02
+2019-03-22,Financials,0.18
+2019-03-22,Health Care,0
+2019-03-22,IT,0.01
+2019-03-22,Industrials,0.12
+2019-03-22,Currency,0
+2019-03-22,Comm. Services,0.09
+2019-03-22,Real Estate,0.05
+2019-03-22,Cons. Disc.,0.34
+2019-03-22,Materials,0.04
+2019-03-22,Cons. Staples,0.13
+2019-03-25,Comm. Services,0.09
+2019-03-25,Cons. Staples,0.13
+2019-03-25,Cons. Disc.,0.33
+2019-03-25,Real Estate,0.05
+2019-03-25,Financials,0.18
+2019-03-25,Materials,0.04
+2019-03-25,IT,0.01
+2019-03-25,Industrials,0.12
+2019-03-25,Health Care,0
+2019-03-25,Index,0.02
+2019-03-25,Currency,0
+2019-03-26,Materials,0.04
+2019-03-26,Real Estate,0.05
+2019-03-26,Financials,0.18
+2019-03-26,Health Care,0
+2019-03-26,Cons. Disc.,0.33
+2019-03-26,Industrials,0.11
+2019-03-26,Currency,0
+2019-03-26,Index,0.03
+2019-03-26,Cons. Staples,0.13
+2019-03-26,Comm. Services,0.09
+2019-03-26,IT,0.01
+2019-03-27,Currency,0
+2019-03-27,Real Estate,0.05
+2019-03-27,Financials,0.19
+2019-03-27,Industrials,0.11
+2019-03-27,IT,0.01
+2019-03-27,Cons. Disc.,0.33
+2019-03-27,Comm. Services,0.1
+2019-03-27,Cons. Staples,0.13
+2019-03-27,Health Care,0
+2019-03-27,Materials,0.04
+2019-03-27,Index,0.02
+2019-03-28,Industrials,0.11
+2019-03-28,Financials,0.19
+2019-03-28,Materials,0.04
+2019-03-28,Comm. Services,0.1
+2019-03-28,IT,0.01
+2019-03-28,Cons. Disc.,0.32
+2019-03-28,Currency,0
+2019-03-28,Health Care,0
+2019-03-28,Cons. Staples,0.13
+2019-03-28,Real Estate,0.05
+2019-03-28,Index,0.02
+2019-03-29,Financials,0.19
+2019-03-29,Industrials,0.12
+2019-03-29,Index,0.01
+2019-03-29,Currency,0
+2019-03-29,Comm. Services,0.1
+2019-03-29,Real Estate,0.05
+2019-03-29,IT,0.01
+2019-03-29,Cons. Staples,0.14
+2019-03-29,Health Care,0
+2019-03-29,Materials,0.04
+2019-03-29,Cons. Disc.,0.33
+2019-04-01,Health Care,0
+2019-04-01,Comm. Services,0.1
+2019-04-01,Materials,0.04
+2019-04-01,Cons. Disc.,0.33
+2019-04-01,IT,0.01
+2019-04-01,Industrials,0.12
+2019-04-01,Cons. Staples,0.14
+2019-04-01,Financials,0.19
+2019-04-01,Real Estate,0.05
+2019-04-01,Index,0.01
+2019-04-01,Currency,0
+2019-04-02,Currency,0
+2019-04-02,IT,0.02
+2019-04-02,Health Care,0
+2019-04-02,Cons. Staples,0.14
+2019-04-02,Index,0.01
+2019-04-02,Real Estate,0.05
+2019-04-02,Financials,0.19
+2019-04-02,Materials,0.04
+2019-04-02,Cons. Disc.,0.32
+2019-04-02,Comm. Services,0.1
+2019-04-02,Industrials,0.12
+2019-04-03,Cons. Disc.,0.32
+2019-04-03,Financials,0.19
+2019-04-03,Currency,0
+2019-04-03,Materials,0.04
+2019-04-03,Health Care,0
+2019-04-03,Real Estate,0.05
+2019-04-03,Industrials,0.12
+2019-04-03,Cons. Staples,0.14
+2019-04-03,IT,0.02
+2019-04-03,Index,0
+2019-04-03,Comm. Services,0.1
+2019-04-04,Financials,0.19
+2019-04-04,IT,0.02
+2019-04-04,Currency,0
+2019-04-04,Real Estate,0.05
+2019-04-04,Health Care,0
+2019-04-04,Index,0
+2019-04-04,Cons. Disc.,0.32
+2019-04-04,Materials,0.04
+2019-04-04,Industrials,0.12
+2019-04-04,Cons. Staples,0.14
+2019-04-04,Comm. Services,0.1
+2019-04-05,Index,0
+2019-04-05,Health Care,0
+2019-04-05,IT,0.02
+2019-04-05,Currency,0
+2019-04-05,Industrials,0.12
+2019-04-05,Materials,0.04
+2019-04-05,Real Estate,0.05
+2019-04-05,Financials,0.19
+2019-04-05,Comm. Services,0.1
+2019-04-05,Cons. Disc.,0.32
+2019-04-05,Cons. Staples,0.14
+2019-04-08,Cons. Staples,0.14
+2019-04-08,Health Care,0
+2019-04-08,Real Estate,0.05
+2019-04-08,Currency,0
+2019-04-08,Financials,0.19
+2019-04-08,IT,0.02
+2019-04-08,Industrials,0.12
+2019-04-08,Index,0
+2019-04-08,Cons. Disc.,0.31
+2019-04-08,Comm. Services,0.1
+2019-04-08,Materials,0.04
+2019-04-09,Index,0
+2019-04-09,Real Estate,0.05
+2019-04-09,Financials,0.19
+2019-04-09,Materials,0.04
+2019-04-09,Industrials,0.12
+2019-04-09,Health Care,0
+2019-04-09,Currency,0
+2019-04-09,Comm. Services,0.1
+2019-04-09,Cons. Staples,0.14
+2019-04-09,IT,0.02
+2019-04-09,Cons. Disc.,0.32
+2019-04-10,Real Estate,0.05
+2019-04-10,Materials,0.04
+2019-04-10,Cons. Disc.,0.31
+2019-04-10,Currency,0
+2019-04-10,Financials,0.19
+2019-04-10,Cons. Staples,0.14
+2019-04-10,Index,0
+2019-04-10,Health Care,0
+2019-04-10,Comm. Services,0.1
+2019-04-10,Industrials,0.12
+2019-04-10,IT,0.02
+2019-04-11,Cons. Staples,0.14
+2019-04-11,Index,0
+2019-04-11,Materials,0.04
+2019-04-11,Health Care,0
+2019-04-11,Real Estate,0.05
+2019-04-11,Currency,0
+2019-04-11,Financials,0.19
+2019-04-11,Comm. Services,0.1
+2019-04-11,Cons. Disc.,0.31
+2019-04-11,Industrials,0.12
+2019-04-11,IT,0.02
+2019-04-12,Health Care,0
+2019-04-12,Cons. Disc.,0.31
+2019-04-12,Industrials,0.12
+2019-04-12,Materials,0.04
+2019-04-12,Currency,0
+2019-04-12,Financials,0.19
+2019-04-12,Real Estate,0.05
+2019-04-12,Comm. Services,0.1
+2019-04-12,Index,0
+2019-04-12,Cons. Staples,0.14
+2019-04-12,IT,0.02
+2019-04-15,Materials,0.04
+2019-04-15,Health Care,0
+2019-04-15,IT,0.02
+2019-04-15,Real Estate,0.05
+2019-04-15,Comm. Services,0.1
+2019-04-15,Currency,0
+2019-04-15,Index,0
+2019-04-15,Industrials,0.12
+2019-04-15,Cons. Staples,0.14
+2019-04-15,Cons. Disc.,0.31
+2019-04-15,Financials,0.19
+2019-04-16,Currency,0
+2019-04-16,Real Estate,0.05
+2019-04-16,Materials,0.04
+2019-04-16,Cons. Disc.,0.31
+2019-04-16,Industrials,0.12
+2019-04-16,Health Care,0
+2019-04-16,Index,0
+2019-04-16,Cons. Staples,0.14
+2019-04-16,Financials,0.19
+2019-04-16,Comm. Services,0.11
+2019-04-16,IT,0.02
+2019-04-17,Index,0
+2019-04-17,Health Care,0
+2019-04-17,Materials,0.04
+2019-04-17,Comm. Services,0.11
+2019-04-17,Cons. Disc.,0.31
+2019-04-17,IT,0.02
+2019-04-17,Industrials,0.12
+2019-04-17,Real Estate,0.05
+2019-04-17,Currency,0
+2019-04-17,Cons. Staples,0.14
+2019-04-17,Financials,0.19
+2019-04-18,Health Care,0
+2019-04-18,IT,0.02
+2019-04-18,Industrials,0.12
+2019-04-18,Financials,0.19
+2019-04-18,Index,0
+2019-04-18,Real Estate,0.05
+2019-04-18,Materials,0.04
+2019-04-18,Cons. Disc.,0.31
+2019-04-18,Cons. Staples,0.14
+2019-04-18,Comm. Services,0.11
+2019-04-18,Currency,0
+2019-04-19,Currency,0
+2019-04-19,Real Estate,0.05
+2019-04-19,Financials,0.19
+2019-04-19,Materials,0.04
+2019-04-19,IT,0.02
+2019-04-19,Comm. Services,0.11
+2019-04-19,Health Care,0
+2019-04-19,Cons. Disc.,0.31
+2019-04-19,Cons. Staples,0.14
+2019-04-19,Industrials,0.12
+2019-04-19,Index,0
+2019-04-22,Health Care,0
+2019-04-22,Cons. Staples,0.14
+2019-04-22,IT,0.02
+2019-04-22,Real Estate,0.05
+2019-04-22,Financials,0.19
+2019-04-22,Currency,0
+2019-04-22,Materials,0.04
+2019-04-22,Index,0
+2019-04-22,Cons. Disc.,0.31
+2019-04-22,Industrials,0.12
+2019-04-22,Comm. Services,0.11
+2019-04-23,Health Care,0
+2019-04-23,Index,0.01
+2019-04-23,Real Estate,0.05
+2019-04-23,Industrials,0.12
+2019-04-23,Comm. Services,0.11
+2019-04-23,Materials,0.04
+2019-04-23,Currency,0
+2019-04-23,Cons. Disc.,0.31
+2019-04-23,IT,0.02
+2019-04-23,Financials,0.19
+2019-04-23,Cons. Staples,0.13
+2019-04-24,Health Care,0
+2019-04-24,Financials,0.19
+2019-04-24,IT,0.02
+2019-04-24,Cons. Disc.,0.31
+2019-04-24,Index,0.01
+2019-04-24,Real Estate,0.05
+2019-04-24,Comm. Services,0.11
+2019-04-24,Industrials,0.11
+2019-04-24,Cons. Staples,0.13
+2019-04-24,Materials,0.04
+2019-04-24,Currency,0
+2019-04-25,Materials,0.04
+2019-04-25,Currency,0
+2019-04-25,Cons. Staples,0.13
+2019-04-25,Cons. Disc.,0.3
+2019-04-25,Real Estate,0.05
+2019-04-25,Financials,0.19
+2019-04-25,Health Care,0
+2019-04-25,Index,0.02
+2019-04-25,Comm. Services,0.11
+2019-04-25,IT,0.02
+2019-04-25,Industrials,0.11
+2019-04-26,IT,0.02
+2019-04-26,Health Care,0
+2019-04-26,Industrials,0.11
+2019-04-26,Real Estate,0.05
+2019-04-26,Cons. Staples,0.13
+2019-04-26,Comm. Services,0.11
+2019-04-26,Financials,0.19
+2019-04-26,Cons. Disc.,0.3
+2019-04-26,Index,0.02
+2019-04-26,Currency,0
+2019-04-26,Materials,0.04
+2019-04-29,Currency,0
+2019-04-29,Real Estate,0.05
+2019-04-29,Cons. Staples,0.13
+2019-04-29,IT,0.02
+2019-04-29,Health Care,0
+2019-04-29,Materials,0.04
+2019-04-29,Cons. Disc.,0.3
+2019-04-29,Index,0.02
+2019-04-29,Financials,0.19
+2019-04-29,Industrials,0.11
+2019-04-29,Comm. Services,0.11
+2019-04-30,Real Estate,0.05
+2019-04-30,Cons. Staples,0.13
+2019-04-30,Comm. Services,0.11
+2019-04-30,Financials,0.19
+2019-04-30,Materials,0.05
+2019-04-30,Cons. Disc.,0.3
+2019-04-30,Index,0.02
+2019-04-30,IT,0.02
+2019-04-30,Industrials,0.12
+2019-04-30,Health Care,0
+2019-04-30,Currency,0
+2019-05-01,Industrials,0.12
+2019-05-01,Materials,0.05
+2019-05-01,IT,0.02
+2019-05-01,Currency,0
+2019-05-01,Index,0.02
+2019-05-01,Real Estate,0.05
+2019-05-01,Comm. Services,0.11
+2019-05-01,Cons. Disc.,0.3
+2019-05-01,Financials,0.19
+2019-05-01,Health Care,0
+2019-05-01,Cons. Staples,0.13
+2019-05-02,Comm. Services,0.11
+2019-05-02,Financials,0.18
+2019-05-02,Health Care,0
+2019-05-02,Industrials,0.12
+2019-05-02,Currency,0
+2019-05-02,Cons. Disc.,0.29
+2019-05-02,Materials,0.05
+2019-05-02,Index,0.02
+2019-05-02,IT,0.02
+2019-05-02,Real Estate,0.05
+2019-05-02,Cons. Staples,0.13
+2019-05-03,IT,0.02
+2019-05-03,Real Estate,0.05
+2019-05-03,Materials,0.05
+2019-05-03,Industrials,0.12
+2019-05-03,Comm. Services,0.11
+2019-05-03,Currency,0
+2019-05-03,Health Care,0
+2019-05-03,Cons. Staples,0.13
+2019-05-03,Financials,0.18
+2019-05-03,Index,0.02
+2019-05-03,Cons. Disc.,0.29
+2019-05-06,Comm. Services,0.12
+2019-05-06,Cons. Disc.,0.29
+2019-05-06,Real Estate,0.05
+2019-05-06,Currency,0
+2019-05-06,Financials,0.18
+2019-05-06,Industrials,0.12
+2019-05-06,IT,0.02
+2019-05-06,Materials,0.05
+2019-05-06,Health Care,0
+2019-05-06,Cons. Staples,0.13
+2019-05-06,Index,0.03
+2019-05-07,IT,0.02
+2019-05-07,Materials,0.05
+2019-05-07,Comm. Services,0.11
+2019-05-07,Health Care,0
+2019-05-07,Cons. Staples,0.13
+2019-05-07,Cons. Disc.,0.29
+2019-05-07,Real Estate,0.05
+2019-05-07,Currency,0
+2019-05-07,Financials,0.18
+2019-05-07,Industrials,0.12
+2019-05-07,Index,0.02
+2019-05-08,Real Estate,0.05
+2019-05-08,Financials,0.18
+2019-05-08,Cons. Staples,0.12
+2019-05-08,Materials,0.05
+2019-05-08,Comm. Services,0.11
+2019-05-08,Industrials,0.12
+2019-05-08,Currency,0
+2019-05-08,IT,0.03
+2019-05-08,Health Care,0
+2019-05-08,Index,0.02
+2019-05-08,Cons. Disc.,0.3
+2019-05-09,Comm. Services,0.11
+2019-05-09,Index,0.02
+2019-05-09,Currency,0
+2019-05-09,Cons. Staples,0.12
+2019-05-09,Industrials,0.12
+2019-05-09,Health Care,0
+2019-05-09,Real Estate,0.05
+2019-05-09,Cons. Disc.,0.3
+2019-05-09,IT,0.03
+2019-05-09,Financials,0.18
+2019-05-09,Materials,0.05
+2019-05-10,Real Estate,0.05
+2019-05-10,Index,0.02
+2019-05-10,Cons. Disc.,0.29
+2019-05-10,Currency,0
+2019-05-10,Financials,0.18
+2019-05-10,Industrials,0.12
+2019-05-10,Health Care,0
+2019-05-10,Materials,0.05
+2019-05-10,IT,0.03
+2019-05-10,Cons. Staples,0.13
+2019-05-10,Comm. Services,0.11
+2019-05-13,Index,0.02
+2019-05-13,Health Care,0
+2019-05-13,Comm. Services,0.12
+2019-05-13,Cons. Disc.,0.3
+2019-05-13,Cons. Staples,0.13
+2019-05-13,Industrials,0.12
+2019-05-13,Currency,0
+2019-05-13,Materials,0.05
+2019-05-13,Financials,0.18
+2019-05-13,IT,0.03
+2019-05-13,Real Estate,0.05
+2019-05-14,Cons. Disc.,0.3
+2019-05-14,Comm. Services,0.11
+2019-05-14,Index,0.02
+2019-05-14,Industrials,0.12
+2019-05-14,Materials,0.05
+2019-05-14,Currency,0
+2019-05-14,Real Estate,0.05
+2019-05-14,IT,0.03
+2019-05-14,Financials,0.18
+2019-05-14,Cons. Staples,0.12
+2019-05-15,Materials,0.05
+2019-05-15,Industrials,0.12
+2019-05-15,Comm. Services,0.12
+2019-05-15,IT,0.03
+2019-05-15,Index,0.02
+2019-05-15,Cons. Disc.,0.3
+2019-05-15,Financials,0.18
+2019-05-15,Real Estate,0.05
+2019-05-15,Currency,0
+2019-05-15,Cons. Staples,0.13
+2019-05-16,Comm. Services,0.12
+2019-05-16,Real Estate,0.05
+2019-05-16,Industrials,0.11
+2019-05-16,Cons. Staples,0.13
+2019-05-16,IT,0.03
+2019-05-16,Index,0.01
+2019-05-16,Cons. Disc.,0.3
+2019-05-16,Currency,0
+2019-05-16,Materials,0.05
+2019-05-16,Financials,0.17
+2019-05-17,Cons. Staples,0.12
+2019-05-17,Financials,0.18
+2019-05-17,Index,0
+2019-05-17,Cons. Disc.,0.31
+2019-05-17,Currency,0
+2019-05-17,Real Estate,0.05
+2019-05-17,Comm. Services,0.13
+2019-05-17,Industrials,0.11
+2019-05-17,IT,0.03
+2019-05-17,Materials,0.05
+2019-05-20,Industrials,0.11
+2019-05-20,IT,0.03
+2019-05-20,Real Estate,0.05
+2019-05-20,Currency,0
+2019-05-20,Cons. Disc.,0.31
+2019-05-20,Comm. Services,0.13
+2019-05-20,Materials,0.05
+2019-05-20,Cons. Staples,0.12
+2019-05-20,Index,0
+2019-05-20,Financials,0.19
+2019-05-21,Industrials,0.11
+2019-05-21,Financials,0.18
+2019-05-21,Cons. Staples,0.12
+2019-05-21,Materials,0.05
+2019-05-21,Currency,0
+2019-05-21,Cons. Disc.,0.31
+2019-05-21,Comm. Services,0.13
+2019-05-21,IT,0.03
+2019-05-21,Real Estate,0.05
+2019-05-21,Index,0
+2019-05-22,Comm. Services,0.14
+2019-05-22,Index,0
+2019-05-22,Cons. Disc.,0.3
+2019-05-22,Financials,0.18
+2019-05-22,IT,0.03
+2019-05-22,Industrials,0.11
+2019-05-22,Currency,0
+2019-05-22,Real Estate,0.05
+2019-05-22,Cons. Staples,0.12
+2019-05-22,Materials,0.05
+2019-05-23,Currency,0
+2019-05-23,Cons. Disc.,0.3
+2019-05-23,IT,0.03
+2019-05-23,Materials,0.05
+2019-05-23,Comm. Services,0.14
+2019-05-23,Financials,0.18
+2019-05-23,Real Estate,0.05
+2019-05-23,Industrials,0.11
+2019-05-23,Index,0
+2019-05-23,Cons. Staples,0.12
+2019-05-24,Industrials,0.12
+2019-05-24,Index,0
+2019-05-24,Currency,0
+2019-05-24,Real Estate,0.05
+2019-05-24,Cons. Disc.,0.3
+2019-05-24,Materials,0.04
+2019-05-24,Comm. Services,0.14
+2019-05-24,IT,0.03
+2019-05-24,Financials,0.18
+2019-05-24,Cons. Staples,0.12
+2019-05-27,Materials,0.05
+2019-05-27,Comm. Services,0.14
+2019-05-27,Real Estate,0.05
+2019-05-27,IT,0.03
+2019-05-27,Currency,0
+2019-05-27,Financials,0.19
+2019-05-27,Cons. Staples,0.12
+2019-05-27,Index,0
+2019-05-27,Industrials,0.12
+2019-05-27,Cons. Disc.,0.29
+2019-05-28,Comm. Services,0.14
+2019-05-28,IT,0.03
+2019-05-28,Real Estate,0.05
+2019-05-28,Cons. Staples,0.12
+2019-05-28,Financials,0.19
+2019-05-28,Industrials,0.11
+2019-05-28,Materials,0.04
+2019-05-28,Cons. Disc.,0.29
+2019-05-28,Currency,0
+2019-05-28,Index,0
+2019-05-29,Materials,0.05
+2019-05-29,Index,0.01
+2019-05-29,Industrials,0.12
+2019-05-29,IT,0.03
+2019-05-29,Real Estate,0.04
+2019-05-29,Currency,0
+2019-05-29,Comm. Services,0.14
+2019-05-29,Financials,0.18
+2019-05-29,Cons. Staples,0.12
+2019-05-29,Cons. Disc.,0.29
+2019-05-30,Index,0.01
+2019-05-30,Cons. Disc.,0.29
+2019-05-30,Comm. Services,0.14
+2019-05-30,Industrials,0.11
+2019-05-30,IT,0.03
+2019-05-30,Cons. Staples,0.12
+2019-05-30,Financials,0.19
+2019-05-30,Currency,0
+2019-05-30,Materials,0.05
+2019-05-30,Real Estate,0.04
+2019-05-31,Comm. Services,0.14
+2019-05-31,Currency,0
+2019-05-31,Materials,0.05
+2019-05-31,Real Estate,0.04
+2019-05-31,Industrials,0.11
+2019-05-31,Index,0.02
+2019-05-31,Cons. Disc.,0.29
+2019-05-31,IT,0.03
+2019-05-31,Cons. Staples,0.13
+2019-05-31,Financials,0.19
+2019-06-03,Cons. Staples,0.13
+2019-06-03,Cons. Disc.,0.29
+2019-06-03,Currency,0
+2019-06-03,Comm. Services,0.14
+2019-06-03,Materials,0.05
+2019-06-03,Financials,0.18
+2019-06-03,Index,0.02
+2019-06-03,Real Estate,0.04
+2019-06-03,Industrials,0.11
+2019-06-03,IT,0.03
+2019-06-04,Real Estate,0.05
+2019-06-04,Financials,0.18
+2019-06-04,Industrials,0.11
+2019-06-04,Cons. Disc.,0.29
+2019-06-04,Currency,0
+2019-06-04,Index,0.02
+2019-06-04,Materials,0.05
+2019-06-04,Cons. Staples,0.13
+2019-06-04,IT,0.03
+2019-06-04,Comm. Services,0.14
+2019-06-05,Materials,0.04
+2019-06-05,Financials,0.18
+2019-06-05,Real Estate,0.05
+2019-06-05,Cons. Disc.,0.28
+2019-06-05,Index,0.02
+2019-06-05,Comm. Services,0.14
+2019-06-05,IT,0.03
+2019-06-05,Currency,0
+2019-06-05,Industrials,0.1
+2019-06-05,Cons. Staples,0.12
+2019-06-06,Index,0.03
+2019-06-06,Financials,0.18
+2019-06-06,Cons. Disc.,0.28
+2019-06-06,Materials,0.04
+2019-06-06,Industrials,0.1
+2019-06-06,Comm. Services,0.14
+2019-06-06,Currency,0
+2019-06-06,Cons. Staples,0.12
+2019-06-06,Real Estate,0.05
+2019-06-06,IT,0.03
+2019-06-07,Currency,0
+2019-06-07,Materials,0.04
+2019-06-07,Financials,0.18
+2019-06-07,Cons. Staples,0.12
+2019-06-07,Real Estate,0.05
+2019-06-07,Index,0.03
+2019-06-07,Cons. Disc.,0.28
+2019-06-07,Comm. Services,0.14
+2019-06-07,IT,0.03
+2019-06-07,Industrials,0.1
+2019-06-10,IT,0.03
+2019-06-10,Index,0.04
+2019-06-10,Industrials,0.1
+2019-06-10,Comm. Services,0.14
+2019-06-10,Real Estate,0.04
+2019-06-10,Cons. Staples,0.12
+2019-06-10,Materials,0.04
+2019-06-10,Cons. Disc.,0.28
+2019-06-10,Financials,0.17
+2019-06-10,Currency,0
+2019-06-11,Materials,0.04
+2019-06-11,Cons. Disc.,0.27
+2019-06-11,Index,0.05
+2019-06-11,Cons. Staples,0.12
+2019-06-11,Industrials,0.1
+2019-06-11,Currency,0
+2019-06-11,Comm. Services,0.14
+2019-06-11,Financials,0.17
+2019-06-11,Real Estate,0.04
+2019-06-11,IT,0.03
+2019-06-12,Materials,0.04
+2019-06-12,Real Estate,0.04
+2019-06-12,Cons. Disc.,0.28
+2019-06-12,Industrials,0.1
+2019-06-12,Currency,0
+2019-06-12,Comm. Services,0.14
+2019-06-12,Financials,0.17
+2019-06-12,Index,0.05
+2019-06-12,IT,0.03
+2019-06-12,Cons. Staples,0.12
+2019-06-13,Cons. Staples,0.12
+2019-06-13,Index,0.06
+2019-06-13,Cons. Disc.,0.27
+2019-06-13,IT,0.03
+2019-06-13,Comm. Services,0.14
+2019-06-13,Materials,0.04
+2019-06-13,Financials,0.17
+2019-06-13,Currency,0
+2019-06-13,Industrials,0.1
+2019-06-13,Real Estate,0.04
+2019-06-14,Index,0.06
+2019-06-14,Comm. Services,0.14
+2019-06-14,Industrials,0.1
+2019-06-14,Currency,0
+2019-06-14,IT,0.03
+2019-06-14,Materials,0.04
+2019-06-14,Cons. Disc.,0.27
+2019-06-14,Real Estate,0.04
+2019-06-14,Cons. Staples,0.12
+2019-06-14,Financials,0.17
+2019-06-17,IT,0.03
+2019-06-17,Currency,0
+2019-06-17,Real Estate,0.04
+2019-06-17,Cons. Disc.,0.27
+2019-06-17,Materials,0.04
+2019-06-17,Index,0.07
+2019-06-17,Comm. Services,0.14
+2019-06-17,Financials,0.17
+2019-06-17,Cons. Staples,0.12
+2019-06-17,Industrials,0.1
+2019-06-18,Financials,0.16
+2019-06-18,Currency,0
+2019-06-18,Comm. Services,0.13
+2019-06-18,Materials,0.04
+2019-06-18,Real Estate,0.04
+2019-06-18,Cons. Disc.,0.27
+2019-06-18,Cons. Staples,0.12
+2019-06-18,Industrials,0.09
+2019-06-18,Index,0.08
+2019-06-18,IT,0.04
+2019-06-19,Index,0.08
+2019-06-19,Materials,0.05
+2019-06-19,Real Estate,0.04
+2019-06-19,IT,0.03
+2019-06-19,Currency,0
+2019-06-19,Cons. Disc.,0.27
+2019-06-19,Comm. Services,0.13
+2019-06-19,Industrials,0.1
+2019-06-19,Cons. Staples,0.12
+2019-06-19,Financials,0.16
+2019-06-20,Materials,0.05
+2019-06-20,Industrials,0.09
+2019-06-20,Currency,0
+2019-06-20,Financials,0.16
+2019-06-20,Comm. Services,0.14
+2019-06-20,Real Estate,0.04
+2019-06-20,Index,0.08
+2019-06-20,Cons. Disc.,0.27
+2019-06-20,IT,0.03
+2019-06-20,Cons. Staples,0.11
+2019-06-21,Industrials,0.09
+2019-06-21,IT,0.03
+2019-06-21,Cons. Disc.,0.27
+2019-06-21,Real Estate,0.04
+2019-06-21,Financials,0.16
+2019-06-21,Currency,0
+2019-06-21,Comm. Services,0.14
+2019-06-21,Index,0.09
+2019-06-21,Materials,0.05
+2019-06-21,Cons. Staples,0.11
+2019-06-24,Currency,0
+2019-06-24,Materials,0.05
+2019-06-24,Comm. Services,0.14
+2019-06-24,Cons. Disc.,0.27
+2019-06-24,Industrials,0.09
+2019-06-24,IT,0.03
+2019-06-24,Cons. Staples,0.11
+2019-06-24,Real Estate,0.04
+2019-06-24,Index,0.09
+2019-06-24,Financials,0.16
+2019-06-25,IT,0.03
+2019-06-25,Materials,0.05
+2019-06-25,Industrials,0.09
+2019-06-25,Index,0.09
+2019-06-25,Real Estate,0.04
+2019-06-25,Comm. Services,0.14
+2019-06-25,Financials,0.16
+2019-06-25,Cons. Staples,0.11
+2019-06-25,Cons. Disc.,0.27
+2019-06-25,Currency,0
+2019-06-26,Real Estate,0.04
+2019-06-26,Currency,0
+2019-06-26,Materials,0.05
+2019-06-26,Comm. Services,0.14
+2019-06-26,Industrials,0.09
+2019-06-26,IT,0.03
+2019-06-26,Index,0.09
+2019-06-26,Financials,0.16
+2019-06-26,Cons. Staples,0.11
+2019-06-26,Cons. Disc.,0.27
+2019-06-27,Industrials,0.09
+2019-06-27,Comm. Services,0.15
+2019-06-27,Materials,0.05
+2019-06-27,Cons. Staples,0.11
+2019-06-27,Index,0.05
+2019-06-27,Currency,0
+2019-06-27,Financials,0.16
+2019-06-27,Real Estate,0.04
+2019-06-27,Cons. Disc.,0.27
+2019-06-27,IT,0.03
+2019-06-28,Real Estate,0.04
+2019-06-28,Cons. Staples,0.12
+2019-06-28,IT,0.04
+2019-06-28,Financials,0.17
+2019-06-28,Currency,0
+2019-06-28,Industrials,0.1
+2019-06-28,Comm. Services,0.15
+2019-06-28,Index,0.01
+2019-06-28,Cons. Disc.,0.28
+2019-06-28,Materials,0.05
+2019-07-01,Industrials,0.1
+2019-07-01,Index,0.01
+2019-07-01,Comm. Services,0.16
+2019-07-01,Financials,0.17
+2019-07-01,Cons. Staples,0.12
+2019-07-01,Materials,0.05
+2019-07-01,Real Estate,0.05
+2019-07-01,IT,0.04
+2019-07-01,Cons. Disc.,0.29
+2019-07-01,Currency,0
+2019-07-02,Financials,0.17
+2019-07-02,Currency,0
+2019-07-02,Industrials,0.1
+2019-07-02,Real Estate,0.05
+2019-07-02,Cons. Staples,0.12
+2019-07-02,Cons. Disc.,0.29
+2019-07-02,Index,0.01
+2019-07-02,Comm. Services,0.16
+2019-07-02,IT,0.04
+2019-07-02,Materials,0.05
+2019-07-03,Currency,0
+2019-07-03,Industrials,0.1
+2019-07-03,IT,0.03
+2019-07-03,Cons. Disc.,0.28
+2019-07-03,Index,0.01
+2019-07-03,Cons. Staples,0.12
+2019-07-03,Materials,0.05
+2019-07-03,Real Estate,0.05
+2019-07-03,Comm. Services,0.16
+2019-07-03,Financials,0.17
+2019-07-04,Financials,0.17
+2019-07-04,Industrials,0.1
+2019-07-04,Index,0.01
+2019-07-04,Comm. Services,0.16
+2019-07-04,Cons. Disc.,0.28
+2019-07-04,IT,0.03
+2019-07-04,Currency,0
+2019-07-04,Real Estate,0.05
+2019-07-04,Cons. Staples,0.13
+2019-07-04,Materials,0.05
+2019-07-05,Real Estate,0.05
+2019-07-05,Index,0.01
+2019-07-05,Currency,0
+2019-07-05,Industrials,0.1
+2019-07-05,Financials,0.17
+2019-07-05,Cons. Staples,0.13
+2019-07-05,Cons. Disc.,0.28
+2019-07-05,Materials,0.05
+2019-07-05,IT,0.04
+2019-07-05,Comm. Services,0.17
+2019-07-08,Cons. Disc.,0.28
+2019-07-08,Currency,0
+2019-07-08,Materials,0.05
+2019-07-08,Index,0.01
+2019-07-08,Industrials,0.1
+2019-07-08,Comm. Services,0.17
+2019-07-08,Cons. Staples,0.13
+2019-07-08,IT,0.04
+2019-07-08,Real Estate,0.05
+2019-07-08,Financials,0.17
+2019-07-09,Index,0
+2019-07-09,Industrials,0.1
+2019-07-09,IT,0.04
+2019-07-09,Comm. Services,0.17
+2019-07-09,Real Estate,0.05
+2019-07-09,Currency,0
+2019-07-09,Materials,0.05
+2019-07-09,Cons. Disc.,0.28
+2019-07-09,Financials,0.17
+2019-07-09,Cons. Staples,0.13
+2019-07-10,Financials,0.16
+2019-07-10,Cons. Disc.,0.27
+2019-07-10,IT,0.04
+2019-07-10,Currency,0
+2019-07-10,Materials,0.05
+2019-07-10,Index,0.01
+2019-07-10,Real Estate,0.05
+2019-07-10,Comm. Services,0.17
+2019-07-10,Industrials,0.1
+2019-07-10,Cons. Staples,0.13
+2019-07-11,Index,0.01
+2019-07-11,Financials,0.16
+2019-07-11,Materials,0.05
+2019-07-11,Comm. Services,0.17
+2019-07-11,Cons. Disc.,0.27
+2019-07-11,Real Estate,0.04
+2019-07-11,Currency,0
+2019-07-11,IT,0.04
+2019-07-11,Industrials,0.1
+2019-07-11,Cons. Staples,0.13
+2019-07-12,Index,0
+2019-07-12,Currency,0
+2019-07-12,Real Estate,0.04
+2019-07-12,Cons. Disc.,0.28
+2019-07-12,Cons. Staples,0.13
+2019-07-12,Comm. Services,0.18
+2019-07-12,Industrials,0.1
+2019-07-12,Financials,0.16
+2019-07-12,Materials,0.05
+2019-07-12,IT,0.04
+2019-07-15,Index,0
+2019-07-15,Real Estate,0.04
+2019-07-15,IT,0.04
+2019-07-15,Comm. Services,0.18
+2019-07-15,Materials,0.05
+2019-07-15,Currency,0
+2019-07-15,Industrials,0.1
+2019-07-15,Financials,0.16
+2019-07-15,Cons. Disc.,0.27
+2019-07-15,Cons. Staples,0.13
+2019-07-16,Cons. Disc.,0.27
+2019-07-16,Materials,0.05
+2019-07-16,Industrials,0.1
+2019-07-16,Real Estate,0.04
+2019-07-16,Cons. Staples,0.13
+2019-07-16,Financials,0.16
+2019-07-16,IT,0.04
+2019-07-16,Currency,0
+2019-07-16,Comm. Services,0.18
+2019-07-16,Index,0
+2019-07-17,Materials,0.05
+2019-07-17,Comm. Services,0.18
+2019-07-17,Financials,0.16
+2019-07-17,Cons. Staples,0.13
+2019-07-17,IT,0.04
+2019-07-17,Real Estate,0.04
+2019-07-17,Cons. Disc.,0.27
+2019-07-17,Currency,0
+2019-07-17,Industrials,0.1
+2019-07-18,IT,0.04
+2019-07-18,Industrials,0.1
+2019-07-18,Cons. Staples,0.13
+2019-07-18,Materials,0.05
+2019-07-18,Cons. Disc.,0.27
+2019-07-18,Real Estate,0.05
+2019-07-18,Currency,0
+2019-07-18,Financials,0.16
+2019-07-18,Comm. Services,0.18
+2019-07-19,Comm. Services,0.19
+2019-07-19,IT,0.04
+2019-07-19,Index,0
+2019-07-19,Real Estate,0.05
+2019-07-19,Cons. Disc.,0.26
+2019-07-19,Materials,0.05
+2019-07-19,Cons. Staples,0.14
+2019-07-19,Financials,0.15
+2019-07-19,Currency,0
+2019-07-19,Industrials,0.1
+2019-07-22,IT,0.04
+2019-07-22,Cons. Staples,0.14
+2019-07-22,Comm. Services,0.19
+2019-07-22,Financials,0.15
+2019-07-22,Currency,0
+2019-07-22,Industrials,0.1
+2019-07-22,Index,0
+2019-07-22,Cons. Disc.,0.26
+2019-07-22,Real Estate,0.05
+2019-07-22,Materials,0.05
+2019-07-23,Index,0
+2019-07-23,Financials,0.14
+2019-07-23,Cons. Disc.,0.25
+2019-07-23,Real Estate,0.05
+2019-07-23,Cons. Staples,0.14
+2019-07-23,Comm. Services,0.2
+2019-07-23,Currency,0
+2019-07-23,IT,0.04
+2019-07-23,Industrials,0.1
+2019-07-23,Materials,0.05
+2019-07-24,Real Estate,0.05
+2019-07-24,Industrials,0.11
+2019-07-24,Materials,0.05
+2019-07-24,Comm. Services,0.2
+2019-07-24,Cons. Disc.,0.25
+2019-07-24,Index,0.01
+2019-07-24,Cons. Staples,0.14
+2019-07-24,Financials,0.14
+2019-07-24,IT,0.04
+2019-07-25,Cons. Staples,0.15
+2019-07-25,Materials,0.05
+2019-07-25,Financials,0.14
+2019-07-25,IT,0.04
+2019-07-25,Real Estate,0.05
+2019-07-25,Comm. Services,0.2
+2019-07-25,Index,0.01
+2019-07-25,Industrials,0.11
+2019-07-25,Cons. Disc.,0.25
+2019-07-26,Financials,0.14
+2019-07-26,Comm. Services,0.21
+2019-07-26,Real Estate,0.05
+2019-07-26,Index,0.01
+2019-07-26,Materials,0.05
+2019-07-26,Cons. Staples,0.15
+2019-07-26,IT,0.04
+2019-07-26,Cons. Disc.,0.25
+2019-07-26,Industrials,0.1
+2019-07-29,Index,0.01
+2019-07-29,Materials,0.05
+2019-07-29,Comm. Services,0.21
+2019-07-29,IT,0.04
+2019-07-29,Financials,0.14
+2019-07-29,Real Estate,0.05
+2019-07-29,Cons. Staples,0.15
+2019-07-29,Industrials,0.1
+2019-07-29,Cons. Disc.,0.24
+2019-07-30,Cons. Staples,0.15
+2019-07-30,Comm. Services,0.21
+2019-07-30,Materials,0.05
+2019-07-30,Financials,0.13
+2019-07-30,Industrials,0.11
+2019-07-30,Index,0.01
+2019-07-30,IT,0.04
+2019-07-30,Cons. Disc.,0.24
+2019-07-30,Real Estate,0.05
+2019-07-31,Cons. Staples,0.15
+2019-07-31,Index,0.01
+2019-07-31,IT,0.04
+2019-07-31,Comm. Services,0.21
+2019-07-31,Financials,0.13
+2019-07-31,Materials,0.05
+2019-07-31,Industrials,0.11
+2019-07-31,Real Estate,0.05
+2019-07-31,Cons. Disc.,0.24
+2019-08-01,Real Estate,0.05
+2019-08-01,Cons. Staples,0.15
+2019-08-01,Industrials,0.1
+2019-08-01,Financials,0.12
+2019-08-01,Cons. Disc.,0.24
+2019-08-01,Materials,0.05
+2019-08-01,Comm. Services,0.21
+2019-08-01,Index,0.01
+2019-08-01,IT,0.04
+2019-08-02,Real Estate,0.05
+2019-08-02,Financials,0.12
+2019-08-02,IT,0.04
+2019-08-02,Cons. Staples,0.15
+2019-08-02,Cons. Disc.,0.24
+2019-08-02,Comm. Services,0.22
+2019-08-02,Index,0.01
+2019-08-02,Materials,0.05
+2019-08-02,Industrials,0.1
+2019-08-05,Real Estate,0.05
+2019-08-05,Comm. Services,0.22
+2019-08-05,Index,0.01
+2019-08-05,Cons. Staples,0.15
+2019-08-05,Materials,0.05
+2019-08-05,Financials,0.12
+2019-08-05,Industrials,0.1
+2019-08-05,IT,0.04
+2019-08-05,Cons. Disc.,0.24
+2019-08-06,Real Estate,0.05
+2019-08-06,Comm. Services,0.22
+2019-08-06,Financials,0.12
+2019-08-06,Cons. Staples,0.15
+2019-08-06,Industrials,0.1
+2019-08-06,Index,0.01
+2019-08-06,IT,0.04
+2019-08-06,Materials,0.05
+2019-08-06,Cons. Disc.,0.24
+2019-08-07,IT,0.04
+2019-08-07,Cons. Staples,0.15
+2019-08-07,Industrials,0.1
+2019-08-07,Real Estate,0.05
+2019-08-07,Financials,0.13
+2019-08-07,Cons. Disc.,0.24
+2019-08-07,Comm. Services,0.22
+2019-08-07,Materials,0.05
+2019-08-07,Index,0.01
+2019-08-08,Financials,0.13
+2019-08-08,IT,0.04
+2019-08-08,Index,0.01
+2019-08-08,Comm. Services,0.22
+2019-08-08,Real Estate,0.04
+2019-08-08,Materials,0.05
+2019-08-08,Industrials,0.1
+2019-08-08,Cons. Staples,0.15
+2019-08-08,Cons. Disc.,0.24
+2019-08-09,Industrials,0.1
+2019-08-09,Cons. Disc.,0.24
+2019-08-09,Cons. Staples,0.15
+2019-08-09,IT,0.04
+2019-08-09,Materials,0.05
+2019-08-09,Index,0.01
+2019-08-09,Comm. Services,0.23
+2019-08-09,Financials,0.13
+2019-08-09,Real Estate,0.04
+2019-08-12,Comm. Services,0.23
+2019-08-12,Cons. Staples,0.15
+2019-08-12,Currency,0
+2019-08-12,Real Estate,0.04
+2019-08-12,Index,0.01
+2019-08-12,Cons. Disc.,0.24
+2019-08-12,Materials,0.05
+2019-08-12,Industrials,0.1
+2019-08-12,IT,0.04
+2019-08-12,Financials,0.13
+2019-08-13,Cons. Disc.,0.24
+2019-08-13,Financials,0.13
+2019-08-13,Index,0.01
+2019-08-13,Real Estate,0.04
+2019-08-13,Cons. Staples,0.14
+2019-08-13,IT,0.04
+2019-08-13,Industrials,0.09
+2019-08-13,Currency,0
+2019-08-13,Materials,0.05
+2019-08-13,Comm. Services,0.23
+2019-08-14,Materials,0.05
+2019-08-14,Comm. Services,0.23
+2019-08-14,Currency,0
+2019-08-14,Index,0.01
+2019-08-14,IT,0.04
+2019-08-14,Industrials,0.09
+2019-08-14,Cons. Disc.,0.23
+2019-08-14,Real Estate,0.04
+2019-08-14,Cons. Staples,0.14
+2019-08-14,Financials,0.13
+2019-08-15,Comm. Services,0.23
+2019-08-15,Cons. Disc.,0.24
+2019-08-15,Cons. Staples,0.14
+2019-08-15,Index,0.01
+2019-08-15,Real Estate,0.04
+2019-08-15,Materials,0.05
+2019-08-15,Industrials,0.09
+2019-08-15,Financials,0.13
+2019-08-15,Currency,0
+2019-08-15,IT,0.04
+2019-08-16,Materials,0.05
+2019-08-16,Real Estate,0.04
+2019-08-16,Cons. Staples,0.14
+2019-08-16,Index,0.02
+2019-08-16,IT,0.04
+2019-08-16,Cons. Disc.,0.23
+2019-08-16,Comm. Services,0.23
+2019-08-16,Currency,0
+2019-08-16,Financials,0.13
+2019-08-16,Industrials,0.09
+2019-08-19,Industrials,0.09
+2019-08-19,Index,0.02
+2019-08-19,Real Estate,0.04
+2019-08-19,Cons. Disc.,0.23
+2019-08-19,IT,0.04
+2019-08-19,Currency,0
+2019-08-19,Comm. Services,0.23
+2019-08-19,Materials,0.04
+2019-08-19,Cons. Staples,0.14
+2019-08-19,Financials,0.13
+2019-08-20,Comm. Services,0.24
+2019-08-20,IT,0.04
+2019-08-20,Industrials,0.09
+2019-08-20,Currency,0
+2019-08-20,Materials,0.04
+2019-08-20,Cons. Disc.,0.22
+2019-08-20,Financials,0.12
+2019-08-20,Index,0.02
+2019-08-20,Real Estate,0.04
+2019-08-20,Cons. Staples,0.14
+2019-08-21,Real Estate,0.05
+2019-08-21,Financials,0.12
+2019-08-21,Materials,0.05
+2019-08-21,Currency,0
+2019-08-21,Cons. Disc.,0.22
+2019-08-21,Comm. Services,0.24
+2019-08-21,Index,0.03
+2019-08-21,Industrials,0.1
+2019-08-21,Cons. Staples,0.14
+2019-08-21,IT,0.04
+2019-08-22,Cons. Disc.,0.21
+2019-08-22,Cons. Staples,0.14
+2019-08-22,Real Estate,0.05
+2019-08-22,Financials,0.12
+2019-08-22,Comm. Services,0.25
+2019-08-22,Industrials,0.09
+2019-08-22,Currency,0
+2019-08-22,IT,0.04
+2019-08-22,Index,0.03
+2019-08-22,Materials,0.05
+2019-08-23,Currency,0
+2019-08-23,Financials,0.13
+2019-08-23,Industrials,0.09
+2019-08-23,Materials,0.04
+2019-08-23,Index,0.03
+2019-08-23,Cons. Staples,0.13
+2019-08-23,Cons. Disc.,0.21
+2019-08-23,IT,0.04
+2019-08-23,Real Estate,0.05
+2019-08-23,Comm. Services,0.25
+2019-08-26,Cons. Staples,0.13
+2019-08-26,Currency,0
+2019-08-26,Industrials,0.09
+2019-08-26,Comm. Services,0.25
+2019-08-26,Cons. Disc.,0.21
+2019-08-26,Real Estate,0.05
+2019-08-26,Materials,0.04
+2019-08-26,IT,0.04
+2019-08-26,Financials,0.13
+2019-08-26,Index,0.03
+2019-08-27,Materials,0.04
+2019-08-27,Comm. Services,0.25
+2019-08-27,Index,0.03
+2019-08-27,Real Estate,0.05
+2019-08-27,Industrials,0.09
+2019-08-27,Currency,0
+2019-08-27,Cons. Staples,0.13
+2019-08-27,Financials,0.13
+2019-08-27,IT,0.04
+2019-08-27,Cons. Disc.,0.2
+2019-08-28,Industrials,0.09
+2019-08-28,Cons. Staples,0.13
+2019-08-28,Comm. Services,0.26
+2019-08-28,Currency,0
+2019-08-28,IT,0.04
+2019-08-28,Index,0.03
+2019-08-28,Real Estate,0.05
+2019-08-28,Materials,0.04
+2019-08-28,Financials,0.13
+2019-08-28,Cons. Disc.,0.21
+2019-08-29,Comm. Services,0.25
+2019-08-29,Currency,0
+2019-08-29,Materials,0.05
+2019-08-29,Industrials,0.09
+2019-08-29,Cons. Staples,0.13
+2019-08-29,Financials,0.13
+2019-08-29,IT,0.04
+2019-08-29,Index,0.03
+2019-08-29,Real Estate,0.05
+2019-08-29,Cons. Disc.,0.21
+2019-08-30,Materials,0.05
+2019-08-30,Cons. Disc.,0.2
+2019-08-30,Cons. Staples,0.14
+2019-08-30,Real Estate,0.05
+2019-08-30,Comm. Services,0.25
+2019-08-30,Industrials,0.09
+2019-08-30,IT,0.04
+2019-08-30,Currency,0
+2019-08-30,Financials,0.13
+2019-08-30,Index,0.03
+2019-09-03,Cons. Staples,0.14
+2019-09-03,Currency,0
+2019-09-03,Cons. Disc.,0.21
+2019-09-03,Industrials,0.09
+2019-09-03,Real Estate,0.05
+2019-09-03,Comm. Services,0.26
+2019-09-03,Financials,0.13
+2019-09-03,Index,0.03
+2019-09-03,IT,0.04
+2019-09-03,Materials,0.04
+2019-09-04,Industrials,0.09
+2019-09-04,Comm. Services,0.26
+2019-09-04,Financials,0.13
+2019-09-04,IT,0.04
+2019-09-04,Materials,0.05
+2019-09-04,Index,0.03
+2019-09-04,Real Estate,0.05
+2019-09-04,Currency,0
+2019-09-04,Cons. Staples,0.14
+2019-09-04,Cons. Disc.,0.2
+2019-09-05,Industrials,0.09
+2019-09-05,IT,0.04
+2019-09-05,Real Estate,0.05
+2019-09-05,Index,0.03
+2019-09-05,Cons. Staples,0.14
+2019-09-05,Comm. Services,0.25
+2019-09-05,Cons. Disc.,0.2
+2019-09-05,Materials,0.05
+2019-09-05,Currency,0
+2019-09-05,Financials,0.13
+2019-09-06,Industrials,0.09
+2019-09-06,Materials,0.05
+2019-09-06,Real Estate,0.05
+2019-09-06,Index,0.04
+2019-09-06,IT,0.04
+2019-09-06,Cons. Disc.,0.21
+2019-09-06,Cons. Staples,0.14
+2019-09-06,Currency,0
+2019-09-06,Comm. Services,0.25
+2019-09-06,Financials,0.12
+2019-09-09,Materials,0.05
+2019-09-09,Financials,0.12
+2019-09-09,Currency,0
+2019-09-09,Industrials,0.09
+2019-09-09,Comm. Services,0.25
+2019-09-09,Cons. Disc.,0.21
+2019-09-09,Index,0.04
+2019-09-09,IT,0.04
+2019-09-09,Real Estate,0.05
+2019-09-09,Cons. Staples,0.14
+2019-09-10,Financials,0.12
+2019-09-10,Materials,0.04
+2019-09-10,Currency,0
+2019-09-10,Cons. Staples,0.13
+2019-09-10,IT,0.04
+2019-09-10,Index,0.05
+2019-09-10,Cons. Disc.,0.2
+2019-09-10,Real Estate,0.05
+2019-09-10,Industrials,0.09
+2019-09-10,Comm. Services,0.25

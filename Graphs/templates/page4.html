@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+text {
+    text-decoration: none !important;
+    font-family: verdana !important;
+    fill:black !important;
+    font-size:12px !important;
+
+}
+
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>GHC</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+<link rel="stylesheet" href="../static/css/css/fontawesome.min.css">
+<link rel="stylesheet" href="../static/css/css/fullcalendar.min.css">
+<link rel="stylesheet" href="../static/css/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/css/tooplate.css">
+<link rel="stylesheet" href="../static/css/css/styling.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script> 
+<script src="https://code.highcharts.com/modules/data.js"></script>
+
+</head>
+<body onload="document.getElementById('dt').value='8/19/2019';pie_of_pie('8/19/2019');bar_of_bar('8/19/2019')">
+
+
+
+<div class="" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-xl navbar-light bg-light" style="position: fixed;width:100%;top:0;left:0;z-index:1;">
+                    <a class="navbar-brand" href="#">
+                        <!-- <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i> -->
+                        <img src="../static/images/ghclogo.png" height=70 width=70>
+                        <h1 class="tm-site-title mb-0">GHC</h1>
+                    </a>
+                    <button class="navbar-toggler ml-auto mr-0" type="button"id="dropbtn" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" ></span>
+                        </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link " href="{% url 'chatbot'%}"> Chatterbot
+                                        </a>
+                                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="{% url 'firstpage'%}">Portfolio Overview
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <li class="nav-item">
+                                    <a class="nav-link "  href="{% url 'secondpage'%}">Net Exposure
+                                       
+                                    </a>
+                                </li>
+                               
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'thirdpage'%}">Factor Contribution</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active"  href="{% url 'fourthpage'%}">Gross Exposure and PnL</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link"  href="{% url 'fifthpage'%}">Value at Risk</a>
+                
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{% url 'sixthpage'%}">Excess, Vol and Return Disturbution</a>
+                
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex" href="{% url 'logout'%}">
+                                    <!-- <i class="far fa-user mr-2 tm-logout-icon"></i> -->
+                                    <span>Logout<i style="font-size:24px" class="fa">&#xf08b;</i></span>
+                        
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div style="margin-top:100px;text-align:right">
+
+            Select Date: <input type="text"id="dt" onchange="pie_of_pie(document.getElementById('dt').value);bar_of_bar(document.getElementById('dt').value);"  class="column  month_and_year_option i" name="announcementdate" required placeholder="MM-DD-YYYY" autocomplete="off">            
+            <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+            <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+            <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"><!--- For Date Picker-->
+            <script>
+                    $(function(){
+                        $( "#dt" ).datepicker({
+                                           changeMonth : true,
+                                           changeYear : true,
+                                           dateFormat : 'm/d/yy'
+                                       });
+                                   });
+                                    
+                            </script>
+        </div>
+        <!-- row -->
+        <div class="row tm-content-row tm-mt-big">
+                  
+            <div class="tm-col tm-col-big">
+                <div class="bg-white tm-block h-100">
+                        <h2 class="tm-block-title">Gross Exposure Drilldown By Sector</h2>
+                        <div id="image1" style="margin-left:40%"></div>
+                         <div id="container" style="height: 500px;margin-top:10%"></div>
+                        
+                        <script>
+                        function pie_of_pie(selected_date)
+                        {
+                            data1={{sector|safe}}
+                            data2={{region|safe}}
+                       
+                            var filtered,filtered2;
+                            for(i=0;i<data1.length;i++)
+                            {
+                            
+                                 sector=data1[i].filter(function(item){
+                                        
+                                        return item.date==selected_date;         
+                                            });	
+                                if(sector.length!=0)
+                                  {
+                                   break;
+                                  }
+                                
+                            }
+                           
+                            for(i=0;i<data2.length;i++)
+                            {
+                            
+                                 region=data2[i].filter(function(item){
+                                        
+                                        return item.date==selected_date;         
+                                            });	
+                                if(region.length!=0)
+                                  {
+                                   break;
+                                  }
+                                
+                            }
+                        
+                            
+                        if(sector.length>0)
+                        {
+                            document.getElementById("image1").style.display="none"
+                            document.getElementById("container").style.display="block"
+
+                            Highcharts.chart('container', {
+                            chart: {
+                                type: 'pie',
+                            	plotBackgroundColor: null,
+                              plotBorderWidth: null,
+                              plotShadow: false,
+                            },
+                            title: {
+                                    text: ''
+                                },
+                                credits: {
+                                            enabled: false
+                                        },
+
+                                        exporting: {
+                                        buttons: {
+                                            contextButton: {
+                                               enabled:false
+                                            },
+                                            
+                                        }
+                                    },
+                                                            
+                            tooltip: {
+                              pointFormat: '<span style="text-decoration:none">{series.name}</span>: <br>{point.percentage:.1f} %'
+                            },
+                            plotOptions: {
+                              pie: {
+                                  size:'60%',
+                                dataLabels: {
+                                    style: {
+                                                color: 'black',
+                                                fontSize:'12px',
+                                                fontFamily:'verdana'
+                                            },
+                                  enabled: true,
+                                  format: '<span style="">{point.name}</span> <br>{point.percentage:.1f} %',
+                                }
+                              }
+                            },
+                            series: [{
+                                name: 'Sector  split',
+                                data:sector,
+                        
+                            
+                            }],
+                            
+                            drilldown: {
+                                    drillUpButton: {
+                                        position: {
+                                            verticalAlign: 'left'
+                                        },
+                                    },
+                                series: region
+                            
+                            }
+                        });
+                        }
+                        else{
+                            document.getElementById("image1").style.display="block"
+                            document.getElementById("container").style.display="none"
+                            document.getElementById("image1").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                        }
+                        }
+                        
+                       
+                        </script>
+                  
+                </div>
+            </div>
+        
+            <div class="tm-col tm-col-big" >
+                    <div class="bg-white tm-block h-100">
+                            <h2 class="tm-block-title">PNL Drilldown By Sector</h2>
+
+                            <div id="image" style="margin-left:40%"></div>
+
+                            <div id="container2" style="height: 600px"></div>
+                            <script src="https://d3js.org/d3.v4.min.js"></script>
+                            <script>
+                            function bar_of_bar(selected_date)
+                            {
+                                data1={{sector2|safe}}
+                                data2={{ticker|safe}}
+                                var filtered,filtered2;
+
+                                for(i=0;i<data1.length;i++)
+                                {
+                                    
+                                    filtered=data1[i].filter(function(item){
+                                                item.y=item.y/1000
+                                            return item.date==selected_date;
+                                                });    
+                                    if(filtered.length!=0)
+                                      {
+                                       break;
+                                      }
+
+                                    
+                                }
+                                for(i=0;i<data2.length;i++)
+                                {
+                                
+                                    filtered2=data2[i].filter(function(item){
+                                            for(j=0;j<(item.data).length;j++)
+                                            {
+                                                item.data[j][1]=item.data[j][1]/1000;
+                                                
+                                            }
+                                            return item.date==selected_date;
+                                                });    
+                                    if(filtered2.length!=0)
+                                      {
+                                       break;
+                                      }
+                                    
+                                }
+                                
+                               
+                                if (filtered.length >0)
+                                {
+                                        
+                                        document.getElementById("image").style.display="none"
+                                        document.getElementById("container2").style.display="block"
+                              
+                                        Highcharts.chart('container2', {
+                                        chart: {
+                                            type: 'column',
+                                        },
+                                        credits: {
+                                                        enabled: false
+                                                    },
+                                                    exporting: {
+                                                    buttons: {
+                                                        contextButton: {
+                                                        enabled:false
+                                                        },
+                                                        
+                                                    }
+                                                },
+                                        title: {
+                                            text:''
+                                        },
+                                        //   subtitle: {
+                                        //     text: 'Click the columns to view versions.'
+                                        //   },
+                                        xAxis: {
+                                            lineWidth: 0,  tickLength: 0,
+                                                labels: {
+                                                enabled:false,
+                                               
+                                                }
+                                        },
+                                        yAxis: {
+                                            gridLineWidth: 0,
+                                            
+                                            title: {
+                                            text: 'PNL values($)',
+                                            style: {
+                                                            color: 'black',
+                                                            fontSize:'13px',
+                                                            fontFamily:'verdana'
+                                                        },
+                                            },
+                                            labels: {
+                                                style: {
+                                                            color: 'black',
+                                                            fontSize:'13px',
+                                                            fontFamily:'verdana'
+                                                        },
+                                                        formatter: function(){
+                                                        return  this.value+ 'K';
+                                                        }
+                                                    },
+                                        
+                                        },
+                                      
+                                        plotOptions: {
+                                            series: {
+                                            borderWidth: 0,
+                                            dataLabels: {
+                                                enabled: true,
+                                                format: '{point.name}<br>${point.y:.0f}K'
+                                            
+                                            }
+                                            }
+                                        },
+                                        
+                                        tooltip: {
+                                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                                            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y:.0f}K</b><br/>'
+                                        },
+                                        series: [{
+                                            name: '',
+                                            colorByPoint: true,
+                                            data:filtered,showInLegend: false,
+                                           
+                                          dataLabels: {
+                                                    formatter: function() {
+                                                        return point.name ;
+                                                    },
+                                                    color: 'black',  
+                                                  
+                                                    distance: -30
+                                                }
+                                        }],
+                                        drilldown: {
+                                            series: filtered2,
+                                           
+                                            
+                                        }
+                                        });
+                                        }
+                                        else{
+                                            document.getElementById("image").style.display="block"
+                                            document.getElementById("container2").style.display="none"
+                                            document.getElementById("image").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                                        }
+                                    
+                       
+                        
+                                    }
+                            </script>
+                      
+                    </div>
+                </div>
+       
+        </div>
+    </div>
+
+</body>
+</html>

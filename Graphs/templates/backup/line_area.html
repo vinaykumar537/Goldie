@@ -1,0 +1,75 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+ var ranges={{data|safe}}
+var averages={{data2|safe}}
+for(i=0;i<averages.length-1;i++)
+{
+averages[i][0]=new Date(averages[i][0]).getTime();
+}
+for(i=0;i<ranges.length-1;i++)
+{
+    ranges[i][0]=new Date(ranges[i][0]).getTime();
+
+}
+
+
+Highcharts.chart('container', {
+
+    title: {
+        text: 'Volatility'
+    },
+
+    xAxis: {
+   
+      type: 'datetime'
+    },
+
+    yAxis: {
+        title: {
+            text: null
+        }
+    },
+
+    tooltip: {
+        crosshairs: true,
+        shared: true,
+        
+    },
+
+    legend: {
+    },
+
+    series: [{
+        name: 'Date',
+        data: averages,
+        pointStart:averages[0][0],
+        pointInterval: 24 * 3600 * 1000,
+        zIndex: 1,
+        marker: {
+            fillColor: 'red',
+            lineWidth: 2,
+            lineColor: Highcharts.getOptions().colors[0]
+        }
+    }, {
+        name: 'Range',
+        data: ranges,
+        type: 'arearange',
+            pointStart: ranges[0][0],
+            pointInterval: 24 * 3600 * 1000,
+        lineWidth: 0,
+        linkedTo: ':previous',
+     
+        color: Highcharts.getOptions().colors[1],
+        fillOpacity: 0.3,
+        zIndex: 0,
+        marker: {
+           
+            enabled: false
+        }
+    }]
+});
+</script>

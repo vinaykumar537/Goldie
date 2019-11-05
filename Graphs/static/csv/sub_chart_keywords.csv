@@ -1,0 +1,82 @@
+Main_Chart,Sub_Chart_Keywords,Sub_Chart
+Net Exposure,stock,Net Exposure by Stock
+Net Exposure,ticker,Net Exposure by Stock
+Net Exposure,position,Net Exposure by Stock
+Net Exposure,security,Net Exposure by Stock
+Net Exposure,company,Net Exposure by Stock
+Net Exposure,holdings,Net Exposure by Stock
+Net Exposure,scrip,Net Exposure by Stock
+Net Exposure,stocks,Net Exposure by Stock
+Net Exposure,tickers,Net Exposure by Stock
+Net Exposure,positions,Net Exposure by Stock
+Net Exposure,securities,Net Exposure by Stock
+Net Exposure,companies,Net Exposure by Stock
+Net Exposure,holdings,Net Exposure by Stock
+Net Exposure,scrips,Net Exposure by Stock
+Net Exposure,country,Net Exposure by Country
+Net Exposure,region,Net Exposure by Country
+Net Exposure,geography,Net Exposure by Country
+Net Exposure,continent,Net Exposure by Country
+Net Exposure,area,Net Exposure by Country
+Net Exposure,territory,Net Exposure by Country
+Net Exposure,iso,Net Exposure by Country
+Net Exposure,countries,Net Exposure by Country
+Net Exposure,regions,Net Exposure by Country
+Net Exposure,geographical,Net Exposure by Country
+Net Exposure,continents,Net Exposure by Country
+Net Exposure,geographies,Net Exposure by Country
+Net Exposure,territories,Net Exposure by Country
+Net Exposure,iso,Net Exposure by Country
+Net Exposure,sector,Net Exposure by Sector
+Net Exposure,gics,Net Exposure by Sector
+Net Exposure,industry,Net Exposure by Sector
+Net Exposure,subindustry,Net Exposure by Sector
+Net Exposure,sectors,Net Exposure by Sector
+Net Exposure,industries,Net Exposure by Sector
+Net Exposure,subindustries,Net Exposure by Sector
+FAMA FRENCH MODEL,foroneday,Multi Factor Model
+VaRnPNL,stock,VaR by Stock
+VaRnPNL,ticker,VaR by Stock
+VaRnPNL,position,VaR by Stock
+VaRnPNL,security,VaR by Stock
+VaRnPNL,company,VaR by Stock
+VaRnPNL,holdings,VaR by Stock
+VaRnPNL,scrip,VaR by Stock
+VaRnPNL,stocks,VaR by Stock
+VaRnPNL,tickers,VaR by Stock
+VaRnPNL,positions,VaR by Stock
+VaRnPNL,securities,VaR by Stock
+VaRnPNL,companies,VaR by Stock
+VaRnPNL,holdings,VaR by Stock
+VaRnPNL,scrips,VaR by Stock
+VaRnPNL,country,VaR by Country
+VaRnPNL,region,VaR by Country
+VaRnPNL,geography,VaR by Country
+VaRnPNL,continent,VaR by Country
+VaRnPNL,area,VaR by Country
+VaRnPNL,territory,VaR by Country
+VaRnPNL,iso,VaR by Country
+VaRnPNL,countries,VaR by Country
+VaRnPNL,regions,VaR by Country
+VaRnPNL,geographical,VaR by Country
+VaRnPNL,continents,VaR by Country
+VaRnPNL,geographies,VaR by Country
+VaRnPNL,territories,VaR by Country
+VaRnPNL,iso,VaR by Country
+VaRnPNL,sector,VaR by Sector
+VaRnPNL,gics,VaR by Sector
+VaRnPNL,industry,VaR by Sector
+VaRnPNL,subindustry,VaR by Sector
+VaRnPNL,sectors,VaR by Sector
+VaRnPNL,industries,VaR by Sector
+VaRnPNL,subindustries,VaR by Sector
+Growth of $1000-Since Inception,portfoliometrics,Portfolio Measurements
+Growth of $1000-Since Inception,portfoliomeasurments,Portfolio Measurements
+Growth of $1000-Since Inception,fundstatistics,Portfolio Measurements
+Growth of $1000-Since Inception,fundstat,Portfolio Measurements
+Growth of $1000-Since Inception,portfoliosummary,Portfolio Measurements
+Growth of $1000-Since Inception,portfoliosnippet,Portfolio Measurements
+Growth of $1000-Since Inception,sharpe,Portfolio Measurements
+Growth of $1000-Since Inception,sortino,Portfolio Measurements
+Growth of $1000-Since Inception,monthly,Monthly Performance
+Growth of $1000-Since Inception,yearly,Monthly Performance

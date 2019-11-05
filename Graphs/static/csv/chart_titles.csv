@@ -1,0 +1,39 @@
+Chart_Name,Similar_Names,Keywords
+Net Exposure,Net exposure,netexposure
+Net Exposure,Gross Exposure,grossexposure
+Net Exposure,Exposure over time,exposureovertime
+Net Exposure,Weight,weight
+Net Exposure,Net,net
+Net Exposure,Gross,gross
+Net Exposure,exposure,exposure
+FAMA FRENCH MODEL,Factor analysis,factoranalysis
+FAMA FRENCH MODEL,Fama-French,fama-french
+FAMA FRENCH MODEL,multi factor,multifactor
+FAMA FRENCH MODEL,regression,regression
+FAMA FRENCH MODEL,factor break up,factorbreakup
+FAMA FRENCH MODEL,FamaFrench,famafrench
+FAMA FRENCH MODEL,Fama,fama
+Growth of $1000-Since Inception,Growth of $,growthof$
+Growth of $1000-Since Inception,Fund return,fundreturn
+Growth of $1000-Since Inception,Fund returns,fundreturns
+Growth of $1000-Since Inception,return chart,returnchart
+Growth of $1000-Since Inception,cumulative,cumulative
+Growth of $1000-Since Inception,evolution,evolution
+Growth of $1000-Since Inception,fund vs bmk,fundvsbmk
+Growth of $1000-Since Inception,Growth of dollar,growthofdollar
+Growth of $1000-Since Inception,fund vs benchmark,fundvsbenchmark
+VaRnPNL,VaR,valueatrisk
+VaRnPNL,Var,var
+VaRnPNL,risk,risk
+VaRnPNL,PNL,pnl
+Portfolio Measurements,Portfolio measurements,portfoliomeasurements
+Portfolio Measurements,Measurements,measurement
+Hi,Hi,hi
+Hi,Hai,hai
+Hello,Hello,hello
+Bye,Bi,bi
+Bye,Bye,bye
+Ok,Ok,ok
+Ok,K,k
+Ok,Kk,kk
+Ok,Okay,okay

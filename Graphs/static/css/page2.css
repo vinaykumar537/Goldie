@@ -1,0 +1,25 @@
+
+#date
+{
+    padding-left:10%;
+    /* background-color: blue; */
+}
+#areachart{
+    width:100%;
+    height:50%;
+}
+#bubblechart{
+    width:100%;
+    height:50%;
+}
+p{
+    font-size:20px;
+}
+.column{
+    width:300px;
+    height:40px;
+    font-size:18px;
+    padding:5px;
+    border-radius:3px;
+    border:1px solid #CCCCCC;
+}

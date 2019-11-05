@@ -1,0 +1,231 @@
+Trade_Dt,Sector,PNL
+8/1/2019,Communication Services,-34281.95036
+8/2/2019,Communication Services,-67876.20956
+8/5/2019,Communication Services,-39029.42494
+8/6/2019,Communication Services,-8404.969125
+8/7/2019,Communication Services,11287.64808
+8/8/2019,Communication Services,13617.09385
+8/9/2019,Communication Services,-27904.99587
+8/12/2019,Communication Services,-28526.94172
+8/13/2019,Communication Services,-5059.200484
+8/14/2019,Communication Services,-26664.21566
+8/15/2019,Communication Services,-2040.463391
+8/16/2019,Communication Services,79268.85753
+8/19/2019,Communication Services,40979.92765
+8/20/2019,Communication Services,4949.832648
+8/21/2019,Communication Services,37319.86058
+8/22/2019,Communication Services,13254.1041
+8/23/2019,Communication Services,-8596.623342
+8/26/2019,Communication Services,12636.82378
+8/27/2019,Communication Services,-7761.72064
+8/28/2019,Communication Services,3186.084366
+8/29/2019,Communication Services,-1471.68522
+8/30/2019,Communication Services,-16246.03542
+8/1/2019,Consumer Discretionary,-51882.68751
+8/2/2019,Consumer Discretionary,-79877.84729
+8/5/2019,Consumer Discretionary,-437960.0868
+8/6/2019,Consumer Discretionary,113068.3225
+8/7/2019,Consumer Discretionary,-163662.1889
+8/8/2019,Consumer Discretionary,150332.4831
+8/9/2019,Consumer Discretionary,98777.95643
+8/12/2019,Consumer Discretionary,-159577.4162
+8/13/2019,Consumer Discretionary,212997.366
+8/14/2019,Consumer Discretionary,-336363.4918
+8/15/2019,Consumer Discretionary,144418.9853
+8/16/2019,Consumer Discretionary,126833.2507
+8/19/2019,Consumer Discretionary,118501.512
+8/20/2019,Consumer Discretionary,-50024.43268
+8/21/2019,Consumer Discretionary,185548.7363
+8/22/2019,Consumer Discretionary,9783.5506
+8/23/2019,Consumer Discretionary,-18107.85
+8/26/2019,Consumer Discretionary,-171426.05
+8/27/2019,Consumer Discretionary,-74205.1362
+8/28/2019,Consumer Discretionary,-85600.84
+8/29/2019,Consumer Discretionary,81074.082
+8/30/2019,Consumer Discretionary,154380.66
+8/1/2019,Consumer Staples,551060.6946
+8/2/2019,Consumer Staples,27261.46
+8/5/2019,Consumer Staples,-29863.6932
+8/6/2019,Consumer Staples,-302338.1734
+8/7/2019,Consumer Staples,108671.4276
+8/8/2019,Consumer Staples,-70729.1862
+8/9/2019,Consumer Staples,26237.37
+8/12/2019,Consumer Staples,74470.14
+8/13/2019,Consumer Staples,-37200.3437
+8/14/2019,Consumer Staples,-68054.5
+8/15/2019,Consumer Staples,-285737.9298
+8/28/2019,Consumer Staples,1222.750249
+8/29/2019,Consumer Staples,5182.75583
+8/30/2019,Consumer Staples,-2758.584764
+8/1/2019,Energy,20239.08388
+8/2/2019,Energy,81879.00714
+8/5/2019,Energy,-213052.4298
+8/6/2019,Energy,-36293.2361
+8/7/2019,Energy,-17680.4312
+8/8/2019,Energy,41441.9694
+8/9/2019,Energy,-10529.7102
+8/12/2019,Energy,-103626.48
+8/13/2019,Energy,17307.515
+8/14/2019,Energy,-151817.37
+8/15/2019,Energy,-51545.97
+8/16/2019,Energy,94973.6288
+8/19/2019,Energy,100115.6
+8/20/2019,Energy,-12493.84
+8/21/2019,Energy,-4189.36
+8/22/2019,Energy,-127123.72
+8/23/2019,Energy,-150099.16
+8/26/2019,Energy,107834.58
+8/27/2019,Energy,-36632.08
+8/28/2019,Energy,69850
+8/29/2019,Energy,72060.14
+8/30/2019,Energy,-42800.66
+8/1/2019,Financials,-218495.1874
+8/2/2019,Financials,-157184.7304
+8/5/2019,Financials,-372108.7756
+8/6/2019,Financials,350450.433
+8/7/2019,Financials,-16.964577
+8/8/2019,Financials,16471.80446
+8/9/2019,Financials,50253.97166
+8/12/2019,Financials,-230092.1488
+8/13/2019,Financials,127188.3214
+8/14/2019,Financials,-153219.4342
+8/15/2019,Financials,-124729.3333
+8/16/2019,Financials,8409.945953
+8/19/2019,Financials,115799.1046
+8/20/2019,Financials,44349.78609
+8/21/2019,Financials,-104082.2683
+8/22/2019,Financials,111591.7153
+8/23/2019,Financials,-64059.87688
+8/26/2019,Financials,-9898.92708
+8/27/2019,Financials,-15987.95411
+8/28/2019,Financials,-29554.48615
+8/29/2019,Financials,-23852.22544
+8/30/2019,Financials,-2369.65013
+8/1/2019,Health Care,-895550.641
+8/2/2019,Health Care,-756905.4171
+8/5/2019,Health Care,-885229.4653
+8/6/2019,Health Care,373147.1572
+8/7/2019,Health Care,350096.7351
+8/8/2019,Health Care,409988.1474
+8/9/2019,Health Care,-336798.0563
+8/12/2019,Health Care,-188417.5403
+8/13/2019,Health Care,296113.6779
+8/14/2019,Health Care,-240734.4852
+8/15/2019,Health Care,-242656.5415
+8/16/2019,Health Care,415373.2496
+8/19/2019,Health Care,5077.870436
+8/20/2019,Health Care,-35060.36316
+8/21/2019,Health Care,-29189.68547
+8/22/2019,Health Care,-120728.5474
+8/23/2019,Health Care,-204067.6181
+8/26/2019,Health Care,240097.9075
+8/27/2019,Health Care,-1157.071871
+8/28/2019,Health Care,13176.52897
+8/29/2019,Health Care,29075.4603
+8/30/2019,Health Care,-148204.2176
+8/1/2019,Industrials,-142260.8432
+8/2/2019,Industrials,-86571.65992
+8/5/2019,Industrials,-159063.6835
+8/6/2019,Industrials,127186.8514
+8/7/2019,Industrials,58461.05358
+8/8/2019,Industrials,-7964.91643
+8/9/2019,Industrials,-208114.5345
+8/12/2019,Industrials,-64412.3703
+8/13/2019,Industrials,-20587.92562
+8/14/2019,Industrials,-175615.252
+8/15/2019,Industrials,-97422.9338
+8/16/2019,Industrials,16031.01696
+8/19/2019,Industrials,-24587.50464
+8/20/2019,Industrials,2481.74208
+8/21/2019,Industrials,20036.51712
+8/22/2019,Industrials,-22872.90112
+8/23/2019,Industrials,-36123.5104
+8/26/2019,Industrials,-23321.59516
+8/27/2019,Industrials,2175.11916
+8/30/2019,Industrials,196.336376
+8/1/2019,Information Technology,79952.85015
+8/2/2019,Information Technology,76582.51345
+8/5/2019,Information Technology,-208919.9328
+8/6/2019,Information Technology,72318.02709
+8/7/2019,Information Technology,174086.2837
+8/8/2019,Information Technology,98422.9914
+8/9/2019,Information Technology,-46473.7471
+8/12/2019,Information Technology,-115235.5873
+8/13/2019,Information Technology,80033.6098
+8/14/2019,Information Technology,-419794.7856
+8/15/2019,Information Technology,-36501.0112
+8/16/2019,Information Technology,78709.5281
+8/19/2019,Information Technology,39928.6896
+8/20/2019,Information Technology,-3563.1964
+8/21/2019,Information Technology,17631.29
+8/22/2019,Information Technology,-14181.43
+8/23/2019,Information Technology,-57352.18703
+8/26/2019,Information Technology,-1657.022
+8/27/2019,Information Technology,40361.62266
+8/28/2019,Information Technology,23557.33606
+8/29/2019,Information Technology,86748.9042
+8/30/2019,Information Technology,-14404.5972
+8/1/2019,Materials,-100048.9222
+8/2/2019,Materials,-59647.07307
+8/5/2019,Materials,-5146.571431
+8/6/2019,Materials,-516.0348404
+8/7/2019,Materials,-4986.91666
+8/8/2019,Materials,-3171.169843
+8/9/2019,Materials,-1981.078552
+8/12/2019,Materials,-2795.858628
+8/1/2019,Other,326304.8921
+8/2/2019,Other,841700.5267
+8/5/2019,Other,1934591.122
+8/6/2019,Other,-819267.0616
+8/7/2019,Other,-178679.2581
+8/8/2019,Other,-1544177.538
+8/9/2019,Other,621527.7847
+8/12/2019,Other,1312687.461
+8/13/2019,Other,-1242606.326
+8/14/2019,Other,2291999.214
+8/15/2019,Other,-11514.93057
+8/16/2019,Other,-935236.1087
+8/19/2019,Other,-490799.9593
+8/20/2019,other,314543.2948
+8/21/2019,Other,-392791.2906
+8/22/2019,Other,250013.1567
+8/23/2019,Other,957791.551
+8/26/2019,Other,-337608.4375
+8/27/2019,Other,222414.0258
+8/28/2019,Other,-328054.5364
+8/29/2019,Other,-480938.95
+8/30/2019,Other,56241.3588
+8/1/2019,Real Estate,48564.88584
+8/2/2019,Real Estate,79615.27326
+8/5/2019,Real Estate,-208595.8237
+8/6/2019,Real Estate,84061.31789
+8/7/2019,Real Estate,-14117.65614
+8/8/2019,Real Estate,-22467.1069
+8/9/2019,Real Estate,-46065.20782
+8/12/2019,Real Estate,116102.5916
+8/13/2019,Real Estate,26422.41158
+8/14/2019,Real Estate,-104223.3946
+8/15/2019,Real Estate,51273.126
+8/16/2019,Real Estate,24032.37
+8/19/2019,Real Estate,63747.59
+8/20/2019,Real Estate,-25017.17
+8/21/2019,Real Estate,22159.3731
+8/22/2019,Real Estate,53794.47055
+8/23/2019,Real Estate,-60584.92
+8/26/2019,Real Estate,25040.9509
+8/27/2019,Real Estate,-21682.1899
+8/28/2019,Real Estate,23151.0504
+8/29/2019,Real Estate,27506.6466
+8/30/2019,Real Estate,-15338.25263
+8/1/2019,Utilities,-12685.85042
+8/2/2019,Utilities,-3219.358782
+8/5/2019,Utilities,-143176.0184
+8/6/2019,Utilities,42852.2062
+8/7/2019,Utilities,39800.5586
+8/8/2019,Utilities,49925.92
+8/9/2019,Utilities,5575.28
+8/12/2019,Utilities,-39687.84
+8/13/2019,Utilities,14687.1664
+8/14/2019,Utilities,-42658.2665
+8/15/2019,Utilities,-50532.1227
+8/16/2019,Utilities,-8105.93

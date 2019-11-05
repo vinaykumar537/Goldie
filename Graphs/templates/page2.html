@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GHC</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="../static/css/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../static/css/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="../static/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/css/tooplate.css">
+    <link rel="stylesheet" href="../static/css/css/styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<style> /* set the CSS */
+
+        .line {
+          fill: none;
+          stroke:#9EC8F1;
+          stroke-width: 2px;
+        }
+        
+        .area {
+          /* fill:rgb(13, 160, 13); */
+          fill:#9EC8F1;
+        }
+        
+        #date
+        {
+            padding-left:10%;
+            /* background-color: blue; */
+        }
+   
+        #bubblehart{
+            width:100%;
+            height:50%;
+        }
+        p{
+            font-size:20px;
+        }
+        .column{
+            width:300px;
+            height:40px;
+            font-size:18px;
+            padding:5px;
+            border-radius:3px;
+            border:1px solid #CCCCCC;
+        }
+        .toolTip, div.toolTip{
+            position: absolute;
+            display: none;
+            min-width: 80px;
+            height: auto;
+            background: none repeat scroll 0 0 #ffffff;
+            border: 1px solid #6F257F;
+            padding: 14px;
+            text-align: center;
+            pointer-events: none; 
+            font-family:verdana;
+            }
+            #c1{
+                /* background-color:grey; */
+                display:block;
+                margin:auto !important;
+            }
+            #c2{
+                /* background-color:grey; */
+                display:block;
+                margin:auto !important;
+            }
+
+        </style>
+        
+<body id="reportsPage" onload="bubble('2019-09-10');bubble2('2019-09-10');tree('2019-09-10');document.getElementById('datepicker').value='2019-09-10';">
+    <div class="" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light" style="position: fixed;width:100%;top:0;left:0;z-index:1;">
+                        <a class="navbar-brand" href="#">
+                            <!-- <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i> -->
+                            <img src="../static/images/ghclogo.png" height=70 width=70>
+                            <h1 class="tm-site-title mb-0">GHC</h1>
+                        </a>
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item">
+                                            <a class="nav-link " href="{% url 'chatbot'%}"> Chatterbot
+                                            </a>
+                                        </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="{% url 'firstpage'%}">Portfolio Overview
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <li class="nav-item">
+                                        <a class="nav-link active"  href="{% url 'secondpage'%}">Net Exposure
+                                           
+                                        </a>
+                                    </li>
+                                   
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'thirdpage'%}">Factor Contribution</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link"  href="{% url 'fourthpage'%}">Gross Exposure and PnL</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link"  href="{% url 'fifthpage'%}">Value at Risk</a>
+                    
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="{% url 'sixthpage'%}">Excess, Vol and Return Disturbution</a>
+                    
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex" href="{% url 'logout'%}">
+                                        <!-- <i class="far fa-user mr-2 tm-logout-icon"></i> -->
+                                        <span>Logout<i style="font-size:24px" class="fa">&#xf08b;</i></span>
+                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div style="text-align:right;margin-top:100px">
+                    <h3 style="float:left">Net Exposure (%)</h3>
+                    <p>Select Date: <input type="text"id="datepicker"  class="column  month_and_year_option2 i" name="announcementdate" required placeholder="DD/MM/YY" autocomplete="off"></p>
+                    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+                    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+                    <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"><!--- For Date Picker-->
+                    <script>
+                            var  selected_date;
+                                $(function(){
+                                $( "#datepicker" ).datepicker({
+                                    changeMonth : true,
+                                    changeYear : true,
+                                    dateFormat : 'yy-mm-dd'
+                                });
+                            });
+                            $(function(){
+                                    
+                                    $("#datepicker").on("change",function(){             
+                                    selected_date=$('#datepicker').val();
+                                    // alert(selected_date)
+                                    tree(selected_date)
+                                    bubble(selected_date)
+                                    bubble2(selected_date)
+                                });
+                            });
+
+                        </script> 
+            </div>
+             
+            <div class="row tm-content-row tm-mt-big">
+                    
+                    <div class="tm-col tm-col-big">
+                            <div class="bg-white tm-block h-100">
+                                <h2 class="tm-block-title">Evolution Since ITD</h2>
+                                <div id="areachart">
+                                        <script src="https://d3js.org/d3.v4.min.js"></script>   
+                                    <script>
+                                    
+                                    // set the dimensions and margins of the graph
+                                    var margin = {top: 10, right: 10, bottom: 20, left: 60},
+                                        width = 700 - margin.left - margin.right,
+                                        height = 300 - margin.top - margin.bottom;
+                                    
+                                    // parse the date / time
+                                    var parseTime = d3.timeParse("%d-%b-%y");
+                                    var formatTime = d3.timeFormat("%b %d %Y");
+                                    
+                                    
+                                    // set the ranges
+                                    //alert(d3.scaleTime().range([0, width]))
+                                    //alert(d3.scaleLinear().range([height, 0]))
+                                    var x = d3.scaleTime().range([0, width]);
+                                    var y = d3.scaleLinear().range([height, 0]);
+                                    
+                                    // define the area
+                                    var area = d3.area()
+                                        .x(function(d) { return x(d.Date); })
+                                        .y0(height)
+                                        .y1(function(d) { return y(d.Net); });
+                                    
+                                    // define the line
+                                    var valueline = d3.line()
+                                        .x(function(d) { return x(d.Date); })
+                                        .y(function(d) { return y(d.Net); });
+                                    
+                                    // append the svg obgect to the body of the page
+                                    // appends a 'group' element to 'svg'
+                                    // moves the 'group' element to the top left margin
+                                    var svg = d3.select("#areachart")
+                                                .append("svg")
+                                                .attr("viewBox", [0, 0, width+90, height+50 ])
+                                                .append("g")
+                                                .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+                                    
+                                    //adding tooltip variable
+                                    var div = d3.select("#areachart").append("div").attr("class", "toolTip");
+
+
+
+                                    // get the data
+                                    d3.csv("../static/csv/page2_evolution_ITD.csv", function(error, data) {
+                                      if (error) throw error;
+                                    
+                                      // format the data
+                                      data.forEach(function(d) {
+                                          d.Date = parseTime(d.Date);
+                                          d.Net = (+d.Net)*100;
+                                      });
+                                    
+                                      // scale the range of the data
+                                      x.domain(d3.extent(data, function(d) { return d.Date; }));
+                                      y.domain([0, 100]);
+                                                                                             
+                                    
+                                     //adding tooltip
+
+                                svg.selectAll("dot")    
+                                        .data(data)         
+                                    .enter().append("circle")                               
+                                        .attr("r", 8)     
+                                        .style("fill", "transparent")  
+                                        .attr("cx", function(d) { return x(d.Date); })       
+                                        .attr("cy", function(d) { return y(d.Net); })     
+                                        .on("mouseover", function(d){
+                                            div.transition()		
+                                            .duration(200)		
+                                                    .style("left", d3.event.pageX - 50 + "px")
+                                                    .style("top", d3.event.pageY - 100 + "px")
+                                                    .style("display", "inline-block")   
+                                                    div.html("Date : "+formatTime(d.Date)+ "<br/>Net Exposure: "  + d.Net.toFixed(2) + "%");
+
+                                            })
+                                            .on("mouseout", function(){
+                                                    div.style("display","none")
+                                                });
+
+                                      // add the X Axis
+                                        x_axis=svg.append("g")
+                                                .attr("transform", "translate(0," + height + ")")
+                                                .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%b-%y")).tickValues(x.ticks(3).concat(x.domain())))
+                                                .selectAll("text")
+                                                .attr("transform", "translate(20,0)rotate(-0)")
+                                                .style("font-family","verdana")
+                                                .style("font-size","12")
+                                                .style("text-anchor", "end");
+
+                                          // add the Y Axis
+                                        y_axis= svg.append("g")
+                                                    .call(d3.axisLeft(y).tickFormat(d => d+"% "));
+
+
+                                     //adding the x-axis label
+                                    //   svg.append("text")      
+                                    //         .attr("x", 100 )
+                                    //         .attr("y",  200 )
+                                    //         .style("text-anchor", "middle")
+                                    //         .style("font-size", "18px")
+                                    //         .text("Date");
+                                        //adding label to y-axis
+                                        svg.append("text")      // text label for the x axis
+                                            .attr("x", -110 )
+                                            .attr("y",  -50 )
+                                            .style("text-anchor", "middle")
+                                            .style("font-size", "14px").attr("transform", "rotate(-90)")
+                                            .text("Net Exposure");
+
+                                    x_axis.selectAll("text").style("fill","black").style("font-size","13");
+                                    y_axis.selectAll("text").style("fill","black").style("font-size","12");
+ 
+
+                                    var focus = svg.append("g")
+                                    .attr("class", "focus")
+                                    .style("display", "none");
+
+                                        focus.append("circle")
+                                            .attr("r", 5);
+
+                                        focus.append("text")
+                                            .attr("x", 9)
+                                            .attr("dy", ".35em")
+                                            .style("font-size",15);
+
+                                      // add the area
+                                        svg.append("path")
+                                           .data([data])
+                                           .attr("class", "area")
+                                           .attr("d", area)
+                                           
+                                    
+                                   
+                                    //   // add the valueline path.
+                                    //   svg.append("path")
+                                    //       .data([data])
+                                    //       .attr("class", "line")
+                                    //       .attr("d", valueline);        
+                                    }); 
+                                    </script>
+                                    
+                                    </div>
+        
+                            </div>
+                    </div>
+
+
+                    <div class="tm-col tm-col-big">
+                            <div class="bg-white tm-block h-100 centered  tip">
+                                <h2 class="tm-block-title">Breakdown By Stock</h2>
+                            <script src="https://d3js.org/d3.v4.min.js"></script>
+                            <div id="image1" style="margin-left:40%;height:100px;"></div>
+                            <svg id="treemap"></svg>
+                            <script>
+                        
+                            function tree(selected_date){
+                                        
+                                        d3.selectAll("#treemap > *").remove()
+                                        
+                                        // set the dimensions and margins of the graph
+                                        var margin = {top: 10, right: 10, bottom: 10, left: 60},
+                                        width = 1200,
+                                        height = 450 ;
+                                        
+                                        // append the svg object to the body of the page
+                                        var svg = d3.select("#treemap")
+                                                    .attr("viewBox", [0, 0, width+100, height+150 ])
+                                                    .append("g")
+                                                    .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+
+                                        // Read data
+                                        color = d3.scaleOrdinal(d3.schemeCategory20)
+                                        d3.csv('../static/csv/net_exposure_stock.csv', function(data) {
+                                            
+                                            sort_data=data.filter((item) => item.Date === (selected_date) )
+                                            
+                                            sort_data.forEach(function(x)
+                                            {
+                                                delete x.Date;
+                        
+                                            })
+                                            sort_data.unshift({ name: 'Origin', value: '',parent:'' });
+                                            if(sort_data.length!=1)
+                                            {
+                                                document.getElementById("image1").style.display="none"
+                                                document.getElementById("treemap").style.display="block"
+
+                                                // stratify the data: reformatting for d3.js
+                                            var root = d3.stratify()
+                                                .id(function(d) { return d.name; })   // Name of the entity (column name is name in csv)
+                                                .parentId(function(d) { return d.parent; })   // Name of the parent (column name is parent in csv)
+                                                (sort_data);
+                        
+                                            root.sum(function(d) { return +d.value })   // Compute the numeric value for each entity
+                                            
+                                //   // Then d3.treemap computes the position of each element of the hierarchy
+                                //   // The coordinates are added to the root object above
+                                            d3.treemap()
+                                                .size([width, height+70])
+                                                .padding(5)
+                                                (root)
+                                
+                                            var tool = d3.select(".tip").append("div").attr("class", "toolTip");
+                                            // use this information to add rectangles:
+                                            svg
+                                                .selectAll("rect")
+                                                .data(root.leaves())
+                                                .enter()
+                                                .append("rect")
+                                                .attr('x', function (d) { return d.x0; })
+                                                .attr('y', function (d) { return d.y0; })
+                                                .attr('width', function (d) { return d.x1 - d.x0; })
+                                                .attr('height', function (d) { return d.y1 - d.y0; })
+                                                .style("stroke", "black")
+                                                .attr("fill", (d,i) => color(i))
+                                                .on("mouseover", function(d){
+                                                tool.style("left", d3.event.pageX - 50 + "px")
+                                                        .style("top", d3.event.pageY - 100 + "px")
+                                                        .style("display", "inline-block")   
+                                                tool.html("Ticker : "+d.data.name+ "<br/>Exp as % of Total : "  + ((d.value)*100).toFixed(2)+"%");
+
+                                                })
+                                                .on("mouseout", function(){
+                                                tool.style("display","none")
+                                            });;
+
+
+                                            // and to add the text labels
+  
+                                            svg
+                                                .selectAll("text")
+                                                .data(root.leaves())
+                                                .enter()
+                                                .append("text")
+                                                .attr("x", function(d){ return d.x0+10})    // +10 to adjust position (more right)
+                                                .attr("y", function(d){ return d.y0+20})    // +20 to adjust position (lower)
+                                       
+                                                .text(d=>d.data.name )
+                                                
+                                                // .text(function(d){ return d.data.value })
+                                                .attr("font-size", "15px")
+                                                .attr("fill", "white") ;
+                                
+                                              
+                                            }  
+                                            else{
+                                   document.getElementById("image1").style.display="block"
+                                   document.getElementById("treemap").style.display="none"
+                                   document.getElementById("image1").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                               }    
+                                            
+                                })
+                                        }
+                                </script>
+                            </div>
+                    </div>
+
+                    <div class="tm-col tm-col-big">
+                            <div class="bg-white tm-block h-100 tip">
+                                <h2 class="tm-block-title">Breakdown By Sector </h2>
+                                <div id="image2" style="margin-left:40%;height:100px"></div>
+                                <svg width="600" height="450" id="c2"></svg>
+
+                                <script src="https://d3js.org/d3.v4.min.js"></script>
+        
+                                <script>  
+                                    function bubble2(selected_date)
+                                        {
+    
+                                            d3.selectAll("#c2 > *").remove()
+                                                var svg1 = d3.select("#c2").attr("viewBox", [0, 80, width, height ]);;
+                                                margin = 0,                                                
+                                        
+                                                d3.csv("../static/csv/net_exposure_sector.csv",function(data)
+                                                    {
+                                                
+                                                    data.forEach(function(d) {
+                                                        d.Sector=d.Sector;
+                                                    d.Net=+d.Net;
+                                                });
+
+                                                sort_data=data.filter((item) => item.Date === selected_date )
+                                                if(sort_data.length!=0)
+                                                {
+                                                    document.getElementById("image2").style.display="none"
+                                                    document.getElementById("c2").style.display="block"
+
+
+                                                    color = d3.scaleOrdinal(d3.schemeCategory20)
+                                                    formatPercent = d3.format(",.2%");
+                                                        //Tooltip for chart
+                                                        var div = d3.select(".tip")
+                                                                .append("div")
+                                                                .attr("class", "toolTip")
+                                                                // .style("opacity", 0);
+
+                                                        let bubble = d3.pack()
+                                                                        .size([500, 450])
+                                                                        .padding(1.5);
+                            
+                            
+                                                        let nodes = d3.hierarchy({children:sort_data})
+                                                                .sum(function (d) { return d.Net; });
+                            
+                            
+                            
+                                                        let node = svg1.selectAll(".node")
+                                                                .data(bubble(nodes).descendants())
+                                                                .enter()
+                                                                .filter(function (d) { return !d.children })
+                                                                .append("g")
+                                                                .attr("class", "node")
+                                                                .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});
+                            
+                                                        // node.append("title")
+                                                        // .text(function (d) { return d.data.Date + ": " + d.Net; });
+                            
+                                                        node.append("circle")
+                                                        .attr("x", function (d) { return d.x; })
+                                                        .attr("y", function (d) { return d.y; })
+                                                        .attr("r", function (d) { return d.r; })
+                                                        .attr("fill", (d,i) => color(i))
+                                                        .on("mouseover", function(d){
+                                                        div.transition()		
+                                                        .duration(200)		
+                                                                .style("left", d3.event.pageX - 50 + "px")
+                                                                .style("top", d3.event.pageY - 100 + "px")
+                                                                .style("display", "inline-block")   
+                                                                div.html("Date : "+d.data.Date+ "<br/>Sector :"  + d.data.Sector +"<br/>Net Exposure: "+((d.data.Net)*100).toFixed(1) + "%")
+
+                                                        })
+                                                            .on("mouseout", function(){
+                                                                    div.style("display","none")
+                                                        });
+                            
+                            
+                                                        node.append("text")
+                                                        .attr("dy", ".0em")
+                                                        .style("text-anchor", "middle")
+                                                        .text(function (d) { return d.data.Sector;})
+                                                        .attr("font-family", "verdana")
+                                                        .attr("font-size", function (d) { return d.r /5; })
+                                                        .attr("fill", "white");
+                            
+                                                        node.append('text')
+                                                        .attr("dy", "1.2em")
+                                                        .style("text-anchor", "middle")
+                                                        .text(function (d) { return formatPercent(d.data.Net); })
+                                                        .attr("font-family", "verdana")
+                                                        .attr("font-size", function (d) { return d.r /5; })
+                                                        .attr("fill", "white");
+                    
+                                                }
+                                                else{
+                                                        document.getElementById("image2").style.display="block"
+                                                        document.getElementById("c2").style.display="none"
+                                                        document.getElementById("image2").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                                                    }
+                            
+                            
+                                                })
+                                        }
+                                                
+                                </script>
+                              </div>
+                        </div>
+             
+                    <div class="tm-col tm-col-big">
+                        <div class="bg-white tm-block h-100 centered tip ">
+                            <h2 class="tm-block-title">Breakdown By Country</h2>
+                        
+                            <!-- <p>Select Date: <input type="text"id="datepicker"   class="column  month_and_year_option i" name="announcementdate" required placeholder="YYYY-MM-DD" autocomplete="off"></p> -->
+        
+                                <div id="bubblechart">
+
+     
+                        <script src="https://d3js.org/d3.v4.min.js"></script>
+                        <div id="image3" style="margin-left:40%;height:100px"></div>
+                        <svg width="600" height="450" id="c1"></svg>
+
+                        <script>
+                            
+                    
+                        function bubble(selected_date)
+                            {
+                            d3.selectAll("#c1 > *").remove()
+                    
+                            var svg = d3.select("#c1").attr("viewBox", [100, 0, width-200, height]);
+                                    margin =  0,
+
+
+                                    d3.csv("../static/csv/net_exposure_country.csv",function(data)
+                                    {
+                                
+                                    data.forEach(function(d) {
+                                        d.Country=d.Country;
+                                    d.Net=+d.Net;
+                                            });
+                                sort_data=data.filter((item) => item.Date === selected_date )
+                                if(sort_data.length!=0)
+                                {
+                                    document.getElementById("image3").style.display="none"
+                                    document.getElementById("c1").style.display="block"
+
+                                    color = d3.scaleOrdinal(d3.schemeCategory20)
+                                    formatPercent = d3.format(",.2%");
+                                        let bubble = d3.pack()
+                                                        .size([width, height])
+                                                        .padding(1.5);
+
+
+                                        let nodes = d3.hierarchy({children:sort_data})
+                                                .sum(function (d) { return d.Net; });
+
+                              
+                                        var div = d3.select(".tip")
+                                                        .append("div")
+                                                        .attr("class", "toolTip")
+
+                                        let node = svg.selectAll(".node")
+                                                .data(bubble(nodes).descendants())
+                                                .enter()
+                                                .filter(function (d) { return !d.children })
+                                                .append("g")
+                                                .attr("class", "node")
+                                                .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});
+
+                           
+
+                                        node.append("circle")
+                                        .attr("x", function (d) { return d.x; })
+                                        .attr("y", function (d) { return d.y; })
+                                        .attr("r", function (d) { return d.r/1; })
+                                        .attr("fill", (d,i) => color(i))
+                                        .on("mouseover", function(d){
+                                                        div.transition()		
+                                                        .duration(200)		
+                                                                .style("left", d3.event.pageX - 50 + "px")
+                                                                .style("top", d3.event.pageY - 100 + "px")
+                                                                .style("display", "inline-block")   
+                                                                div.html("Date : "+d.data.Date+ "<br/>Country :"  + d.data.Country +"<br/>Net Exposure: "+((d.data.Net)*100).toFixed(1) + "%")
+
+                                                        })
+                                                            .on("mouseout", function(){
+                                                                    div.style("display","none")
+                                                        });
+
+
+                                        node.append("text")
+                                        .attr("dy", ".2em")
+                                        .style("text-anchor", "middle")
+                                        .text(function (d) { return d.data.Country;})
+                                        .attr("font-family", "sans-serif")
+                                        .attr("font-size", function (d) { return d.r /4; })
+                                        .attr("fill", "white") ;
+
+                                        node.append('text')
+                                        .attr("dy", "1.3em")
+                                        .style("text-anchor", "middle")
+                                        .text(function (d) { return formatPercent(d.data.Net); })
+                                        // .attr("font-family", "sans-serif")
+                                        .attr("font-size", function (d) { return d.r / 4; })
+                                        .attr("fill", "white");
+                                }
+                                else{
+                                   document.getElementById("image3").style.display="block"
+                                   document.getElementById("c1").style.display="none"
+                                   document.getElementById("image3").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                               }
+
+                                })
+                                }      
+                            </script>
+                            </div>
+                    
+                                
+
+                        </div>
+                    </div>            
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
+   <!-- ALL JS FILES -->
+   <script src="{% static 'static/js/all.js' %}"></script>
+   <!-- ALL PLUGINS -->
+   <script src="{% static 'static/js/custom.js' %}"></script>

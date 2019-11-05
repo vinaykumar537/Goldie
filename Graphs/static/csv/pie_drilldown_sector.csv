@@ -1,0 +1,231 @@
+trade_dt,sector,Gross_Exposure_Percentage
+8/1/2019,Health Care,0.154196441
+8/1/2019,Energy,0.027603875
+8/1/2019,Utilities,0.026778978
+8/1/2019,Information Technology,0.02342539
+8/1/2019,Materials,0.014876044
+8/1/2019,Financials,0.191943672
+8/1/2019,Consumer Staples,0.023429244
+8/1/2019,Industrials,0.044677684
+8/1/2019,Other,0.33267889
+8/1/2019,Real Estate,0.071339334
+8/1/2019,Consumer Discretionary,0.078241909
+8/1/2019,Communication Services,0.010808539
+8/2/2019,Consumer Staples,0.024196277
+8/2/2019,Real Estate,0.066532902
+8/2/2019,Industrials,0.044778301
+8/2/2019,Other,0.34383165
+8/2/2019,Utilities,0.027471332
+8/2/2019,Communication Services,0.009500265
+8/2/2019,Materials,0.010921569
+8/2/2019,Health Care,0.147390342
+8/2/2019,Financials,0.193447935
+8/2/2019,Energy,0.028238107
+8/2/2019,Consumer Discretionary,0.079430454
+8/2/2019,Information Technology,0.024260864
+8/5/2019,Health Care,0.150391731
+8/5/2019,Industrials,0.046463833
+8/5/2019,Utilities,0.01737998
+8/5/2019,Other,0.367443696
+8/5/2019,Real Estate,0.057302893
+8/5/2019,Consumer Staples,0.022839832
+8/5/2019,Materials,0.004038818
+8/5/2019,Communication Services,0.007504055
+8/5/2019,Financials,0.199491947
+8/5/2019,Consumer Discretionary,0.076844415
+8/5/2019,Information Technology,0.025291675
+8/5/2019,Energy,0.025007125
+8/6/2019,Consumer Discretionary,0.07749424
+8/6/2019,Information Technology,0.024294624
+8/6/2019,Energy,0.023779749
+8/6/2019,Utilities,0.02051686
+8/6/2019,Communication Services,0.007373223
+8/6/2019,Other,0.388565344
+8/6/2019,Health Care,0.140879339
+8/6/2019,Industrials,0.038273056
+8/6/2019,Materials,0.004035924
+8/6/2019,Consumer Staples,0.019927148
+8/6/2019,Real Estate,0.053729139
+8/6/2019,Financials,0.201131355
+8/7/2019,Health Care,0.147673644
+8/7/2019,Consumer Discretionary,0.069272689
+8/7/2019,Information Technology,0.041030304
+8/7/2019,Energy,0.020430901
+8/7/2019,Real Estate,0.048520105
+8/7/2019,Other,0.41748872
+8/7/2019,Financials,0.181644531
+8/7/2019,Consumer Staples,0.015411527
+8/7/2019,Utilities,0.017951628
+8/7/2019,Communication Services,0.00663153
+8/7/2019,Industrials,0.031039429
+8/7/2019,Materials,0.002904991
+8/8/2019,Energy,0.026726513
+8/8/2019,Health Care,0.146019938
+8/8/2019,Information Technology,0.036074587
+8/8/2019,Consumer Staples,0.013207765
+8/8/2019,Other,0.427909514
+8/8/2019,Materials,0.001051682
+8/8/2019,Communication Services,0.005456577
+8/8/2019,Utilities,0.017329721
+8/8/2019,Consumer Discretionary,0.073687972
+8/8/2019,Industrials,0.033551325
+8/8/2019,Real Estate,0.042186952
+8/8/2019,Financials,0.176797455
+8/9/2019,Information Technology,0.044168068
+8/9/2019,Financials,0.182066987
+8/9/2019,Other,0.420549069
+8/9/2019,Consumer Staples,0.013040569
+8/9/2019,Consumer Discretionary,0.087538415
+8/9/2019,Energy,0.026019463
+8/9/2019,Materials,0.000458252
+8/9/2019,Communication Services,0.005165071
+8/9/2019,Real Estate,0.037326338
+8/9/2019,Utilities,0.016964658
+8/9/2019,Industrials,0.024131662
+8/9/2019,Health Care,0.142571446
+8/12/2019,Other,0.431722283
+8/12/2019,Industrials,0.022238253
+8/12/2019,Health Care,0.139234552
+8/12/2019,Consumer Staples,0.013895367
+8/12/2019,Real Estate,0.037843761
+8/12/2019,Energy,0.026405948
+8/12/2019,Information Technology,0.040548265
+8/12/2019,Financials,0.1767968
+8/12/2019,Utilities,0.017362439
+8/12/2019,Consumer Discretionary,0.089422423
+8/12/2019,Communication Services,0.004529908
+8/12/2019,Materials,0
+8/13/2019,Information Technology,0.041255501
+8/13/2019,Energy,0.027951741
+8/13/2019,Real Estate,0.049270215
+8/13/2019,Consumer Staples,0.015458371
+8/13/2019,Health Care,0.131523582
+8/13/2019,Industrials,0.020569735
+8/13/2019,Other,0.426509222
+8/13/2019,Consumer Discretionary,0.094537179
+8/13/2019,Utilities,0.015962597
+8/13/2019,Financials,0.172562495
+8/13/2019,Communication Services,0.004399363
+8/14/2019,Financials,0.198215943
+8/14/2019,Communication Services,0.002284698
+8/14/2019,Consumer Discretionary,0.089800043
+8/14/2019,Information Technology,0.060166302
+8/14/2019,Energy,0.031601193
+8/14/2019,Real Estate,0.036882253
+8/14/2019,Consumer Staples,0.01606944
+8/14/2019,Industrials,0.015607455
+8/14/2019,Health Care,0.129589035
+8/14/2019,Utilities,0.004429549
+8/14/2019,Other,0.415354089
+8/15/2019,Other,0.39978568
+8/15/2019,Real Estate,0.041744493
+8/15/2019,Financials,0.218797169
+8/15/2019,Utilities,0.002536358
+8/15/2019,Health Care,0.135788155
+8/15/2019,Consumer Discretionary,0.107264627
+8/15/2019,Energy,0.036490238
+8/15/2019,Communication Services,0.000371139
+8/15/2019,Industrials,0.005388883
+8/15/2019,Information Technology,0.051833258
+8/15/2019,Consumer Staples,0
+8/16/2019,Health Care,0.127842017
+8/16/2019,Utilities,0
+8/16/2019,Communication Services,0.008366681
+8/16/2019,Energy,0.039989334
+8/16/2019,Consumer Discretionary,0.106981607
+8/16/2019,Information Technology,0.055099419
+8/16/2019,Financials,0.229267122
+8/16/2019,Real Estate,0.045489755
+8/16/2019,Industrials,0.005979506
+8/16/2019,Other,0.380984559
+8/19/2019,Information Technology,0.056217499
+8/19/2019,Energy,0.042636154
+8/19/2019,Industrials,0.006032874
+8/19/2019,Consumer Discretionary,0.113084384
+8/19/2019,Real Estate,0.048087506
+8/19/2019,Financials,0.227669294
+8/19/2019,Communication Services,0.009093862
+8/19/2019,Other,0.381455896
+8/19/2019,Health Care,0.115722531
+8/20/2019,Consumer Discretionary,0.092698969
+8/20/2019,Real Estate,0.047542973
+8/20/2019,Financials,0.238106455
+8/20/2019,Energy,0.044359493
+8/20/2019,Information Technology,0.058181413
+8/20/2019,Other,0.387079679
+8/20/2019,Health Care,0.116185747
+8/20/2019,Communication Services,0.009530183
+8/20/2019,Industrials,0.006315089
+8/21/2019,Other,0.379024853
+8/21/2019,Industrials,0.006704356
+8/21/2019,Health Care,0.10172866
+8/21/2019,Real Estate,0.047686012
+8/21/2019,Financials,0.244952159
+8/21/2019,Communication Services,0.010183628
+8/21/2019,Energy,0.04574333
+8/21/2019,Consumer Discretionary,0.103765071
+8/21/2019,Information Technology,0.06021193
+8/22/2019,Information Technology,0.066483401
+8/22/2019,Other,0.369631936
+8/22/2019,Energy,0.046654903
+8/22/2019,Consumer Discretionary,0.093527639
+8/22/2019,Health Care,0.098790338
+8/22/2019,Industrials,0.006796582
+8/22/2019,Real Estate,0.052034657
+8/22/2019,Financials,0.255288542
+8/22/2019,Communication Services,0.010792002
+8/23/2019,Information Technology,0.092953298
+8/23/2019,Consumer Discretionary,0.089739914
+8/23/2019,Energy,0.043446295
+8/23/2019,Real Estate,0.049438665
+8/23/2019,Financials,0.241448758
+8/23/2019,Other,0.374681977
+8/23/2019,Health Care,0.091800828
+8/23/2019,Industrials,0.006195425
+8/23/2019,Communication Services,0.010294841
+8/26/2019,Health Care,0.094151255
+8/26/2019,Other,0.377109221
+8/26/2019,Industrials,0.001031973
+8/26/2019,Real Estate,0.050056116
+8/26/2019,Financials,0.243000362
+8/26/2019,Consumer Discretionary,0.089062454
+8/26/2019,Communication Services,0.01057492
+8/26/2019,Information Technology,0.089866227
+8/26/2019,Energy,0.045147471
+8/27/2019,Other,0.380230556
+8/27/2019,Financials,0.250492845
+8/27/2019,Energy,0.046400962
+8/27/2019,Information Technology,0.09244522
+8/27/2019,Real Estate,0.048318433
+8/27/2019,Industrials,0
+8/27/2019,Consumer Discretionary,0.076243261
+8/27/2019,Communication Services,0.010876603
+8/27/2019,Health Care,0.094992118
+8/28/2019,Communication Services,0.01119668
+8/28/2019,Consumer Staples,0.00545216
+8/28/2019,Health Care,0.091492588
+8/28/2019,Other,0.378214104
+8/28/2019,Information Technology,0.083032677
+8/28/2019,Financials,0.255050275
+8/28/2019,Real Estate,0.049831466
+8/28/2019,Consumer Discretionary,0.077393859
+8/28/2019,Energy,0.048336191
+8/29/2019,Energy,0.051064101
+8/29/2019,Consumer Staples,0.005745522
+8/29/2019,Real Estate,0.052691847
+8/29/2019,Financials,0.258824726
+8/29/2019,Consumer Discretionary,0.078995025
+8/29/2019,Information Technology,0.082362616
+8/29/2019,Health Care,0.086307298
+8/29/2019,Other,0.372337793
+8/29/2019,Communication Services,0.011671072
+8/30/2019,Health Care,0.083094691
+8/30/2019,Other,0.371939148
+8/30/2019,Industrials,0.006724577
+8/30/2019,Real Estate,0.051474393
+8/30/2019,Consumer Staples,0.005693472
+8/30/2019,Information Technology,0.081687663
+8/30/2019,Energy,0.050557332
+8/30/2019,Consumer Discretionary,0.080304052
+8/30/2019,Communication Services,0.011453298
+8/30/2019,Financials,0.257071373

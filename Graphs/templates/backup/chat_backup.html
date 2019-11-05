@@ -1,0 +1,1937 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Kiski </title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="../static/css/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../static/css/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="../static/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/css/tooplate.css">
+    <link rel="stylesheet" href="../static/css/css/styling.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">
+
+    <style>        
+        .left {
+          left: 0;
+          width:42%;
+          float:left;
+          height:60%;
+          margin-left:150px;
+
+        }
+        .right {
+            text-align:center;
+          height:80%;
+          
+        }
+        p{
+            margin-top:-1%;
+            margin-left:30%;
+        }
+         .centered {
+          position: absolute;
+          width: 100%;
+          /* height:90%; */
+          top: 47%;
+          left: 50%;
+          height:80%;
+          /* bottom:%; */
+          /* width : 100%;
+          height:30%; */
+          transform: translate(-50%, -50%);
+          /* background-color:grey; */
+          text-align: center;
+          /* box-shadow: 0 1px 1px rgba(0,0,0,.05); */
+          /* border:1px solid black; */
+          /* background-color: #fff; */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+            box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        } 
+   
+        .dateinput{
+            margin-top: 30%;
+            margin-left:45%;
+        }
+        .line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+.axis { font: 13px Verdana;
+/* font-weight:4px; */
+ }  
+
+strong {
+	font-weight: bold; 
+}
+
+em {
+	font-style: italic; 
+}
+#id_of_table th {
+                /* color:#366887; */
+                background-color:#9EC8F1; 
+                font-weight: normal;
+                padding: 10px 15px;
+                position: relative;
+                text-shadow: 0 1px 0 #000;
+                text-align:center;
+                width:50%;
+                font-family:verdana !important;	
+                }
+                #id_of_table tr{
+                    height:30px;
+                }
+                #id_of_table td {
+                    padding: 0px 10px 0px 10px;
+                    width:50%;
+                    /* text-align:center; */
+                    position: relative;
+                    transition: all 300ms;
+                    border:1px solid black;
+                } 
+
+	
+#id_of_table td{
+    height:20px;
+}
+
+ th {
+	background: url(https://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444); 
+  
+   /* background-color:rgb(75, 166, 241); */
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color:white;
+    font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+ th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+
+
+.line {
+  fill: none;
+  stroke:rgb(13, 160, 13);
+  stroke-width: 2px;
+}
+
+.area {
+  fill:#9EC8F1;
+}
+
+#date
+{
+    padding-left:10%;
+    /* background-color: blue; */
+}
+
+#bubblehart{
+    width:100%;
+    height:50%;
+}
+p{
+    font-size:20px;
+}
+.column{
+    width:300px;
+    height:40px;
+    font-size:18px;
+    padding:5px;
+    border-radius:3px;
+    border:1px solid #CCCCCC;
+}
+.toolTip, div.toolTip{
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #6F257F;
+    padding: 14px;
+    text-align: center;
+    pointer-events: none; 
+    font-family:verdana;
+    }
+    #c1{
+        /* background-color:grey; */
+        display:block;
+        margin:auto !important;
+    }
+    #c2{
+        /* background-color:grey; */
+        display:block;
+        margin:auto !important;
+    }
+
+#navbarSupportedContent a:hover {background-color: #ddd;}
+
+.col-12:hover #navbarSupportedContent {display: block;}
+
+#id_of_table th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+#id_of_table th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+ td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+#id_of_table td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+#id_of_table td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+#id_of_table tr {
+	background: url(https://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+#id_of_table tr:nth-child(odd) td {
+	background: #f1f1f1 url(https://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+#id_of_table tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+#id_of_table tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+#id_of_table tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+/* 
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+} */
+
+/* tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+} */
+input[type="text"], textarea {
+
+background-color : #f5f5f5; 
+border:0px;
+/* width:300px; */
+/* height:40px; */
+
+}
+#id_of_table input:focus {
+/* outline:none; */
+border: 0;
+outline: none
+}
+
+
+
+/* chart3 */
+#firsttable td {
+  /* border: 1px solid #ccc; */
+}
+      
+
+            .line {
+              fill: none;
+              stroke:#9EC8F1;
+              stroke-width: 2px;
+            }
+            
+            .area {
+              /* fill:rgb(13, 160, 13); */
+              fill:#9EC8F1;
+            }
+            
+            #date
+            {
+                padding-left:10%;
+                /* background-color: blue; */
+            }
+       
+            #bubblehart{
+                width:100%;
+                height:50%;
+            }
+            p{
+                font-size:20px;
+            }
+            .column{
+                width:300px;
+                height:40px;
+                font-size:18px;
+                padding:5px;
+                border-radius:3px;
+                border:1px solid #CCCCCC;
+            }
+            .toolTip, div.toolTip{
+                position: absolute;
+                display: none;
+                min-width: 80px;
+                height: auto;
+                background: none repeat scroll 0 0 #ffffff;
+                border: 1px solid #6F257F;
+                padding: 14px;
+                text-align: center;
+                pointer-events: none; 
+                font-family:verdana;
+                }
+                #c1{
+                    /* background-color:grey; */
+                    display:block;
+                    margin:auto !important;
+                }
+                #c2{
+                    /* background-color:grey; */
+                    display:block;
+                    margin:auto !important;
+                }
+    
+            </style>
+
+</head>
+            <body id="reportsPage" >
+                <div class="" id="home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+            <nav class="navbar navbar-expand-xl navbar-light bg-light" style="position: fixed;width:100%;top:0;left:0;z-index:1;">
+                    <a class="navbar-brand" href="#">
+                        <img src="../static/images/ghclogo.png" height=70 width=70>
+                        <h1 class="tm-site-title mb-0">GHC</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link active" href="{% url 'chatbot'%}"> Chatterbot
+                                        </a>
+                                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="{% url 'firstpage'%}"> Portfolio Overview
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <li class="nav-item">
+                                    <a class="nav-link "  href="{% url 'secondpage'%}">Net Exposure
+                                       
+                                    </a>
+                                </li>
+                               
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'thirdpage'%}">Factor Contribution</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"  href="{% url 'fourthpage'%}"> Gross Exposure and PnL</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link"  href="{% url 'fifthpage'%}">Value at Risk</a>
+                
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{% url 'sixthpage'%}">Excess, Vol and Return Disturbution</a>
+                
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex" href="{% url 'logout'%}">
+                                    <!-- <i class="far fa-user mr-2 tm-logout-icon"></i> -->
+                                    <span>Logout<i style="font-size:24px" class="fa">&#xf08b;</i></span>
+                        
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav> 
+</div>
+</div>
+</div>
+</div>
+</body>
+
+
+
+
+<style>
+
+.chatinput
+{
+    position:fixed;
+    /* background-color: grey; */
+    width:100%;
+    /* position: absolute; */
+    top: 90%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    /* border:1px solid black; */
+}
+.chatinput input[type="text"]
+{
+    /* width:60%;
+   font-size:18px !important;
+   border:1px solid black;
+   height:40px;
+   font-weight: normal;
+   padding-left:10px;
+   font-family:'sans-serif';
+   background-color:transparent;
+   border-radius:5px;
+   border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important; */
+    width:60%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn
+{
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    border-radius:6px;
+    /* position: relative; */
+    /* z-index: 2; */
+    /* margin-left: -3px !important;
+    border-radius:6px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    height:40px !important;
+    padding:10px !important;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a; */
+}
+</style>
+
+<div id="top">
+        
+     
+                    
+                    {% if error %}
+                    <div class="centered">
+                            <h3>{{error}}</h3>
+                    </div>
+                    {% endif %}
+                    <form action="/chatbot/" method="POST">
+                        {% csrf_token %}
+                        <div class="chatinput">
+                                <input type="text" name="input" placeholder="Enter Something here" autocomplete="off"  >
+                                <button type="submit" name="submit" class="btn btn-danger" >Send</button>
+                        </div>
+                                </form>
+            {% if data2 %}
+<div class="right" >
+   
+    <div class="centered">
+                <h3> Portfolio Measurments</h3><br>
+       <!-- <p> Select Date: <input type="text"id="dt"   class="column  month_and_year_option i " name="announcementdate" required placeholder="DD/MM/YYYY" autocomplete="off"></p>   -->
+     <input type="hidden" id="start" />
+
+         
+
+
+
+     <!-------- Second Table in the First Page-->
+     <table id='id_of_table'align='center' width='500' height='300'>
+         <tr>
+             <th> </th>
+             <th> Fund </th>
+             <th> S&P 500 </th>
+         </tr>
+ 
+         <tr>
+             <td>Ann'l Return</td>
+             <td id="1" ></td>
+             <td id="2"></td>
+         </tr>
+     
+         <tr>
+             <td>Ann'l  Vol</td>
+             <td id="3" ></td>
+             <td id="4"></td>
+         </tr>
+
+     
+         <tr>
+             <td>Max Drawdown </td>
+             <td id="5" ></td>
+             <td id="6"></td>
+         </tr>
+         
+         <tr>
+             <td>Sharpe  </td>
+             <td id="7" ></td>
+             <td id="8"></td>
+         </tr>
+         <tr>
+             <td>Sortino  </td>
+             <td id="9" ></td>
+             <td id="10"></td>
+         </tr>
+     </table> <br><br>
+     <script>                      
+        var data = {{data2|safe}}
+    
+          sort_data=data
+          data2=sort_data;
+         console.log(data2)
+      if(sort_data.length!=0)
+                              
+     
+           {
+           if(data2[0]['Annl Fund '])
+              document.getElementById("1").innerHTML=data2[0]['Annl Fund '];
+          else
+              document.getElementById("1").innerHTML=null;
+
+
+       if(data2[0]['Annl Benchmark'])
+       
+           document.getElementById("2").innerHTML= parseFloat(data2[0]['Annl Benchmark']*100).toFixed(2)+"%"
+       
+       else 
+           document.getElementById("2").innerHTML=null;
+
+       if(data2[0]["Ann'l Fund Vol"])
+       {
+        
+        document.getElementById("3").innerHTML=data2[0]["Ann'l Fund Vol"]
+       }
+       
+            
+          
+       
+       else 
+           document.getElementById("3").innerHTML=null;    
+
+
+       if(data2[0]["Ann'l Benchmark Vol"])   
+           document.getElementById("4").innerHTML=parseFloat(data2[0]["Ann'l Benchmark Vol"]*100).toFixed(2)+"%"
+       else 
+           document.getElementById("4").innerHTML=null;
+
+       if(data2[0]['Max Drawdown - Fund'])
+           document.getElementById("5").innerHTML =data2[0]['Max Drawdown - Fund']
+       else 
+           document.getElementById("5").innerHTML=null;
+
+       if(data2[0]['Max Drawdown - Bench Mark'])
+           document.getElementById("6").innerHTML=data2[0]['Max Drawdown - Bench Mark']
+       else 
+           document.getElementById("6").innerHTML=null;
+
+       if(data2[0]['Sharpe - Fund'])
+           document.getElementById("7").innerHTML =data2[0]['Sharpe - Fund']
+       else 
+           document.getElementById("7").innerHTML=null;
+
+       if(data2[0]['Sharpe - Benchmark'])
+               document.getElementById("8").innerHTML =data2[0]['Sharpe - Benchmark']
+       else 
+           document.getElementById("8").innerHTML=null;
+
+       if(data2[0]['Sortino - Fund'])
+           document.getElementById("9").innerHTML =data2[0]['Sortino - Fund']
+       else 
+           document.getElementById("9").innerHTML=null;
+
+       if(data2[0]['Sortino - Benchmark'])
+           document.getElementById("10").innerHTML=data2[0]['Sortino - Benchmark']
+       else 
+           document.getElementById("10").innerHTML=null;
+           }
+           else
+           {
+                       document.getElementById("1").innerHTML=null;
+                       document.getElementById("2").innerHTML=null;
+                       document.getElementById("3").innerHTML=null;    
+                       document.getElementById("4").innerHTML=null;    
+                       document.getElementById("5").innerHTML=null;    
+                       document.getElementById("6").innerHTML=null;    
+                       document.getElementById("7").innerHTML=null;    
+                       document.getElementById("8").innerHTML=null;    
+                       document.getElementById("9").innerHTML=null;    
+                       document.getElementById("10").innerHTML=null; 
+           }
+       
+       
+
+</script>
+   
+         
+         
+            
+  </div>
+ 
+</div>
+{% elif list1 %}
+    <div class="centered">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+                          <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                          
+                          <div id="container" style="width:1200px;height: 400px; margin: 0 auto"></div>
+                          <script>
+                              
+                          Highcharts.chart('container', {
+                                  chart: {
+                                      type: 'area'
+                                  },
+                                  title: {
+                                     text: 'FAMA FRENCH MODEL'
+                                  },
+                                  subtitle: {
+                                      // text: 'GHC'
+                                  },
+                                  xAxis: {
+                                      categories:{{list1|safe}} ,
+                                      tickmarkPlacement: 'on',
+                                      title: {
+                                          enabled: false
+                                      }
+                                  },
+                                  yAxis: {
+                                      title: {
+                                          text: 'Cumulative Returns'
+                                      },
+                                      labels: {
+                                          formatter: function () {
+                                              return this.value / 1000;
+                                          }
+                                      }
+                                  },
+                                  tooltip: {
+                                      split: true,
+                                      valueSuffix: ' ',
+                                      valueDecimals : 3,
+                                  },
+                                  plotOptions: {
+                                      area: {
+                                          stacking: 'normal',
+                                          lineColor: '#666666',
+                                          lineWidth: 1,
+                                          marker: {
+                                              lineWidth: 1,
+                                              lineColor: '#666666'
+                                          }
+                                      }
+                                  },
+                                  series: [
+                                  {
+                                      name: 'Funds',
+                                      data:{{list7|safe}},
+                                      color:"white"
+                                    
+                                
+                                  },{
+                                      name: 'Mkt',
+                                      data:{{list2|safe}},
+                                
+                                  },
+                                  
+                                  
+                                  {
+                                      name: 'Growth',
+                                      data:{{list3|safe}},
+                                
+                                  },
+                                  {
+                                      name: 'Size',
+                                      data:{{list6|safe}},
+                                
+                                  },
+                                  {
+                                      name: 'Mom',
+                                      data:{{list4|safe}},
+                                
+                                  },
+                                  {
+                                      name: 'Quality',
+                                      data:{{list5|safe}},
+                                
+                                  }
+                                 
+                             
+                                  ]
+                              });
+                              </script>
+                             
+                              </div>
+{% elif chart_data %}
+<div class="centered" id="centered">
+    <span id="line_chart"></span>
+         <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script>
+            
+            // // set the dimensions and margins of the graph
+            var margin = {top: 80, right: 20, bottom: 30, left: 380},
+                width = 950,
+                height =350;
+            
+
+            var tooltip1 = d3.select("#centered").append("div").attr("class", "toolTip");
+            var tooltip2 = d3.select("#centered").append("div").attr("class", "toolTip");
+            // parse the date / time
+            // var parseTime = d3.timeParse("%Y-%m");
+            var parseTime = d3.timeParse("%Y-%m-%d");
+            var formatTime = d3.timeFormat("%b %d %Y");
+            // set the ranges
+            var x = d3.scaleTime().range([20, width-20]);
+            var y = d3.scaleLinear().range([height, 0]);
+            var x= d3.scaleTime()
+                .domain([new Date(2014, 0, 1), new Date(2016, 0, 1, 0)])
+                .rangeRound([20,width - 20]);
+                var xAxis2 = d3.axisBottom(x).tickFormat(d3.timeFormat("%Y"));
+
+            // define the 1st line
+            var valueline = d3.line()
+                .x(function(d) { return x(d.Trade_Dt); })
+                .y(function(d) { return y(d.Fund_Cumulative); });
+            
+            // define the 2nd line
+            var valueline2 = d3.line()
+                .x(function(d) { return x(d.Trade_Dt); })
+                .y(function(d) { return y(d.Cumulative_Return_Benchmark); });
+            
+            // append the svg obgect to the body of the page
+            // appends a 'group' element to 'svg'
+            // moves the 'group' element to the top left margin
+            var svg = d3.select("body").append("svg")
+                        .attr("viewBox", [0, 0, width+650, height+100])
+                        .append("g")
+                        .attr("transform",
+                                "translate(" + margin.left + "," + margin.top + ")");
+
+            // Get the data
+            // d3.csv("chart1.csv", function(error, data) {
+            //   if (error) throw error;
+            var count=0
+            var data={{chart_data|safe}}
+            // console.log(data)
+            var count=[]
+                // format the data
+                data.forEach(function(d) {
+                    d.Trade_Dt = parseTime(d.Trade_Dt);
+                 
+                    count.push(d.Trade_Dt.getFullYear())
+                    d.Fund_Cumulative= +d.Fund_Cumulative;
+                    d.Cumulative_Return_Benchmark = +d.Cumulative_Return_Benchmark;
+                    
+                });
+            
+            count = count.filter( function( item, index, inputArray ) {
+                        return inputArray.indexOf(item) == index;
+                });
+            
+            
+                // Scale the range of the data
+            
+                x.domain(d3.extent(data, function(d) { return d.Trade_Dt; }));
+                
+                y.domain([0, d3.max(data, function(d) {
+                    return Math.max(d.Fund_Cumulative, d.Cumulative_Return_Benchmark); })]);
+            // alert(JSON.stringify(data))
+            // Add the valueline path.
+            svg.append("path")
+                .data([data])
+                .attr("class", "line").style("stroke", "red")
+                .attr("d", valueline)
+                svg.selectAll("dot")
+                .data(data)
+            .enter().append("circle")
+                .attr("r", 3)
+                .style("fill", "transparent")  
+                .attr("cx", function(d) { return x(d.Trade_Dt); })
+                .attr("cy", function(d) { return y(d.Fund_Cumulative); })    
+                .on("mouseover", function(d){
+                    tooltip1.transition()		
+                    .duration(200)		
+                            .style("left", d3.event.pageX - 50 + "px")
+                            .style("top", d3.event.pageY - 60 + "px")
+                            .style("display", "inline-block")
+                            //tooltip.html("Trade Date: "+(d.Trade_Dt))
+                            //tooltip.html("Fund_Cumulative: "+(d.Fund_Cumulative))
+                            tooltip1.html("Date : " +formatTime(d.Trade_Dt)+ "<br/>Fund_Cumulative : $"  + d.Fund_Cumulative);
+
+                      })
+                      .on("mouseout", function(d){ tooltip1.style("display", "none")});
+                 
+            
+        
+            // Add the valueline2 path.
+            svg.append("path")
+                .data([data])
+                .attr("class", "line")
+                .style("stroke", "black")
+                .attr("d", valueline2)
+                svg.selectAll("dot")
+                .data(data)
+                .enter().append("circle")
+                .attr("r", 5)
+                .attr("cx", function(d) { return x(d.Trade_Dt); })
+                .attr("cy", function(d) { return y(d.Cumulative_Return_Benchmark); })   
+                .style("fill", "transparent")   
+                .on("mouseover", function(d){
+                    tooltip1.transition()		
+                    .duration(200)		
+                            .style("left", d3.event.pageX - 50 + "px")
+                            .style("top", d3.event.pageY - 100 + "px")
+                            .style("display", "inline-block")
+                            //tooltip.html("Trade Date: "+(d.Trade_Dt))
+                            //tooltip.html("Fund_Cumulative: "+(d.Fund_Cumulative))
+                            tooltip1.html("Date : "+formatTime(d.Trade_Dt)+ "<br/>Cumulative_Return_Benchmark : $"  + d.Cumulative_Return_Benchmark.toFixed(2));
+
+                      })
+                      .on("mouseout", function(d){ tooltip1.style("display", "none")});
+        
+            // Add the X Axis
+            svg.append("g")
+                .attr("transform", "translate(-20," + height + ")").attr("class","axis")  
+                .call(d3.axisBottom(x).ticks(count.length-1) .tickFormat(d3.timeFormat("%Y")));
+        
+            // Add the Y Axis
+        
+        
+            svg.append("g")  .attr("class","axis")
+                .call(d3.axisLeft(y).tickFormat(d => "$ "+d ));
+        
+
+            svg.append("text")             
+                .attr("x",-120 )
+                .attr("y",-60)
+                .style("text-anchor", "middle")
+                .attr("transform", "rotate(-90)")
+                .attr("font-family","verdana")
+                .style("font-size","13")
+                .text("Growth of $1000");
+
+            var colors = ["green", "black"];
+                // Draw legend
+                var legend = svg.selectAll(".legend")
+                                .data(colors)
+                                .enter().append("g")
+                                .attr("class", "legend")
+                                .attr("transform", function(d, i) { return "translate(30," + i * 20 + ")"; });
+                                
+                                legend.append("rect")
+                                .attr("x",width-130)
+                                .attr("y",-40)
+                                .attr("width", 18)
+                                .attr("height", 18)
+                                .style("fill", function(d, i) {return colors.slice().reverse()[i];});
+                                
+                                legend.append("text")
+                                .attr("x",width-110)
+                                .attr("y", -30)
+                                .attr("dy", ".35em")
+                                .style("text-anchor", "start")
+                                .text(function(d, i) { 
+                    
+                                    switch (i) {
+                                    case 0: return "Fund";
+                                    case 1: return "S&P500";
+                                    
+                                    }
+                                });
+            
+            
+
+        </script>
+
+</div>
+{% elif chart1 %}
+<div class="centered">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <div id="image1" style="margin-left:40%;height:100px;"></div>
+    <svg id="treemap" ></svg>
+    <script>
+    // function tree(selected_date){
+                d3.selectAll("#treemap > *").remove()
+                // set the dimensions and margins of the graph
+                var margin = {top: 10, right: 10, bottom: 10, left: 60},
+                width = 1200,
+                height = 450 ;
+                // append the svg object to the body of the page
+                var svg = d3.select("#treemap")
+                            .attr("viewBox", [0, 0, width+100, height+150 ])
+                            .append("g")
+                            .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+                // Read data
+                color = d3.scaleOrdinal(d3.schemeCategory20)
+                    sort_data = {{chart1|safe}}
+                    sort_data.forEach(function(x)
+                    {
+                        delete x.Date;
+
+                    })
+                    sort_data.unshift({ name: 'Origin', value: '',parent:'' });
+                    if(sort_data.length!=1)
+                    {
+                        document.getElementById("image1").style.display="none"
+                        document.getElementById("treemap").style.display="block"
+                        // stratify the data: reformatting for d3.js
+                    var root = d3.stratify()
+                        .id(function(d) { return d.name; })   // Name of the entity (column name is name in csv)
+                        .parentId(function(d) { return d.parent; })   // Name of the parent (column name is parent in csv)
+                        (sort_data);
+                    root.sum(function(d) { return +d.value })   // Compute the numeric value for each entity
+        //   // Then d3.treemap computes the position of each element of the hierarchy
+        //   // The coordinates are added to the root object above
+                    d3.treemap()
+                        .size([width, height+70])
+                        .padding(5)
+                        (root)
+                    var tool = d3.select(".tip").append("div").attr("class", "toolTip");
+                    // use this information to add rectangles:
+                    svg
+                        .selectAll("rect")
+                        .data(root.leaves())
+                        .enter()
+                        .append("rect")
+                        .attr('x', function (d) { return d.x0; })
+                        .attr('y', function (d) { return d.y0; })
+                        .attr('width', function (d) { return d.x1 - d.x0; })
+                        .attr('height', function (d) { return d.y1 - d.y0; })
+                        .style("stroke", "black")
+                        .attr("fill", (d,i) => color(i))
+                        .on("mouseover", function(d){
+                        tool.style("left", d3.event.pageX - 50 + "px")
+                                .style("top", d3.event.pageY - 100 + "px")
+                                .style("display", "inline-block")   
+                        tool.html("Ticker : "+d.data.name+ "<br/>Exp as % of Total : "  + ((d.value)*100).toFixed(2)+"%");
+
+                        })
+                        .on("mouseout", function(){
+                        tool.style("display","none")
+                    });;
+                    // and to add the text labels
+                    svg
+                        .selectAll("text")
+                        .data(root.leaves())
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d){ return d.x0+10})    // +10 to adjust position (more right)
+                        .attr("y", function(d){ return d.y0+20})    // +20 to adjust position (lower)
+                        .text(d=>d.data.name )
+                        // .text(function(d){ return d.data.value })
+                        .attr("font-size", "15px")
+                        .attr("fill", "white") ;
+                    }  
+                    else{
+           document.getElementById("image1").style.display="block"
+           document.getElementById("treemap").style.display="none"
+           document.getElementById("image1").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+       }    
+                // }
+                
+        </script>
+</div>
+{% elif chart2 %}
+<div class="centered"> 
+        
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <svg width="600" height="450" id="c1" ></svg>
+        <script>      
+            d3.selectAll("#c1 > *").remove()
+                    var svg = d3.select("#c1").attr("viewBox", [100, 0, 400, 450]);
+                    margin =  0,
+                sort_data = {{chart2|safe}}
+                if(sort_data.length!=0)
+                {
+                    document.getElementById("c1").style.display="block"
+                    color = d3.scaleOrdinal(d3.schemeCategory10)
+                    formatPercent = d3.format(",.2%");
+                        let bubble = d3.pack()
+                                        .size([600, 450])
+                                        .padding(1.5);
+                        let nodes = d3.hierarchy({children:sort_data})
+                                .sum(function (d) { return d.Net; });              
+                        var div = d3.select(".tip")
+                                        .append("div")
+                                        .attr("class", "toolTip")
+                        let node = svg.selectAll(".node")
+                                .data(bubble(nodes).descendants())
+                                .enter()
+                                .filter(function (d) { return !d.children })
+                                .append("g")
+                                .attr("class", "node")
+                                .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});        
+                        node.append("circle")
+                        .attr("x", function (d) { return d.x; })
+                        .attr("y", function (d) { return d.y; })
+                        .attr("r", function (d) { return d.r/1; })
+                        .attr("fill", (d,i) => color(i))
+                        .on("mouseover", function(d){
+                                        div.transition()		
+                                        .duration(200)		
+                                                .style("left", d3.event.pageX - 50 + "px")
+                                                .style("top", d3.event.pageY - 100 + "px")
+                                                .style("display", "inline-block")   
+                                                div.html("Date : "+d.data.Date+ "<br/>Country :"  + d.data.Country +"<br/>Net Exposure: "+((d.data.Net)*100).toFixed(1) + "%")
+
+                                        })
+                                            .on("mouseout", function(){
+                                                    div.style("display","none")
+                                        });
+                        node.append("text")
+                        .attr("dy", ".2em")
+                        .style("text-anchor", "middle")
+                        .text(function (d) { return d.data.Country;})
+                        .attr("font-family", "sans-serif")
+                        .attr("font-size", function (d) { return d.r /4; })
+                        .attr("fill", "white") ;
+                        node.append('text')
+                        .attr("dy", "1.3em")
+                        .style("text-anchor", "middle")
+                        .text(function (d) { return formatPercent(d.data.Net); })
+                        .attr("font-size", function (d) { return d.r / 4; })
+                        .attr("fill", "white");
+                }
+                else{
+                   document.getElementById("image3").style.display="block"
+                   document.getElementById("c1").style.display="none"
+                   document.getElementById("image3").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+               }           
+                    
+            </script>
+        </div>
+{% elif chart3 %}
+<div class="centered">                           
+                    <div id="image2" style="margin-left:40%;height:100px"></div>
+                    <svg width="600" height="450" id="c2"></svg>
+                    <script src="https://d3js.org/d3.v4.min.js"></script>
+                    <script> 
+                                    d3.selectAll("#c2 > *").remove()
+                                    var svg1 = d3.select("#c2").attr("viewBox", [0, 80, 600, 450 ]);;
+                                    margin = 0,                                                
+                                    sort_data={{chart3|safe}}
+                                    if(sort_data.length!=0)
+                                    {
+                                        document.getElementById("image2").style.display="none"
+                                        document.getElementById("c2").style.display="block"
+                                        color = d3.scaleOrdinal(d3.schemeCategory10)
+                                        formatPercent = d3.format(",.2%");
+                                            //Tooltip for chart
+                                            var div = d3.select(".tip")
+                                                    .append("div")
+                                                    .attr("class", "toolTip")
+                                                    // .style("opacity", 0);
+                                            let bubble = d3.pack()
+                                                            .size([500, 450])
+                                                            .padding(1.5);
+                                            let nodes = d3.hierarchy({children:sort_data})
+                                                    .sum(function (d) { return d.Net; });
+                                            let node = svg1.selectAll(".node")
+                                                    .data(bubble(nodes).descendants())
+                                                    .enter()
+                                                    .filter(function (d) { return !d.children })
+                                                    .append("g")
+                                                    .attr("class", "node")
+                                                    .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});
+                
+                                            // node.append("title")
+                                            // .text(function (d) { return d.data.Date + ": " + d.Net; });
+                
+                                            node.append("circle")
+                                            .attr("x", function (d) { return d.x; })
+                                            .attr("y", function (d) { return d.y; })
+                                            .attr("r", function (d) { return d.r; })
+                                            .attr("fill", (d,i) => color(i))
+                                            .on("mouseover", function(d){
+                                            div.transition()		
+                                            .duration(200)		
+                                                    .style("left", d3.event.pageX - 50 + "px")
+                                                    .style("top", d3.event.pageY - 100 + "px")
+                                                    .style("display", "inline-block")   
+                                                    div.html("Date : "+d.data.Date+ "<br/>Sector :"  + d.data.Sector +"<br/>Net Exposure: "+((d.data.Net)*100).toFixed(1) + "%")
+
+                                            })
+                                                .on("mouseout", function(){
+                                                        div.style("display","none")
+                                            });
+                
+                
+                                            node.append("text")
+                                            .attr("dy", ".0em")
+                                            .style("text-anchor", "middle")
+                                            .text(function (d) { return d.data.Sector;})
+                                            .attr("font-family", "verdana")
+                                            .attr("font-size", function (d) { return d.r /5; })
+                                            .attr("fill", "white");
+                
+                                            node.append('text')
+                                            .attr("dy", "1.2em")
+                                            .style("text-anchor", "middle")
+                                            .text(function (d) { return formatPercent(d.data.Net); })
+                                            .attr("font-family", "verdana")
+                                            .attr("font-size", function (d) { return d.r /5; })
+                                            .attr("fill", "white");
+        
+                                    }
+                                    else{
+                                            document.getElementById("image2").style.display="block"
+                                            document.getElementById("c2").style.display="none"
+                                            document.getElementById("image2").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                                        }
+                
+                
+                                 
+                            
+                                    
+                    </script>
+                
+            
+
+</div>
+{% elif chart_data1 %}
+<div class="centered1"  >
+    <svg id="areachart" ></svg>
+        <script src="https://d3js.org/d3.v4.min.js"></script>   
+        <script>
+                                    var data= {{chart_data1 | safe}}
+                                    // set the dimensions and margins of the graph
+                                    var margin = {top: 150, right: 10, bottom: 170, left: 350},
+                                        width = 750 ,
+                                        height = 350;
+                                    
+                                    // parse the date / time
+                                    var parseTime = d3.timeParse("%d-%b-%y");
+                                    var formatTime = d3.timeFormat("%b %d %Y");
+                                    
+                                    
+                                    // set the ranges
+                                    //alert(d3.scaleTime().range([0, width]))
+                                    //alert(d3.scaleLinear().range([height, 0]))
+                                    var x = d3.scaleTime().range([0, width]);
+                                    var y = d3.scaleLinear().range([height, 0]);
+                                    
+                                    // define the area
+                                    var area = d3.area()
+                                        .x(function(d) { return x(d.Date); })
+                                        .y0(height)
+                                        .y1(function(d) { return y(d.Net); });
+                                    
+                                    // define the line
+                                    var valueline = d3.line()
+                                        .x(function(d) { return x(d.Date); })
+                                        .y(function(d) { return y(d.Net); });
+                                    
+                                    // append the svg obgect to the body of the page
+                                    // appends a 'group' element to 'svg'
+                                    // moves the 'group' element to the top left margin
+                                    var svg = d3.select("#areachart")
+                                                // .append("svg")
+                                                .attr("viewBox", [0,0, width+700, height+250 ])
+                                                .append("g")
+                                                .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+                                    
+                                    //adding tooltip variable
+                                    var div = d3.select("body").append("div").attr("class", "toolTip");
+
+
+
+                                    // get the data
+                                    // d3.csv("../static/csv/page2_evolution_ITD.csv", function(error, data) {
+                                    //   if (error) throw error;
+                                    console.log(data)
+                                      // format the data
+                                      data.forEach(function(d) {
+                                          d.Date = parseTime(d.Date);
+                                          d.Net = (+d.Net)*100;
+                                      });
+                                    
+                                      // scale the range of the data
+                                      x.domain([d3.min(data, function(d) {return Math.min(d.Date); }),d3.max(data, function(d) {return Math.max(d.Date); })]);
+                                      y.domain([d3.min(data, function(d) {return Math.min(d.Net); }), 100]);
+                                                                                             
+                                    
+                                     //adding tooltip
+
+                                svg.selectAll("dot")    
+                                        .data(data)         
+                                    .enter().append("circle")                               
+                                        .attr("r", 8)     
+                                        .style("fill", "transparent")  
+                                        .attr("cx", function(d) { return x(d.Date); })       
+                                        .attr("cy", function(d) { return y(d.Net); })     
+                                        .on("mouseover", function(d){
+                                            div.transition()		
+                                            .duration(200)		
+                                                    .style("left", d3.event.pageX - 50 + "px")
+                                                    .style("top", d3.event.pageY - 100 + "px")
+                                                    .style("display", "inline-block")   
+                                                    div.html("Date : "+formatTime(d.Date)+ "<br/>Net Exposure: "  + d.Net.toFixed(2) + "%");
+
+                                            })
+                                            .on("mouseout", function(){
+                                                    div.style("display","none")
+                                                });
+
+                                      // add the X Axis
+                                        x_axis=svg.append("g")
+                                                .attr("transform", "translate(0," + height + ")")
+                                                .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%d-%b-%y")))
+                                                .selectAll("text")
+                                                .attr("transform", "translate(0,0)rotate(-45)")
+                                                .style("font-family","verdana")
+                                                .style("font-size","12")
+                                                .style("text-anchor", "end");
+
+                                          // add the Y Axis
+                                        y_axis= svg.append("g")
+                                                    .call(d3.axisLeft(y).tickFormat(d => d+"% "));
+
+
+                                     //adding the x-axis label
+                                    //   svg.append("text")      
+                                    //         .attr("x", 100 )
+                                    //         .attr("y",  200 )
+                                    //         .style("text-anchor", "middle")
+                                    //         .style("font-size", "18px")
+                                    //         .text("Date");
+                                        //adding label to y-axis
+                                        svg.append("text")      // text label for the x axis
+                                            .attr("x", -110 )
+                                            .attr("y",  -50 )
+                                            .style("text-anchor", "middle")
+                                            .style("font-size", "14px").attr("transform", "rotate(-90)")
+                                            .text("Net Exposure");
+
+                                    x_axis.selectAll("text").style("fill","black").style("font-size","13");
+                                    y_axis.selectAll("text").style("fill","black").style("font-size","12");
+ 
+
+                                    var focus = svg.append("g")
+                                    .attr("class", "focus")
+                                    .style("display", "none");
+
+                                        focus.append("circle")
+                                            .attr("r", 5);
+
+                                        focus.append("text")
+                                            .attr("x", 9)
+                                            .attr("dy", ".35em")
+                                            .style("font-size",15);
+
+                                      // add the area
+                                        svg.append("path")
+                                           .data([data])
+                                           .attr("class", "area")
+                                           .attr("d", area)
+                                           
+                                    
+                                   
+                                    //   // add the valueline path.
+                                    //   svg.append("path")
+                                    //       .data([data])
+                                    //       .attr("class", "line")
+                                    //       .attr("d", valueline);        
+                                    // }); 
+                                    </script>
+
+</div>
+{% elif chart4 %}
+<div class="centered">
+        <table id='id_of_table' >
+                <tr>
+                    <th>
+                            Ticker_Und
+                    </th>
+                    <th>
+                        var90d%
+                    </th>
+                    </tr>
+                <tr><td id="1"></td><td id="6"></td></tr>
+                <tr><td id="2"></td><td id="7"></td></tr>
+                <tr><td id="3"></td><td id="8"></td></tr> 
+                <tr><td id="4"></td><td id="9"></td></tr>
+                <tr><td id="5"></td><td id="10"></td></tr>
+        </table>
+        <script>
+
+
+                                    data2={{chart4|safe}}
+                                        if(data2.length!=0)
+                                            {
+                                              if(data2[0]['Ticker_Und'])
+                                                document.getElementById("1").innerHTML=data2[0]['Ticker_Und']
+                                             else
+                                                document.getElementById("1").innerHTML=null;
+                                                if(data2[1]['Ticker_Und'])
+                                                document.getElementById("2").innerHTML=data2[1]['Ticker_Und']
+                                             else
+                                                document.getElementById("2").innerHTML=null;
+                
+                                                if(data2[2]['Ticker_Und'])
+                                                document.getElementById("3").innerHTML=data2[2]['Ticker_Und']
+                                             else
+                                                document.getElementById("3").innerHTML=null;
+                
+                                                if(data2[3]['Ticker_Und'])
+                                                document.getElementById("4").innerHTML=data2[3]['Ticker_Und']
+                                             else
+                                                document.getElementById("4").innerHTML=null;
+                
+                                            if(data2[4]['Ticker_Und'])
+                                                document.getElementById("5").innerHTML=data2[4]['Ticker_Und']
+                                             else
+                                                document.getElementById("5").innerHTML=null;
+                                                if(data2[0]['VaR90D%']>=0||data2[0]['VaR90D%']<0)
+                                                document.getElementById("6").innerHTML=  parseFloat(data2[0]['VaR90D%']*100).toFixed(3)+"%"
+                                             else
+                                                document.getElementById("6").innerHTML=null;
+                                                if(data2[1]['VaR90D%']>=0||data2[1]['VaR90D%']<0)
+                                                document.getElementById("7").innerHTML=  parseFloat(data2[1]['VaR90D%']*100).toFixed(3)+"%"
+                                             else
+                                                document.getElementById("7").innerHTML=null;
+                                                if(data2[2]['VaR90D%']>=0||data2[2]['VaR90D%']<0)
+                                                document.getElementById("8").innerHTML=  parseFloat(data2[2]['VaR90D%']*100).toFixed(3)+"%"
+                                             else
+                                                document.getElementById("8").innerHTML=null;
+                                                if(data2[3]['VaR90D%']>=0||data2[3]['VaR90D%']<0)
+                                                document.getElementById("9").innerHTML=  parseFloat(data2[3]['VaR90D%']*100).toFixed(3)+"%"
+                                             else
+                                                document.getElementById("9").innerHTML=null;
+                                                if(data2[4]['VaR90D%']>=0||data2[4]['VaR90D%']<0)
+                                                document.getElementById("10").innerHTML=  parseFloat(data2[4]['VaR90D%']*100).toFixed(3)+"%"
+                                             else
+                                                document.getElementById("10").innerHTML=null;
+                                            
+                                            
+                
+                                            }
+                                            else
+                                            {
+                                                          document.getElementById("1").innerHTML=null;
+                                                          document.getElementById("2").innerHTML=null;
+                                                          document.getElementById("3").innerHTML=null;  
+                                                          document.getElementById("4").innerHTML=null;   
+                                                          document.getElementById("5").innerHTML=null;   
+                                                          document.getElementById("6").innerHTML=null;   
+                                                          document.getElementById("7").innerHTML=null;   
+                                                          document.getElementById("8").innerHTML=null;   
+                                                          document.getElementById("9").innerHTML=null;     
+                                                          document.getElementById("10").innerHTML=null;    
+                                            }
+                                        
+                                           
+                    </script>
+                                           
+                
+                
+                               
+       
+</div>
+{% elif chart5 %}
+<div class="centered">
+        <table id='id_of_table' border=1>
+               
+                <tr>
+                   
+                    <th>
+                            Country
+                    </th>
+                    <th>
+                       var90d%
+                    </th>
+                   </tr>
+               
+                <tr><td id="11"></td><td id="16"></td></tr>
+                <tr><td id="12"></td><td id="17"></td></tr>
+                <tr><td id="13"></td><td id="18"></td></tr> 
+                <tr><td id="14"></td><td id="19"></td></tr>
+                <tr><td id="15"></td><td id="20"></td></tr>
+       </table>
+       <script>
+data2={{chart5|safe}}
+
+
+if(data2.length!=0)
+{
+ if(data2[0]['Country'])
+   document.getElementById("11").innerHTML=data2[0]['Country']
+else
+   document.getElementById("11").innerHTML=null;
+   if(data2[1]['Country'])
+   document.getElementById("12").innerHTML=data2[1]['Country']
+else
+   document.getElementById("12").innerHTML=null;
+
+   if(data2[2]['Country'])
+   document.getElementById("13").innerHTML=data2[2]['Country']
+else
+   document.getElementById("13").innerHTML=null;
+
+   if(data2[3]['Country'])
+   document.getElementById("14").innerHTML=data2[3]['Country']
+else
+   document.getElementById("14").innerHTML=null;
+
+if(data2[4]['Country'])
+   document.getElementById("15").innerHTML=data2[4]['Country']
+else
+   document.getElementById("15").innerHTML=null;
+if(data2[0]['VaR90D%']>=0||data2[0]['VaR90D%']<0)
+   document.getElementById("16").innerHTML=  parseFloat(data2[0]['VaR90D%']*100).toFixed(3)+"%"
+else
+   document.getElementById("16").innerHTML=null;
+   if(data2[1]['VaR90D%']>=0||data2[1]['VaR90D%']<0)
+   document.getElementById("17").innerHTML=  parseFloat(data2[1]['VaR90D%']*100).toFixed(3)+"%"
+else
+   document.getElementById("17").innerHTML=null;
+   if(data2[2]['VaR90D%']>=0||data2[2]['VaR90D%']<0)
+   document.getElementById("18").innerHTML=  parseFloat(data2[2]['VaR90D%']*100).toFixed(3)+"%"
+else
+   document.getElementById("18").innerHTML=null;
+   if(data2[3]['VaR90D%']>=0||data2[3]['VaR90D%']<0)
+   document.getElementById("19").innerHTML=  parseFloat(data2[3]['VaR90D%']*100).toFixed(3)+"%"
+else
+   document.getElementById("19").innerHTML=null;
+   if(data2[4]['VaR90D%']>=0||data2[4]['VaR90D%']<0)
+   document.getElementById("20").innerHTML=  parseFloat(data2[4]['VaR90D%']*100).toFixed(3)+"%"
+else
+   document.getElementById("20").innerHTML=null;
+
+
+}
+else
+{
+             document.getElementById("11").innerHTML=null;
+             document.getElementById("12").innerHTML=null;
+             document.getElementById("13").innerHTML=null;  
+             document.getElementById("14").innerHTML=null;   
+             document.getElementById("15").innerHTML=null;   
+             document.getElementById("16").innerHTML=null;   
+             document.getElementById("17").innerHTML=null;   
+             document.getElementById("18").innerHTML=null;   
+             document.getElementById("19").innerHTML=null;     
+             document.getElementById("20").innerHTML=null;    
+}
+
+</script>
+
+
+
+</div>
+{% elif chart6 %}
+<div class="centered">
+        <table id='id_of_table' border=1>
+                <caption style="caption-side:top;text-align:center;color:black;font-size:18px"> By Sector</caption>
+        
+                <tr>
+                   
+                    <th>
+                            GICS_Sector_Name
+                    </th>
+                    <th>
+                      var90d%
+                    </th>
+                   </tr>
+               
+                <tr><td id="21"></td><td id="26"></td></tr>
+                    <tr><td id="22"></td><td id="27"></td></tr>
+                    <tr><td id="23"></td><td id="28"></td></tr> 
+                    <tr><td id="24"></td><td id="29"></td></tr>
+                    <tr><td id="25"></td><td id="30"></td></tr>
+        </table>
+        <script>
+            data2 = {{chart6|safe}}
+        if(data2.length!=0)
+                            {
+                              if(data2[0]['GICS_Sector_Name'])
+                                document.getElementById("21").innerHTML=data2[0]['GICS_Sector_Name']
+                             else
+                                document.getElementById("21").innerHTML=null;
+                                if(data2[1]['GICS_Sector_Name'])
+                                document.getElementById("22").innerHTML=data2[1]['GICS_Sector_Name']
+                             else
+                                document.getElementById("22").innerHTML=null;
+
+                                if(data2[2]['GICS_Sector_Name'])
+                                document.getElementById("23").innerHTML=data2[2]['GICS_Sector_Name']
+                             else
+                                document.getElementById("23").innerHTML=null;
+
+                                if(data2[3]['GICS_Sector_Name'])
+                                document.getElementById("24").innerHTML=data2[3]['GICS_Sector_Name']
+                             else
+                                document.getElementById("24").innerHTML=null;
+
+                            if(data2[4]['GICS_Sector_Name'])
+                                document.getElementById("25").innerHTML=data2[4]['GICS_Sector_Name']
+                             else
+                                document.getElementById("25").innerHTML=null;
+                            if(data2[0]['VaR90D%']>=0||data2[0]['VaR90D%']<0)
+                                document.getElementById("26").innerHTML=  parseFloat(data2[0]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("26").innerHTML=null;
+                                if(data2[1]['VaR90D%']>=0||data2[1]['VaR90D%']<0)
+                                document.getElementById("27").innerHTML=  parseFloat(data2[1]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("27").innerHTML=null;
+                                if(data2[2]['VaR90D%']>=0||data2[2]['VaR90D%']<0)
+                                document.getElementById("28").innerHTML=  parseFloat(data2[2]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("28").innerHTML=null;
+                                if(data2[3]['VaR90D%']>=0||data2[3]['VaR90D%']<0)
+                                document.getElementById("29").innerHTML=  parseFloat(data2[3]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("29").innerHTML=null;
+                                if(data2[4]['VaR90D%']>=0||data2[4]['VaR90D%']<0)
+                                document.getElementById("30").innerHTML=  parseFloat(data2[4]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("30").innerHTML=null;
+                            
+
+                            }
+                            else
+                            {
+                                          document.getElementById("21").innerHTML=null;
+                                          document.getElementById("22").innerHTML=null;
+                                          document.getElementById("23").innerHTML=null;  
+                                          document.getElementById("24").innerHTML=null;   
+                                          document.getElementById("25").innerHTML=null;   
+                                          document.getElementById("26").innerHTML=null;   
+                                          document.getElementById("27").innerHTML=null;   
+                                          document.getElementById("28").innerHTML=null;   
+                                          document.getElementById("29").innerHTML=null;     
+                                          document.getElementById("30").innerHTML=null;    
+                            }
+                        
+        </script>
+
+</div>
+{% elif data %}
+
+<div class="centered">
+    <h3>Benchmark VS Fund Returns</h3><br><br>
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+
+    <script>
+    
+      // set the dimensions and margins of the graph
+      var margin = {top: 10, right: 30, bottom: 10, left: 100},
+          width = 550 ,
+          height = 350 ;
+      
+      // append the svg object to the body of the page
+      var svg3 = d3.select(".centered")
+        .append("svg").attr("viewBox", [0, 0, width+200, height+100])
+          // .attr("width", width + margin.left + margin.right)
+          // .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+                
+      // Parse the Data
+     
+        var data ={{data|safe}}
+      
+        var parseDate = d3.timeParse("%Y-%m-%d");
+    
+          
+        data.forEach(function(d) {
+        d[0] = parseDate(d[0]);
+        console.log(typeof(d[0]))
+    });
+      // X axis
+                            
+      function getDate(d) {
+        return new Date(d.Date);
+    }
+    
+    var minDate = getDate(data[0]),
+        maxDate = getDate(data[data.length-1]);
+    
+      var x = d3.scaleTime()
+        .range([ 0, width ])
+        .domain([minDate, maxDate]) 
+        
+      svg3.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+      
+      // //  adding x-axis label
+      // svg.append("text")             
+      //   .attr("transform","translate(" + (width/2) + " ," + (height + 50) + ")")
+      //   .style("text-anchor", "middle")
+      //   .text("Inception");
+    
+      // Add Y axis
+      var y = d3.scaleLinear()
+        .domain([-0.1, 0.1])
+        .range([ height, 0]);
+      svg3.append("g")
+        .call(d3.axisLeft(y));
+      
+    
+     
+    
+    
+    
+      // Lines
+      svg3.selectAll("myline")
+        .data(data)
+        .enter()
+        .append("line")
+          .attr("x1", function(d) { return x(getDate(d)); })
+          .attr("x2", function(d) { return x(getDate(d)); })
+          .attr("y1", function(d) { return y(d.Benchmarkreturn); })
+          .attr("y2",  function(d) { return y(d.Return); })
+          .attr("stroke", function(d){ return d.Benchmarkreturn <= d.Return ? '#FFAA08' : '#0A5ABB' })
+          .attr("stroke-width", "1px")
+      var tooltip = d3.select(".centered").append("div").attr("class", "toolTip");
+      // Circles
+      svg3.selectAll("mycircle")
+          .data(data)
+          .enter()
+          .append("circle")
+          .attr("cx", function(d) { return x(getDate(d)); })
+          .attr("cy", function(d) { return y(d.Benchmarkreturn); })
+          .attr("r", "5")
+          .style("fill", "#0A5ABB")
+          .on("mouseover", function(d){
+              tooltip
+                .style("left", d3.event.pageX - 50 + "px")
+                .style("top", d3.event.pageY - 60 + "px")
+                .style("display", "inline-block")
+                .html("Benchmark Return: "+(d.Benchmarkreturn));
+          })
+          .on("mouseout", function(d){ tooltip.style("display", "none");});;
+          // .attr("stroke", "black")
+    
+    
+          svg3.selectAll("mycircle")
+              .data(data)
+              .enter()
+              .append("circle")
+              .attr("cx", function(d) { return x(getDate(d)); })
+              .attr("cy", function(d) { return y(d.Return); })
+              .attr("r", "5")
+              .style("fill", "#FFAA08")
+              .on("mouseover", function(d){
+                  tooltip
+                    .style("left", d3.event.pageX - 50 + "px")
+                    .style("top", d3.event.pageY - 60 + "px")
+                    .style("display", "inline-block")
+                    .html("Return: "+(d.Return));
+              })
+              .on("mouseout", function(d){ tooltip.style("display", "none")});
+          // .attr("stroke", "black")
+    
+        
+      </script>
+
+</div>
+{% elif sector %}
+<div class="centered" id="container" >
+   
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+<script>
+    window.onload=pie_of_pie('8/22/2019');
+        function pie_of_pie(selected_date)
+        {
+            var data1={{sector|safe}}
+            var data2={{region|safe}}
+            var filtered,filtered2;
+            for(i=0;i<data1.length;i++)
+            {
+            
+                 sector=data1[i].filter(function(item){
+                        
+                        return item.date==selected_date;         
+                            });	
+                if(sector.length!=0)
+                  {
+                   break;
+                  }
+                
+            }
+            for(i=0;i<data2.length;i++)
+            {
+            
+                 region=data2[i].filter(function(item){
+                        
+                        return item.date==selected_date;         
+                            });	
+                if(region.length!=0)
+                  {
+                   break;
+                  }
+                
+            }
+        
+        
+        
+        
+        Highcharts.chart('container', {
+            chart: {
+                type: 'pie',
+                plotBackgroundColor: null,
+              plotBorderWidth: null,
+              plotShadow: false,
+            },
+            title: {
+                    text: 'Sector Region  split'
+                },
+          
+            tooltip: {
+              pointFormat: '<span style="text-decoration:none">{series.name}</span>: <br>{point.percentage:.1f} %'
+            },
+            plotOptions: {
+              pie: {
+                dataLabels: {
+                  enabled: true,
+                  format: '<span style="">{point.name}</span>:<br>{point.percentage:.1f} %',
+                }
+              }
+            },
+            series: [{
+                name: 'Sector  split',
+                data:sector,
+        
+            
+            }],
+            
+            drilldown: {
+                
+                series: region
+            
+            }
+        });
+        }
+        </script>
+
+</div>
+{% elif data11 %}
+<div class="centered" id="container1">
+        <script>
+                $(function () {
+                    $('#container1').highcharts({
+                        title: {
+                                    text: 'Daily VaR and PNL monitoring',
+                                    style: {
+                                                color: 'black',
+                                                fontSize:'18px',
+                                                fontFamily:'verdana',
+                                                },
+                             
+                                    x: -20 //center
+                                },
+                                xAxis: {
+                                    categories:{{data13|safe}},
+                                    tickInterval: 30,lineColor:"black",
+                                    tickLength: 7,
+                                            tickWidth: 1,
+                                            tickColor:"black",
+                                    labels:{
+                                          style: {
+                                                color: 'black',
+                                                fontSize:'13px',
+                                                fontFamily:'verdana'
+                                            },
+                                            // formatter: function () {
+                                            //     if(this.value.length==8)
+                                            //           return  this.value.toString().substring(2,9);
+                                            //     else
+                                            //           return  this.value.toString().substring(3,9);
+
+                                            //    }
+                                    }
+                                },
+                                credits: {
+                                            enabled: false
+                                        },
+                                        exporting: {
+                                            buttons: {
+                                                contextButton: {
+                                                enabled:false
+                                                },
+                                                
+                                            }
+                                        },
+                                        yAxis: {
+                                    gridLineWidth: 0,lineWidth:1,lineColor:"black",
+                                    tickLength: 7,
+                                            tickWidth: 1,
+                                            tickColor:"black",
+                                    title: {
+                                        text: 'PNL & VaR 90D(%)',
+                                        style:{
+                                                    color: 'black',
+                                                fontSize:'13px',
+                                                fontFamily:'verdana',
+                                                }
+                                    },
+                                   
+                                    labels: {
+                                                style: {
+                                                color: 'black',
+                                                fontSize:'13px',
+                                                fontFamily:'verdana',
+                                                },
+                             
+                                            formatter: function(){
+                                            return  (this.value).toFixed(1)+ '%';
+                                            }
+                                        },
+                                    plotLines: [{
+                                        value: 0,
+                                        width: 1,
+                                        color: 'grey'
+                                    }]
+                                },
+                                tooltip: {
+                                    valueSuffix: "%"
+                                },
+                                legend: {
+                                  
+                                            align: 'center',
+                                            verticalAlign: 'bottom',
+                                            x: 0,
+                                            y: 0
+                                  
+                                },
+                        series: [{
+                            name: 'PNL',
+                            data:{{data12|safe}},
+                            color:'red'
+                        },        
+                            {        		
+                                type: "arearange",   
+                                name:"VaR 90D",               
+                            data: {{data11|safe}},
+                            showInLegend: false,
+                           
+                            fillOpacity: 0.3
+                         
+                            
+                        }]
+                    });
+                });
+                </script>
+                 
+</div>
+{% endif %}
+
+</div>
+<div >
+ 
+    
+</div>
+     
+	
+
+    
+
+    
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'static/js/all.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'static/js/custom.js' %}"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

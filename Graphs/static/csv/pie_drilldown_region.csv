@@ -1,0 +1,440 @@
+trade_dt,sector,region,Percentage
+8/1/2019,Communication Services,Asia,0.21
+8/1/2019,Communication Services,Europe,0.45
+8/1/2019,Communication Services,North America,0.33
+8/1/2019,Consumer Discretionary,North America,0.61
+8/1/2019,Consumer Discretionary,South America,0.39
+8/1/2019,Consumer Staples,North America,1.00
+8/1/2019,Energy,Europe,0.09
+8/1/2019,Energy,North America,0.91
+8/1/2019,Financials,Europe,0.05
+8/1/2019,Financials,North America,0.78
+8/1/2019,Financials,South America,0.17
+8/1/2019,Health Care,Europe,0.20
+8/1/2019,Health Care,North America,0.76
+8/1/2019,Health Care,South America,0.04
+8/1/2019,Industrials,Europe,0.58
+8/1/2019,Industrials,North America,0.30
+8/1/2019,Industrials,South America,0.13
+8/1/2019,Information Technology,Asia,0.05
+8/1/2019,Information Technology,North America,0.95
+8/1/2019,Information Technology,South America,0.00
+8/1/2019,Materials,Africa,0.39
+8/1/2019,Materials,Asia,0.33
+8/1/2019,Materials,Europe,0.28
+8/1/2019,Other,Asia,0.00
+8/1/2019,other,Europe,0.14
+8/1/2019,Other,North America,0.86
+8/1/2019,Real Estate,Asia,0.01
+8/1/2019,Real Estate,Europe,0.29
+8/1/2019,Real Estate,North America,0.70
+8/1/2019,Utilities,North America,0.87
+8/1/2019,Utilities,South America,0.13
+8/2/2019,Communication Services,Asia,0.11
+8/2/2019,Communication Services,Europe,0.51
+8/2/2019,Communication Services,North America,0.38
+8/2/2019,Consumer Discretionary,North America,0.61
+8/2/2019,Consumer Discretionary,South America,0.39
+8/2/2019,Consumer Staples,North America,1.00
+8/2/2019,Energy,Europe,0.08
+8/2/2019,Energy,North America,0.92
+8/2/2019,Financials,Europe,0.05
+8/2/2019,Financials,North America,0.80
+8/2/2019,Financials,South America,0.16
+8/2/2019,Health Care,Asia,0.00
+8/2/2019,Health Care,Europe,0.20
+8/2/2019,Health Care,North America,0.75
+8/2/2019,Health Care,South America,0.04
+8/2/2019,Industrials,Europe,0.56
+8/2/2019,Industrials,North America,0.31
+8/2/2019,Industrials,South America,0.13
+8/2/2019,Information Technology,Asia,0.05
+8/2/2019,Information Technology,North America,0.95
+8/2/2019,Materials,Africa,0.28
+8/2/2019,Materials,Asia,0.33
+8/2/2019,Materials,Europe,0.40
+8/2/2019,Other,Asia,0.01
+8/2/2019,other,Europe,0.14
+8/2/2019,Other,North America,0.85
+8/2/2019,Real Estate,Asia,0.01
+8/2/2019,Real Estate,Europe,0.29
+8/2/2019,Real Estate,North America,0.70
+8/2/2019,Utilities,North America,0.87
+8/2/2019,Utilities,South America,0.13
+8/5/2019,Communication Services,Asia,0.00
+8/5/2019,Communication Services,Europe,0.63
+8/5/2019,Communication Services,North America,0.37
+8/5/2019,Consumer Discretionary,North America,0.69
+8/5/2019,Consumer Discretionary,South America,0.31
+8/5/2019,Consumer Staples,North America,1.00
+8/5/2019,Energy,Europe,0.00
+8/5/2019,Energy,North America,1.00
+8/5/2019,Financials,Europe,0.05
+8/5/2019,Financials,North America,0.84
+8/5/2019,Financials,South America,0.11
+8/5/2019,Health Care,Asia,0.01
+8/5/2019,Health Care,Europe,0.21
+8/5/2019,Health Care,North America,0.74
+8/5/2019,Health Care,South America,0.05
+8/5/2019,Industrials,Europe,0.54
+8/5/2019,Industrials,North America,0.32
+8/5/2019,Industrials,South America,0.14
+8/5/2019,Information Technology,Asia,0.04
+8/5/2019,Information Technology,North America,0.96
+8/5/2019,Materials,Africa,0.00
+8/5/2019,Materials,Asia,0.96
+8/5/2019,Materials,Europe,0.04
+8/5/2019,Other,Asia,0.00
+8/5/2019,other,Europe,0.15
+8/5/2019,Other,North America,0.85
+8/5/2019,Real Estate,Asia,0.01
+8/5/2019,Real Estate,Europe,0.38
+8/5/2019,Real Estate,North America,0.61
+8/5/2019,Utilities,North America,1.00
+8/5/2019,Utilities,South America,0.00
+8/6/2019,Communication Services,Europe,0.63
+8/6/2019,Communication Services,North America,0.37
+8/6/2019,Consumer Discretionary,North America,0.69
+8/6/2019,Consumer Discretionary,South America,0.31
+8/6/2019,Consumer Staples,North America,1.00
+8/6/2019,Energy,North America,1.00
+8/6/2019,Financials,Europe,0.05
+8/6/2019,Financials,North America,0.84
+8/6/2019,Financials,South America,0.11
+8/6/2019,Health Care,Asia,0.01
+8/6/2019,Health Care,Europe,0.20
+8/6/2019,Health Care,North America,0.75
+8/6/2019,Health Care,South America,0.05
+8/6/2019,Industrials,Europe,0.43
+8/6/2019,Industrials,North America,0.39
+8/6/2019,Industrials,South America,0.18
+8/6/2019,Information Technology,Asia,0.02
+8/6/2019,Information Technology,North America,0.98
+8/6/2019,Materials,Asia,0.96
+8/6/2019,Materials,Europe,0.04
+8/6/2019,Other,Asia,0.00
+8/6/2019,other,Europe,0.13
+8/6/2019,Other,North America,0.87
+8/6/2019,Real Estate,Asia,0.01
+8/6/2019,Real Estate,Europe,0.40
+8/6/2019,Real Estate,North America,0.59
+8/6/2019,Utilities,North America,1.00
+8/7/2019,Communication Services,Europe,0.62
+8/7/2019,Communication Services,North America,0.38
+8/7/2019,Consumer Discretionary,North America,0.69
+8/7/2019,Consumer Discretionary,South America,0.31
+8/7/2019,Consumer Staples,North America,1.00
+8/7/2019,Energy,North America,1.00
+8/7/2019,Financials,Europe,0.05
+8/7/2019,Financials,North America,0.83
+8/7/2019,Financials,South America,0.12
+8/7/2019,Health Care,Asia,0.00
+8/7/2019,Health Care,Europe,0.17
+8/7/2019,Health Care,North America,0.78
+8/7/2019,Health Care,South America,0.04
+8/7/2019,Industrials,Europe,0.36
+8/7/2019,Industrials,North America,0.44
+8/7/2019,Industrials,South America,0.20
+8/7/2019,Information Technology,Asia,0.00
+8/7/2019,Information Technology,North America,1.00
+8/7/2019,Materials,Asia,0.97
+8/7/2019,Materials,Europe,0.03
+8/7/2019,other,Europe,0.11
+8/7/2019,Other,North America,0.89
+8/7/2019,Real Estate,Asia,0.01
+8/7/2019,Real Estate,Europe,0.40
+8/7/2019,Real Estate,North America,0.59
+8/7/2019,Utilities,North America,1.00
+8/8/2019,Communication Services,Europe,0.55
+8/8/2019,Communication Services,North America,0.45
+8/8/2019,Consumer Discretionary,North America,0.72
+8/8/2019,Consumer Discretionary,South America,0.28
+8/8/2019,Consumer Staples,North America,1.00
+8/8/2019,Energy,North America,1.00
+8/8/2019,Financials,Europe,0.05
+8/8/2019,Financials,North America,0.84
+8/8/2019,Financials,South America,0.11
+8/8/2019,Health Care,Asia,0.00
+8/8/2019,Health Care,Europe,0.17
+8/8/2019,Health Care,North America,0.78
+8/8/2019,Health Care,South America,0.04
+8/8/2019,Industrials,Europe,0.18
+8/8/2019,Industrials,North America,0.64
+8/8/2019,Industrials,South America,0.18
+8/8/2019,Information Technology,North America,1.00
+8/8/2019,Materials,Asia,1.00
+8/8/2019,Materials,Europe,0.00
+8/8/2019,other,Europe,0.08
+8/8/2019,Other,North America,0.92
+8/8/2019,Real Estate,Asia,0.00
+8/8/2019,Real Estate,Europe,0.32
+8/8/2019,Real Estate,North America,0.68
+8/8/2019,Utilities,North America,1.00
+8/9/2019,Communication Services,Europe,0.55
+8/9/2019,Communication Services,North America,0.45
+8/9/2019,Consumer Discretionary,North America,0.77
+8/9/2019,Consumer Discretionary,South America,0.23
+8/9/2019,Consumer Staples,North America,1.00
+8/9/2019,Energy,North America,1.00
+8/9/2019,Financials,Europe,0.04
+8/9/2019,Financials,North America,0.85
+8/9/2019,Financials,South America,0.11
+8/9/2019,Health Care,Asia,0.00
+8/9/2019,Health Care,Europe,0.14
+8/9/2019,Health Care,North America,0.82
+8/9/2019,Health Care,South America,0.04
+8/9/2019,Industrials,Europe,0.14
+8/9/2019,Industrials,North America,0.61
+8/9/2019,Industrials,South America,0.24
+8/9/2019,Information Technology,North America,0.71
+8/9/2019,Information Technology,South America,0.29
+8/9/2019,Materials,Asia,1.00
+8/9/2019,other,Europe,0.06
+8/9/2019,Other,North America,0.94
+8/9/2019,Real Estate,Asia,0.00
+8/9/2019,Real Estate,Europe,0.26
+8/9/2019,Real Estate,North America,0.74
+8/9/2019,Utilities,North America,1.00
+8/12/2019,Communication Services,Europe,0.50
+8/12/2019,Communication Services,North America,0.50
+8/12/2019,Consumer Discretionary,North America,0.77
+8/12/2019,Consumer Discretionary,South America,0.23
+8/12/2019,Consumer Staples,North America,1.00
+8/12/2019,Energy,North America,1.00
+8/12/2019,Financials,Europe,0.05
+8/12/2019,Financials,North America,0.90
+8/12/2019,Financials,South America,0.06
+8/12/2019,Health Care,Europe,0.13
+8/12/2019,Health Care,North America,0.82
+8/12/2019,Health Care,South America,0.05
+8/12/2019,Industrials,Europe,0.14
+8/12/2019,Industrials,North America,0.68
+8/12/2019,Industrials,South America,0.18
+8/12/2019,Information Technology,North America,0.73
+8/12/2019,Information Technology,South America,0.27
+8/12/2019,Materials,Asia,0.45
+8/12/2019,other,Europe,0.06
+8/12/2019,Other,North America,0.94
+8/12/2019,Real Estate,Europe,0.27
+8/12/2019,Real Estate,North America,0.73
+8/12/2019,Utilities,North America,1.00
+8/13/2019,Communication Services,Europe,0.46
+8/13/2019,Communication Services,North America,0.54
+8/13/2019,Consumer Discretionary,North America,0.79
+8/13/2019,Consumer Discretionary,South America,0.21
+8/13/2019,Consumer Staples,North America,1.00
+8/13/2019,Energy,North America,1.00
+8/13/2019,Financials,Europe,0.05
+8/13/2019,Financials,North America,0.95
+8/13/2019,Financials,South America,0.00
+8/13/2019,Health Care,Europe,0.13
+8/13/2019,Health Care,North America,0.82
+8/13/2019,Health Care,South America,0.05
+8/13/2019,Industrials,Europe,0.00
+8/13/2019,Industrials,North America,0.78
+8/13/2019,Industrials,South America,0.22
+8/13/2019,Information Technology,North America,0.79
+8/13/2019,Information Technology,South America,0.21
+8/13/2019,other,Europe,0.05
+8/13/2019,Other,North America,0.95
+8/13/2019,Real Estate,Europe,0.16
+8/13/2019,Real Estate,North America,0.84
+8/13/2019,Utilities,North America,1.00
+8/14/2019,Communication Services,Europe,1.00
+8/14/2019,Communication Services,North America,0.00
+8/14/2019,Consumer Discretionary,North America,0.76
+8/14/2019,Consumer Discretionary,South America,0.24
+8/14/2019,Consumer Staples,North America,1.00
+8/14/2019,Energy,North America,1.00
+8/14/2019,Financials,Europe,0.05
+8/14/2019,Financials,North America,0.95
+8/14/2019,Health Care,Europe,0.12
+8/14/2019,Health Care,North America,0.88
+8/14/2019,Health Care,South America,0.00
+8/14/2019,Industrials,North America,0.69
+8/14/2019,Industrials,South America,0.31
+8/14/2019,Information Technology,North America,0.91
+8/14/2019,Information Technology,South America,0.09
+8/14/2019,other,Europe,0.03
+8/14/2019,Other,North America,0.97
+8/14/2019,Real Estate,Europe,0.00
+8/14/2019,Real Estate,North America,1.00
+8/14/2019,Utilities,North America,1.00
+8/15/2019,Communication Services,Europe,1.00
+8/15/2019,Consumer Discretionary,North America,0.79
+8/15/2019,Consumer Discretionary,South America,0.21
+8/15/2019,Consumer Staples,North America,0.43
+8/15/2019,Energy,North America,1.00
+8/15/2019,Financials,#NAME?,0.00
+8/15/2019,Financials,Europe,0.05
+8/15/2019,Financials,North America,0.95
+8/15/2019,Health Care,Europe,0.07
+8/15/2019,Health Care,North America,0.93
+8/15/2019,Industrials,North America,0.00
+8/15/2019,Industrials,South America,1.00
+8/15/2019,Information Technology,North America,1.00
+8/15/2019,Information Technology,South America,0.00
+8/15/2019,other,Europe,0.03
+8/15/2019,Other,North America,0.97
+8/15/2019,Real Estate,North America,1.00
+8/15/2019,Utilities,North America,1.00
+8/16/2019,Communication Services,Europe,0.00
+8/16/2019,Communication Services,North America,1.00
+8/16/2019,Consumer Discretionary,North America,0.88
+8/16/2019,Consumer Discretionary,South America,0.12
+8/16/2019,Energy,North America,1.00
+8/16/2019,Financials,Europe,0.06
+8/16/2019,Financials,North America,0.94
+8/16/2019,Health Care,Europe,0.00
+8/16/2019,Health Care,North America,1.00
+8/16/2019,Industrials,South America,1.00
+8/16/2019,Information Technology,North America,1.00
+8/16/2019,other,Europe,0.03
+8/16/2019,Other,North America,0.97
+8/16/2019,Real Estate,North America,1.00
+8/16/2019,Utilities,North America,0.43
+8/19/2019,Communication Services,North America,1.00
+8/19/2019,Consumer Discretionary,North America,0.88
+8/19/2019,Consumer Discretionary,South America,0.12
+8/19/2019,Energy,North America,1.00
+8/19/2019,Financials,Europe,0.05
+8/19/2019,Financials,North America,0.95
+8/19/2019,Health Care,North America,1.00
+8/19/2019,Industrials,South America,1.00
+8/19/2019,Information Technology,North America,1.00
+8/19/2019,other,Europe,0.03
+8/19/2019,Other,North America,0.97
+8/19/2019,Real Estate,North America,1.00
+8/20/2019,Communication Services,North America,1.00
+8/20/2019,Consumer Discretionary,North America,0.85
+8/20/2019,Consumer Discretionary,South America,0.15
+8/20/2019,Energy,North America,1.00
+8/20/2019,Financials,Asia,0.01
+8/20/2019,Financials,Europe,0.05
+8/20/2019,Financials,North America,0.95
+8/20/2019,Health Care,North America,1.00
+8/20/2019,Industrials,South America,1.00
+8/20/2019,Information Technology,North America,1.00
+8/20/2019,other,Europe,0.03
+8/20/2019,Other,North America,0.97
+8/20/2019,Real Estate,North America,1.00
+8/21/2019,Communication Services,North America,1.00
+8/21/2019,Consumer Discretionary,North America,0.86
+8/21/2019,Consumer Discretionary,South America,0.14
+8/21/2019,Energy,North America,1.00
+8/21/2019,Financials,Asia,0.02
+8/21/2019,Financials,Europe,0.05
+8/21/2019,Financials,North America,0.93
+8/21/2019,Health Care,North America,1.00
+8/21/2019,Industrials,South America,1.00
+8/21/2019,Information Technology,North America,1.00
+8/21/2019,Other,Asia,0.01
+8/21/2019,other,Europe,0.03
+8/21/2019,Other,North America,0.96
+8/21/2019,Real Estate,North America,1.00
+8/22/2019,Communication Services,North America,1.00
+8/22/2019,Consumer Discretionary,North America,1.00
+8/22/2019,Consumer Discretionary,South America,0.00
+8/22/2019,Energy,North America,1.00
+8/22/2019,Financials,Asia,0.01
+8/22/2019,Financials,Europe,0.04
+8/22/2019,Financials,North America,0.94
+8/22/2019,Health Care,North America,1.00
+8/22/2019,Industrials,South America,1.00
+8/22/2019,Information Technology,North America,1.00
+8/22/2019,Other,Asia,0.01
+8/22/2019,other,Europe,0.03
+8/22/2019,Other,North America,0.96
+8/22/2019,Real Estate,Asia,0.01
+8/22/2019,Real Estate,North America,0.99
+8/23/2019,Communication Services,North America,1.00
+8/23/2019,Consumer Discretionary,North America,1.00
+8/23/2019,Energy,North America,1.00
+8/23/2019,Financials,Asia,0.01
+8/23/2019,Financials,Europe,0.04
+8/23/2019,Financials,North America,0.94
+8/23/2019,Health Care,North America,1.00
+8/23/2019,Industrials,South America,1.00
+8/23/2019,Information Technology,Europe,0.33
+8/23/2019,Information Technology,North America,0.67
+8/23/2019,Other,Asia,0.00
+8/23/2019,other,Europe,0.11
+8/23/2019,Other,North America,0.89
+8/23/2019,Real Estate,Asia,0.01
+8/23/2019,Real Estate,North America,0.99
+8/26/2019,Communication Services,North America,1.00
+8/26/2019,Consumer Discretionary,North America,1.00
+8/26/2019,Energy,North America,1.00
+8/26/2019,Financials,Asia,0.01
+8/26/2019,Financials,Europe,0.04
+8/26/2019,Financials,North America,0.94
+8/26/2019,Health Care,North America,1.00
+8/26/2019,Industrials,South America,1.00
+8/26/2019,Information Technology,Europe,0.34
+8/26/2019,Information Technology,North America,0.66
+8/26/2019,Other,Asia,0.01
+8/26/2019,other,Europe,0.11
+8/26/2019,Other,North America,0.88
+8/26/2019,Real Estate,Asia,0.01
+8/26/2019,Real Estate,North America,0.99
+8/27/2019,Communication Services,North America,1.00
+8/27/2019,Consumer Discretionary,North America,1.00
+8/27/2019,Energy,North America,1.00
+8/27/2019,Financials,Asia,0.02
+8/27/2019,Financials,Europe,0.04
+8/27/2019,Financials,North America,0.95
+8/27/2019,Health Care,North America,1.00
+8/27/2019,Industrials,South America,0.43
+8/27/2019,Information Technology,Europe,0.35
+8/27/2019,Information Technology,North America,0.65
+8/27/2019,Other,Asia,0.01
+8/27/2019,other,Europe,0.11
+8/27/2019,Other,North America,0.88
+8/27/2019,Real Estate,Asia,0.01
+8/27/2019,Real Estate,North America,0.99
+8/28/2019,Communication Services,North America,1.00
+8/28/2019,Consumer Discretionary,North America,1.00
+8/28/2019,Consumer Staples,North America,1.00
+8/28/2019,Energy,North America,1.00
+8/28/2019,Financials,Asia,0.02
+8/28/2019,Financials,Europe,0.04
+8/28/2019,Financials,North America,0.95
+8/28/2019,Health Care,North America,1.00
+8/28/2019,Information Technology,Europe,0.40
+8/28/2019,Information Technology,North America,0.60
+8/28/2019,Other,Asia,0.01
+8/28/2019,other,Europe,0.11
+8/28/2019,Other,North America,0.88
+8/28/2019,Real Estate,Asia,0.01
+8/28/2019,Real Estate,North America,0.99
+8/29/2019,Communication Services,North America,1.00
+8/29/2019,Consumer Discretionary,North America,1.00
+8/29/2019,Consumer Staples,North America,1.00
+8/29/2019,Energy,North America,1.00
+8/29/2019,Financials,Asia,0.02
+8/29/2019,Financials,Europe,0.03
+8/29/2019,Financials,North America,0.95
+8/29/2019,Health Care,North America,1.00
+8/29/2019,Information Technology,Europe,0.42
+8/29/2019,Information Technology,North America,0.58
+8/29/2019,Other,Asia,0.01
+8/29/2019,other,Europe,0.12
+8/29/2019,Other,North America,0.88
+8/29/2019,Real Estate,Asia,0.03
+8/29/2019,Real Estate,North America,0.97
+8/30/2019,Communication Services,North America,1.00
+8/30/2019,Consumer Discretionary,North America,1.00
+8/30/2019,Consumer Staples,North America,1.00
+8/30/2019,Energy,North America,1.00
+8/30/2019,Financials,Asia,0.02
+8/30/2019,Financials,Europe,0.03
+8/30/2019,Financials,North America,0.95
+8/30/2019,Health Care,North America,1.00
+8/30/2019,Industrials,Europe,1.00
+8/30/2019,Information Technology,Europe,0.42
+8/30/2019,Information Technology,North America,0.58
+8/30/2019,Other,Asia,0.01
+8/30/2019,other,Europe,0.13
+8/30/2019,Other,North America,0.86
+8/30/2019,Real Estate,Asia,0.02
+8/30/2019,Real Estate,North America,0.98

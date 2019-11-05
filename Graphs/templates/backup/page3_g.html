@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Kiski </title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   
+    <style>
+
+        .bar.total rect {
+          fill: rgb(150, 190, 223);
+        }
+        
+        .bar.positive rect {
+          fill: rgb(176, 199, 137);
+        }
+        .bar.negative rect {
+          fill: rgb(224, 136, 153);
+        }
+        
+        .bar line.connector {
+          stroke: grey;
+          stroke-dasharray: 3;
+        }
+        
+        .bar text {
+          fill: white;
+          font: 12px sans-serif;
+          text-anchor: middle;
+        }
+        
+        .axis text {
+          font: 10px sans-serif;
+        }
+        
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: #000;
+          shape-rendering: crispEdges;
+        }
+        
+        </style>
+    
+
+</head>
+<body class="host_version"> 
+
+	
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loading">
+			<div class="finger finger-1">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-2">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-3">
+				<div class="finger-item">
+				  <span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-4">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="last-finger">
+				<div class="last-finger-item"><i></i></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'firstpage'%}"></a>
+                    <img src="{% static 'images/navbar_logo.png' %}" alt="image not available" id="img">
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                            <li><a href="{% url 'firstpage'%}" >Page 1</a></li>
+                            <li><a href="{% url 'secondpage'%}">Page 2 </a></li>
+                            <li><a href="{% url 'thirdpage'%}">Page 3</a></li>
+                            <li><a    href="{% url 'fourthpage'%}">Page 4</a></li>
+                            <li><a class="active" href="{% url 'fifthpage'%}">Page 5</a></li>
+                            <li><a href="{% url 'sixthpage'%}">Page 6</a></li>
+                            
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+							<li><a href="{% url 'logout'%}" > Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+Select Date: <input type="text"id="dt"  class="column  month_and_year_option i" name="announcementdate" required placeholder="YYYY-MM-DD" autocomplete="off">
+  
+<div id="top">
+           
+ <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+ <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">
+ 
+        <svg class="chart"></svg>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script>
+               $(function(){
+                   $( "#dt" ).datepicker({
+                       changeMonth : true,
+                       changeYear : true,
+                       dateFormat : 'm/d/yy'
+                   });
+               });
+               $(function(){
+            
+                $("#dt").on("change",function(){
+                     selected_date=$('#dt').val();
+                     
+          d3.selectAll(".chart > *").remove()
+          var margin = {top: 20, right: 30, bottom: 30, left: 40},
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom,
+            padding = 0.3;
+        
+        var x = d3.scale.ordinal()
+            .rangeRoundBands([0, width], padding);
+        
+        var y = d3.scale.linear()
+            .range([height, 0]);
+        
+        var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
+        
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left");
+         
+        
+        var chart = d3.select(".chart")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        
+        d3.csv("../static/csv/p3_chart2.csv", type, function(error, data) {
+         
+            sort_data=data.filter((item) => item.Trade_Dt === selected_date )
+            data=sort_data
+          if(sort_data.length!=0)
+          {
+          // Transform data (i.e., finding cumulative values and total) for easier charting
+              var cumulative = 0;
+              for (var i = 0; i < data.length; i++) {
+                data[i].start = cumulative;
+                cumulative += data[i].value;
+                data[i].end = cumulative;
+            
+                data[i].class = ( data[i].value >= 0 ) ? 'positive' : 'negative'
+              }
+              data.push({
+                Trade_Dt:"1/1/2019",
+                name: 'Total',
+                end: cumulative,
+                start: 0,
+                class: 'total'
+              });
+            
+              x.domain(data.map(function(d) {return d.name; }));
+              y.domain([0, d3.max(data, function(d) { return d.end; })]);
+              
+            chart.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis);
+          
+                chart.append("g")
+                    .attr("class", "y axis")
+                    .call(yAxis);
+              
+                var bar = chart.selectAll(".bar")
+                    .data(data)
+                  .enter().append("g")
+                    .attr("class", function(d) { return "bar " + d.class })
+                    .attr("transform", function(d) { return "translate(" + x(d.name) + ",0)"; });
+              
+                bar.append("rect")
+                    .attr("y", function(d) { return y( Math.max(d.start, d.end) ); })
+                    .attr("height", function(d) { return Math.abs( y(d.start) - y(d.end) ); })
+                    .attr("width",x.rangeBand());
+              
+                bar.append("text")
+                    .attr("x", x.rangeBand() / 2)
+                    .attr("y", function(d) { return y(d.end) +20; }).style('fill','black')
+                    .attr("dy", function(d) { return ((d.class=='negative') ? '-' : '') + ".100em" })
+                    .text(function(d) { num=d.end - d.start;y=parseFloat(num).toFixed(5);return y;});
+        // bar.append("text")
+        //       .attr("x", x.rangeBand() / 2)
+        //       .attr("y", function(d) { return y(d.end) +30; }).style('fill','black')
+        //       .attr("dy", function(d) { return ((d.class=='negative') ? '-' : '') + ".100em" })
+        //       .text(function(d) { return d.name;});
+        
+              bar.filter(function(d) { return d.class != "total" }).append("line")
+                  .attr("class", "connector")
+                  .attr("x1", x.rangeBand() + 5 )
+                  .attr("y1", function(d) { return y(d.end) } )
+                  .attr("x2", x.rangeBand() / ( 1 - padding) - 5 )
+                  .attr("y2", function(d) { return y(d.end) } )
+          }
+            });
+      
+        
+                    function type(d) {
+                      d.value = +d.value;
+                    //   alert(d.value)
+                      return d;
+                    }
+        
+                })
+          
+
+
+});
+
+        
+    </script>
+    </div>
+
+    <div>
+
+    </div>
+
+    
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'static/js/all.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'static/js/custom.js' %}"></script>
+
+</body>
+</html>

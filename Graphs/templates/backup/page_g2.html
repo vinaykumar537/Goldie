@@ -1,0 +1,1124 @@
+
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Kiski </title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   
+    <style> /* set the CSS */
+
+      .line {
+        fill: none;
+        stroke: white;
+        stroke-width: 2px;
+      }
+      
+      .area {
+        fill:rgb(13, 160, 13);
+      }
+      
+      #date
+      {
+          padding-left:10%;
+          /* background-color: blue; */
+      }
+ 
+      #bubblehart{
+          width:100%;
+          height:50%;
+      }
+      p{
+          font-size:20px;
+      }
+      .column{
+          width:300px;
+          height:40px;
+          font-size:18px;
+          padding:5px;
+          border-radius:3px;
+          border:1px solid #CCCCCC;
+      }
+      
+      </style>
+      
+    
+
+</head>
+<body class="host_version"> 
+
+	
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loading">
+			<div class="finger finger-1">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-2">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-3">
+				<div class="finger-item">
+				  <span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-4">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="last-finger">
+				<div class="last-finger-item"><i></i></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'firstpage'%}"></a>
+                    <img src="{% static 'images/navbar_logo.png' %}" alt="image not available" id="img">
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                            <li><a href="{% url 'firstpage'%}" >Page 1</a></li>
+                            <li><a href="{% url 'secondpage'%}">Page 2 </a></li>
+                            <li><a href="{% url 'thirdpage'%}">Page 3</a></li>
+                            <li><a    href="{% url 'fourthpage'%}">Page 4</a></li>
+                            <li><a class="active" href="{% url 'fifthpage'%}">Page 5</a></li>
+                            <li><a href="{% url 'sixthpage'%}">Page 6</a></li>
+                            
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+							<li><a href="{% url 'logout'%}" > Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+	
+	
+<div id="areachart">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+// set the dimensions and margins of the graph
+var margin = {top: 50, right: 10, bottom: 30, left: 200},
+    width = 1800 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+// parse the date / time
+var parseTime = d3.timeParse("%d-%b-%y");
+
+// set the ranges
+//alert(d3.scaleTime().range([0, width]))
+//alert(d3.scaleLinear().range([height, 0]))
+var x = d3.scaleTime().range([0, width]);
+var y = d3.scaleLinear().range([height, 0]);
+
+// define the area
+var area = d3.area()
+    .x(function(d) { return x(d.Date); })
+    .y0(height)
+    .y1(function(d) { return y(d.Net); });
+
+// define the line
+var valueline = d3.line()
+    .x(function(d) { return x(d.Date); })
+    .y(function(d) { return y(d.Net); });
+
+// append the svg obgect to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg = d3.select("#areachart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// get the data
+d3.csv("../static/csv/three.csv", function(error, data) {
+  if (error) throw error;
+
+  // format the data
+  data.forEach(function(d) {
+      d.Date = parseTime(d.Date);
+      d.Net = +d.Net;
+  });
+
+  // scale the range of the data
+  x.domain(d3.extent(data, function(d) { return d.Date; }));
+  //y.domain([0.8, d3.max(data, function(d) { return d.Net; })]);
+
+  y.domain([d3.min(data, function(d) {
+	  return Math.max(d.Net); }), d3.max(data, function(d) {
+	  return Math.max(d.Net); })]);
+
+  // add the area
+    svg.append("path")
+       .data([data])
+       .attr("class", "area")
+       .attr("d", area);
+
+  // add the valueline path.
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .attr("d", valueline);
+
+      
+
+  // add the X Axis
+  svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+  //adding the x-axis label
+
+  svg.append("text")      // text label for the x axis
+        .attr("x", 375 )
+        .attr("y",  549 )
+        .style("text-anchor", "middle")
+        .style("font-size", "18px")
+        .text("Date");
+
+  // add the Y Axis
+  svg.append("g")
+      .call(d3.axisLeft(y));
+
+  //adding label to y-axis
+  svg.append("text")      // text label for the x axis
+        .attr("x", -75 )
+        .attr("y",  230 )
+        .style("text-anchor", "middle")
+        .style("font-size", "18px")
+        .text("Net value");
+
+
+    //adding title to a graph
+    svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "24px") 
+        .style("text-decoration", "underline")  
+        .text("Area Graph");
+
+        
+});
+
+
+
+</script>
+
+</div>
+<p>Select Date: <input type="text"id="datepicker"  class="column  month_and_year_option i" name="announcementdate" required placeholder="YYYY-MM-DD" autocomplete="off"></p>
+    
+<div id="bubblechart">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">
+    <!--- For Date Picker-->
+    <script>
+        var  selected_date;
+            $(function(){
+            $( ".month_and_year_option" ).datepicker({
+                changeMonth : true,
+                changeYear : true,
+                dateFormat : 'yy-mm-dd'
+            });
+        });
+    </script>
+  <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+  <svg width="600" height="700" id="c1"></svg>
+  <svg width="600" height="700" id="c2"></svg>
+  <svg id="treemap"></svg>
+  <script>
+          $(function(){
+          
+              $("#datepicker").on("change",function(){
+              selected_date=$('#datepicker').val();
+              d3.selectAll("#c1 > *").remove()
+              d3.selectAll("#c2 > *").remove()
+              d3.selectAll("#treemap > *").remove()
+                  var svg = d3.select("#c1");
+                      margin = 200,
+                      width = svg.attr("width")-margin ,
+                      height = svg.attr("height")-margin ;
+
+                  var svg1 = d3.select("#c2");
+                  margin = 200,
+                  width = svg1.attr("width")-margin ,
+                  height = svg1.attr("height")-margin ;
+                  
+              
+                    d3.csv("../static/csv/one.csv",function(data)
+                      {
+                  
+                      data.forEach(function(d) {
+                          d.Country=d.Country;
+                      d.Net=+d.Net;
+                  });
+                  console.log(data)
+                  sort_data=data.filter((item) => item.Date === selected_date )
+                  console.log(sort_data)
+                  if(sort_data.length!=0)
+                  {
+                      color = d3.scaleOrdinal(d3.schemeCategory10)
+                      formatPercent = d3.format(",.2%");
+                          let bubble = d3.pack()
+                                          .size([width, height])
+                                          .padding(1.5);
+
+
+                          let nodes = d3.hierarchy({children:sort_data})
+                                  .sum(function (d) { return d.Net; });
+
+
+
+                          let node = svg.selectAll(".node")
+                                  .data(bubble(nodes).descendants())
+                                  .enter()
+                                  .filter(function (d) { return !d.children })
+                                  .append("g")
+                                  .attr("class", "node")
+                                  .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});
+
+                          node.append("title")
+                          .text(function (d) { return d.Date + ": " + d.Net; });
+
+                          node.append("circle")
+                          .attr("x", function (d) { return d.x; })
+                          .attr("y", function (d) { return d.y; })
+                          .attr("r", function (d) { return d.r/1; })
+                          .attr("fill", (d,i) => color(i));
+
+
+                          node.append("text")
+                          .attr("dy", ".2em")
+                          .style("text-anchor", "middle")
+                          .text(function (d) { return d.data.Country;})
+                          .attr("font-family", "sans-serif")
+                          .attr("font-size", function (d) { return d.r /4; })
+                          .attr("fill", "white");
+
+                          node.append('text')
+                          .attr("dy", "1.3em")
+                          .style("text-anchor", "middle")
+                          .text(function (d) { return formatPercent(d.data.Net); })
+                          .attr("font-family", "Gill Sans")
+                          .attr("font-size", function (d) { return d.r / 4; })
+                          .attr("fill", "white");
+                  }
+                  else{
+                      alert("Data is not Available for that date !")
+                  }
+                 
+
+                  })
+                  d3.csv("../static/csv/two.csv",function(data)
+                      {
+                  
+                      data.forEach(function(d) {
+                          d.Sector=d.Sector;
+                      d.Net=+d.Net;
+                  });
+                  console.log(data)
+                  sort_data=data.filter((item) => item.Date === selected_date )
+                  console.log(sort_data)
+                  if(sort_data.length!=0)
+                  {
+                      color = d3.scaleOrdinal(d3.schemeCategory10)
+                      formatPercent = d3.format(",.2%");
+                          let bubble = d3.pack()
+                                          .size([width, height])
+                                          .padding(1.5);
+
+
+                          let nodes = d3.hierarchy({children:sort_data})
+                                  .sum(function (d) { return d.Net; });
+
+
+
+                          let node = svg1.selectAll(".node")
+                                  .data(bubble(nodes).descendants())
+                                  .enter()
+                                  .filter(function (d) { return !d.children })
+                                  .append("g")
+                                  .attr("class", "node")
+                                  .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});
+
+                          node.append("title")
+                          .text(function (d) { return d.Date + ": " + d.Net; });
+
+                          node.append("circle")
+                          .attr("x", function (d) { return d.x; })
+                          .attr("y", function (d) { return d.y; })
+                          .attr("r", function (d) { return d.r/1; })
+                          .attr("fill", (d,i) => color(i));
+
+
+                          node.append("text")
+                          .attr("dy", ".2em")
+                          .style("text-anchor", "middle")
+                          .text(function (d) { return d.data.Sector;})
+                          .attr("font-family", "sans-serif")
+                          .attr("font-size", function (d) { return d.r /4; })
+                          .attr("fill", "white");
+
+                          node.append('text')
+                          .attr("dy", "1.3em")
+                          .style("text-anchor", "middle")
+                          .text(function (d) { return formatPercent(d.data.Net); })
+                          .attr("font-family", "Gill Sans")
+                          .attr("font-size", function (d) { return d.r / 4; })
+                          .attr("fill", "white");
+                  }
+                  else{
+                      alert("Data is not Available for that date !")
+                  }
+                 
+
+                  })
+              })
+
+
+                                      // set the dimensions and margins of the graph
+                                      var margin = {top: 10, right: 10, bottom: 10, left: 10},
+                width = 600 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+                
+                // append the svg object to the body of the page
+                var svg = d3.select("#treemap")
+                            // .append("svg")
+                            .attr("width", width + margin.left + margin.right)
+                            .attr("height", height + margin.top + margin.bottom)
+                            .append("g")
+                            .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+                
+                // Read data
+                d3.csv('../static/csv/four.csv', function(data) {
+                    // console.log(data)
+                    sort_data=data.filter((item) => item.Date === selected_date )
+                    sort_data.forEach(function(x)
+                    {
+                        delete x.Date;
+
+                    })
+                    sort_data.unshift({ name: 'Origin', value: '',parent:'' });
+                    console.log(sort_data)
+                    if(sort_data.length!=1)
+                    {
+                        // stratify the data: reformatting for d3.js
+                    var root = d3.stratify()
+                        .id(function(d) { return d.name; })   // Name of the entity (column name is name in csv)
+                        .parentId(function(d) { return d.parent; })   // Name of the parent (column name is parent in csv)
+                        (sort_data);
+
+                    root.sum(function(d) { return +d.value })   // Compute the numeric value for each entity
+                    
+        //   // Then d3.treemap computes the position of each element of the hierarchy
+        //   // The coordinates are added to the root object above
+                    d3.treemap()
+                        .size([width, height])
+                        .padding(4)
+                        (root)
+        
+                    console.log(root.leaves())
+                    // use this information to add rectangles:
+                    svg
+                        .selectAll("rect")
+                        .data(root.leaves())
+                        .enter()
+                        .append("rect")
+                        .attr('x', function (d) { return d.x0; })
+                        .attr('y', function (d) { return d.y0; })
+                        .attr('width', function (d) { return d.x1 - d.x0; })
+                        .attr('height', function (d) { return d.y1 - d.y0; })
+                        .style("stroke", "black")
+                        .style("fill", "#69b3a2");
+                    
+                    // and to add the text labels
+                    svg
+                        .selectAll("text")
+                        .data(root.leaves())
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d){ return d.x0+10})    // +10 to adjust position (more right)
+                        .attr("y", function(d){ return d.y0+20})    // +20 to adjust position (lower)
+                        .text(function(d){ return d.data.name})
+                        .attr("font-size", "15px")
+                        .attr("fill", "white")
+                    }
+                    else{
+                        alert("No Data Available for this date");
+                    }
+                    
+        })
+               
+          });
+                  
+  </script>
+</div>
+    <!-- ALL JS FILES -->
+    <script src="{% static 'static/js/all.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'static/js/custom.js' %}"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GHC</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="../static/css/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../static/css/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="../static/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/css/tooplate.css">
+</head>
+<style> /* set the CSS */
+
+        .line {
+          fill: none;
+          stroke: white;
+          stroke-width: 2px;
+        }
+        
+        .area {
+          fill:rgb(13, 160, 13);
+        }
+        
+        #date
+        {
+            padding-left:10%;
+            /* background-color: blue; */
+        }
+   
+        #bubblehart{
+            width:100%;
+            height:50%;
+        }
+        p{
+            font-size:20px;
+        }
+        .column{
+            width:300px;
+            height:40px;
+            font-size:18px;
+            padding:5px;
+            border-radius:3px;
+            border:1px solid #CCCCCC;
+        }
+        
+        </style>
+        
+<body id="reportsPage">
+    <div class="" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <a class="navbar-brand" href="#">
+                            <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
+                            <h1 class="tm-site-title mb-0">GHC</h1>
+                        </a>
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="{% url 'firstpage'%}">Page1
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <li class="nav-item">
+                                        <a class="nav-link active"  href="{% url 'secondpage'%}">Page2
+                                           
+                                        </a>
+                                    </li>
+                                   
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'thirdpage'%}">Page3</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link"  href="{% url 'fourthpage'%}">Page4</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link"  href="{% url 'fifthpage'%}">Page5</a>
+                    
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="{% url 'sixthpage'%}">Page6</a>
+                    
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex" href="{% url 'logout'%}">
+                                        <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                        <span>Logout</span>
+                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="row tm-content-row tm-mt-big">
+                    <div class="tm-col tm-col-big">
+                            <div class="bg-white tm-block h-100">
+                                <h2 class="tm-block-title">Area Chart</h2>
+                                <div id="areachart">
+                                        <script src="https://d3js.org/d3.v4.min.js"></script>   
+                                    <script>
+                                    
+                                    // set the dimensions and margins of the graph
+                                    var margin = {top: 50, right: 10, bottom: 30, left: 60},
+                                        width = 700 - margin.left - margin.right,
+                                        height = 500 - margin.top - margin.bottom;
+                                    
+                                    // parse the date / time
+                                    var parseTime = d3.timeParse("%d-%b-%y");
+                                    
+                                    // set the ranges
+                                    //alert(d3.scaleTime().range([0, width]))
+                                    //alert(d3.scaleLinear().range([height, 0]))
+                                    var x = d3.scaleTime().range([0, width]);
+                                    var y = d3.scaleLinear().range([height, 0]);
+                                    
+                                    // define the area
+                                    var area = d3.area()
+                                        .x(function(d) { return x(d.Date); })
+                                        .y0(height)
+                                        .y1(function(d) { return y(d.Net); });
+                                    
+                                    // define the line
+                                    var valueline = d3.line()
+                                        .x(function(d) { return x(d.Date); })
+                                        .y(function(d) { return y(d.Net); });
+                                    
+                                    // append the svg obgect to the body of the page
+                                    // appends a 'group' element to 'svg'
+                                    // moves the 'group' element to the top left margin
+                                    var svg = d3.select("#areachart").append("svg")
+                                        .attr("width", width + margin.left + margin.right)
+                                        .attr("height", height + margin.top + margin.bottom)
+                                      .append("g")
+                                        .attr("transform",
+                                              "translate(" + margin.left + "," + margin.top + ")");
+                                    
+                                    // get the data
+                                    d3.csv("../static/csv/three.csv", function(error, data) {
+                                      if (error) throw error;
+                                    
+                                      // format the data
+                                      data.forEach(function(d) {
+                                          d.Date = parseTime(d.Date);
+                                          d.Net = +d.Net;
+                                      });
+                                    
+                                      // scale the range of the data
+                                      x.domain(d3.extent(data, function(d) { return d.Date; }));
+                                      //y.domain([0.8, d3.max(data, function(d) { return d.Net; })]);
+                                    
+                                      y.domain([d3.min(data, function(d) {
+                                          return Math.max(d.Net); }), d3.max(data, function(d) {
+                                          return Math.max(d.Net); })]);
+                                    
+                                      // add the area
+                                        svg.append("path")
+                                           .data([data])
+                                           .attr("class", "area")
+                                           .attr("d", area);
+                                    
+                                      // add the valueline path.
+                                      svg.append("path")
+                                          .data([data])
+                                          .attr("class", "line")
+                                          .attr("d", valueline);
+                                    
+                                          
+                                    
+                                      // add the X Axis
+                                      svg.append("g")
+                                          .attr("transform", "translate(0," + height + ")")
+                                          .call(d3.axisBottom(x));
+                                    
+                                      //adding the x-axis label
+                                    
+                                      svg.append("text")      // text label for the x axis
+                                            .attr("x", 375 )
+                                            .attr("y",  549 )
+                                            .style("text-anchor", "middle")
+                                            .style("font-size", "18px")
+                                            .text("Date");
+                                    
+                                      // add the Y Axis
+                                      svg.append("g")
+                                          .call(d3.axisLeft(y));
+                                    
+                                      //adding label to y-axis
+                                      svg.append("text")      // text label for the x axis
+                                            .attr("x", -200 )
+                                            .attr("y",  -40 )
+                                            .style("text-anchor", "middle")
+                                            .style("font-size", "18px").attr("transform", "rotate(-90)")
+                                            .text("Net value");
+                                    
+                                    
+                                        //adding title to a graph
+                                        // svg.append("text")
+                                        //     .attr("x", (width / 2))             
+                                        //     .attr("y", 0 - (margin.top / 2))
+                                        //     .attr("text-anchor", "middle")  
+                                        //     .style("font-size", "24px") 
+                                        //     .style("text-decoration", "underline")  
+                                        //     .text(" Year vs Data");
+                                    
+                                            
+                                    });
+                                    
+                                    
+                                    
+                                    </script>
+                                    
+                                    </div>
+        
+                            </div>
+                        </div>
+                        <div class="tm-col tm-col-big">
+                                <div class="bg-white tm-block h-100 centered  ">
+                                    <h2 class="tm-block-title">Tree Map</h2>
+                                   
+                        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+                        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+                        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+                        <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"><!--- For Date Picker-->
+
+                               
+                        <script>
+                                var  selected_date;
+                                  $(function(){
+                                    $( ".month_and_year_option2" ).datepicker({
+                                        changeMonth : true,
+                                        changeYear : true,
+                                        dateFormat : 'd/m/yy'
+                                    });
+                                });
+  
+                            </script>      
+             <div id="date">
+                    <p>Select Date: <input type="text"id="datepicker3"  class="column  month_and_year_option2 i" name="announcementdate" required placeholder="DD-MM-YY" autocomplete="off"></p>
+                    <!-- <button id="btn" onclick="getdate()">Submit</button> -->
+                </div>
+                <script src="https://d3js.org/d3.v4.min.js"></script>
+                <svg id="treemap"></svg>
+                <script>
+                        $(function(){
+                        
+                            $("#datepicker3").on("change",function(){
+                            d3.selectAll("#treemap > *").remove()
+                            selected_date=$('#datepicker3').val();
+                            // alert(selected_date)
+                                    // set the dimensions and margins of the graph
+                            var margin = {top: 10, right: 10, bottom: 10, left: 10},
+                            width = 600 - margin.left - margin.right,
+                            height = 500 - margin.top - margin.bottom;
+                            
+                            // append the svg object to the body of the page
+                            var svg = d3.select("#treemap")
+                                        // .append("svg")
+                                        .attr("width", width + margin.left + margin.right)
+                                        .attr("height", height + margin.top + margin.bottom)
+                                        .append("g")
+                                        .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+                            
+                            // Read data
+                         
+                            d3.csv('../static/csv/four.csv', function(data) {
+                                console.log(data)
+                                sort_data=data.filter((item) => item.Date === selected_date )
+                                sort_data.forEach(function(x)
+                                {
+                                    delete x.Date;
+            
+                                })
+                                sort_data.unshift({ name: 'Origin', value: '',parent:'' });
+                                console.log(sort_data)
+                                if(sort_data.length!=1)
+                                {
+                                    // stratify the data: reformatting for d3.js
+                                var root = d3.stratify()
+                                    .id(function(d) { return d.name; })   // Name of the entity (column name is name in csv)
+                                    .parentId(function(d) { return d.parent; })   // Name of the parent (column name is parent in csv)
+                                    (sort_data);
+            
+                                root.sum(function(d) { return +d.value })   // Compute the numeric value for each entity
+                                
+                    //   // Then d3.treemap computes the position of each element of the hierarchy
+                    //   // The coordinates are added to the root object above
+                                d3.treemap()
+                                    .size([width, height])
+                                    .padding(4)
+                                    (root)
+                    
+                                console.log(root.leaves())
+                                // use this information to add rectangles:
+                                svg
+                                    .selectAll("rect")
+                                    .data(root.leaves())
+                                    .enter()
+                                    .append("rect")
+                                    .attr('x', function (d) { return d.x0; })
+                                    .attr('y', function (d) { return d.y0; })
+                                    .attr('width', function (d) { return d.x1 - d.x0; })
+                                    .attr('height', function (d) { return d.y1 - d.y0; })
+                                    .style("stroke", "black")
+                                    .style("fill", "steelblue");
+                                
+                                // and to add the text labels
+                                svg
+                                    .selectAll("text")
+                                    .data(root.leaves())
+                                    .enter()
+                                    .append("text")
+                                    .attr("x", function(d){ return d.x0+10})    // +10 to adjust position (more right)
+                                    .attr("y", function(d){ return d.y0+10})    // +20 to adjust position (lower)
+                                    .text(function(d){ return d.data.name})
+                                    .attr("font-size", "15px")
+                                    .attr("fill", "white") .call(wrap, 4);
+                                }
+                                // else{
+                                //     alert("No Data Available for this date");
+                                // }
+                                
+             function wrap(text, width) {
+                  text.each(function () {
+                      var text = d3.select(this),
+                          words = text.text().split(/\s+/).reverse(),
+                          word,
+                          line = [],
+                          lineNumber = 0,
+                          lineHeight = 1.1, // ems
+                          x = text.attr("x"),
+                          y = text.attr("y"),
+                          dy = 0, //parseFloat(text.attr("dy")),
+                          tspan = text.text(null)
+                                      .append("tspan")
+                                      .attr("x", x)
+                                      .attr("y", y)
+                                      .attr("dy", dy + "em");
+                      while (word = words.pop()) {
+                          line.push(word);
+                          tspan.text(line.join(" "));
+                          if (tspan.node().getComputedTextLength() > width) {
+                              line.pop();
+                              tspan.text(line.join(" "));
+                              line = [word];
+                              tspan = text.append("tspan")
+                                          .attr("x", x)
+                                          .attr("y", y)
+                                          .attr("dy", ++lineNumber * lineHeight + dy + "em")
+                                          .text(word);
+                          }
+                      }
+                  });
+              }
+            
+                                
+                    })
+                            
+            
+            
+                  
+                   
+                    });
+                });
+                    </script>
+                                </div>
+                            </div>
+                <div class="tm-col tm-col-big">
+                    <div class="bg-white tm-block h-100 centered  ">
+                        <h2 class="tm-block-title">Bubble chart</h2>
+                       
+                        <p>Select Date: <input type="text"id="datepicker"   class="column  month_and_year_option i" name="announcementdate" required placeholder="YYYY-MM-DD" autocomplete="off"></p>
+    
+                    <div id="bubblechart">
+                <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+                <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+                <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">
+                <!--- For Date Picker-->
+                <script>
+                    var  selected_date;
+                        $(function(){
+                        $( ".month_and_year_option" ).datepicker({
+                            changeMonth : true,
+                            changeYear : true,
+                            dateFormat : 'yy-mm-dd'
+                        });
+                    });
+                </script>
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+            <svg width="600" height="600" id="c1"></svg>
+
+            <script>
+                    $(function(){
+
+                        $("#datepicker").on("change",function(){
+                        selected_date=$('#datepicker').val();
+
+                        
+                        d3.selectAll("#c1 > *").remove()
+                   
+                            var svg = d3.select("#c1");
+                                margin =  0,
+                                width = svg.attr("width")-margin ,
+                                height = svg.attr("height")-margin ;
+
+                                d3.csv("../static/csv/one.csv",function(data)
+                                {
+                            
+                                data.forEach(function(d) {
+                                    d.Country=d.Country;
+                                d.Net=+d.Net;
+                                        });
+                            sort_data=data.filter((item) => item.Date === selected_date )
+                            if(sort_data.length!=0)
+                            {
+                                color = d3.scaleOrdinal(d3.schemeCategory10)
+                                formatPercent = d3.format(",.2%");
+                                    let bubble = d3.pack()
+                                                    .size([width, height])
+                                                    .padding(1.5);
+
+
+                                    let nodes = d3.hierarchy({children:sort_data})
+                                            .sum(function (d) { return d.Net; });
+
+
+
+                                    let node = svg.selectAll(".node")
+                                            .data(bubble(nodes).descendants())
+                                            .enter()
+                                            .filter(function (d) { return !d.children })
+                                            .append("g")
+                                            .attr("class", "node")
+                                            .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});
+
+                                    node.append("title")
+                                    .text(function (d) { return d.Date + ": " + d.Net; });
+
+                                    node.append("circle")
+                                    .attr("x", function (d) { return d.x; })
+                                    .attr("y", function (d) { return d.y; })
+                                    .attr("r", function (d) { return d.r/1; })
+                                    .attr("fill", (d,i) => color(i));
+
+
+                                    node.append("text")
+                                    .attr("dy", ".2em")
+                                    .style("text-anchor", "middle")
+                                    .text(function (d) { return d.data.Country;})
+                                    .attr("font-family", "sans-serif")
+                                    .attr("font-size", function (d) { return d.r /4; })
+                                    .attr("fill", "white");
+
+                                    node.append('text')
+                                    .attr("dy", "1.3em")
+                                    .style("text-anchor", "middle")
+                                    .text(function (d) { return formatPercent(d.data.Net); })
+                                    .attr("font-family", "Gill Sans")
+                                    .attr("font-size", function (d) { return d.r / 4; })
+                                    .attr("fill", "white");
+                            }
+                        
+
+                            })
+                        
+                        })
+
+
+                        
+          });
+                  
+  </script>
+</div>
+                   
+                            
+
+                    </div>
+                </div>
+                <div class="tm-col tm-col-big">
+                    <div class="bg-white tm-block h-100">
+                        <h2 class="tm-block-title">Bubble Chart2 </h2>
+                        <p>Select Date: <input type="text" id="datepicker2"  class="column  month_and_year_option i" name="announcementdate"  required placeholder="YYYY-MM-DD" autocomplete="off"></p>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" >
+    <!--- For Date Picker-->
+    <svg width="600" height="600" id="c2"></svg>
+    <script>
+        var  selected_date;
+            $(function(){
+            $( ".month_and_year_option" ).datepicker({
+                changeMonth : true,
+                changeYear : true,
+                dateFormat : 'yy-mm-dd'
+            });
+        });
+    </script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+ 
+                        <script>
+                                $(function(){
+                                
+                                    $("#datepicker2").on("change",function(){
+                                    selected_date=$('#datepicker2').val();
+                                  
+
+                                    d3.selectAll("#c2 > *").remove()
+                                        var svg1 = d3.select("#c2");
+                                        margin = 0,
+                                        width = svg1.attr("width")-margin ,
+                                        height = svg1.attr("height")-margin ;
+                                        
+                                  
+                                        d3.csv("../static/csv/two.csv",function(data)
+                                            {
+                                        
+                                            data.forEach(function(d) {
+                                                d.Sector=d.Sector;
+                                            d.Net=+d.Net;
+                                        });
+                                        console.log(data)
+                                        sort_data=data.filter((item) => item.Date === selected_date )
+                                        console.log(sort_data)
+                                        if(sort_data.length!=0)
+                                        {
+                                            color = d3.scaleOrdinal(d3.schemeCategory10)
+                                            formatPercent = d3.format(",.2%");
+                                                let bubble = d3.pack()
+                                                                .size([width, height])
+                                                                .padding(1.5);
+                      
+                      
+                                                let nodes = d3.hierarchy({children:sort_data})
+                                                        .sum(function (d) { return d.Net; });
+                      
+                      
+                      
+                                                let node = svg1.selectAll(".node")
+                                                        .data(bubble(nodes).descendants())
+                                                        .enter()
+                                                        .filter(function (d) { return !d.children })
+                                                        .append("g")
+                                                        .attr("class", "node")
+                                                        .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});
+                      
+                                                node.append("title")
+                                                .text(function (d) { return d.Date + ": " + d.Net; });
+                      
+                                                node.append("circle")
+                                                .attr("x", function (d) { return d.x; })
+                                                .attr("y", function (d) { return d.y; })
+                                                .attr("r", function (d) { return d.r/1; })
+                                                .attr("fill", (d,i) => color(i));
+                      
+                      
+                                                node.append("text")
+                                                .attr("dy", ".2em")
+                                                .style("text-anchor", "middle")
+                                                .text(function (d) { return d.data.Sector;})
+                                                .attr("font-family", "sans-serif")
+                                                .attr("font-size", function (d) { return d.r /4; })
+                                                .attr("fill", "white") 
+                      
+                                                node.append('text')
+                                                .attr("dy", "1.3em")
+                                                .style("text-anchor", "middle")
+                                                .text(function (d) { return formatPercent(d.data.Net); })
+                                                .attr("font-family", "Gill Sans")
+                                                .attr("font-size", function (d) { return d.r / 4; })
+                                                .attr("fill", "white");
+            
+                                        }
+                                      
+                      
+                                        })
+                                    })
+                      
+                      
+                                     
+                              });
+                                     
+                             
+                                        
+                        </script>
+                        <!-- <canvas id="barChart"></canvas> -->
+
+
+                    </div>
+                </div>
+         
+    </div>
+
+</body>
+</html>
+   <!-- ALL JS FILES -->
+   <script src="{% static 'static/js/all.js' %}"></script>
+   <!-- ALL PLUGINS -->
+   <script src="{% static 'static/js/custom.js' %}"></script>

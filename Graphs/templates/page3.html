@@ -1,0 +1,493 @@
+    <!DOCTYPE html>
+    {% load staticfiles %}
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>GHC</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+        <link rel="stylesheet" href="../static/css/css/fontawesome.min.css">
+        <link rel="stylesheet" href="../static/css/css/fullcalendar.min.css">
+        <link rel="stylesheet" href="../static/css/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/css/css/tooplate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <style>
+
+        /* .bar.total rect {
+        fill: blue;
+        }
+        
+        .bar.positive rect {
+        fill: green;
+        }
+        .bar.negative rect {
+        fill: orange;
+        }
+        */
+                    
+
+        .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+    }
+
+        .bar line.connector {
+        stroke: grey;
+        stroke-dasharray: 3;
+        }
+        
+        .bar text {
+        fill: white;
+        font: 12px sans-serif;
+        text-anchor: middle;
+        }
+        
+        .axis text {
+        font: 10px sans-serif;
+        }
+        
+        .axis path,
+        .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+        }
+        
+        </style>
+    <body id="reportsPage" onload="document.getElementById('dt').value='19-Jun';waterfall('19-Jun');">
+        <div class="" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-xl navbar-light bg-light" style="position: fixed;width:100%;top:0;left:0;z-index:1;">
+                            <a class="navbar-brand" href="#">
+                                <img src="../static/images/ghclogo.png" height=70 width=70>
+
+                                <h1 class="tm-site-title mb-0">GHC</h1>
+                            </a>
+                            <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto">
+                                        <li class="nav-item">
+                                                <a class="nav-link " href="{% url 'chatbot'%}"> Chatterbot
+                                                </a>
+                                            </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="{% url 'firstpage'%}">Portfolio Overview
+                                            <span class="sr-only">(current)</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <li class="nav-item">
+                                            <a class="nav-link "  href="{% url 'secondpage'%}">Net Exposure
+                                            
+                                            </a>
+                                        </li>
+                                    
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="{% url 'thirdpage'%}">Factor Contribution</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link"  href="{% url 'fourthpage'%}">Gross Exposure and PnL</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link"  href="{% url 'fifthpage'%}">Value at Risk</a>
+                        
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="{% url 'sixthpage'%}">Excess, Vol and Return Disturbution</a>
+                        
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex" href="{% url 'logout'%}">
+                                            <!-- <i class="far fa-user mr-2 tm-logout-icon"></i> -->
+                                            <span>Logout<i style="font-size:24px" class="fa">&#xf08b;</i></span>
+                                
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="row tm-content-row tm-mt-big" style="margin-top:100px">
+                    <div class="tm-col tm-col-big">
+                        <div class="bg-white tm-block h-100 centered " id="centered">
+                            <h2 class="tm-block-title">Factor Contribution Over Time</h2>
+
+                            <script src="https://code.highcharts.com/highcharts.js"></script>
+                            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                            
+                            <div id="container" style="width:100%;height:600px; margin-top:12%"></div>
+                            <script>
+                                Highcharts.chart('container', {
+                                        chart: {
+                                            type: 'area'
+                                        },
+                                    
+                                        title: {
+                                            text: ''
+                                        },
+                                        credits: {
+                                                enabled: false
+                                            },
+                                            exporting: {
+                                            buttons: {
+                                                contextButton: {
+                                                enabled:false
+                                                },
+                                                
+                                            }
+                                        },
+        
+                                        xAxis: {
+                                           
+                                                tickLength: 7,
+                                            tickWidth: 1,
+                                            lineColor:"black",
+                                            tickColor:"black",
+                                            labels:{
+                                                style: {
+                                                color: 'black',
+                                                fontSize:'13px',
+                                                fontFamily:'verdana'
+                                            },
+                                            },
+                                            allowDecimals: false,
+                                            categories:{{list1|safe}}
+                                            ,tickInterval: 5,
+                                        tickmarkPlacement: 'on',
+                                        // title: {
+                                        //     enabled: false
+                                        // },
+                                            
+                                        },
+                                        yAxis: {
+                                        lineWidth:1,
+                                        tickLength: 7,
+                                        tickWidth: 1,
+                                        lineColor:"black",
+                                        tickColor:"black",
+                                            gridLineWidth: 0,
+                                            title: {
+                                                text: 'Cumulative Return(%)',
+                                                style:{
+                                                    color: 'black',
+                                                fontSize:'13px',
+                                                fontFamily:'verdana',
+                                                }
+                                            
+                                            },
+                                        
+                                            labels: {
+                                                style: {
+                                                color: 'black',
+                                                fontSize:'13px',
+                                                fontFamily:'verdana'
+                                            },
+                                                formatter: function () {
+                                                    return  (this.value).toFixed(1)+ '%';
+                                                }
+                                            }
+                                        
+                                        },
+                                        tooltip: {
+                                            shared:true,
+                                                pointFormat: '{series.name}: <b>{point.y:.2f}%</b><br/>'
+                                        
+                                        },
+                                        plotOptions: {
+                                            area: {
+                                                
+                                                marker: {
+                                                    enabled: false,
+                                                    symbol: 'circle',
+                                                    radius: 2,
+                                                    states: {
+                                                        hover: {
+                                                            enabled: true
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        series: [
+                                        {
+                                        name: 'Alpha',
+                                        data:{{list8|safe}},
+                                
+                                    },                               
+                                    {
+                                        name: 'Mkt',
+                                        data:{{list2|safe}},
+                                
+                                    },
+                                    {
+                                        name: 'Size',
+                                        data:{{list6|safe}},
+                                
+                                    },
+                                    {
+                                        name: 'Quality',
+                                        data:{{list5|safe}},
+                                
+                                    },
+                                    {
+                                        name: 'Momentum',
+                                        data:{{list4|safe}},
+                                
+                                    },
+                                    {
+                                        name: 'Growth',
+                                        data:{{list3|safe}},
+                                
+                                    },
+                                
+                                    {
+                                        name: 'Capex',
+                                        data:{{list9|safe}},
+                                
+                                    },
+                                    {
+                                            name: 'Fund',
+                                            data:{{list7|safe}},
+                                            fillColor:"none"
+                                        
+                                    
+                                        },
+                                
+                            
+                                    ]
+                                    });
+                            </script>                        
+
+
+                    
+                        </div>
+                    </div>
+                
+            
+
+                    <div class="tm-col tm-col-big">
+                        <div class="bg-white tm-block h-100">
+                                <h2 class="tm-block-title">Multi Factor Model - Snapshot (Since ITD)</h2>
+                            <div>Select Date: 
+                                <!-- <input type="text"id="dt"  name="announcementdate" required placeholder="YYYY-MM-DD" autocomplete="off"> -->
+                                <select id="dt"  >
+                                        <script>
+                                            var select = document.getElementById("dt");
+                                            var options = {{multi_factor_dates|safe}};
+                                            // alert([options[0]])
+                                            for(var i = 0; i < options.length; i++) {
+                                                var opt = options[i];
+                                                var el = document.createElement("option");
+                                                el.textContent = opt;
+                                                el.value = opt;
+                                                select.appendChild(el);
+                                            }
+                                        </script>
+                                </select>
+                            </div>
+                        
+                            <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+                            <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+                            <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">
+                            <script src="https://d3js.org/d3.v3.min.js"></script>
+
+                            <div id="image" style="margin-left:40%;margin-top:20%;"></div>
+                            <svg class="chart"></svg>
+                            <script>
+                            
+                // $(function(){
+                //     var selected_date;
+                //     $( "#dt" ).datepicker({
+                //         changeMonth : true,
+                //         changeYear : true,
+                //         dateFormat : 'm-d-yy'
+                //     });
+                // });
+                $(function(){
+                
+                    $("#dt").on("change",function(){
+                    selected_date=$('#dt').val();
+                        waterfall(selected_date)
+                                })
+                });
+                function waterfall(selected_date)
+                    {           
+                    d3.selectAll(".chart > *").remove()
+                        var margin = {top: 50, right: 30, bottom: 30, left: 80},
+                            width = 650,
+                            height = 438 ,
+                            padding = 0.3;
+                        
+                        var x = d3.scale.ordinal()
+                            .rangeRoundBands([0, width], padding);
+                        
+                        var y = d3.scale.linear()
+                            .range([height,0]);
+                        
+                        var xAxis = d3.svg.axis()
+                                            .scale(x).tickSize(7, 0)
+                                            .orient("bottom");
+                        
+                        var yAxis = d3.svg.axis()
+                                            .scale(y)
+                                            .orient("left");
+                        var color =["#9EC8F1","#5A6472",'#90ED7D','#F8A35D','#8085E9','#F15C80',"#E4D354","#2B908F"]
+                        
+                        var chart = d3.select(".chart")
+                                        .attr("viewBox", [0, 0, width+100, height+100])
+                        .append("g")
+                            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                        
+                        d3.csv("../static/csv/page3_multi_factor.csv", type, function(error, data) {
+                            sort_data=data.filter((item) => item.Trade_Dt === selected_date )
+                            data=sort_data
+                        
+                        if(sort_data.length!=0)
+                        {
+                            document.getElementById("image").style.display="none"
+                        // Transform data (i.e., finding cumulative values and total) for easier charting
+                            var cumulative = 0;
+                            for (var i = 0; i < data.length; i++) {
+                                data[i].start = cumulative;
+                                cumulative = cumulative+(data[i].value);
+                                data[i].end = cumulative;
+                            
+                                data[i].class = ( data[i].value >= 0 ) ? 'positive' : 'negative'
+                            }
+
+                            data.push({
+                             Trade_Dt:"1/1/2019",
+                             name: 'Fund',
+                             end: cumulative,
+                             start: 0,
+                             class: 'Fund'
+                           });
+                            
+                            x.domain(data.map(function(d) {return d.name; }));
+                            y.domain([0, d3.max(data, function(d) { return d.end; })]).nice();
+                            
+                            chart.append("g")
+                                .attr("class", "x axis")
+                                .attr("transform", "translate(0," + height + ")")
+                                .call(xAxis) .selectAll("text")
+                                .style("font-family","verdana")
+                                .style("font-size","13");
+                        
+                                chart.append("g")
+                                    .attr("class", "y axis")
+                                    .call(yAxis.tickFormat(d => d.toFixed(1)+"%"))
+                                    .selectAll("text")
+                                    .style("font-family","verdana")
+                                    .style("font-size","13");
+                       
+
+                                    // chart.append("text")
+                                    //     .attr("x", 500)             
+                                    //     .attr("y", -30 )
+                                    //     .attr("text-anchor", "end")  
+                                    //     .style("font-size", "16px") 
+                                    //     .text("Breaking down performance by factor");
+
+                                var bar = chart.selectAll(".bar")
+                                                .data(data)
+                                                .enter().append("g")
+                                                .attr("class", function(d) { return "bar " + d.class })
+                                                .attr("transform", function(d) { return "translate(" + x(d.name) + ",0)"; });
+                            
+                                bar.append("rect")
+                                    .attr("y", function(d) { return y( Math.max(d.start, d.end) ); })
+                                    .attr("height", function(d) { return Math.abs( y(d.start) - y(d.end) ); })
+                                    .attr("width",x.rangeBand()) .style("fill", (d,i) => color[i]);
+                            
+                                bar.append("text")
+                                    .attr("x", x.rangeBand() / 2)
+                                    .attr("y", function(d) { return y(d.end)-3; }).style('fill','black')
+                                    .text(function(d) { num=d.end - d.start;y=parseFloat(num).toFixed(2);return y+"%";});
+
+                                    var colors = ["#9EC8F1","#5A6472",'#90ED7D','#F8A35D','#8085E9','#F15C80',"#E4D354","#2B908F"];
+                    
+                                    var legends = ['Alpha','Market','Size','Quality','Momentum','Growth','Capex','Fund'];
+
+                            var svg2 = d3.select('.legend')
+                            
+                            
+                            
+                                var groups = d3.select('.legend')
+                                                .selectAll('g')
+                                                .data(legends)
+                                                .enter()
+                                                .append('g');
+                            
+
+                            //   var line=groups.append("circle").attr("r",5).attr("x",280).attr("y",50).attr("class","leg")
+                            //                 .attr('stroke',function(d,i) { return colors[i];})
+
+                            var text = groups.append('text')
+                                                .attr('x',50)
+                                                .attr('y', 20)
+                                                .style("font-size","14px")
+                                                .text(function(d,i) { return legends[i]; });
+                            
+                            // Now space the groups out after they have been appended:
+                            var padding = 40;
+                            groups.attr('transform', function(d,i) { 
+                            return "translate("+(d3.sum(data, function(e,j) {
+                                if (j < i) { return groups.nodes()[j].getBBox().width-200; } else return 0; }) + padding * i) + ",30)";
+                            })                      
+                    
+                                }
+                                else{
+                                   document.getElementById("image").style.display="block"
+                                   document.getElementById("image").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                               }
+                            });
+                    
+                        
+                                    function type(d) {
+                                    d.value = +d.value;
+                                    return d;
+                                    }
+                            }
+
+                    
+                    </script>    
+                        
+                    
+                            
+                        </div>
+                    </div>
+                    
+                
+            
+            </div>
+        </div>
+
+  </body>
+    </html>
+    <!-- ALL JS FILES -->
+    <script src="{% static 'static/js/all.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'static/js/custom.js' %}"></script>
+

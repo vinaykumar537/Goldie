@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GHC</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="../static/css/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../static/css/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="../static/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/css/tooplate.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<style>
+    
+        #navbarSupportedContent a:hover {background-color: #ddd;}
+
+        .col-12:hover #navbarSupportedContent {display: block;}
+        #left{
+            float:left;
+            width:70%;
+            height:850px;
+        }
+        #right{
+            float:right;
+            width:30%;
+            height:850px;
+        }
+         table{
+
+            font-size: 15px;
+            line-height: 24px;
+            margin: 30px auto;
+            text-align: left;
+            width: 400px;
+            font-family:verdana;
+
+        }
+        #id_of_table th {
+                /* color:#366887; */
+                background-color:#9EC8F1; 
+                font-weight: normal;
+                padding: 10px 15px;
+                position: relative;
+                text-shadow: 0 1px 0 #000;
+                text-align:center;
+                width:50%;
+                font-family:verdana !important;	
+                }
+                #id_of_table tr{
+                    height:30px;
+                }
+                #id_of_table td {
+                    padding: 0px 10px 0px 10px;
+                    width:50%;
+                    text-align:center;
+                    position: relative;
+                    transition: all 300ms;
+                    border:1px solid black;
+                } 
+
+	
+#id_of_table td{
+    height:20px;
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+        </style>
+<body id="reportsPage" onload="table_data('8/30/2019');document.getElementById('dt').value='8/30/2019';">
+    <div class="" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <a class="navbar-brand" href="#">
+                                <img src="../static/images/ghclogo.png" height=70 width=70>
+                            <h1 class="tm-site-title mb-0">GHC</h1>
+                        </a>
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="{% url 'firstpage'%}">Page1
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <li class="nav-item">
+                                        <a class="nav-link "  href="{% url 'secondpage'%}">Page2
+                                           
+                                        </a>
+                                    </li>
+                                   
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'thirdpage'%}">Page3</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link"  href="{% url 'fourthpage'%}">Page4</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link"  href="{% url 'fifthpage'%}">Page5</a>
+                    
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="{% url 'sixthpage'%}">Page6</a>
+                    
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex" href="{% url 'logout'%}">
+                                        <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                        <span>Logout</span>
+                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row tm-content-row tm-mt-big">
+                <div class="tm-col tm-col-big" style="width:70%">
+                    <div class="bg-white tm-block h-100 centered " id="centered">
+                        <h2 class="tm-block-title"> Value At Risk</h2>
+                       
+                        ​​
+                        <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                        ​
+                
+                        <script>
+                           
+                        $(function () {
+                            $('#container1').highcharts({
+                                title: {
+                                    text: 'Daily VaR and PNL monitoring',
+                                    x: -20 //center
+                                },
+                                // subtitle: {
+                                //     text: 'Source: WorldClimate.com',
+                                //     x: -20
+                                // },
+                                xAxis: {
+                                    categories:{{data3|safe}},
+                                    tickInterval: 50
+                                },
+                                credits: {
+                                            enabled: false
+                                        },
+                                yAxis: {
+                                    gridLineWidth: 0,
+                                    title: {
+                                        text: ''
+                                    },
+                                    exporting: {
+                                        buttons: {
+                                            contextButton: {
+                                               enabled:false
+                                            },
+                                            
+                                        }
+                                    },
+                                    labels: {
+                                            formatter: function(){
+                                            return  (this.value).toFixed(2)+ '%';
+                                            }
+                                        },
+                                    plotLines: [{
+                                        value: 0,
+                                        width: 1,
+                                        color: 'grey'
+                                    }]
+                                },
+                                tooltip: {
+                                    valueSuffix: "%"
+                                },
+                                legend: {
+                                    layout: 'vertical',
+                                    align: 'right',
+                                    verticalAlign: 'middle',
+                                    borderWidth: 0
+                                },
+                                series: [{
+                                    name: 'PNL',
+                                    data:{{data2|safe}},
+                                    color:'red'
+                                },        
+                                    {        		
+                                        type: "arearange",            
+                                    data: {{data|safe}},
+                                    showInLegend: false,
+                                   
+                                    fillOpacity: 0.3
+                                 
+                                    
+                                }]
+                            });
+                        });
+                        </script>
+
+                            <div id="container2" style="width:500pxs;height: 400px; margin: 0 auto"></div>
+                            <script>
+                            Highcharts.chart('container2', {
+                                    chart: {
+                                        type: 'area'
+                                    },
+                                    title: {
+                                        text: 'VaR Attribution & Reduction'
+                                    },
+                                    credits: {
+                                            enabled: false
+                                        },
+                                exporting: {
+                                        buttons: {
+                                            contextButton: {
+                                               enabled:false
+                                            },
+                                            
+                                        }
+                                    },
+                                    subtitle: {
+                                        text: ''
+                                    },
+                                    xAxis: {
+                                        allowDecimals: false,
+                                        categories:{{list4|safe}} ,tickInterval: 50,
+                                    tickmarkPlacement: 'on',
+                                    title: {
+                                        enabled: false
+                                    }
+                                    },
+                                    yAxis: {
+                                        gridLineWidth: 0,
+                                        title: {
+                                            text: ''
+                                        },
+                                        labels: {
+                                            formatter: function () {
+                                                return this.value / 10;
+                                            }
+                                        }
+                                    },
+                                    tooltip: {
+                                        split: true,
+                                        // valueSuffix: '%'
+                                        // pointFormat: '{point.percentage:.3f}%'
+                                    },
+                                    plotOptions: {
+                                        area: {
+                                            stacking: 'normal',
+                                            lineColor: '#666666',
+                                            lineWidth: 1,
+                                            marker: {
+                                                lineWidth: 1,
+                                                lineColor: '#666666'
+                                            }
+                                        }
+                                    },
+                                    series: [
+                                    {
+                                        name: 'India',
+                                        data:{{list5|safe}},
+                                      
+                                    
+                                
+                                    },{
+                                        name: 'Brazil',
+                                        data:{{list6|safe}},
+                                
+                                    },
+                                    
+                                    
+                                    {
+                                        name: 'China',
+                                        data:{{list7|safe}},
+                                
+                                    },
+                                    {
+                                        name: 'Mexico',
+                                        data:{{list8|safe}},
+                                
+                                    },{
+                                    name: 'Taiwan',
+                                    data:{{list9|safe}},
+                                
+                                    },
+                                    {
+                                    name: 'Philippines',
+                                    data:{{list10|safe}},
+                                
+                                    }
+                                    
+                                    ]
+                                });</script>
+                    </div>
+
+                </div>
+                <div class="tm-col tm-col-small">
+                    <div class="bg-white tm-block h-100">
+                        <h2 class="tm-block-title">Top 5 Contributors</h2>
+                        <!-- <canvas id="barChart"></canvas> -->
+                                    
+
+            Select Date: <input type="text"id="dt" onchange="table_data(document.getElementById('dt').value);" class="column  month_and_year_option i" name="announcementdate" required placeholder="YYYY-MM-DD" autocomplete="off">
+            <input type="hidden" id="start" />
+            <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+            <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+            <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+            <script>
+
+$(function(){
+    $( "#dt" ).datepicker({
+                       changeMonth : true,
+                       changeYear : true,
+                       dateFormat : 'd/m/yy'
+                   });
+               });
+               
+                             
+            //    $(function(){
+              
+      
+                  function table_data(selected){
+                    d3.csv("../static/csv/p4_chart3.csv",function(data)
+                                    {
+                                
+                                        data.forEach(function(d) {
+                                        d.trade_dt = d.trade_dt;
+                                        d.Ticker_Und=d.Ticker_Und;
+                                        d['VaR90D%']=+d['VaR90D%']
+                                });
+                      
+                                // $("#dt").on("change",function(){
+                               
+                     
+                      
+                     
+                        sort_data=data.filter((item) => item.trade_dt === selected)
+                   
+                        data2=sort_data;
+                     
+                        if(sort_data.length!=0)
+                            {
+                              if(data2[0]['Ticker_Und'])
+                                document.getElementById("1").innerHTML=data2[0]['Ticker_Und']
+                             else
+                                document.getElementById("1").innerHTML=null;
+                                if(data2[1]['Ticker_Und'])
+                                document.getElementById("2").innerHTML=data2[1]['Ticker_Und']
+                             else
+                                document.getElementById("2").innerHTML=null;
+
+                                if(data2[2]['Ticker_Und'])
+                                document.getElementById("3").innerHTML=data2[2]['Ticker_Und']
+                             else
+                                document.getElementById("3").innerHTML=null;
+
+                                if(data2[3]['Ticker_Und'])
+                                document.getElementById("4").innerHTML=data2[3]['Ticker_Und']
+                             else
+                                document.getElementById("4").innerHTML=null;
+
+                            if(data2[4]['Ticker_Und'])
+                                document.getElementById("5").innerHTML=data2[4]['Ticker_Und']
+                             else
+                                document.getElementById("5").innerHTML=null;
+                                if(data2[0]['VaR90D%']>=0||data2[0]['VaR90D%']<0)
+                                document.getElementById("6").innerHTML=  parseFloat(data2[0]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("6").innerHTML=null;
+                                if(data2[1]['VaR90D%']>=0||data2[1]['VaR90D%']<0)
+                                document.getElementById("7").innerHTML=  parseFloat(data2[1]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("7").innerHTML=null;
+                                if(data2[2]['VaR90D%']>=0||data2[2]['VaR90D%']<0)
+                                document.getElementById("8").innerHTML=  parseFloat(data2[2]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("8").innerHTML=null;
+                                if(data2[3]['VaR90D%']>=0||data2[3]['VaR90D%']<0)
+                                document.getElementById("9").innerHTML=  parseFloat(data2[3]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("9").innerHTML=null;
+                                if(data2[4]['VaR90D%']>=0||data2[4]['VaR90D%']<0)
+                                document.getElementById("10").innerHTML=  parseFloat(data2[4]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("10").innerHTML=null;
+                            
+                            
+
+                            }
+                            else
+                            {
+                                          document.getElementById("1").innerHTML=null;
+                                          document.getElementById("2").innerHTML=null;
+                                          document.getElementById("3").innerHTML=null;  
+                                          document.getElementById("4").innerHTML=null;   
+                                          document.getElementById("5").innerHTML=null;   
+                                          document.getElementById("6").innerHTML=null;   
+                                          document.getElementById("7").innerHTML=null;   
+                                          document.getElementById("8").innerHTML=null;   
+                                          document.getElementById("9").innerHTML=null;     
+                                          document.getElementById("10").innerHTML=null;    
+                            }
+                        
+                           
+    
+                            // })
+
+
+                });
+
+                d3.csv("../static/csv/p4_chart4.csv",function(data)
+                                    {
+                                
+                                        data.forEach(function(d) {
+                                        d.trade_dt = d.trade_dt;
+                                        d.Country=d.Country;
+                                        d['VaR90D%']=+d['VaR90D%']
+                                });
+                              
+                   
+                        // $("#dt").on("change",function(){
+                        // selected=document.getElementById('dt').value;
+                     
+                        sort_data=data.filter((item) => item.trade_dt === selected )
+                   
+                        data2=sort_data;
+                     
+                        if(sort_data.length!=0)
+                            {
+                              if(data2[0]['Country'])
+                                document.getElementById("11").innerHTML=data2[0]['Country']
+                             else
+                                document.getElementById("11").innerHTML=null;
+                                if(data2[1]['Country'])
+                                document.getElementById("12").innerHTML=data2[1]['Country']
+                             else
+                                document.getElementById("12").innerHTML=null;
+
+                                if(data2[2]['Country'])
+                                document.getElementById("13").innerHTML=data2[2]['Country']
+                             else
+                                document.getElementById("13").innerHTML=null;
+
+                                if(data2[3]['Country'])
+                                document.getElementById("14").innerHTML=data2[3]['Country']
+                             else
+                                document.getElementById("14").innerHTML=null;
+
+                            if(data2[4]['Country'])
+                                document.getElementById("15").innerHTML=data2[4]['Country']
+                             else
+                                document.getElementById("15").innerHTML=null;
+                            if(data2[0]['VaR90D%']>=0||data2[0]['VaR90D%']<0)
+                                document.getElementById("16").innerHTML=  parseFloat(data2[0]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("16").innerHTML=null;
+                                if(data2[1]['VaR90D%']>=0||data2[1]['VaR90D%']<0)
+                                document.getElementById("17").innerHTML=  parseFloat(data2[1]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("17").innerHTML=null;
+                                if(data2[2]['VaR90D%']>=0||data2[2]['VaR90D%']<0)
+                                document.getElementById("18").innerHTML=  parseFloat(data2[2]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("18").innerHTML=null;
+                                if(data2[3]['VaR90D%']>=0||data2[3]['VaR90D%']<0)
+                                document.getElementById("19").innerHTML=  parseFloat(data2[3]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("19").innerHTML=null;
+                                if(data2[4]['VaR90D%']>=0||data2[4]['VaR90D%']<0)
+                                document.getElementById("20").innerHTML=  parseFloat(data2[4]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("20").innerHTML=null;
+                            
+
+                            }
+                            else
+                            {
+                                          document.getElementById("11").innerHTML=null;
+                                          document.getElementById("12").innerHTML=null;
+                                          document.getElementById("13").innerHTML=null;  
+                                          document.getElementById("14").innerHTML=null;   
+                                          document.getElementById("15").innerHTML=null;   
+                                          document.getElementById("16").innerHTML=null;   
+                                          document.getElementById("17").innerHTML=null;   
+                                          document.getElementById("18").innerHTML=null;   
+                                          document.getElementById("19").innerHTML=null;     
+                                          document.getElementById("20").innerHTML=null;    
+                            }
+                        
+                           
+    
+                            // })
+
+
+                });
+
+                d3.csv("../static/csv/p4_chart5.csv",function(data)
+                                    {
+                                
+                                        data.forEach(function(d) {
+                                        d.trade_dt = d.trade_dt;
+                                        d.GICS_Sector_Name=d.GICS_Sector_Name;
+                                        d['VaR90D%']=+d['VaR90D%']
+                                });
+                              
+                   
+                        // $("#dt").on("change",function(){
+                        // selected=document.getElementById('dt').value;
+                     
+                        sort_data=data.filter((item) => item.trade_dt === selected )
+                   
+                        data2=sort_data;
+                     
+                        if(sort_data.length!=0)
+                            {
+                              if(data2[0]['GICS_Sector_Name'])
+                                document.getElementById("21").innerHTML=data2[0]['GICS_Sector_Name']
+                             else
+                                document.getElementById("21").innerHTML=null;
+                                if(data2[1]['GICS_Sector_Name'])
+                                document.getElementById("22").innerHTML=data2[1]['GICS_Sector_Name']
+                             else
+                                document.getElementById("22").innerHTML=null;
+
+                                if(data2[2]['GICS_Sector_Name'])
+                                document.getElementById("23").innerHTML=data2[2]['GICS_Sector_Name']
+                             else
+                                document.getElementById("23").innerHTML=null;
+
+                                if(data2[3]['GICS_Sector_Name'])
+                                document.getElementById("24").innerHTML=data2[3]['GICS_Sector_Name']
+                             else
+                                document.getElementById("24").innerHTML=null;
+
+                            if(data2[4]['GICS_Sector_Name'])
+                                document.getElementById("25").innerHTML=data2[4]['GICS_Sector_Name']
+                             else
+                                document.getElementById("25").innerHTML=null;
+                            if(data2[0]['VaR90D%']>=0||data2[0]['VaR90D%']<0)
+                                document.getElementById("26").innerHTML=  parseFloat(data2[0]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("26").innerHTML=null;
+                                if(data2[1]['VaR90D%']>=0||data2[1]['VaR90D%']<0)
+                                document.getElementById("27").innerHTML=  parseFloat(data2[1]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("27").innerHTML=null;
+                                if(data2[2]['VaR90D%']>=0||data2[2]['VaR90D%']<0)
+                                document.getElementById("28").innerHTML=  parseFloat(data2[2]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("28").innerHTML=null;
+                                if(data2[3]['VaR90D%']>=0||data2[3]['VaR90D%']<0)
+                                document.getElementById("29").innerHTML=  parseFloat(data2[3]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("29").innerHTML=null;
+                                if(data2[4]['VaR90D%']>=0||data2[4]['VaR90D%']<0)
+                                document.getElementById("30").innerHTML=  parseFloat(data2[4]['VaR90D%']*100).toFixed(3)+"%"
+                             else
+                                document.getElementById("30").innerHTML=null;
+                            
+
+                            }
+                            else
+                            {
+                                          document.getElementById("21").innerHTML=null;
+                                          document.getElementById("22").innerHTML=null;
+                                          document.getElementById("23").innerHTML=null;  
+                                          document.getElementById("24").innerHTML=null;   
+                                          document.getElementById("25").innerHTML=null;   
+                                          document.getElementById("26").innerHTML=null;   
+                                          document.getElementById("27").innerHTML=null;   
+                                          document.getElementById("28").innerHTML=null;   
+                                          document.getElementById("29").innerHTML=null;     
+                                          document.getElementById("30").innerHTML=null;    
+                            }
+                        
+                           
+    
+                            // })
+                                    
+
+                });
+                  }
+            // })
+        </script>
+
+<h6> By Ticker</h6>
+<table id='id_of_table' border=1>
+             <tr>
+                
+                 <th>
+                        Ticker_Und
+                 </th>
+                 <th>
+                    var90d%
+                 </th>
+                </tr>
+            
+            <tr><td id="1"></td><td id="6"></td></tr>
+            <tr><td id="2"></td><td id="7"></td></tr>
+            <tr><td id="3"></td><td id="8"></td></tr> 
+            <tr><td id="4"></td><td id="9"></td></tr>
+            <tr><td id="5"></td><td id="10"></td></tr>
+    </table>
+    <h6> By Country</h6>
+    <table id='id_of_table' border=1>
+            <tr>
+               
+                <th>
+                        Country
+                </th>
+                <th>
+                   var90d%
+                </th>
+               </tr>
+           
+            <tr><td id="11"></td><td id="16"></td></tr>
+            <tr><td id="12"></td><td id="17"></td></tr>
+            <tr><td id="13"></td><td id="18"></td></tr> 
+            <tr><td id="14"></td><td id="19"></td></tr>
+            <tr><td id="15"></td><td id="20"></td></tr>
+   </table>
+   <h6> By Sector</h6>
+   <table id='id_of_table' border=1>
+        <tr>
+           
+            <th>
+                    GICS_Sector_Name
+            </th>
+            <th>
+              var90d%
+            </th>
+           </tr>
+       
+        <tr><td id="21"></td><td id="26"></td></tr>
+            <tr><td id="22"></td><td id="27"></td></tr>
+            <tr><td id="23"></td><td id="28"></td></tr> 
+            <tr><td id="24"></td><td id="29"></td></tr>
+            <tr><td id="25"></td><td id="30"></td></tr>
+</table>
+
+
+    </div>
+                    
+                    </div>
+                </div>
+          
+
+    
+
+              
+           
+      
+    </div>
+
+</body>
+</html>
+   <!-- ALL JS FILES -->
+   <script src="{% static 'static/js/all.js' %}"></script>
+   <!-- ALL PLUGINS -->
+   <script src="{% static 'static/js/custom.js' %}"></script>

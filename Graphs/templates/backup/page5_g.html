@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Kiski </title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   
+
+    <style>
+    
+    
+
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 600px;
+}	
+
+ th {
+	background: url(https://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444); 
+  
+   /* background-color:rgb(75, 166, 241); */
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color:white;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+ th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+ td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+ td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+ td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+ tr {
+	background: url(https://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+ tr:nth-child(odd) td {
+	background: #f1f1f1 url(https://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+ tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+ tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+ tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+    </style>
+
+</head>
+<body class="host_version"> 
+
+	
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loading">
+			<div class="finger finger-1">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-2">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-3">
+				<div class="finger-item">
+				  <span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-4">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="last-finger">
+				<div class="last-finger-item"><i></i></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'firstpage'%}"></a>
+                    <img src="{% static 'images/navbar_logo.png' %}" alt="image not available" id="img">
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                            <li><a href="{% url 'firstpage'%}" >Page 1</a></li>
+                            <li><a href="{% url 'secondpage'%}">Page 2 </a></li>
+                            <li><a href="{% url 'thirdpage'%}">Page 3</a></li>
+                            <li><a    href="{% url 'fourthpage'%}">Page 4</a></li>
+                            <li><a class="active" href="{% url 'fifthpage'%}">Page 5</a></li>
+                            <li><a href="{% url 'sixthpage'%}">Page 6</a></li>
+                            
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+							<li><a href="{% url 'logout'%}" > Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+	
+	
+<div>
+
+
+        <p style="color:white;background-color:rgb(29, 26, 26);padding:0.4%;height:50px;font-size:25px;margin-top:2%;margin-left:10%;margin-right:10%;">Monthly Perfomance</p>
+        <table>
+        	
+            
+            <thead>
+              <th></th>
+              <th>9/3/2014 to 1/21/2016</th>
+              <th>5/2/2011 to 10/4/2011</th>
+              <th>1/26/2018 to 10/29/2018</th>
+             
+            </thead>
+            <tr>
+                <td>Fund </td>
+                <td>-16.76% </td>
+                <td>-18.64% </td>
+                <td>-15.2%</td>
+            </tr>
+            <tr>
+                    <td>Benchmark </td>
+                    <td>-24.42% </td>
+                    <td>-25.59% </td>
+                    <td>-7.39%</td>
+                </tr>
+            <tr>
+                        <td>Difference </td>
+                        <td>	7.66% </td>
+                        <td>6.95%	 </td>
+                        <td>-7.81%</td>
+         </tr>
+          
+          </table>
+</div>
+    
+
+    
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'static/js/all.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'static/js/custom.js' %}"></script>
+
+</body>
+</html>

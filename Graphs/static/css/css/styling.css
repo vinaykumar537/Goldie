@@ -1,0 +1,15 @@
+*{
+    font-family: verdana;
+}
+body{
+    background-color:white;
+    font-family:verdana;
+
+}
+.ytd_table td
+{
+border:1px solid black;
+}
+.bg-light {
+    background-color: whitesmoke;
+}

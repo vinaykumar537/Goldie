@@ -1,0 +1,2734 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+        <!--- Order of the Files -->
+         <!-- Mobile Metas -->
+         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+         <!--- Statci CSS files from this folder-->
+         <link rel="stylesheet" href="../static/css/css/fontawesome.min.css">
+         <link rel="stylesheet" href="../static/css/css/fullcalendar.min.css">
+         <link rel="stylesheet" href="../static/css/css/bootstrap.min.css">
+         <link rel="stylesheet" href="../static/css/css/tooplate.css">
+         <link rel="stylesheet" href="../static/css/css/styling.css">
+ 
+         <!-- Files for dropdown when the screen is minimized -- jQuery first, then Popper.js, then Bootstrap JS -->
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+         <!--bootstrap css files-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">
+ 
+         <!--- JQuery files -->
+         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+         <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"><!--- For Date Picker-->
+ 
+         <!-- D3 js file-->
+         <script src="https://d3js.org/d3.v4.min.js"></script>
+         <!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+ 
+         <!-- High Charts js files-->
+         <script src="https://code.highcharts.com/highcharts.js"></script>
+         <script src="http://code.highcharts.com/highcharts-more.js"></script>
+         <script src="https://code.highcharts.com/modules/exporting.js"></script>
+         <script src="https://code.highcharts.com/modules/data.js"></script>
+         <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+         
+                
+                
+        
+        <style>        
+            .centered {
+                width:100%;
+                height:100%;
+                margin-top:5%;
+                padding:5%;
+                text-align: center;
+                /* border: 1px solid #ddd; */
+                border-radius: 4px;
+                /* box-shadow: 0 1px 1px rgba(0,0,0,.05); */
+            } 
+            
+            .line {
+                fill: none;
+                stroke:#9EC8F1;
+                stroke-width: 2px;
+            }
+            
+            .area {
+                /* fill:rgb(13, 160, 13); */
+                fill:#9EC8F1;
+            }
+            
+            #date
+            {
+                padding-left:10%;
+            }
+
+            .voicebot{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            
+	    margin: auto;
+            }
+            .toolTip, div.toolTip{
+                position: absolute;
+                display: none;
+                min-width: 80px;
+                height: auto;
+                background: none repeat scroll 0 0 #ffffff;
+                border: 1px solid #6F257F;
+                padding: 14px;
+                text-align: center;
+                pointer-events: none; 
+                font-family:verdana;
+            }
+            #c1{
+                display:block;
+                margin:auto !important;
+            }
+            #c2{
+                display:block;
+                margin:auto !important;
+            }
+            .chatinput
+            {
+                height:80px;
+                width:100%;
+                background-color: #9EC8F1;
+                text-align: center;
+                position: fixed;
+                bottom: 0;
+                padding-top:20px;
+                z-index:1;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-shadow: 0 1px 1px rgba(0,0,0,.05);
+                
+            }
+            .chatinput input[type="text"]
+            {
+                width:60%;
+                height: 40px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            
+            }
+            .send_btn
+            {
+
+                height: 40px;
+                padding: 5px 12px;
+                border:none;
+                color: #fff;
+                background-color: #d9534f;
+                border-color: #d43f3a;
+                border-radius:6px;   
+            }  
+            table{
+                font-size: 15px;
+                line-height: 24px;
+                margin: 30px auto;
+                text-align: left;
+                width: 40%;
+                height:90%;
+                font-family:verdana;
+
+            }
+            table th
+            {
+                text-align:left;
+            }
+            table td + td,table th + th
+            {
+                text-align:center
+            }
+            #id_of_table th,#ytd_table th {
+                background-color:#9EC8F1; 
+                font-weight: normal;
+                padding: 10px 15px;
+                position: relative;
+                text-shadow: 0 1px 0 #000;
+                text-align:center;
+                width:50%;
+                font-family:verdana !important;	
+            }
+            #id_of_table tr, #ytd_table tr{
+                height:60px;
+            }
+            #id_of_table td ,#ytd_table td{
+                padding: 0px 10px 0px 10px;
+                width:50%;
+                position: relative;
+                transition: all 300ms;
+                border:1px solid black;
+            }    
+            #id_of_table td{
+                height:20px;
+            }
+            #id_of_table input[type="text"] {
+                border:0px;
+                text-align: center;
+            }
+            #id_of_table input:focus {
+                border: 0;
+                outline: none
+            } 
+            #ytd_table
+            {
+                float:right;
+                margin: 0 auto;
+                width:10%;
+                font-size: 15px;
+                line-height: 24px;
+                margin-top:35px;
+                object-fit: contain;
+            }
+            #monthly
+            {
+                float:left;
+                width:90%;
+                }
+          p{
+                float: right;
+                margin-right:15%;
+          }
+          #msg
+          {
+            color:crimson; 
+            font-size: 18px;;
+            
+          }
+          .tm-block-title 
+          {
+              background-color: transparent;
+              color:black;
+              font-size:25px;
+              margin-bottom:30px !important;
+          }
+          .axis path{
+              stroke:black;
+              stroke-width:1px;
+          }
+          
+        .bar { 
+          fill:#95CEFF;
+       
+          }
+        </style>
+    </head>
+    <body id="reportsPage" >
+            <!--Nav bar Div-->
+            <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-xl navbar-light bg-light" style="position: fixed;width:100%;top:0;left:0;z-index:1;">
+                            <a class="navbar-brand" href="#">
+                                <img src="../static/images/ghclogo.png" height=70 width=70>
+                                <h1 class="tm-site-title mb-0">GHC</h1>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto">
+                                        <li class="nav-item">
+                                                <a class="nav-link active" href="{% url 'chatbot'%}"> Chatterbot
+                                                        
+                                                </a>
+                                            </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'firstpage'%}"> Portfolio Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <li class="nav-item">
+                                            <a class="nav-link "  href="{% url 'secondpage'%}">Net Exposure
+                                                
+                                            </a>
+                                        </li>
+                                        
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'thirdpage'%}">Factor Contribution</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link"  href="{% url 'fourthpage'%}"> Gross Exposure and PnL</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link"  href="{% url 'fifthpage'%}">Value at Risk</a>
+                        
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="{% url 'sixthpage'%}">Excess, Vol and Return Disturbution</a>
+                        
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex" href="{% url 'logout'%}">
+                                            <!-- <i class="far fa-user mr-2 tm-logout-icon"></i> -->
+                                            <span>Logout<i style="font-size:24px" class="fa">&#xf08b;</i></span>
+                                
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav> 
+                    </div>
+            </div>                
+            <!-- Div for- Hi message from bot -->
+            <div class="centered" id="message" style="text-align:center">
+                    <!-- <div style="text-align:center"> -->
+                            <h5 id="msg" >Hi there! I am Goldie. I'm here to assist you with dashboards. To get started, Simply ask me a question!</h5>
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                <div class="voicebot">
+                                    <i class="fa fa-microphone" style="font-size:60px;color:black;" onclick="voicebot();"></i>
+                                </div>
+                                 <script>
+                                 function voicebot(){
+                                     location.href="{% url 'voicebot' %}";
+                                }
+                                 </script>
+                            </form>
+                    <!-- </div> -->
+            </div>
+            <!---Centered div which displays graphs-->
+            {% if error %}
+                <script>
+                    document.getElementById('message').style.display='none';
+                </script>
+                <div class="centered">
+                    <h5 style="color:crimson; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 18px;">{{error}}</h5><br><br>
+                   
+                </div>
+            {% endif %}
+            {% if error1 %}
+            <script>
+                document.getElementById('message').style.display='none';
+            </script>
+            <div class="centered">
+                <h5 style="color:crimson; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 18px;">{{error1}}</h5><br><br>
+                <a href ="{% url 'chatbot' %}">Back</a>
+            </div>
+        {% endif %}
+
+            <!--- Input Div (textbox and button)-->
+            <div class="chatinput"> 
+                <form action="/chatbot/" method="POST">
+                    {% csrf_token %}
+                    <input type="text" autofocus name="input" placeholder="Try Asking 'Give me Fund Returns' or 'Show me Fama French'" autocomplete="off"  >
+                    <button type="submit" name="submit" class="send_btn" >Ask</button>
+                    
+                </form>
+            </div>
+            <!-- Fama French Model -->
+            {% if list1 %}
+            <div class="centered">
+                    <h2 class="tm-block-title">Fama French Model</h2> 
+                <div id="container" style="width:1200px;height: 400px; margin: 0 auto"></div>
+                <script>
+                    document.getElementById('message').style.display='none';
+                        Highcharts.chart('container', {
+                                chart: {
+                                    type: 'area'
+                                },
+                            
+                                title: {
+                                    text: ''
+                                },
+                                credits: {
+                                        enabled: false
+                                    },
+                                    exporting: {
+                                    buttons: {
+                                        contextButton: {
+                                        enabled:false
+                                        },
+                                        
+                                    }
+                                },
+
+                                xAxis: {
+                                
+                                        tickLength: 7,
+                                    tickWidth: 1,
+                                    lineColor:"black",
+                                    tickColor:"black",
+                                    labels:{
+                                        style: {
+                                        color: 'black',
+                                        fontSize:'13px',
+                                        fontFamily:'verdana'
+                                    },
+                                    },
+                                    allowDecimals: false,
+                                    categories:{{list1|safe}}
+                                    ,tickInterval: 5,
+                                tickmarkPlacement: 'on',
+                                // title: {
+                                //     enabled: false
+                                // },
+                                    
+                                },
+                                yAxis: {
+                                lineWidth:1,
+                                tickLength: 7,
+                                tickWidth: 1,
+                                lineColor:"black",
+                                tickColor:"black",
+                                    gridLineWidth: 0,
+                                    title: {
+                                        text: 'Cumulative Return(%)',
+                                        style:{
+                                            color: 'black',
+                                        fontSize:'13px',
+                                        fontFamily:'verdana',
+                                        }
+                                    
+                                    },
+                                
+                                    labels: {
+                                        style: {
+                                        color: 'black',
+                                        fontSize:'13px',
+                                        fontFamily:'verdana'
+                                    },
+                                        formatter: function () {
+                                            return  (this.value).toFixed(1)+ '%';
+                                        }
+                                    }
+                                
+                                },
+                                tooltip: {
+                                    shared:true,
+                                        pointFormat: '{series.name}: <b>{point.y:.2f}%</b><br/>'
+                                
+                                },
+                                plotOptions: {
+                                    area: {
+                                        
+                                        marker: {
+                                            enabled: false,
+                                            symbol: 'circle',
+                                            radius: 2,
+                                            states: {
+                                                hover: {
+                                                    enabled: true
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                series: [
+                                {
+                                name: 'Alpha',
+                                data:{{list8|safe}},
+                        
+                                },                               
+                                {
+                                    name: 'Mkt',
+                                    data:{{list2|safe}},
+                            
+                                },
+                                {
+                                    name: 'Size',
+                                    data:{{list6|safe}},
+                            
+                                },
+                                {
+                                    name: 'Quality',
+                                    data:{{list5|safe}},
+                            
+                                },
+                                {
+                                    name: 'Momentum',
+                                    data:{{list4|safe}},
+                            
+                                },
+                                {
+                                    name: 'Growth',
+                                    data:{{list3|safe}},
+                            
+                                },
+                            
+                                {
+                                    name: 'Capex',
+                                    data:{{list9|safe}},
+                            
+                                },
+                                {
+                                    name: 'Fund',
+                                    data:{{list7|safe}},
+                                    fillColor:"none"
+                                
+                            
+                                },
+                        
+                    
+                            ]
+                            });
+                    </script>  
+                   
+                           
+            </div>
+    
+            {% elif chart_data %}
+            <div class="centered" id="centered">
+                    <h2 class="tm-block-title">Fund Return</h2> 
+
+                <span id="line_chart"></span>
+                    <script>  
+                    document.getElementById('message').style.display='none';    
+                        // // set the dimensions and margins of the graph
+                        var margin = {top: 40, right: 20, bottom: 30, left: 90},
+                            width = 1000,
+                            height =300;
+                        
+
+                        var tooltip1 = d3.select("#centered").append("div").attr("class", "toolTip");
+                        var tooltip2 = d3.select("#centered").append("div").attr("class", "toolTip");
+                        // parse the date / time
+                        // var parseTime = d3.timeParse("%Y-%m");
+                        var parseTime = d3.timeParse("%Y-%m-%d");
+                        var formatTime = d3.timeFormat("%b %d %Y");
+                        // set the ranges
+                        var x = d3.scaleTime().range([0, width]);
+                        var y = d3.scaleLinear().range([height, 0]);
+                        
+                        // define the 1st line
+                        var valueline = d3.line()
+                            .x(function(d) { return x(d.Trade_Dt); })
+                            .y(function(d) { return y(d.Fund_Cumulative); });
+                        
+                        // define the 2nd line
+                        var valueline2 = d3.line()
+                            .x(function(d) { return x(d.Trade_Dt); })
+                            .y(function(d) { return y(d.Cumulative_Return_Benchmark); });
+                        
+                        // append the svg obgect to the body of the page
+                        // appends a 'group' element to 'svg'
+                        // moves the 'group' element to the top left margin
+                        var svg = d3.select("#centered").append("svg")
+                                    .attr("viewBox", [-200, -20, width+590, height+100])
+                                    .append("g")
+                                    .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+            
+                        // Get the data
+                        var count=0
+                        var data={{chart_data|safe}}
+                        var count=[]
+                            // format the data
+                            data.forEach(function(d) {
+                                d.Trade_Dt = parseTime(d.Trade_Dt);
+                                
+                                count.push(d.Trade_Dt.getFullYear())
+                                d.Fund_Cumulative= +d.Fund_Cumulative;
+                                d.Cumulative_Return_Benchmark = +d.Cumulative_Return_Benchmark;
+                                
+                            });
+                        
+                        count = count.filter( function( item, index, inputArray ) {
+                                    return inputArray.indexOf(item) == index;
+                            });
+                        
+                        
+                            // Scale the range of the data
+                        
+                            x.domain([d3.min(data, function(d) {return Math.min(d.Trade_Dt); }),d3.max(data, function(d) {return Math.max(d.Trade_Dt); })]);
+                            
+                            // y.domain([1000, d3.max(data, function(d) {return Math.max(d.Fund_Cumulative, d.Cumulative_Return_Benchmark); })]).nice();
+
+                            y.domain([1000, 1600]);
+                        // Add the valueline path.
+                        svg.append("path")
+                            .data([data])
+                            .attr("class", "line")
+                            .style("stroke", "#44A9A8")
+                            .attr("d", valueline);
+                            svg.selectAll("dot")
+                            .data(data)
+                            .enter().append("circle")
+                            .attr("r", 2)
+                            .style("fill", "transparent")  
+                            .attr("cx", function(d) { return x(d.Trade_Dt); })
+                            .attr("cy", function(d) { return y(d.Fund_Cumulative)}) 
+                            .on("mouseover", function(d){
+                                tooltip1.transition()		
+                                .duration(200)		
+                                        .style("left", d3.event.pageX - 50 + "px")
+                                        .style("top", d3.event.pageY - 100 + "px")
+                                        .style("display", "inline-block")   
+                                        tooltip1.html("Date : "+formatTime(d.Trade_Dt)+ "<br/>Fund : $"  + d.Fund_Cumulative.toFixed(2) +"<br/>Benchmark : $"  + d.Cumulative_Return_Benchmark.toFixed(2));
+
+                                })
+                                .on("mouseout", function(){
+                                tooltip1.style("display","none")
+                            });
+                        
+                            
+                        
+                    
+                        // Add the valueline2 path.
+                        svg.append("path")
+                            .data([data])
+                            .attr("class", "line")
+                            .style("stroke", "#5C5C61")
+                            .attr("d", valueline2)
+                            svg.selectAll("dot")
+                            .data(data)
+                            .enter().append("circle")
+                            .attr("r", 2)
+                            .attr("cx", function(d) { return x(d.Trade_Dt); })
+                            .attr("cy", function(d) { return y(d.Cumulative_Return_Benchmark); })   
+                            .style("fill", "transparent")   
+                            .on("mouseover", function(d){
+                                tooltip1.transition()		
+                                .duration(200)		
+                                        .style("left", d3.event.pageX - 50 + "px")
+                                        .style("top", d3.event.pageY - 100 + "px")
+                                        .style("display", "inline-block")   
+                                        tooltip1.html("Date : "+formatTime(d.Trade_Dt)+ "<br/>Fund : $"  + d.Fund_Cumulative.toFixed(2) +"<br/>Benchmark : $"  + d.Cumulative_Return_Benchmark.toFixed(2));
+
+                                })
+                                .on("mouseout", function(){
+                                tooltip1.style("display","none")
+                            });
+                    
+                        // Add the X Axis
+                        svg.append("g")
+                            .attr("transform", "translate(-0," + height + ")").attr("class","axis")
+                            .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%b-%y")).tickValues(x.ticks(3).concat(x.domain()))) 
+                            .selectAll("text") .attr("transform", "rotate(-40)").attr("y", 0) .style("font-family","verdana")
+                            .style("font-size","12")
+                            .attr("x", -30)
+                            .attr("dy", "1.0em");
+                    
+                        // Add the Y Axis                        
+                        svg.append("g") 
+                        .attr("class","axis")
+                        .style("font-family","verdana")
+                            .style("font-size","12")
+                            .call(d3.axisLeft(y).ticks(5).tickFormat(d => "$"+d ));
+                    
+            
+                        svg.append("text")             
+                            .attr("x",-150 )
+                            .attr("y",-60)
+                            .style("text-anchor", "middle")
+                            .attr("transform", "rotate(-90)")
+                            .style("font-family","verdana")
+                            .style("font-size","13")
+                            .text("Growth of $1000");
+
+                        var colors = ["#44A9A8", "#5C5C61"];
+            
+                        var data = ['Fund','S&P 500'];
+
+                                var svg2 = d3.select('#centered')
+                                .append('svg')
+                                .attr("viewBox", [-350, -10, width+350, height-250])
+                                
+                                var groups = svg2.selectAll('g')
+                                .data(data)
+                                .enter()
+                                .append('g');
+                                
+
+                                var line=groups.append("line").attr("x1",200).attr("x2",220).attr("y1",5).attr("class","leg")
+                                .attr("y2",5).attr('stroke',function(d,i) { return colors[i];})
+
+                                var text = groups.append('text')
+                                .attr('y', 10)
+                                .attr('x',230).style("font-size","14px")
+                                .text(function(d) { return d; });
+                                
+                                // Now space the groups out after they have been appended:
+                                var padding = 40;
+                                groups.attr('transform', function(d,i) { 
+                                return "translate("+(d3.sum(data, function(e,j) {
+                                    if (j < i) { return groups.nodes()[j].getBBox().width; } else return 0; }) + padding * i) + ",0)";
+                                })
+                                                            
+                        
+                        
+                        
+                    </script>
+            
+            </div>
+
+            {% elif chart1 %}
+            <div class="centered">
+                    <h2 class="tm-block-title">Net Exposure By Ticker</h2> 
+                    <p>Select Date: <input type="text" id="datepicker"  class="column  month_and_year_option2 i" name="announcementdate" required placeholder="DD/MM/YY" autocomplete="off" value="2019-09-10"></p>            
+                  
+                    <script>
+                        document.getElementById('message').style.display='none';
+                            var  selected_date;
+                                $(function(){
+                                $( "#datepicker" ).datepicker({
+                                    changeMonth : true,
+                                    changeYear : true,
+                                    dateFormat : 'yy-mm-dd'
+                                });
+                            });
+                            $(function(){
+                                
+                                    treemap('2019-09-10');
+
+                                    $("#datepicker").on("change",function(){             
+                                    selected_date=$('#datepicker').val();
+                                    treemap(selected_date)
+                                });
+                            });
+
+                        </script> 
+                <div id="image1" style="margin-left:40%;height:100px;"></div>
+
+                <svg id="treemap" ></svg>
+
+                <script>    
+                function treemap(selected)
+                {               
+                    d3.selectAll("#treemap > *").remove()
+                    
+                    // set the dimensions and margins of the graph
+                    var margin = {top: 10, right: 10, bottom: 10, left: 200},
+                    width = 1000,
+                    height = 350 ;
+                    
+                    // append the svg object to the body of the page
+                    var svg = d3.select("#treemap")
+                                .attr("viewBox", [-100, 0, width+600, height+150 ])
+                                .append("g")
+                                .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+
+                    // Read data
+                    color = d3.scaleOrdinal(d3.schemeCategory20)
+                    data = {{chart1|safe}} 
+                    console.log(data)
+                    sort_data=data.filter((item) => item.Date === (selected) )  
+                    sort_data.forEach(function(x)
+                    {
+                        delete x.Date;
+
+                    })
+                    sort_data.unshift({ name: 'Origin', value: '',parent:'' });
+                    if(sort_data.length!=1)
+                    {
+                        document.getElementById("image1").style.display="none"
+                        document.getElementById("treemap").style.display="block"
+
+                        // stratify the data: reformatting for d3.js
+                    var root = d3.stratify()
+                        .id(function(d) { return d.name; })   // Name of the entity (column name is name in csv)
+                        .parentId(function(d) { return d.parent; })   // Name of the parent (column name is parent in csv)
+                        (sort_data);
+
+                    root.sum(function(d) { return +d.value })   // Compute the numeric value for each entity
+                
+                    // The coordinates are added to the root object above
+                    d3.treemap()
+                        .size([width, height+70])
+                        .padding(5)
+                        (root)
+            
+                    var tool = d3.select("body").append("div").attr("class", "toolTip");
+                    // use this information to add rectangles:
+                    
+                    svg.selectAll("rect")
+                        .data(root.leaves())
+                        .enter()
+                        .append("rect")
+                        .attr('x', function (d) { return d.x0; })
+                        .attr('y', function (d) { return d.y0; })
+                        .attr('width', function (d) { return d.x1 - d.x0; })
+                        .attr('height', function (d) { return d.y1 - d.y0; })
+                        .style("stroke", "black")
+                        .attr("fill", (d,i) => color(i))
+                        .on("mouseover", function(d){
+                        tool.style("left", d3.event.pageX - 50 + "px")
+                                .style("top", d3.event.pageY - 100 + "px")
+                                .style("display", "inline-block")   
+                        tool.html("Ticker : "+d.data.name+ "<br/>Exp as % of Total : "  + ((d.value)*100).toFixed(2)+"%");
+
+                        })
+                        .on("mouseout", function(){
+                        tool.style("display","none")
+                    });;
+
+
+                    // and to add the text labels
+
+                    svg.selectAll("text")
+                        .data(root.leaves())
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d){ return d.x0+10})    // +10 to adjust position (more right)
+                        .attr("y", function(d){ return d.y0+20})    // +20 to adjust position (lower)
+                
+                        .text(d=>d.data.name )
+                        
+                        // .text(function(d){ return d.data.value })
+                        .attr("font-size", "15px")
+                        .attr("fill", "white") ;
+                        }  
+                        else{
+                            document.getElementById("image1").style.display="block"
+                            document.getElementById("treemap").style.display="none"
+                            document.getElementById("image1").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                        }    
+                                            
+                } 
+                </script>
+            </div>
+
+            {% elif chart2 %}
+            <div class="centered"> 
+                    <h2 class="tm-block-title">Net Exposure By Country</h2> 
+                    <p>Select Date: <input type="text" id="datepicker"  class="column  month_and_year_option2 i" name="announcementdate" required placeholder="DD/MM/YY" autocomplete="off" value="2019-09-10"></p>            
+                  
+                    <script>
+                        document.getElementById('message').style.display='none';
+                            var  selected_date;
+                                $(function(){
+                                $( "#datepicker" ).datepicker({
+                                    changeMonth : true,
+                                    changeYear : true,
+                                    dateFormat : 'yy-mm-dd'
+                                });
+                            });
+                            $(function(){
+                                
+                                    country_bubble('2019-09-10');
+
+                                    $("#datepicker").on("change",function(){             
+                                    selected_date=$('#datepicker').val();
+                                    country_bubble(selected_date)
+                                });
+                            });
+
+                        </script>
+                <div id="image3" style="margin-left:40%;height:100px"></div>
+                <svg id="c1" ></svg>
+                <script>    
+                function country_bubble(selected)
+                {  
+                    d3.selectAll("#c1 > *").remove()
+                    width=600,height=350;
+                    var svg = d3.select("#c1").attr("viewBox", [-350, 0, width+800, height+150]);
+                    margin =  0,
+                    data = {{chart2|safe}}
+                    sort_data=data.filter((item) => item.Date === selected )
+                    if(sort_data.length!=0)
+                    {
+                        document.getElementById("image3").style.display="none"
+                        document.getElementById("c1").style.display="block"
+                        color = d3.scaleOrdinal(d3.schemeCategory20)
+                        formatPercent = d3.format(",.2%");
+                            let bubble = d3.pack()
+                                            .size([600, 450])
+                                            .padding(1.5);
+                            let nodes = d3.hierarchy({children:sort_data})
+                                    .sum(function (d) { return d.Net; });              
+                            var div = d3.select(".centered")
+                                            .append("div")
+                                            .attr("class", "toolTip")
+                            let node = svg.selectAll(".node")
+                                    .data(bubble(nodes).descendants())
+                                    .enter()
+                                    .filter(function (d) { return !d.children })
+                                    .append("g")
+                                    .attr("class", "node")
+                                    .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});        
+                            node.append("circle")
+                            .attr("x", function (d) { return d.x; })
+                            .attr("y", function (d) { return d.y; })
+                            .attr("r", function (d) { return d.r/1; })
+                            .attr("fill", (d,i) => color(i))
+                            .on("mouseover", function(d){
+                                            div.transition()		
+                                            .duration(200)		
+                                                    .style("left", d3.event.pageX - 50 + "px")
+                                                    .style("top", d3.event.pageY - 100 + "px")
+                                                    .style("display", "inline-block")   
+                                                    div.html("Date : "+d.data.Date+ "<br/>Country :"  + d.data.Country +"<br/>Net Exposure: "+((d.data.Net)*100).toFixed(1) + "%")
+
+                                            })
+                                                .on("mouseout", function(){
+                                                        div.style("display","none")
+                                            });
+                            node.append("text")
+                            .attr("dy", ".2em")
+                            .style("text-anchor", "middle")
+                            .text(function (d) { return d.data.Country;})
+                            .attr("font-family", "sans-serif")
+                            .attr("font-size", function (d) { return d.r /4; })
+                            .attr("fill", "white") ;
+                            node.append('text')
+                            .attr("dy", "1.3em")
+                            .style("text-anchor", "middle")
+                            .text(function (d) { return formatPercent(d.data.Net); })
+                            .attr("font-size", function (d) { return d.r / 4; })
+                            .attr("fill", "white");
+                    }
+                    else{
+                        document.getElementById("image3").style.display="block"
+                        document.getElementById("c1").style.display="none"
+                        document.getElementById("image3").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                    } 
+                }          
+                </script>
+            </div>
+                        
+            {% elif chart3 %}
+            <div class="centered"> 
+                    <h2 class="tm-block-title">Net Exposure By Sector</h2> 
+                    <p>Select Date: <input type="text" id="datepicker"  class="column  month_and_year_option2 i" name="announcementdate" required placeholder="DD/MM/YY" autocomplete="off" value="2019-09-10"></p>            
+                  
+                    <script>
+                        document.getElementById('message').style.display='none';
+                            var  selected_date;
+                                $(function(){
+                                $( "#datepicker" ).datepicker({
+                                    changeMonth : true,
+                                    changeYear : true,
+                                    dateFormat : 'yy-mm-dd'
+                                });
+                            });
+                            $(function(){
+                                
+                                    sector_bubble('2019-09-10');
+
+                                    $("#datepicker").on("change",function(){             
+                                    selected_date=$('#datepicker').val();
+                                    sector_bubble(selected_date)
+                                });
+                            });
+
+                        </script>                          
+                <div id="image2" style="margin-left:40%;height:100px"></div>
+                <svg  id="c2"></svg>
+                <script> 
+                function sector_bubble(selected)
+                {
+                    d3.selectAll("#c2 > *").remove()
+                    width=600,height=350;
+                    var svg1 = d3.select("#c2").attr("viewBox", [-400, 0, width+800, height+150]);
+                    margin = 0,                                                
+                    data={{chart3|safe}}
+                    sort_data=data.filter((item) => item.Date === selected )
+                    if(sort_data.length!=0)
+                    {
+                        document.getElementById("image2").style.display="none"
+                        document.getElementById("c2").style.display="block"
+                        color = d3.scaleOrdinal(d3.schemeCategory20)
+                        formatPercent = d3.format(",.2%");
+                            //Tooltip for chart
+                            var div = d3.select("body")
+                                    .append("div")
+                                    .attr("class", "toolTip")
+                                    // .style("opacity", 0);
+                            let bubble = d3.pack()
+                                            .size([500, 450])
+                                            .padding(1.5);
+                            let nodes = d3.hierarchy({children:sort_data})
+                                    .sum(function (d) { return d.Net; });
+                            let node = svg1.selectAll(".node")
+                                    .data(bubble(nodes).descendants())
+                                    .enter()
+                                    .filter(function (d) { return !d.children })
+                                    .append("g")
+                                    .attr("class", "node")
+                                    .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")";});
+
+                            // node.append("title")
+                            // .text(function (d) { return d.data.Date + ": " + d.Net; });
+
+                            node.append("circle")
+                            .attr("x", function (d) { return d.x; })
+                            .attr("y", function (d) { return d.y; })
+                            .attr("r", function (d) { return d.r; })
+                            .attr("fill", (d,i) => color(i))
+                            .on("mouseover", function(d){
+                            div.transition()		
+                            .duration(200)		
+                                    .style("left", d3.event.pageX - 50 + "px")
+                                    .style("top", d3.event.pageY - 100 + "px")
+                                    .style("display", "inline-block")   
+                                    div.html("Date : "+d.data.Date+ "<br/>Sector :"  + d.data.Sector +"<br/>Net Exposure: "+((d.data.Net)*100).toFixed(1) + "%")
+
+                            })
+                                .on("mouseout", function(){
+                                        div.style("display","none")
+                            });
+
+
+                            node.append("text")
+                            .attr("dy", ".0em")
+                            .style("text-anchor", "middle")
+                            .text(function (d) { return d.data.Sector;})
+                            .attr("font-family", "verdana")
+                            .attr("font-size", function (d) { return d.r /5; })
+                            .attr("fill", "white");
+
+                            node.append('text')
+                            .attr("dy", "1.2em")
+                            .style("text-anchor", "middle")
+                            .text(function (d) { return formatPercent(d.data.Net); })
+                            .attr("font-family", "verdana")
+                            .attr("font-size", function (d) { return d.r /5; })
+                            .attr("fill", "white");
+
+                    }
+                    else{
+                            document.getElementById("image2").style.display="block"
+                            document.getElementById("c2").style.display="none"
+                            document.getElementById("image2").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                        }
+                }              
+                </script>
+            </div>
+
+            {% elif chart_data1 %}
+            <div class="centered"  >
+                    <h2 class="tm-block-title">Net Exposure</h2> 
+                <svg id="areachart" ></svg> 
+                <script>
+                    document.getElementById('message').style.display='none';
+                    var data= {{chart_data1 | safe}}
+                    // set the dimensions and margins of the graph
+                    var margin = {top: 10, right: 10, bottom: 10, left: 300},
+                        width = 550 ,
+                        height = 300;
+
+                    // append the svg obgect to the body of the page
+                    // appends a 'group' element to 'svg'
+                    // moves the 'group' element to the top left margin
+                    var svg = d3.select("#areachart")
+                                .attr("viewBox", [0,0, width+600, height+150 ])
+                                .append("g")
+                                .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+                    // parse the date / time
+                    var parseTime = d3.timeParse("%d-%b-%y");
+                    var formatTime = d3.timeFormat("%b %d %Y");
+                    
+                    
+                    // set the ranges
+                    //alert(d3.scaleTime().range([0, width]))
+                    //alert(d3.scaleLinear().range([height, 0]))
+                    var x = d3.scaleTime().range([0, width]);
+                    var y = d3.scaleLinear().range([height, 0]);
+                    
+                    // define the area
+                    var area = d3.area()
+                        .x(function(d) { return x(d.Date); })
+                        .y0(height)
+                        .y1(function(d) { return y(d.Net); });
+                    
+                    // define the line
+                    var valueline = d3.line()
+                        .x(function(d) { return x(d.Date); })
+                        .y(function(d) { return y(d.Net); });
+                                    
+            
+                    
+                    //adding tooltip variable
+                    var div = d3.select("body").append("div").attr("class", "toolTip");
+                    data.forEach(function(d) {
+                        d.Date = parseTime(d.Date);
+                        d.Net = (+d.Net)*100;
+                    });
+                                    
+                    // scale the range of the data
+                    x.domain([d3.min(data, function(d) {return Math.min(d.Date); }),d3.max(data, function(d) {return Math.max(d.Date); })]);
+                    y.domain([d3.min(data, function(d) {return Math.min(d.Net); }), 100]);
+                                                                            
+                
+                    //adding tooltip
+
+                    svg.selectAll("dot")    
+                        .data(data)         
+                        .enter().append("circle")                               
+                        .attr("r", 8)     
+                        .style("fill", "transparent")  
+                        .attr("cx", function(d) { return x(d.Date); })       
+                        .attr("cy", function(d) { return y(d.Net); })     
+                        .on("mouseover", function(d){
+                            div.transition()		
+                            .duration(200)		
+                                    .style("left", d3.event.pageX - 50 + "px")
+                                    .style("top", d3.event.pageY - 100 + "px")
+                                    .style("display", "inline-block")   
+                                    div.html("Date : "+formatTime(d.Date)+ "<br/>Net Exposure: "  + d.Net.toFixed(2) + "%");
+
+                            })
+                            .on("mouseout", function(){
+                                    div.style("display","none")
+                                });
+
+                    // add the X Axis
+                    x_axis=svg.append("g")
+                            .attr("transform", "translate(0," + height + ")")
+                            .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%d-%b-%y")))
+                            .selectAll("text")
+                            .attr("transform", "translate(0,0)rotate(-45)")
+                            .style("font-family","verdana")
+                            .style("font-size","12")
+                            .style("text-anchor", "end");
+
+                        // add the Y Axis
+                    y_axis= svg.append("g")
+                                .call(d3.axisLeft(y).tickFormat(d => d+"% "));
+
+                    //adding label to y-axis
+                    svg.append("text")      // text label for the x axis
+                        .attr("x", -110 )
+                        .attr("y",  -50 )
+                        .style("text-anchor", "middle")
+                        .style("font-size", "14px").attr("transform", "rotate(-90)")
+                        .text("Net Exposure");
+
+                    x_axis.selectAll("text").style("fill","black").style("font-size","13");
+                    y_axis.selectAll("text").style("fill","black").style("font-size","12");
+
+
+                    var focus = svg.append("g")
+                    .attr("class", "focus")
+                    .style("display", "none");
+
+                        focus.append("circle")
+                            .attr("r", 5);
+
+                        focus.append("text")
+                            .attr("x", 9)
+                            .attr("dy", ".35em")
+                            .style("font-size",15);
+
+                        // add the area
+                        svg.append("path")
+                            .data([data])
+                            .attr("class", "area")
+                            .attr("d", area)
+                            
+                        
+                </script>
+            </div>
+
+            {% elif chart4 %}
+            <div class="centered" >
+                    <h2 class="tm-block-title">Value At Risk By Ticker</h2> 
+             
+                    <p>Select Date: <input type="text" id="datepicker"  class="column  month_and_year_option2 i" name="announcementdate" required placeholder="DD/MM/YY" autocomplete="off" value="8/30/2019"></p>            
+                  
+                    <script>
+                        document.getElementById('message').style.display='none';
+                            var  selected_date;
+                                $(function(){
+                                $( "#datepicker" ).datepicker({
+                                    changeMonth : true,
+                                    changeYear : true,
+                                    dateFormat : 'm/d/yy'
+                                });
+                            });
+                            $(function(){
+                                
+                                    ticker_table('8/30/2019')
+
+                                    $("#datepicker").on("change",function(){             
+                                    selected_date=$('#datepicker').val();
+                                    ticker_table(selected_date)
+                                });
+                            });
+
+                        </script> 
+                <table id='id_of_table' border=1>
+                    <!-- <caption style="caption-side:top;text-align:center;color:black;font-size:18px"> By Ticker</caption> -->
+                    <tr>
+                        <th>Ticker_Und</th>
+                        <th>var90d% </th>
+                    </tr>
+                    <tr><td id="1"></td><td id="6"></td></tr>
+                    <tr><td id="2"></td><td id="7"></td></tr>
+                    <tr><td id="3"></td><td id="8"></td></tr> 
+                    <tr><td id="4"></td><td id="9"></td></tr>
+                    <tr><td id="5"></td><td id="10"></td></tr>
+
+                </table>
+                <script>
+                    function ticker_table(selected)
+                    {
+                    data={{chart4|safe}}
+                    data2=data.filter((item) => item.trade_dt === selected)
+                    console.log(data2)
+                    if(data2.length!=0)
+                    {
+                        if(data2[0]['Ticker_Und'])
+                            document.getElementById("1").innerHTML=data2[0]['Ticker_Und']
+                        else
+                            document.getElementById("1").innerHTML=null;
+                        if(data2[1]['Ticker_Und'])
+                            document.getElementById("2").innerHTML=data2[1]['Ticker_Und']
+                        else
+                            document.getElementById("2").innerHTML=null;
+
+                        if(data2[2]['Ticker_Und'])
+                            document.getElementById("3").innerHTML=data2[2]['Ticker_Und']
+                        else
+                            document.getElementById("3").innerHTML=null;
+
+                        if(data2[3]['Ticker_Und'])
+                            document.getElementById("4").innerHTML=data2[3]['Ticker_Und']
+                        else
+                            document.getElementById("4").innerHTML=null;
+
+                        if(data2[4]['Ticker_Und'])
+                            document.getElementById("5").innerHTML=data2[4]['Ticker_Und']
+                        else
+                            document.getElementById("5").innerHTML=null;
+                        if(data2[0]['VaR90D%']>=0||data2[0]['VaR90D%']<0)
+                            document.getElementById("6").innerHTML=  parseFloat(data2[0]['VaR90D%']*100).toFixed(3)+"%"
+                        else
+                            document.getElementById("6").innerHTML=null;
+                        if(data2[1]['VaR90D%']>=0||data2[1]['VaR90D%']<0)
+                            document.getElementById("7").innerHTML=  parseFloat(data2[1]['VaR90D%']*100).toFixed(3)+"%"
+                        else
+                            document.getElementById("7").innerHTML=null;
+                        if(data2[2]['VaR90D%']>=0||data2[2]['VaR90D%']<0)
+                            document.getElementById("8").innerHTML=  parseFloat(data2[2]['VaR90D%']*100).toFixed(3)+"%"
+                        else
+                            document.getElementById("8").innerHTML=null;
+                        if(data2[3]['VaR90D%']>=0||data2[3]['VaR90D%']<0)
+                            document.getElementById("9").innerHTML=  parseFloat(data2[3]['VaR90D%']*100).toFixed(3)+"%"
+                        else
+                            document.getElementById("9").innerHTML=null;
+                        if(data2[4]['VaR90D%']>=0||data2[4]['VaR90D%']<0)
+                            document.getElementById("10").innerHTML=  parseFloat(data2[4]['VaR90D%']*100).toFixed(3)+"%"
+                        else
+                            document.getElementById("10").innerHTML=null;
+                    }
+                    else
+                    {
+                        document.getElementById("1").innerHTML=null;
+                        document.getElementById("2").innerHTML=null;
+                        document.getElementById("3").innerHTML=null;  
+                        document.getElementById("4").innerHTML=null;   
+                        document.getElementById("5").innerHTML=null;   
+                        document.getElementById("6").innerHTML=null;   
+                        document.getElementById("7").innerHTML=null;   
+                        document.getElementById("8").innerHTML=null;   
+                        document.getElementById("9").innerHTML=null;     
+                        document.getElementById("10").innerHTML=null;    
+                    }
+                    }
+                    
+                </script>
+            </div>
+
+            {% elif chart5 %}
+            <div class="centered">
+                    <h2 class="tm-block-title">Value At Risk By Country</h2> 
+                    <p>Select Date: <input type="text" id="datepicker2"  class="column  month_and_year_option2 i" name="announcementdate" required placeholder="M/D/YYYY" autocomplete="off" value="8/30/2019"></p>            
+                  
+                    <script>
+                        document.getElementById('message').style.display='none';
+                            var  selected_date;
+                                $(function(){
+                                $( "#datepicker2" ).datepicker({
+                                    changeMonth : true,
+                                    changeYear : true,
+                                    dateFormat : 'm/d/yy'
+                                });
+                            });
+                            $(function(){
+                                
+                                    country_table('8/30/2019')
+
+                                    $("#datepicker2").on("change",function(){             
+                                    selected_date=$('#datepicker2').val();
+                                    country_table(selected_date)
+                                });
+                            });
+
+                        </script>
+                <table id='id_of_table' border=1>
+                    <!-- <caption style="caption-side:top;text-align:center;color:black;font-size:18px"> By Country</caption> -->
+                    <tr>
+                        <th>Country</th>
+                        <th>var90d%</th>
+                    </tr>
+            
+                    <tr><td id="11"></td><td id="16"></td></tr>
+                    <tr><td id="12"></td><td id="17"></td></tr>
+                    <tr><td id="13"></td><td id="18"></td></tr> 
+                    <tr><td id="14"></td><td id="19"></td></tr>
+                    <tr><td id="15"></td><td id="20"></td></tr>
+                </table>
+                <script>
+                    function country_table(selected)
+                    {
+                        data={{chart5|safe}}
+                        data2=data.filter((item) => item.trade_dt === selected)
+                        if(data2.length!=0)
+                        {
+                            if(data2[0]['Country'])
+                                document.getElementById("11").innerHTML=data2[0]['Country']
+                            else
+                                document.getElementById("11").innerHTML=null;
+                            if(data2[1]['Country'])
+                                document.getElementById("12").innerHTML=data2[1]['Country']
+                            else
+                                document.getElementById("12").innerHTML=null;
+
+                            if(data2[2]['Country'])
+                                document.getElementById("13").innerHTML=data2[2]['Country']
+                            else
+                                document.getElementById("13").innerHTML=null;
+
+                            if(data2[3]['Country'])
+                                document.getElementById("14").innerHTML=data2[3]['Country']
+                            else
+                                document.getElementById("14").innerHTML=null;
+
+                            if(data2[4]['Country'])
+                                document.getElementById("15").innerHTML=data2[4]['Country']
+                            else
+                                document.getElementById("15").innerHTML=null;
+                            if(data2[0]['VaR90D%']>=0||data2[0]['VaR90D%']<0)
+                                document.getElementById("16").innerHTML=  parseFloat(data2[0]['VaR90D%']*100).toFixed(3)+"%"
+                            else
+                                document.getElementById("16").innerHTML=null;
+                            if(data2[1]['VaR90D%']>=0||data2[1]['VaR90D%']<0)
+                                document.getElementById("17").innerHTML=  parseFloat(data2[1]['VaR90D%']*100).toFixed(3)+"%"
+                            else
+                                document.getElementById("17").innerHTML=null;
+                            if(data2[2]['VaR90D%']>=0||data2[2]['VaR90D%']<0)
+                                document.getElementById("18").innerHTML=  parseFloat(data2[2]['VaR90D%']*100).toFixed(3)+"%"
+                            else
+                                document.getElementById("18").innerHTML=null;
+                            if(data2[3]['VaR90D%']>=0||data2[3]['VaR90D%']<0)
+                                document.getElementById("19").innerHTML=  parseFloat(data2[3]['VaR90D%']*100).toFixed(3)+"%"
+                            else
+                                document.getElementById("19").innerHTML=null;
+                            if(data2[4]['VaR90D%']>=0||data2[4]['VaR90D%']<0)
+                                document.getElementById("20").innerHTML=  parseFloat(data2[4]['VaR90D%']*100).toFixed(3)+"%"
+                            else
+                                document.getElementById("20").innerHTML=null;
+                        }
+                        else
+                        {
+                            document.getElementById("11").innerHTML=null;
+                            document.getElementById("12").innerHTML=null;
+                            document.getElementById("13").innerHTML=null;  
+                            document.getElementById("14").innerHTML=null;   
+                            document.getElementById("15").innerHTML=null;   
+                            document.getElementById("16").innerHTML=null;   
+                            document.getElementById("17").innerHTML=null;   
+                            document.getElementById("18").innerHTML=null;   
+                            document.getElementById("19").innerHTML=null;     
+                            document.getElementById("20").innerHTML=null;    
+                        }
+                    }
+                    
+                </script>
+            </div>
+                        
+            {% elif chart6 %}
+            <div class="centered">
+                    <h2 class="tm-block-title">Value At Risk By Sector</h2> 
+                <p>Select Date: <input type="text" id="datepicker3"  class="column  month_and_year_option2 i" name="announcementdate" required placeholder="DD/MM/YY" autocomplete="off" value="8/30/2019"></p>            
+                
+                <script>
+                    document.getElementById('message').style.display='none';
+                        var  selected_date;
+                            $(function(){
+                            $( "#datepicker3" ).datepicker({
+                                changeMonth : true,
+                                changeYear : true,
+                                dateFormat : 'm/d/yy'
+                            });
+                        });
+                        $(function(){
+                            
+                                sector_table('8/30/2019')
+
+                                $("#datepicker3").on("change",function(){             
+                                selected_date=$('#datepicker3').val();
+                                sector_table(selected_date)
+                            });
+                        });
+
+                    </script>
+                    <table id='id_of_table' border=1>
+                        <!-- <caption style="caption-side:top;text-align:center;color:black;font-size:18px"> By Sector</caption> -->
+                        <tr>
+                            <th>
+                                GICS_Sector_Name
+                            </th>
+                            <th>
+                            var90d%
+                            </th>
+                        </tr>
+            
+                        <tr><td id="21"></td><td id="26"></td></tr>
+                        <tr><td id="22"></td><td id="27"></td></tr>
+                        <tr><td id="23"></td><td id="28"></td></tr> 
+                        <tr><td id="24"></td><td id="29"></td></tr>
+                        <tr><td id="25"></td><td id="30"></td></tr>
+                    </table>
+                    <script>
+                        function sector_table(selected)
+                        {
+                        data = {{chart6|safe}}
+                        data2=data.filter((item) => item.trade_dt === selected)
+                        console.log(data2)
+                        if(data2.length!=0)
+                            {
+                                if(data2[0]['GICS_Sector_Name'])
+                                    document.getElementById("21").innerHTML=data2[0]['GICS_Sector_Name']
+                                else
+                                    document.getElementById("21").innerHTML=null;
+                                if(data2[1]['GICS_Sector_Name'])
+                                    document.getElementById("22").innerHTML=data2[1]['GICS_Sector_Name']
+                                else
+                                    document.getElementById("22").innerHTML=null;
+
+                                if(data2[2]['GICS_Sector_Name'])
+                                    document.getElementById("23").innerHTML=data2[2]['GICS_Sector_Name']
+                                else
+                                    document.getElementById("23").innerHTML=null;
+
+                                if(data2[3]['GICS_Sector_Name'])
+                                    document.getElementById("24").innerHTML=data2[3]['GICS_Sector_Name']
+                                else
+                                    document.getElementById("24").innerHTML=null;
+
+                                if(data2[4]['GICS_Sector_Name'])
+                                    document.getElementById("25").innerHTML=data2[4]['GICS_Sector_Name']
+                                else
+                                    document.getElementById("25").innerHTML=null;
+                                if(data2[0]['VaR90D%']>=0||data2[0]['VaR90D%']<0)
+                                    document.getElementById("26").innerHTML=  parseFloat(data2[0]['VaR90D%']*100).toFixed(3)+"%"
+                                else
+                                    document.getElementById("26").innerHTML=null;
+                                if(data2[1]['VaR90D%']>=0||data2[1]['VaR90D%']<0)
+                                    document.getElementById("27").innerHTML=  parseFloat(data2[1]['VaR90D%']*100).toFixed(3)+"%"
+                                else
+                                    document.getElementById("27").innerHTML=null;
+                                if(data2[2]['VaR90D%']>=0||data2[2]['VaR90D%']<0)
+                                    document.getElementById("28").innerHTML=  parseFloat(data2[2]['VaR90D%']*100).toFixed(3)+"%"
+                                else
+                                    document.getElementById("28").innerHTML=null;
+                                if(data2[3]['VaR90D%']>=0||data2[3]['VaR90D%']<0)
+                                    document.getElementById("29").innerHTML=  parseFloat(data2[3]['VaR90D%']*100).toFixed(3)+"%"
+                                else
+                                    document.getElementById("29").innerHTML=null;
+                                if(data2[4]['VaR90D%']>=0||data2[4]['VaR90D%']<0)
+                                    document.getElementById("30").innerHTML=  parseFloat(data2[4]['VaR90D%']*100).toFixed(3)+"%"
+                                else
+                                    document.getElementById("30").innerHTML=null;
+                            }
+                            else
+                            {
+                                document.getElementById("21").innerHTML=null;
+                                document.getElementById("22").innerHTML=null;
+                                document.getElementById("23").innerHTML=null;  
+                                document.getElementById("24").innerHTML=null;   
+                                document.getElementById("25").innerHTML=null;   
+                                document.getElementById("26").innerHTML=null;   
+                                document.getElementById("27").innerHTML=null;   
+                                document.getElementById("28").innerHTML=null;   
+                                document.getElementById("29").innerHTML=null;     
+                                document.getElementById("30").innerHTML=null;    
+                            }   
+
+                        }
+                        
+                    </script>
+            </div>
+
+            {% elif data %}
+            <div class="centered">
+                    <h2 class="tm-block-title">Portfolio Snapshot</h2> 
+                <script>
+                    document.getElementById('message').style.display='none';
+                    // set the dimensions and margins of the graph
+                    var margin = {top: 10, right: 30, bottom: 10, left: 100},
+                        width = 550 ,
+                        height = 350 ;
+
+                    // append the svg object to the body of the page
+                    var svg3 = d3.select(".centered")
+                                .append("svg").attr("viewBox", [0, 0, width+200, height+100])
+                                .append("g")
+                                .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+                    
+                    // Parse the Data 
+                    var data ={{data|safe}}
+                    var parseDate = d3.timeParse("%Y-%m-%d");
+
+                    data.forEach(function(d) {
+                        d[0] = parseDate(d[0]);
+
+                        });
+                    // X axis
+                                            
+                    function getDate(d) {
+                        return new Date(d.Date);
+                    }
+
+                    var minDate = getDate(data[0]),
+                        maxDate = getDate(data[data.length-1]);
+                    
+                    var x = d3.scaleTime()
+                            .range([ 0, width ])
+                            .domain([minDate, maxDate]) 
+                        
+                    svg3.append("g")
+                        .attr("transform", "translate(0," + height + ")")
+                        .call(d3.axisBottom(x))
+                        .selectAll("text")
+                        .attr("transform", "translate(-10,0)rotate(-45)")
+                        .style("text-anchor", "end");
+
+                    // Add Y axis
+                    var y = d3.scaleLinear()
+                        .domain([-0.1, 0.1])
+                        .range([ height, 0]);
+                    svg3.append("g")
+                        .call(d3.axisLeft(y));
+                    // Lines
+                    svg3.selectAll("myline")
+                        .data(data)
+                        .enter()
+                        .append("line")
+                        .attr("x1", function(d) { return x(getDate(d)); })
+                        .attr("x2", function(d) { return x(getDate(d)); })
+                        .attr("y1", function(d) { return y(d.Benchmarkreturn); })
+                        .attr("y2",  function(d) { return y(d.Return); })
+                        .attr("stroke", function(d){ return d.Benchmarkreturn <= d.Return ? '#FFAA08' : '#0A5ABB' })
+                        .attr("stroke-width", "1px")
+                    var tooltip = d3.select(".centered").append("div").attr("class", "toolTip");
+                    // Circles
+                    svg3.selectAll("mycircle")
+                        .data(data)
+                        .enter()
+                        .append("circle")
+                        .attr("cx", function(d) { return x(getDate(d)); })
+                        .attr("cy", function(d) { return y(d.Benchmarkreturn); })
+                        .attr("r", "5")
+                        .style("fill", "#0A5ABB")
+                        .on("mouseover", function(d){
+                            tooltip
+                                .style("left", d3.event.pageX - 50 + "px")
+                                .style("top", d3.event.pageY - 60 + "px")
+                                .style("display", "inline-block")
+                                .html("Benchmark Return: "+(d.Benchmarkreturn));
+                        })
+                        .on("mouseout", function(d){ tooltip.style("display", "none");});;
+                        
+
+                    svg3.selectAll("mycircle")
+                        .data(data)
+                        .enter()
+                        .append("circle")
+                        .attr("cx", function(d) { return x(getDate(d)); })
+                        .attr("cy", function(d) { return y(d.Return); })
+                        .attr("r", "5")
+                        .style("fill", "#FFAA08")
+                        .on("mouseover", function(d){
+                            tooltip
+                                .style("left", d3.event.pageX - 50 + "px")
+                                .style("top", d3.event.pageY - 60 + "px")
+                                .style("display", "inline-block")
+                                .html("Return: "+(d.Return));
+                        })
+                        .on("mouseout", function(d){ tooltip.style("display", "none")});        
+                    </script>
+            </div>
+
+            {% elif sector %}
+            <div class="centered" id="container" >
+                    <h2 class="tm-block-title">Portfolio Snapshot</h2> 
+                <script>
+                    document.getElementById('message').style.display='none';
+                    window.onload=pie_of_pie('8/22/2019');
+                    function pie_of_pie(selected_date)
+                    {
+                        var data1={{sector|safe}}
+                        var data2={{region|safe}}
+                        var filtered,filtered2;
+                        for(i=0;i<data1.length;i++)
+                        {
+                        
+                            sector=data1[i].filter(function(item){
+                                    
+                                    return item.date==selected_date;         
+                                        });	
+                            if(sector.length!=0)
+                            {
+                            break;
+                            }
+                            
+                        }
+                        for(i=0;i<data2.length;i++)
+                        {
+                        
+                            region=data2[i].filter(function(item){
+                                    
+                                    return item.date==selected_date;         
+                                        });	
+                            if(region.length!=0)
+                            {
+                            break;
+                            }
+                            
+                        }
+                        Highcharts.chart('container', {
+                            chart: {
+                                type: 'pie',
+                                plotBackgroundColor: null,
+                            plotBorderWidth: null,
+                            plotShadow: false,
+                            },
+                            credits: {
+                                    enabled: false
+                                },
+                            title: {
+                                    text: 'Sector Region  split'
+                                },
+                        
+                            tooltip: {
+                            pointFormat: '<span style="text-decoration:none">{series.name}</span>: <br>{point.percentage:.1f} %'
+                            },
+                            plotOptions: {
+                            pie: {
+                                dataLabels: {
+                                enabled: true,
+                                format: '<span style="">{point.name}</span>:<br>{point.percentage:.1f} %',
+                                }
+                            }
+                            },
+                            series: [{
+                                name: 'Sector  split',
+                                data:sector,
+                        
+                            
+                            }],
+                            
+                            drilldown: {
+                                
+                                series: region
+                            
+                            }
+                        });
+                        }
+                </script>
+            </div>
+            {% elif sector2 %}
+            <div class="centered">
+                    <h2 class="tm-block-title">PNL Drilldown By Sector</h2>
+
+                    <div id="image" style="margin-left:40%"></div>
+
+                    <div id="container2" style="height: 400px;width:900px;margin-left:25%"></div>
+                    <script src="https://d3js.org/d3.v4.min.js"></script>
+                    <script>
+                        document.getElementById('message').style.display='none';
+                        window.onload=bar_of_bar('8/22/2019');
+                    function bar_of_bar(selected_date)
+                    {
+                        data1={{sector2|safe}}
+                        data2={{ticker|safe}}
+                        var filtered,filtered2;
+0
+                        for(i=0;i<data1.length;i++)
+                        {
+                            
+                            filtered=data1[i].filter(function(item){
+                                        item.y=item.y/1000
+                                    return item.date==selected_date;
+                                        });    
+                            if(filtered.length!=0)
+                              {
+                               break;
+                              }
+
+                            
+                        }
+                        for(i=0;i<data2.length;i++)
+                        {
+                        
+                            filtered2=data2[i].filter(function(item){
+                                    for(j=0;j<(item.data).length;j++)
+                                    {
+                                        item.data[j][1]=item.data[j][1]/1000;
+                                        
+                                    }
+                                    return item.date==selected_date;
+                                        });    
+                            if(filtered2.length!=0)
+                              {
+                               break;
+                              }
+                            
+                        }
+                        
+                       
+                        if (filtered.length >0)
+                        {
+                                
+                                document.getElementById("image").style.display="none"
+                                document.getElementById("container2").style.display="block"
+                      
+                                Highcharts.chart('container2', {
+                                chart: {
+                                    type: 'column',
+                                },
+                                credits: {
+                                                enabled: false
+                                            },
+                                            exporting: {
+                                            buttons: {
+                                                contextButton: {
+                                                enabled:false
+                                                },
+                                                
+                                            }
+                                        },
+                                title: {
+                                    text:''
+                                },
+                                //   subtitle: {
+                                //     text: 'Click the columns to view versions.'
+                                //   },
+                                xAxis: {
+                                    lineWidth: 0,  tickLength: 0,
+                                        labels: {
+                                        enabled:false,
+                                       
+                                        }
+                                },
+                                yAxis: {
+                                    gridLineWidth: 0,
+                                    
+                                    title: {
+                                    text: 'PNL values($)',
+                                    style: {
+                                                    color: 'black',
+                                                    fontSize:'13px',
+                                                    fontFamily:'verdana'
+                                                },
+                                    },
+                                    labels: {
+                                        style: {
+                                                    color: 'black',
+                                                    fontSize:'13px',
+                                                    fontFamily:'verdana'
+                                                },
+                                                formatter: function(){
+                                                return  this.value+ 'K';
+                                                }
+                                            },
+                                
+                                },
+                              
+                                plotOptions: {
+                                    series: {
+                                    borderWidth: 0,
+                                    dataLabels: {
+                                        enabled: true,
+                                        format: '{point.name}<br>${point.y:.0f}K'
+                                    
+                                    }
+                                    }
+                                },
+                                
+                                tooltip: {
+                                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y:.0f}K</b><br/>'
+                                },
+                                series: [{
+                                    name: '',
+                                    colorByPoint: true,
+                                    data:filtered,showInLegend: false,
+                                   
+                                  dataLabels: {
+                                            formatter: function() {
+                                                return point.name ;
+                                            },
+                                            color: 'black',  
+                                          
+                                            distance: -30
+                                        }
+                                }],
+                                drilldown: {
+                                    series: filtered2,
+                                   
+                                    
+                                }
+                                });
+                                }
+                                else{
+                                    document.getElementById("image").style.display="block"
+                                    document.getElementById("container2").style.display="none"
+                                    document.getElementById("image").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                                }
+                            
+               
+                
+                            }
+                    </script>
+              
+            </div>
+            {% elif bench %}
+            <div class="centered" id="centered">
+                    <h2 class="tm-block-title">Benchmark vs Fund Returns</h2>
+                    <script>
+                     document.getElementById('message').style.display='none';   
+                      var margin = {top: 15, right: 30, bottom: 100, left: 220},
+                          width = 950 ,
+                          height = 350 ;
+                      var svg3 = d3.select("#centered")
+                        .append("svg")
+                        .attr("viewBox", [-300, 0, width+750, height+150])
+                        .append("g")
+                          .attr("transform",
+                                "translate(" + margin.left + "," + margin.top + ")");
+                        data = {{benchreturn|safe}}
+                        var parseDate = d3.timeParse("%Y-%m-%d");
+                        data.forEach(function(d) {
+                          d.Benchmarkreturn=(+d.Benchmarkreturn)*100;
+                          d.Return=(+d.Return)*100;
+                        d[0] = parseDate(d[0]);
+                    });
+                      function getDate(d) {
+                        return new Date(d.Date);
+                    }
+                    var minDate = getDate(data[0]),
+                        maxDate = getDate(data[data.length-1]);
+                      var x = d3.scaleTime()
+                        .range([ 0, width/1.5 ])
+                        .domain([minDate, maxDate]) 
+                      svg3.append("g")
+                        .attr("transform", "translate(0," + height + ")")
+                        .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%b-%y")))
+                        .selectAll("text")
+                        .attr("transform", "translate(-10,0)rotate(-45)")
+                        .style("text-anchor", "end");
+                      svg3.append("text")      // text label for the x axis
+                        .attr("x", -200)
+                        .attr("y",  -50 )
+                        .style("text-anchor", "middle")
+                        .style("font-size", "12px")
+                        .attr("transform", "rotate(-90)")
+                        .text("Fund (%)");
+                      var y = d3.scaleLinear()
+                        .domain([-10, 10])
+                        .range([ height, 0]);
+                      svg3.append("g")
+                        .call(d3.axisLeft(y).tickFormat(d =>d.toFixed(1)+"%"));
+                      svg3.selectAll("myline")
+                        .data(data)
+                        .enter()
+                        .append("line")
+                          .attr("x1", function(d) { return x(getDate(d)); })
+                          .attr("x2", function(d) { return x(getDate(d)); })
+                          .attr("y1", function(d) { return y(d.Benchmarkreturn); })
+                          .attr("y2",  function(d) { return y(d.Return); })
+                          .attr("stroke", function(d){ return d.Benchmarkreturn <= d.Return ? '#999EFF' : '#FC7599' })
+                          .attr("stroke-width", "1px")
+                      var tooltip = d3.select("body").append("div").attr("class", "toolTip");
+                  var colors = ["#999EFF", "#FC7599"];
+                    var data_1 = ['Benchmark','Fund'];
+                      var svg_3 = d3.select('.centered')
+                      .append('svg')
+                      .attr("viewBox", [0, 0, width+220, 20])  
+                      var groups = svg_3.selectAll('g')
+                      .data(data_1)
+                      .enter()
+                      .append('g');
+                      var line=groups.append("line").attr("x1",300).attr("x2",313).attr("y1",5).attr("class","legend")
+                      .attr("y2",5).attr('stroke',function(d,i) { return colors[i];})
+                      var text = groups.append('text')
+                      .attr('y', 10)
+                      .attr('x',314).style("font-size","14px")
+                      .text(function(d) { return d; });
+                      var padding = 40;
+                      groups.attr('transform', function(d,i) { 
+                      return "translate("+(d3.sum(data, function(e,j) {
+                          if (j < i) { return groups.nodes()[j].getBBox().width; } else return 0; }) + padding * i) + ",0)";
+                      })
+              
+                      svg3.selectAll("mycircle")
+                          .data(data)
+                          .enter()
+                          .append("circle")
+                          .attr("cx", function(d) { return x(getDate(d)); })
+                          .attr("cy", function(d) { return y(d.Benchmarkreturn); })
+                          .attr("r", "5")
+                          .style("fill", "#FC7599")
+                          .on("mouseover", function(d){
+                              tooltip
+                                .style("left", d3.event.pageX - 50 + "px")
+                                .style("top", d3.event.pageY - 60 + "px")
+                                .style("display", "inline-block")
+                                .html("Benchmark: "+(d.Benchmarkreturn).toFixed(2)+"%"+"<br>Fund: "+(d.Return).toFixed(2)+"%");
+                          })
+                          .on("mouseout", function(d){ tooltip.style("display", "none");});;
+                          svg3.selectAll("mycircle")
+                              .data(data)
+                              .enter()
+                              .append("circle")
+                              .attr("cx", function(d) { return x(getDate(d)); })
+                              .attr("cy", function(d) { return y(d.Return); })
+                              .attr("r", "5")
+                              .style("fill", "#999EFF")
+                              .on("mouseover", function(d){
+                                  tooltip
+                                    .style("left", d3.event.pageX - 50 + "px")
+                                    .style("top", d3.event.pageY - 60 + "px")
+                                    .style("display", "inline-block")
+                                    .html("Benchmark: "+(d.Benchmarkreturn).toFixed(2)+"%"+"<br>Fund: "+(d.Return).toFixed(2)+"%");
+                              })
+                              .on("mouseout", function(d){ tooltip.style("display", "none")});
+                      </script>
+
+                </div>
+                {% elif freqdist %}
+                <div class="centered" id="centered">
+                        <h2 class="tm-block-title">Frequency Distribution - Trailing 2 Years</h2>
+                        <!-- <div id="c1"></div> -->
+                        <script src="//d3js.org/d3.v4.min.js"></script>
+                        <script>
+                        document.getElementById('message').style.display='none';  
+                        var margin = {top: 15, right: 0, bottom: 40, left: 180},
+                            width = 950 ,
+                            height = 380 ;
+                        var x = d3.scaleBand().range([0,width/2])
+                        var y = d3.scaleLinear().range([height, 0]);
+                        var tooltip = d3.select("#centered").append("div").attr("class", "toolTip");   
+                        var svg = d3.select("#centered")
+                                    .append("svg")
+                                    .attr("viewBox", [-350, 0, width+550, height+100])
+                                    .append("g")
+                                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                          data = {{freqdist|safe}}
+                          data.forEach(function(d) {
+                            d.Frequency = +d.Frequency;
+                          });
+                          x.domain(data.map(function(d) { return d.Category; }));
+                          y.domain([0, d3.max(data, function(d) { return d.Frequency; })]);
+                          svg.selectAll(".bar")
+                              .data(data)
+                            .enter().append("rect")
+                              .attr("class", "bar")
+                              .attr("x", function(d) { return x(d.Category)+22; })
+                              .attr("width", x.bandwidth()-50)
+                              .attr("y", function(d) { return y(d.Frequency); })
+                              .attr("height", function(d) { return height - y(d.Frequency); })
+                              .on("mouseover", function(d){
+                                    tooltip
+                                      .style("left", d3.event.pageX - 50 + "px")
+                                      .style("top", d3.event.pageY - 100 + "px")
+                                      .style("display", "inline-block")
+                                      .html("Category: "+(d.Category) + "<br>Frequency: "+ (d.Frequency));
+                                })
+                                .on("mouseout", function(d){ tooltip.style("display", "none");});;;
+                          svg.append("g")
+                              .attr("transform", "translate(0," + height + ")")
+                              .call(d3.axisBottom(x).ticks(5).tickSizeOuter(0)) .selectAll("text").style("font-family","verdana")
+                              .attr("transform", "translate(30,0)rotate(0)")
+                              .style("text-anchor", "end");;
+                        svg.append("text")             
+                            .attr("transform","translate(" + (width/3) + " ," + (height + 60) + ")")
+                            .style("text-anchor", "end")
+                            .style("font-size","13")
+                            .text("Return Buckets");
+                          svg.append("g")
+                              .call(d3.axisLeft(y));
+                              svg.append("text")      
+                                .attr("x",-200 )
+                                .attr("y",-50)
+                                .style("text-anchor", "middle")
+                                .style("font-size", "13px")
+                                .text("Number of Months").attr("transform", "rotate(-90)");
+                                svg.selectAll("text.bar")  		
+                            .data(data)
+                            .enter()
+                            .append("text")
+                            .attr("class","label")
+                            .attr("text-anchor", "start")
+                            .attr("x", (function(d) { return x(d.Category)+40; }  ))
+                            .attr("y", function(d) { return y(d.Frequency)-15; })
+                            .attr("dy", ".75em")
+                            .text(function(d) { return d.Frequency; }); 
+                        
+                        </script>
+                    </div>
+                    {% elif volatility %}
+                    <div class="centered" id="centered">
+                            <h2 class="tm-block-title">Volatility Evolution</h2>
+                            <div id="divline2"></div>
+                            <div id="divline1"></div>
+                            <script src="https://d3js.org/d3.v4.min.js"></script>
+                           <script>
+                               document.getElementById("message").style.display='none';
+                            var margin = {top: 25, right: 30, bottom: 0 , left: 75},
+                                width = 850,
+                                height = 380;
+                            var parseTime1 = d3.timeParse("%d-%b-%y");
+                            var formatTime = d3.timeFormat("%b %d %Y");
+                            var x = d3.scaleTime().range([0, width]);
+                            var y = d3.scaleLinear().range([height, 0]);
+                            var valueline = d3.line()
+                                .x(function(d) { return x(d.date); })
+                                .y(function(d) { return y(d.annual_downside); });
+                            var valueline2 = d3.line()
+                                .x(function(d) { return x(d.date); })
+                                .y(function(d) { return y(d.annual_upside); });
+                            var valueline3 = d3.line()
+                                .x(function(d) { return x(d.date); })
+                                .y(function(d) { return y(d.Annl_Vol_T12M); });
+                            var svg4 = d3.select("#divline2").append("svg")
+                                        .attr("viewBox", [-350, 0,width+750, height+100])
+                                        .append("g")
+                                          .attr("transform",
+                                                "translate(" + margin.left + "," + margin.top+ ")");
+                            data4={{volatility|safe}}
+                              data4.forEach(function(d) {
+                                  d.date = parseTime1(d.date);
+                                  d.annual_downside =(+d.annual_downside)*100;
+                                  d.annual_upside =(+d.annual_upside)*100;
+                                  d.Annl_Vol_T12M =(+d.Annl_Vol_T12M)*100;
+                              });
+                              var tooltip = d3.select("#divline2").append("div").attr("class", "toolTip");
+                              x.domain([d3.min(data4, function(d) { return d.date }), d3.max(data4, function(d) { return d.date; })]);
+                              y.domain([0, d3.max(data4, function(d) {
+                                  return Math.max(d.annual_downside, d.annual_upside); })]).nice();
+                              svg4.append("path")
+                                  .data([data4])
+                                  .attr("class", "line")
+                                  .attr("d", valueline).style("stroke","#FC7599");
+                                  svg4.selectAll("dot")
+                                    .data(data4)
+                                    .enter().append("circle")
+                                    .attr("r", 2)
+                                    .style("fill", "transparent")  
+                                    .attr("cx", function(d) { return x(d.date); })
+                                    .attr("cy", function(d) { return y(d.annual_downside)}) 
+                                  .on("mouseover", function(d){
+                                        tooltip.transition()		
+                                        .duration(200)		
+                                                .style("left", d3.event.pageX - 50 + "px")
+                                                .style("top", d3.event.pageY - 150 + "px")
+                                                .style("display", "inline-block")   
+                                                tooltip.html("Date : "+formatTime(d.date)+ "<br/>Ann'l Vol(T12) : $"  + d.Annl_Vol_T12M.toFixed(2) +"<br/>Ann'l Vol Upside : $"  + d.annual_upside.toFixed(2)+"<br/>Ann'l Vol Downside : $"  + d.annual_downside.toFixed(2));
+                                          })
+                                          .on("mouseout", function(){
+                                        tooltip.style("display","none")
+                                    });
+                              svg4.append("path")
+                                  .data([data4])
+                                  .attr("class", "line").style("stroke","#999EFF")
+                                  .attr("d", valueline2) ;
+                                  svg4.selectAll("dot")
+                                    .data(data4)
+                                    .enter().append("circle")
+                                    .attr("r", 2)
+                                    .style("fill", "transparent")  
+                                    .attr("cx", function(d) { return x(d.date); })
+                                    .attr("cy", function(d) { return y(d.annual_upside)}) 
+                                    .on("mouseover", function(d){
+                                        tooltip.transition()		
+                                        .duration(200)		
+                                                .style("left", d3.event.pageX - 50 + "px")
+                                                .style("top", d3.event.pageY - 150 + "px")
+                                                .style("display", "inline-block")   
+                                                tooltip.html("Date : "+formatTime(d.date)+ "<br/>Ann'l Vol(T12) : $"  + d.Annl_Vol_T12M.toFixed(2) +"<br/>Ann'l Vol Upside : $"  + d.annual_upside.toFixed(2)+"<br/>Ann'l Vol Downside : $"  + d.annual_downside.toFixed(2));
+    
+                                          })
+                                          .on("mouseout", function(){
+                                        tooltip.style("display","none")
+                                    });
+                            svg4.append("path")
+                                  .data([data4])
+                                  .attr("class", "line")
+                                  .attr("d", valueline3).style("stroke","orange").style("stroke-width","3px");
+                                  svg4.selectAll("dot")
+                                    .data(data4)
+                                    .enter().append("circle")
+                                    .attr("r", 2)
+                                    .style("fill", "transparent")  
+                                    .attr("cx", function(d) { return x(d.date); })
+                                    .attr("cy", function(d) { return y(d.Annl_Vol_T12M)}) 
+                                    .on("mouseover", function(d){
+                                        tooltip.transition()		
+                                        .duration(200)		
+                                                .style("left", d3.event.pageX - 50 + "px")
+                                                .style("top", d3.event.pageY - 150 + "px")
+                                                .style("display", "inline-block")   
+                                                tooltip.html("Date : "+formatTime(d.date)+ "<br/>Ann'l Vol(T12) : $"  + d.Annl_Vol_T12M.toFixed(2) +"<br/>Ann'l Vol Upside : $"  + d.annual_upside.toFixed(2)+"<br/>Ann'l Vol Downside : $"  + d.annual_downside.toFixed(2));
+    
+                                          })
+                                          .on("mouseout", function(){
+                                        tooltip.style("display","none")
+                                    });
+                              svg4.append("g")
+                                  .attr("transform", "translate(0," + height + ")").attr("class","y_tick")
+                                  .call(d3.axisBottom(x).tickPadding(7).ticks(10).tickFormat(d3.timeFormat("%b-%y")).tickSizeOuter(0)).selectAll("text")
+                                    .attr("transform", "translate(-10,0)rotate(-45)")
+                                    .style("text-anchor", "end");
+                              svg4.append("g").attr("class","y_tick")
+                                  .call(d3.axisLeft(y).tickFormat(d => d+"%" ));
+                            svg4.append("text")    
+                                    .attr("x", -150)
+                                    .attr("y",  -50 )
+                                    .style("text-anchor", "middle")
+                                    .style("font-size", "12px")
+                                    .attr("transform", "rotate(-90)")
+                                    .text("Volatility (%)");
+                            var colors = [ "#FC7599","#999EFF","orange"];
+                            var data = ['Ann.downside Vol (T12M)','Ann.upside Vol (T12M)','Ann.Vol (T12M)'];
+                              var svg_4 = d3.select('#divline2')
+                              .append('svg')
+                              .attr("viewBox", [-350, 0, width+620, height-250])  
+                              var groups = svg_4.selectAll('g')
+                              .data(data)
+                              .enter()
+                              .append('g');
+                              var line=groups.append("line").attr("x1",130).attr("x2",143).attr("y1",5).attr("class","legend")
+                              .attr("y2",5).attr('stroke',function(d,i) { return colors[i];})
+                              var text = groups.append('text')
+                              .attr('y', 10)
+                              .attr('x',150).style("font-size","14px")
+                              .text(function(d) { return d; });
+                              var padding = 40;
+                              groups.attr('transform', function(d,i) { 
+                              return "translate("+(d3.sum(data, function(e,j) {
+                                  if (j < i) { return groups.nodes()[j].getBBox().width; } else return 0; }) + padding * i) + ",0)";
+                              })
+                            </script>
+                        </div>
+            {% elif freqinception %}
+            <div class="centered" id="centered">
+                    <h2 class="tm-block-title">Frequency Distribution - Since Inception</h2>
+                    <div id="c22"></div>
+                    <script src="//d3js.org/d3.v4.min.js"></script>
+                    <script>
+                    document.getElementById("message").style.display='none';
+                    var margin = {top: 20, right: 0, bottom: 80, left: 180},
+                                    width = 950 ,
+                                    height = 380 ;
+                    var x = d3.scaleBand()
+                              .range([0, width/1.5])
+                              .padding(0.1);
+                    var y = d3.scaleLinear()
+                              .range([height, 0]);
+                    var svg1 = d3.select("#c22")
+                                  .append("svg")
+                                  .attr("viewBox", [-300, 0, width+550, height+100])
+                                  .append("g")
+                                  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                    var tooltip = d3.select("#c22").append("div").attr("class", "toolTip");
+                      data ={{freqinception|safe}}
+                      data.forEach(function(d) {
+                        d.Frequency = +d.Frequency;
+                      });
+                      x.domain(data.map(function(d) { return d.Inspection; }));
+                      y.domain([0, d3.max(data, function(d) { return d.Frequency; })]);
+                      svg1.selectAll(".bar")
+                          .data(data)
+                        .enter().append("rect")
+                          .attr("class", "bar")
+                          .attr("x", function(d) { return x(d.Inspection); })
+                          .attr("width", x.bandwidth())
+                          .attr("y", function(d) { return y(d.Frequency); })
+                          .attr("height", function(d) { return height - y(d.Frequency); })
+                          .on("mouseover", function(d){
+                                  tooltip
+                                    .style("left", d3.event.pageX - 50 + "px")
+                                    .style("top", d3.event.pageY - 100 + "px")
+                                    .style("display", "inline-block")
+                                    .html("Inspection: "+(d.Inspection) + "<br>Frequency"+ (d.Frequency));
+                              })
+                              .on("mouseout", function(d){ tooltip.style("display", "none");});;
+                      svg1.append("g")
+                          .attr("transform", "translate(0," + height + ")")
+                          .call(d3.axisBottom(x).tickSizeOuter(0)).selectAll("text")
+                            .attr("transform", "translate(-10,0)rotate(-45)")
+                            .style("text-anchor", "end");
+                                svg1.append("text")             
+                                    .attr("transform","translate(" + (width/3) + " ," + (height+80) + ")")
+                                    .style("text-anchor", "middle")
+                                    .style("font-size","13")
+                                    .text("Return Buckets");
+                      svg1.append("g")
+                          .call(d3.axisLeft(y));
+                      svg1.append("text")      
+                          .attr("x",-200 )
+                          .attr("y",-50)
+                          .style("text-anchor", "middle")
+                          .style("font-size", "13px")
+                          .text("Number of Months").attr("transform", "rotate(-90)");
+                          svg1.selectAll("text.bar")  		
+                            .data(data)
+                            .enter()
+                            .append("text")
+                            .attr("class","label")
+                            .attr("text-anchor", "start")
+                            .attr("x", (function(d) { return x(d.Inspection)+18; }  ))
+                            .attr("y", function(d) { return y(d.Frequency)-17; })
+                            .attr("dy", ".75em")
+                            .text(function(d) { return d.Frequency; }); 
+                    </script>
+                </div>
+            {% elif data11 %}
+            <div class="centered" id="container1">
+                    <h2 class="tm-block-title">Portfolio Snapshot</h2> 
+                    <script>
+                        document.getElementById('message').style.display='none';
+                        $(function () {
+                            $('#container1').highcharts({
+                                title: {
+                                        text: 'Daily VaR and PNL monitoring',
+                                        style: {
+                                                    color: 'black',
+                                                    fontSize:'18px',
+                                                    fontFamily:'verdana',
+                                                    },
+                                
+                                        x: -20 //center
+                                        },
+                                xAxis: {
+                                        categories:{{data13|safe}},
+                                        tickInterval: 30,lineColor:"black",
+                                        tickLength: 7,
+                                                tickWidth: 1,
+                                                tickColor:"black",
+                                        labels:{
+                                            style: {
+                                                    color: 'black',
+                                                    fontSize:'13px',
+                                                    fontFamily:'verdana'
+                                                },
+                                        }
+                                    },
+                                credits: {
+                                            enabled: false
+                                        },
+                                        exporting: {
+                                            buttons: {
+                                                contextButton: {
+                                                enabled:false
+                                                },
+                                                
+                                            }
+                                        },
+                                yAxis: {
+                                    gridLineWidth: 0,lineWidth:1,lineColor:"black",
+                                    tickLength: 7,
+                                            tickWidth: 1,
+                                            tickColor:"black",
+                                    title: {
+                                        text: 'PNL & VaR 90D(%)',
+                                        style:{
+                                                    color: 'black',
+                                                fontSize:'13px',
+                                                fontFamily:'verdana',
+                                                }
+                                    },
+                                
+                                labels: {
+                                            style: {
+                                            color: 'black',
+                                            fontSize:'13px',
+                                            fontFamily:'verdana',
+                                            },
+                            
+                                        formatter: function(){
+                                        return  (this.value).toFixed(1)+ '%';
+                                        }
+                                    },
+                                plotLines: [{
+                                    value: 0,
+                                    width: 1,
+                                    color: 'grey'
+                                }]
+                                },
+                                tooltip: {
+                                    valueSuffix: "%"
+                                },
+                                legend: {
+                                
+                                            align: 'center',
+                                            verticalAlign: 'bottom',
+                                            x: 0,
+                                            y: 0
+                                
+                                },
+                                series: [{
+                                    name: 'PNL',
+                                    data:{{data12|safe}},
+                                    color:'red'
+                                },        
+                                {        		
+                                    type: "arearange",   
+                                    name:"VaR 90D",               
+                                data: {{data11|safe}},
+                                showInLegend: false,
+                            
+                                fillOpacity: 0.3
+                        
+                        
+                                }]
+                            });
+                        });
+                    </script>
+                
+            </div>
+
+            {% elif multi_dates %}
+            <div class="centered">
+                    <h2 class="tm-block-title">Multi Factor Model</h2> 
+                <div>Select Date: 
+                    <select id="dt">
+                            <script>
+                                document.getElementById('message').style.display='none';
+                                var select = document.getElementById("dt");
+                                var options = {{multi_dates|safe}};
+                                for(var i = 0; i < options.length; i++) {
+                                    var opt = options[i];
+                                    var el = document.createElement("option");
+                                    el.textContent = opt;
+                                    el.value = opt;
+                                    select.appendChild(el);
+                                }
+                            </script>
+                    </select>
+                </div>
+                
+                <div id="image" style="margin-left:40%;margin-top:20%;"></div>
+                <script src="https://d3js.org/d3.v3.min.js"></script>
+                <svg class="chart"></svg>
+                <script>
+                    $(function(){
+                        waterfall('10-May')
+                    $("#dt").on("change",function(){
+                    selected_date=$('#dt').val();
+                    waterfall(selected_date)
+                            })
+                    });
+                    function waterfall(selected_date)
+                    {           
+                    d3.selectAll(".chart > *").remove()
+                    var margin = {top: 50, right: 30, bottom: 30, left: 80},
+                        width = 950,
+                        height = 500 ,
+                        padding = 0.3;
+                    var x = d3.scale.ordinal()
+                        .rangeRoundBands([0, width], padding);
+                    var y = d3.scale.linear()
+                        .range([height,0]);
+                    var xAxis = d3.svg.axis()
+                                        .scale(x).tickSize(7, 0)
+                                        .orient("bottom");
+                    var yAxis = d3.svg.axis()
+                                        .scale(y)
+                                        .orient("left");
+                    var color =["#9EC8F1","#5A6472",'#90ED7D','#F8A35D','#8085E9','#F15C80',"#E4D354","#2B908F"]
+                    var chart = d3.select(".chart")
+                                    .attr("viewBox", [-450, 0, width+1000, height+200])
+                                    .append("g")
+                                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                   
+                        data = {{multi_chart|safe}}
+                        data=data.filter((item) => item.Trade_Dt === selected_date )
+                    if(data.length!=0)
+                    {
+                        document.getElementById("image").style.display="none"
+                        var cumulative = 0;
+                        for (var i = 0; i < data.length; i++) {
+                            data[i].start = cumulative;
+                            cumulative = cumulative+(data[i].value);
+                            data[i].end = cumulative;
+                            data[i].class = ( data[i].value >= 0 ) ? 'positive' : 'negative'
+                        }
+                        data.push({
+                        Trade_Dt:"1/1/2019",
+                        name: 'Fund',
+                        end: cumulative,
+                        start: 0,
+                        class: 'Fund'
+                    });
+                        x.domain(data.map(function(d) {return d.name; }));
+                        y.domain([0, d3.max(data, function(d) { return d.end; })]).nice();
+                        chart.append("g")
+                            .attr("class", "x axis")
+                            .attr("transform", "translate(0," + height + ")")
+                            .call(xAxis) .selectAll("text")
+                            .style("font-family","verdana")
+                            .style("font-size","13");
+                            chart.append("g")
+                                .attr("class", "y axis")
+                                .call(yAxis.tickFormat(d => d.toFixed(1)+"%"))
+                                .selectAll("text")
+                                .style("font-family","verdana")
+                                .style("font-size","13");
+                            var bar = chart.selectAll(".bar")
+                                            .data(data)
+                                            .enter().append("g")
+                                            .attr("class", function(d) { return "bar " + d.class })
+                                            .attr("transform", function(d) { return "translate(" + x(d.name) + ",0)"; });
+                            bar.append("rect")
+                                .attr("y", function(d) { return y( Math.max(d.start, d.end) ); })
+                                .attr("height", function(d) { return Math.abs( y(d.start) - y(d.end) ); })
+                                .attr("width",x.rangeBand()) .style("fill", (d,i) => color[i]);
+                            bar.append("text")
+                                .attr("x", x.rangeBand() / 2)
+                                .attr("y", function(d) { return y(d.end)-3; }).style('fill','black')
+                                .text(function(d) { num=d.end - d.start;y=parseFloat(num).toFixed(2);return y+"%";});
+                                var colors = ["#9EC8F1","#5A6472",'#90ED7D','#F8A35D','#8085E9','#F15C80',"#E4D354","#2B908F"];
+                                var legends = ['Alpha','Market','Size','Quality','Momentum','Growth','Capex','Fund'];
+                                var svg2 = d3.select('.legend')
+                                var groups = d3.select('.legend')
+                                            .selectAll('g')
+                                            .data(legends)
+                                            .enter()
+                                            .append('g');
+                                var text = groups.append('text')
+                                            .attr('x',50)
+                                            .attr('y', 20)
+                                            .style("font-size","14px")
+                                            .text(function(d,i) { return legends[i]; });
+                                var padding = 40;
+                            groups.attr('transform', function(d,i) { 
+                            return "translate("+(d3.sum(data, function(e,j) {
+                            if (j < i) { return groups.nodes()[j].getBBox().width-200; } else return 0; }) + padding * i) + ",30)";
+                            })                      
+                            }
+                            else{
+                            document.getElementById("image").style.display="block"
+                            document.getElementById("image").innerHTML="<img src='../static/images/nodata.jpg\' width=\"200px\" height=\"200px\"  >";
+                        }
+                                function type(d) {
+                                d.value = +d.value;
+                                return d;
+                                }
+                        
+                    }
+                    
+                </script>   
+            </div>
+
+            {% elif port1 %}
+            <div class="centered"> 
+                    <h2 class="tm-block-title">Portfolio Snapshot</h2>  
+                    <p>Select Date: <input type="text" id="datepicker"  class="column  month_and_year_option2 i" name="announcementdate" required placeholder="DD/MM/YY" autocomplete="off" value="30/08/2019"></p>            
+                  
+                    <script>
+                        document.getElementById('message').style.display='none';
+                            var  selected_date;
+                                $(function(){
+                                $( "#datepicker" ).datepicker({
+                                    changeMonth : true,
+                                    changeYear : true,
+                                    dateFormat : 'dd/mm/yy'
+                                });
+                            });
+                            $(function(){
+                                
+                                    sharpe_table('30/08/2019')
+    
+                                    $("#datepicker").on("change",function(){             
+                                    selected_date=$('#datepicker').val();
+                                    sharpe_table(selected_date)
+                                });
+                            });
+    
+                        </script>   
+                <table id='id_of_table' border=1>
+                    <tr>
+                        <th> </th>
+                        <th> Fund </th>
+                        <th> S&P 500 </th>
+                    </tr>
+            
+                    <tr>
+                        <td><b>Ann'l Return</b></td>
+                        <td><input id="1" type="text"  readonly></td>
+                        <td><input id="2" type="text" readonly></td>
+                    </tr>
+                
+                    <tr>
+                        <td><b>Ann'l  Vol</b></td>
+                        <td><input type="text" id="3" readonly></td>
+                        <td><input id="4" type="text" readonly ></td>
+                    </tr>
+
+                
+                    <tr>
+                        <td><b>Max Drawdown </b></td>
+                        <td><input type="text" id="5" readonly></td>
+                        <td><input id="6" type="text"readonly ></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Sharpe </b> </td>
+                        <td><input type="text" id="7" readonly></td>
+                        <td><input id="8" type="text" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><b>Sortino </b> </td>
+                        <td><input type="text" id="9" readonly ></td>
+                        <td><input id="10" type="text" readonly></td>
+                    </tr>
+                </table>
+                <script>
+                    function sharpe_table(selected)
+                    {
+                    var data={{port1|safe}} 
+                    console.log(data)
+                    data2=data.filter((item) => item.Trade_Dt === selected)
+                    console.log(data2)
+
+                    if(data2.length!=0)
+                    {
+                        if(data2[0]['Annl Fund '])
+                        {
+                            document.getElementById("1").value=data2[0]['Annl Fund '];
+                        }
+                        else
+                        {
+                            document.getElementById("1").value=null;
+                        }
+                
+                        if(data2[0]['Annl Benchmark'])
+                        
+                            document.getElementById("2").value= parseFloat(data2[0]['Annl Benchmark']*100).toFixed(2)+"%"
+                        
+                        else 
+                            document.getElementById("2").value=null;
+
+                
+                        if(data2[0]["Ann'l Fund Vol"])
+                        
+                        
+                            document.getElementById("3").value=data2[0]["Ann'l Fund Vol"]
+                        
+                        else 
+                            document.getElementById("3").value=null;    
+
+
+                        if(data2[0]["Ann'l Benchmark Vol"])   
+                            document.getElementById("4").value=parseFloat(data2[0]["Ann'l Benchmark Vol"]*100).toFixed(2)+"%"
+                        else 
+                            document.getElementById("4").value=null;
+
+                        if(data2[0]['Max Drawdown - Fund'])
+                            document.getElementById("5").value =data2[0]['Max Drawdown - Fund']
+                        else 
+                            document.getElementById("5").value=null;
+
+                        if(data2[0]['Max Drawdown - Bench Mark'])
+                            document.getElementById("6").value=data2[0]['Max Drawdown - Bench Mark']
+                        else 
+                            document.getElementById("6").value=null;
+
+                        if(data2[0]['Sharpe - Fund'])
+                            document.getElementById("7").value =data2[0]['Sharpe - Fund']
+                        else 
+                            document.getElementById("7").value=null;
+
+                        if(data2[0]['Sharpe - Benchmark'])
+                                document.getElementById("8").value =data2[0]['Sharpe - Benchmark']
+                        else 
+                            document.getElementById("8").value=null;
+
+                        if(data2[0]['Sortino - Fund'])
+                            document.getElementById("9").value =data2[0]['Sortino - Fund']
+                        else 
+                            document.getElementById("9").value=null;
+
+                        if(data2[0]['Sortino - Benchmark'])
+                            document.getElementById("10").value=data2[0]['Sortino - Benchmark']
+                        else 
+                            document.getElementById("10").value=null;
+                    }
+                    else
+                    {
+                        document.getElementById("1").value=null;
+                        document.getElementById("2").value=null;
+                        document.getElementById("3").value=null;    
+                        document.getElementById("4").value=null;    
+                        document.getElementById("5").value=null;    
+                        document.getElementById("6").value=null;    
+                        document.getElementById("7").value=null;    
+                        document.getElementById("8").value=null;    
+                        document.getElementById("9").value=null;    
+                        document.getElementById("10").value=null; 
+                    }
+
+                    }
+                    
+                </script> 
+            </div>
+
+            {% elif ytd %}
+            <div class="centered">
+                <h2 class="tm-block-title">Monthly Perfomance</h2>
+                <svg id="monthly" ></svg>
+                <table  id="ytd_table"  border=1>
+                        <th>Year</th>
+                        <th>YTD</th>
+                        <tbody id="ytd"></tbody>     
+                    </table>
+                <script> 
+                document.getElementById('message').style.display='none';     
+                    d3.selectAll("#monthly > *").remove()
+                    var ytd={{ytd|safe}}
+                        var year={{year|safe}}
+                        for(j=0;j<ytd.length;j++)
+                        {
+                            var table = document.getElementById('ytd')
+                    
+                            for (var r = 0; r < 1; r += 1) 
+                            {
+                                var x = document.getElementById('ytd').insertRow(r);
+                                for (var c = 0; c < 2; c += 1) {
+                                var y = x.insertCell(c);
+                            
+                                }
+                    
+                                table.rows[r].cells[1].innerHTML = ytd[j];
+                                table.rows[r].cells[0].innerHTML = year[j];
+                            }
+                        }
+                        var margin = {top: 40, right: 0, bottom: 30, left: 170},
+                            width = 1240 - margin.left - margin.right,
+                            height = 255 - margin.top - margin.bottom;
+                    var svg = d3.select("#monthly")
+                                .attr("viewBox", [0, 0, width+200, height+100])
+                                .append("g")
+                                .attr("transform","translate(" + margin.left + "," + margin.top + ")");;
+
+                    // Labels of row and columns
+                    var myGroups =  ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+                        var myVars = ["2017","2018","2019"]
+
+                        // Build X scales and axis:
+                        var x = d3.scaleBand()
+                                    .range([ 0, width ])
+                                    .domain(myGroups)
+                                    .padding(0.01);
+                        x_axis=svg.append("g")
+                                .attr("transform", "translate(0," + height + ")").attr("class",'x_ticks')
+                                .call(d3.axisBottom(x))
+
+                        x_axis.selectAll("text").style("fill","black").style("font-size","18")
+                    
+
+                        // Build X scales and axis:
+                        var y = d3.scaleBand()
+                        .range([ height, 0 ])
+                        .domain(myVars)
+                        .padding(0.01);
+
+                        y_axis =svg.append("g")
+                                    .attr("class", "y axis x_ticks")
+                                    .call(d3.axisLeft(y));
+
+                        y_axis.selectAll("text").style("fill","black").style("font-size","20")
+
+                        
+                    
+                    // Build color scale
+                    var myColor = d3.scaleLinear()
+                    .range(["#FF7474", "#AAFE96"])
+                    .domain([-0.05,0.05])
+                    
+                    //Read the data
+                    d3.csv("../static/csv/page1_heatmap.csv", function(data) {
+                    // var formatter = d3.format(".0%");
+                    svg.selectAll()
+                        .data(data, function(d) {return d.Month+':'+d.Year;})
+                        .enter()
+                        .append("rect")
+                        .attr("x", function(d) { return x(d.Month) })
+                        .attr("y", function(d) { return y(d.Year) })
+                        .attr("width", x.bandwidth() )
+                        .attr("height", y.bandwidth() ) 
+                
+                        .style("fill", function(d) { return myColor(d.value)} )
+                    
+                        svg.selectAll()
+                        .data(data, function(d) {return d.Month+':'+d.Year;})
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return x(d.Month)+20})
+                        .attr("y", function(d) { return y(d.Year)+30})
+                        .attr("width", x.bandwidth() )
+                        .attr("height", y.bandwidth() )
+                        .style("fill","black")
+                        .style("font-size","12")
+                        .style("font-weight","bold")
+                        .text( function(d) {
+                            if(d.value) 
+                            {
+                            num=d.value*100;y=parseFloat(num).toFixed(2);return y+"%";
+                            }
+                            else
+                            return null;
+                            })
+                    })     
+                </script>
+
+            </div>
+
+
+
+            {% endif %}
+
+<!-- ALL JS FILES -->
+<script src="{% static 'static/js/all.js' %}"></script>
+<!-- ALL PLUGINS -->
+<script src="{% static 'static/js/custom.js' %}"></script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

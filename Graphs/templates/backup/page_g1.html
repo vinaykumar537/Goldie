@@ -1,0 +1,822 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Kiski </title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">- For Date Picker -->
+<!--  -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <style>
+        /* body {
+          font-family: Arial;
+        }
+        
+        .split {
+          height: 70%;
+          width: 50%;
+          position: fixed;
+          z-index: 1;
+          top: 10;
+          overflow-x: hidden;
+          padding-top: 20px;
+        } */
+        
+        .left {
+          left: 0;
+          width:42%;
+          float:left;
+          height:60%;
+          margin-left:150px;
+
+        }
+        
+        .right {
+          right: 0;
+          width:42%;
+          float:right;
+          height:60%;
+          margin-right:150px;
+          
+        }
+        p{
+            margin-top:-1%;
+        }
+        /* .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        } */
+        .line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+.axis { font: 13px Verdana;
+/* font-weight:4px; */
+ }  
+
+strong {
+	font-weight: bold; 
+}
+
+em {
+	font-style: italic; 
+}
+/* 
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 600px;
+}	 */
+
+ th {
+	background: url(https://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444); 
+  
+   /* background-color:rgb(75, 166, 241); */
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color:white;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+ th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+#id_of_table th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+#id_of_table th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+ td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+#id_of_table td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+#id_of_table td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+#id_of_table tr {
+	background: url(https://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+#id_of_table tr:nth-child(odd) td {
+	background: #f1f1f1 url(https://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+#id_of_table tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+#id_of_table tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+#id_of_table tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+/* 
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+} */
+
+/* tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+} */
+input[type="text"], textarea {
+
+background-color : #f5f5f5; 
+border:0px;
+/* width:300px; */
+/* height:40px; */
+
+}
+#id_of_table input:focus {
+/* outline:none; */
+border: 0;
+outline: none
+}
+
+
+
+/* chart3 */
+#firsttable td {
+  /* border: 1px solid #ccc; */
+}
+      
+        </style>
+    
+
+</head>
+<body class="host_version"> 
+
+	
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loading">
+			<div class="finger finger-1">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-2">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-3">
+				<div class="finger-item">
+				  <span></span><i></i>
+				</div>
+			</div>
+  			<div class="finger finger-4">
+				<div class="finger-item">
+				<span></span><i></i>
+				</div>
+			</div>
+  			<div class="last-finger">
+				<div class="last-finger-item"><i></i></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'firstpage'%}"></a>
+                    <!-- <img src="{% static 'images/navbar_logo.png' %}" alt="image not available" id="img"> -->
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                            <li><a href="{% url 'firstpage'%}" >Page 1</a></li>
+                            <li><a class="active" href="{% url 'secondpage'%}">Page 2 </a></li>
+                            <li><a href="{% url 'thirdpage'%}">Page 3</a></li>
+                            <li><a    href="{% url 'fourthpage'%}">Page 4</a></li>
+                            <li><a  href="{% url 'fifthpage'%}">Page 5</a></li>
+                            <li><a  href="{% url 'sixthpage'%}">Page 6</a></li>
+                            
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+							<li><a href="{% url 'logout'%}" > Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+<div id="top">
+<div class="left"> 
+  <p style="color:white;background-color:rgb(29, 26, 26);padding:1.2%;height:50px;font-size:25px;">Growth of $1000 since Inception</p>
+  <div class="centered" id="centered">
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+// set the dimensions and margins of the graph
+var margin = {top: 100, right: 20, bottom: 30, left: 100},
+    width = 760 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+
+// parse the date / time
+// var parseTime = d3.timeParse("%Y-%m");
+var parseTime = d3.timeParse("%Y-%m-%d");
+
+// set the ranges
+var x = d3.scaleTime().range([20, width-20]);
+var y = d3.scaleLinear().range([height, 0]);
+var x= d3.scaleTime()
+    .domain([new Date(2014, 0, 1), new Date(2016, 0, 1, 0)])
+    .rangeRound([20,width - 20]);
+    var xAxis2 = d3.axisBottom(x).tickFormat(d3.timeFormat("%Y"));
+
+// define the 1st line
+var valueline = d3.line()
+    .x(function(d) { return x(d.Trade_Dt); })
+    .y(function(d) { return y(d.Fund_Cumulative); });
+
+// define the 2nd line
+var valueline2 = d3.line()
+    .x(function(d) { return x(d.Trade_Dt); })
+    .y(function(d) { return y(d.Cumulative_Return_Benchmark); });
+
+// append the svg obgect to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg = d3.select("#centered").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// Get the data
+// d3.csv("chart1.csv", function(error, data) {
+//   if (error) throw error;
+var count=0
+var data={{data.chart_data|safe}}
+var count=[]
+  // format the data
+  data.forEach(function(d) {
+      d.Trade_Dt = parseTime(d.Trade_Dt);
+     
+      count.push(d.Trade_Dt.getFullYear())
+      d.Fund_Cumulative= +d.Fund_Cumulative;
+      d.Cumulative_Return_Benchmark = +d.Cumulative_Return_Benchmark;
+      
+  });
+
+count = count.filter( function( item, index, inputArray ) {
+           return inputArray.indexOf(item) == index;
+    });
+
+
+  // Scale the range of the data
+
+  x.domain(d3.extent(data, function(d) { return d.Trade_Dt; }));
+  
+  y.domain([0, d3.max(data, function(d) {
+	  return Math.max(d.Fund_Cumulative, d.Cumulative_Return_Benchmark); })]);
+
+  // Add the valueline path.
+  svg.append("path")
+      .data([data])
+      .attr("class", "line").style("stroke", "green")
+      .attr("d", valueline);
+
+  // Add the valueline2 path.
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .style("stroke", "black")
+      .attr("d", valueline2);
+
+  // Add the X Axis
+  svg.append("g")
+      .attr("transform", "translate(0," + height + ")").attr("class","axis")  
+      .call(d3.axisBottom(x).ticks(count.length-1) .tickFormat(d3.timeFormat("%Y")));
+
+  // Add the Y Axis
+
+
+  svg.append("g")  .attr("class","axis")
+      .call(d3.axisLeft(y).tickFormat(d => "$ "+d ));
+
+
+      svg.append("text")             
+        .attr("x",-200 )
+        .attr("y",-80)
+        .style("text-anchor", "middle")
+        .attr("transform", "rotate(-90)")
+        .attr("font-family","Arial Black")
+        .text("Growth of $1000");
+
+// });
+
+
+
+
+var colors = ["green", "black"];
+ // Draw legend
+ var legend = svg.selectAll(".legend")
+                    .data(colors)
+                    .enter().append("g")
+                    .attr("class", "legend")
+                    .attr("transform", function(d, i) { return "translate(30," + i * 19 + ")"; });
+                  
+                  legend.append("rect")
+                    .attr("x",width-100)
+                    .attr("y",10)
+                    .attr("width", 18)
+                    .attr("height", 18)
+                    .style("fill", function(d, i) {return colors.slice().reverse()[i];});
+                  
+                  legend.append("text")
+                    .attr("x",width-80)
+                    .attr("y", 18)
+                    .attr("dy", ".35em")
+                    .style("text-anchor", "start")
+                    .text(function(d, i) { 
+      
+                      switch (i) {
+                        case 0: return "Isomer";
+                        case 1: return "S&P500";
+                      
+                      }
+                    });
+
+
+
+
+</script>
+
+  </div>
+</div>
+
+<div class="right"><p style="color:white;background-color:rgb(29, 26, 26);padding:1.2%;height:50px;font-size:25px;">Portfolio Measurments</p>
+  <div class="centered">
+      
+       
+
+        <!-- <b style="font-size:20px;margin-right:-10px">Date</b><input id="dt" style="margin-left:100px;" placeholder="mm/dd/yyyy"/> -->
+Select Date: <input type="text"id="dt"  class="column  month_and_year_option i" name="announcementdate" required placeholder="YYYY-MM-DD" autocomplete="off">
+<input type="hidden" id="start" />
+        
+ <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet">
+<script>
+
+
+var data={{data2|safe}}  
+
+$(function(){
+               $( "#dt" ).datepicker({
+                   changeMonth : true,
+                   changeYear : true,
+                   dateFormat : 'mm/dd/yy'
+               });
+           });
+           
+    $(function(){
+                        $("#dt").on("change",function(){
+                        selected_date=$('#dt').val();
+                        
+                        sort_data=data.filter((item) => item.Trade_Dt === selected_date )
+                        console.log(sort_data)
+                        data2=sort_data;
+                        if(sort_data.length!=0)
+                            {
+                              if(data2[0]['Annl Fund'])
+                            document.getElementById("1").value=data2[0]['Annl Fund']
+                        else
+                            document.getElementById("1").value=null;
+
+                  
+                        if(data2[0]['Annl Benchmark'])
+                             document.getElementById("2").value= parseFloat(data2[0]['Annl Benchmark']).toFixed(2)
+                        else 
+                            document.getElementById("2").value=null;
+
+                  
+                        if(data2[0]["Ann'l Fund Vol"])
+                             document.getElementById("3").value=data2[0]["Ann'l Fund Vol"]
+                        else 
+                            document.getElementById("3").value=null;    
+
+
+                        if(data2[0]["Ann'l Benchmark Vol"])   
+                             document.getElementById("4").value=parseFloat(data2[0]["Ann'l Benchmark Vol"]).toFixed(2)
+                        else 
+                            document.getElementById("4").value=null;
+
+                        if(data2[0]['Max Drawdown - Fund'])
+                             document.getElementById("5").value =data2[0]['Max Drawdown - Fund']
+                        else 
+                            document.getElementById("5").value=null;
+
+                        if(data2[0]['Max Drawdown - Bench Mark'])
+                              document.getElementById("6").value=data2[0]['Max Drawdown - Bench Mark']
+                        else 
+                            document.getElementById("6").value=null;
+
+                        if(data2[0]['Sharpe - Fund'])
+                             document.getElementById("7").value =data2[0]['Sharpe - Fund']
+                        else 
+                            document.getElementById("7").value=null;
+
+                        if(data2[0]['Sharpe - Benchmark'])
+                                  document.getElementById("8").value =data2[0]['Sharpe - Benchmark']
+                        else 
+                            document.getElementById("8").value=null;
+
+                        if(data2[0]['Sortino - Fund'])
+                             document.getElementById("9").value =data2[0]['Sortino - Fund']
+                        else 
+                            document.getElementById("9").value=null;
+
+                        if(data2[0]['Sortino - Benchmark'])
+                            document.getElementById("10").value=data2[0]['Sortino - Benchmark']
+                        else 
+                            document.getElementById("10").value=null;
+                            }
+                            else
+                            {
+                              alert("Data is not Available for that date !")
+                                          document.getElementById("1").value=null;
+                                          document.getElementById("2").value=null;
+                                          document.getElementById("3").value=null;    
+                                          document.getElementById("4").value=null;    
+                                          document.getElementById("5").value=null;    
+                                          document.getElementById("6").value=null;    
+                                          document.getElementById("7").value=null;    
+                                          document.getElementById("8").value=null;    
+                                          document.getElementById("9").value=null;    
+                                          document.getElementById("10").value=null; 
+                            }
+                        
+                           
+    
+                            })
+
+
+});
+
+
+
+</script>
+<table id='id_of_table' border=1 style="background: #f5f5f5;
+  	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 600px;">
+             <tr>
+                 
+                 <th>      
+                 </th>
+                 <th>
+                     Fund
+                 </th>
+                 <th>
+                     S&P 500
+                 </th>
+                </tr>
+             </th>
+                <tr><td>Ann'l Return</td><td><input id="1" type="text"  readonly></td><td><input id="2" type="text" readonly></td></tr>
+              
+                 <tr><td>Ann'l  Vol</td><td><input type="text" id="3" readonly></td></td><td><input id="4" type="text" readonly ></td></tr>
+        
+                
+                 <tr> <td>Max Drawdown </td><td><input type="text" id="5" readonly></td></td><td><input id="6" type="text"readonly ></td></tr>
+                
+                 <tr><td>Sharpe  </td><td><input type="text" id="7" readonly></td></td><td><input id="8" type="text" readonly></td></tr>
+                    <tr>  <td>Sortino  </td><td><input type="text" id="9" readonly ></td></td><td><input id="10" type="text" readonly></td></tr>
+            </table>
+            
+            </div>
+  </div>
+</div>
+</div>
+<div >
+  <div  style="float:left;width:90%">
+      <p style="color:white;background-color:rgb(29, 26, 26);padding:0.4%;height:50px;font-size:25px;margin-top:2%;margin-left:10%">Monthly Perfomance</p>
+    <table  id="js-datatable"  border="1" style="width:70% ;background: #f5f5f5;
+  	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin-left:10% ;
+	text-align: left;
+	width: 84%;float:left">
+        <thead>
+          <th>Year</th>
+          <th>Jan</th>
+          <th>Feb</th>
+          <th>Mar</th>
+          <th> Apr</th>
+          <th>May</th>
+          <th>Jun </th>
+          <th>Jul</th>
+          <th>Aug</th>
+          <th>Sep</th>
+          <th>Oct</th>
+          <th>Nov</th>
+          <th>Dec</th>
+     
+        </thead>
+        
+      
+      </table>
+      
+      <table border="1" style="float:right;width:100px;background: #f5f5f5;
+      background: #f5f5f5;
+    border-collapse: separate;
+    box-shadow: inset 0 1px 0 #fff;
+    font-size: 12px;
+    line-height: 24px;
+   
+    text-align: left;margin-top:0px">
+          
+            <th>YTD</th>
+            <tbody id="ytd" >
+              </tbody>
+          
+            
+        </table>
+        <b id="insertfirsttable" >
+        </b>
+      <!-- <input type="submit" id="insertitem" > -->
+      <script>
+
+        // var year={{year|safe}}
+        var ytd={{ytd|safe}}
+        // alert(years.length)
+        for(j=0;j<ytd.length;j++)
+      {
+
+        var table = document.getElementById('ytd')
+
+        for (var r = 0; r < 1; r += 1) {
+          var x = document.getElementById('ytd').insertRow(r);
+          for (var c = 0; c < 1; c += 1) {
+            var y = x.insertCell(c);
+          }
+
+          table.rows[r].cells[0].innerHTML = ytd[j];
+        }
+      }
+      var margin = {top: 4, right: 0, bottom: 30, left: 284},
+        width = 1600 - margin.left - margin.right,
+        height = 150 - margin.top - margin.bottom;
+
+      // append the svg object to the body of the page
+      var svg = d3.select("#insertfirsttable")
+      .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform",
+              "translate(" + margin.left + "," + margin.top + ")");
+
+      // Labels of row and columns
+      var myGroups =  ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+      var myVars = ["2017","2018","2019"]
+
+      // Build X scales and axis:
+      var x = d3.scaleBand()
+        .range([ 0, width ])
+        .domain(myGroups)
+        .padding(0.01);
+      svg.append("g")
+        .attr("transform", "translate(0," + height + ")");
+        // .call(d3.axisBottom(x))
+
+      // Build X scales and axis:
+      var y = d3.scaleBand()
+        .range([ height, 0 ])
+        .domain(myVars)
+        .padding(0.01);
+      svg.append("g")  .attr("class", "y axis")
+        .call(d3.axisLeft(y));
+
+      // Build color scale
+      var myColor = d3.scaleLinear()
+        .range(["steelblue", "blue"])
+        .domain([-0.05,0.05])
+      
+      //Read the data
+      d3.csv("../static/csv/chart3.csv", function(data) {
+        // var formatter = d3.format(".0%");
+        svg.selectAll()
+            .data(data, function(d) {return d.Month+':'+d.Year;})
+            .enter()
+            .append("rect")
+            .attr("x", function(d) { return x(d.Month) })
+            .attr("y", function(d) { return y(d.Year) })
+            .attr("width", x.bandwidth() )
+            .attr("height", y.bandwidth() ) 
+     
+            .style("fill", function(d) { return myColor(d.value)} )
+       
+          svg.selectAll()
+            .data(data, function(d) {return d.Month+':'+d.Year;})
+            .enter()
+            .append("text")
+            .attr("x", function(d) { return x(d.Month)+30})
+            .attr("y", function(d) { return y(d.Year)+20})
+            .attr("width", x.bandwidth() )
+            .attr("height", y.bandwidth() ) .style("fill","white")
+            .text( function(d) {
+              if(d.value) 
+              {
+                num=d.value;y=parseFloat(num).toFixed(2);return y+"%";
+              }
+              else
+              return null;
+              })
+            
+            
+
+      })
+    
+  
+
+
+      
+
+      //   var data3={{data3|safe}}
+        
+      // var i=0;
+      // for(j=0;j<year.length;j++)
+      // {
+
+      //   var table = document.getElementById('insertfirsttable')
+
+      //   for (var r = 0; r < 1; r += 1) {
+      //     var x = document.getElementById('insertfirsttable').insertRow(r);
+      //     for (var c = 0; c < 13; c += 1) {
+      //       var y = x.insertCell(c);
+      //     }
+
+      //     table.rows[r].cells[0].innerHTML = year[j];
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[1].innerHTML =null
+      //     else
+      //     table.rows[r].cells[1].innerHTML = parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[2].innerHTML =null
+      //     else
+      //       table.rows[r].cells[2].innerHTML = parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //       if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[3].innerHTML =null
+      //     else
+      //     table.rows[r].cells[3].innerHTML =  parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[4].innerHTML =null
+      //     else
+      //     table.rows[r].cells[4].innerHTML = parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[5].innerHTML =null
+      //     else
+      //     table.rows[r].cells[5].innerHTML = parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[6].innerHTML =null
+      //     else
+      //     table.rows[r].cells[6].innerHTML =  parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[7].innerHTML =null
+      //     else
+      //     table.rows[r].cells[7].innerHTML =  parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[8].innerHTML =null
+      //     else
+      //     table.rows[r].cells[8].innerHTML =  parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[9].innerHTML =null
+      //     else
+      //     table.rows[r].cells[9].innerHTML = parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[10].innerHTML =null
+      //     else
+      //     table.rows[r].cells[10].innerHTML =  parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //     if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[11].innerHTML =null
+      //     else
+      //          table.rows[r].cells[11].innerHTML = parseFloat(data3[i++]*100).toFixed(2)+"%";
+      //          if(isNaN(data3[i])==true)
+      //      table.rows[r].cells[12].innerHTML =null
+      //     else
+      //     table.rows[r].cells[12].innerHTML =  parseFloat(data3[i++]*100).toFixed(2)+"%";
+
+      //   }
+
+
+        
+      // }
+
+    
+               
+      </script>
+      </div>
+    
+</div>
+     
+	
+
+    
+
+    
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'static/js/all.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'static/js/custom.js' %}"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
